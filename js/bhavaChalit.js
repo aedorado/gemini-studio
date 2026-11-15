@@ -206,6 +206,7 @@ export function calculateBhavaChalit(planets, options = {}) {
   return {
     ascendantDeg: ascDeg,
     mcDeg,
+    bhavMadhyas: mid.slice(1),
     houses,
     planetPlacements,
     shiftedPlanets

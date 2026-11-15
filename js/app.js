@@ -1095,23 +1095,29 @@ function runPostCalculationPipeline() {
     console.error('Error in Yogas calculation:', e);
   }
 
-  // 8. Classical Parashari Shadbala & Bhavabala (Planetary & House Strengths)
-  try {
-    const bTime = birthTimeEl ? birthTimeEl.value : '12:00';
-    const bDate = birthDateEl && birthDateEl.value ? new Date(birthDateEl.value) : new Date();
-    appState.shadbala = calculateShadbala(appState.planets, appState.shodashvarga ? appState.shodashvarga.matrix : [], bTime, bDate);
-    const lagna = appState.planets.find(p => p.key === 'ASC');
-    const lagnaSignIdx = lagna ? (lagna.signIndex !== undefined ? lagna.signIndex : (lagna.signId ? lagna.signId - 1 : 0)) : 0;
-    appState.bhavabala = calculateBhavabala(appState.planets, appState.shadbala, lagnaSignIdx);
-  } catch (e) {
-    console.error('Error in Shadbala/Bhavabala calculation:', e);
-  }
-
-  // 8b. Classical Sripati Bhava Chalit (Unequal House Placements)
+  // 8a. Classical Sripati Bhava Chalit (Unequal House Placements)
   try {
     appState.bhavaChalit = calculateBhavaChalit(appState.planets, { mcDeg: appState.mcDeg });
   } catch (e) {
     console.error('Error in Bhava Chalit calculation:', e);
+  }
+
+  // 8b. Classical Parashari Shadbala & Bhavabala (Planetary & House Strengths)
+  try {
+    const bTime = birthTimeEl ? birthTimeEl.value : '12:00';
+    const bDate = birthDateEl && birthDateEl.value ? new Date(birthDateEl.value) : new Date();
+    const sbOptions = {
+      mcDeg: appState.mcDeg
+    };
+    appState.shadbala = calculateShadbala(appState.planets, appState.shodashvarga ? appState.shodashvarga.matrix : [], bTime, bDate, sbOptions);
+    const lagna = appState.planets.find(p => p.key === 'ASC');
+    const lagnaSignIdx = lagna ? (lagna.signIndex !== undefined ? lagna.signIndex : (lagna.signId ? lagna.signId - 1 : 0)) : 0;
+    const bbOptions = {
+      bhavMadhyas: appState.bhavaChalit ? appState.bhavaChalit.bhavMadhyas : undefined
+    };
+    appState.bhavabala = calculateBhavabala(appState.planets, appState.shadbala, lagnaSignIdx, bbOptions);
+  } catch (e) {
+    console.error('Error in Shadbala/Bhavabala calculation:', e);
   }
 
   // 8c. Planetary Friendship Tables (Maitri Chakra)

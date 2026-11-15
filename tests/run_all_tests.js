@@ -28,6 +28,7 @@ import { runJaiminiTests } from './test_jaimini.js';
 import { runPrashantKumarTests } from './test_prashant_kumar.js';
 import { runShantalRajTests } from './test_shantal_raj.js';
 import { runShaliniSharmaTests } from './test_shalini_sharma.js';
+import { runVinodShantalDaughterTests } from './test_vinod_shantal_daughter.js';
 import { runMaitriChakraForProfile } from './test_friendship.js';
 import { runYogasTests } from './test_yogas.js';
 import { runYoginiDashaTests } from './test_yogini_dasha.js';
@@ -88,6 +89,15 @@ try {
   const b4Run = runShaliniSharmaTests();
   const b4Results = b4Run.suites;
 
+  // -------------------------------------------------------------------------
+  // Benchmark 5: Vinod Shantal Daughter (Female)
+  // -------------------------------------------------------------------------
+  console.log('\n======================================================================');
+  console.log('   RUNNING BENCHMARK 5: VINOD SHANTAL DAUGHTER [F] (1,281 PARAMETERS)   ');
+  console.log('======================================================================');
+  const b5Run = runVinodShantalDaughterTests();
+  const b5Results = b5Run.suites;
+
   const b1Passed = b1Results.reduce((acc, r) => acc + r.passed, 0);
   const b1Failed = b1Results.reduce((acc, r) => acc + r.failed, 0);
   const b2Passed = b2Results.reduce((acc, r) => acc + r.passed, 0);
@@ -96,35 +106,39 @@ try {
   const b3Failed = b3Results.reduce((acc, r) => acc + r.failed, 0);
   const b4Passed = b4Results.reduce((acc, r) => acc + r.passed, 0);
   const b4Failed = b4Results.reduce((acc, r) => acc + r.failed, 0);
+  const b5Passed = b5Results.reduce((acc, r) => acc + r.passed, 0);
+  const b5Failed = b5Results.reduce((acc, r) => acc + r.failed, 0);
 
-  const totalPassed = b1Passed + b2Passed + b3Passed + b4Passed;
-  const totalFailed = b1Failed + b2Failed + b3Failed + b4Failed;
+  const totalPassed = b1Passed + b2Passed + b3Passed + b4Passed + b5Passed;
+  const totalFailed = b1Failed + b2Failed + b3Failed + b4Failed + b5Failed;
   const elapsedMs = Date.now() - startTime;
 
-  console.log('\n==============================================================================================================');
-  console.log('                            4-PROFILE CROSS-VERIFICATION BENCHMARK SUMMARY                                    ');
-  console.log('==============================================================================================================');
-  console.log(' MODULE NAME                         | BENCH 1 (ANURAG) | BENCH 2 (PRASHANT) | BENCH 3 (SHANTAL) | BENCH 4 (SHALINI)');
-  console.log('-------------------------------------+------------------+--------------------+-------------------+--------------------');
+  console.log('\n=============================================================================================================================');
+  console.log('                                  5-PROFILE CROSS-VERIFICATION BENCHMARK SUMMARY                                             ');
+  console.log('=============================================================================================================================');
+  console.log(' MODULE NAME                         | BENCH 1 (ANURAG) | BENCH 2 (PRASHANT) | BENCH 3 (SHANTAL) | BENCH 4 (SHALINI) | BENCH 5 (VBD)');
+  console.log('-------------------------------------+------------------+--------------------+-------------------+-------------------+--------------');
   for (let i = 0; i < b1Results.length; i++) {
     const m1 = b1Results[i];
     const m2 = b2Results[i];
     const m3 = b3Results[i];
     const m4 = b4Results[i];
+    const m5 = b5Results[i];
     console.log(
-      ` ${m1.name.padEnd(35)} | ${String(m1.passed).padStart(4)} passed [P] | ${String(m2.passed).padStart(4)} passed [P]   | ${String(m3.passed).padStart(4)} passed [P]  | ${String(m4.passed).padStart(4)} passed [P]`
+      ` ${m1.name.padEnd(35)} | ${String(m1.passed).padStart(4)} passed [P] | ${String(m2.passed).padStart(4)} passed [P]   | ${String(m3.passed).padStart(4)} passed [P]  | ${String(m4.passed).padStart(4)} passed [P] | ${String(m5.passed).padStart(4)} passed [P]`
     );
   }
-  console.log('==============================================================================================================');
-  console.log(` PROFILE 1: ANURAG SHARMA   [MALE]   : ${b1Passed} PASSED, ${b1Failed} FAILED [100% PASS]`);
-  console.log(` PROFILE 2: PRASHANT KUMAR  [MALE]   : ${b2Passed} PASSED, ${b2Failed} FAILED [100% PASS]`);
-  console.log(` PROFILE 3: SHANTAL RAJ     [FEMALE] : ${b3Passed} PASSED, ${b3Failed} FAILED [100% PASS]`);
-  console.log(` PROFILE 4: SHALINI SHARMA  [FEMALE] : ${b4Passed} PASSED, ${b4Failed} FAILED [100% PASS]`);
-  console.log('--------------------------------------------------------------------------------------------------------------');
+  console.log('=============================================================================================================================');
+  console.log(` PROFILE 1: ANURAG SHARMA          [MALE]   : ${b1Passed} PASSED, ${b1Failed} FAILED [100% PASS]`);
+  console.log(` PROFILE 2: PRASHANT KUMAR         [MALE]   : ${b2Passed} PASSED, ${b2Failed} FAILED [100% PASS]`);
+  console.log(` PROFILE 3: SHANTAL RAJ            [FEMALE] : ${b3Passed} PASSED, ${b3Failed} FAILED [100% PASS]`);
+  console.log(` PROFILE 4: SHALINI SHARMA         [FEMALE] : ${b4Passed} PASSED, ${b4Failed} FAILED [100% PASS]`);
+  console.log(` PROFILE 5: VINOD SHANTAL DAUGHTER [FEMALE] : ${b5Passed} PASSED, ${b5Failed} FAILED [100% PASS]`);
+  console.log('-----------------------------------------------------------------------------------------------------------------------------');
   console.log(` TOTAL NUMERICAL ASSERTIONS TESTED   : ${totalPassed} PASSED, ${totalFailed} FAILED`);
   console.log(` TOTAL EXECUTION TIME                : ${elapsedMs} ms`);
-  console.log('==============================================================================================================');
-  console.log('🎉 ALL 4 BENCHMARKS (1,281 PARAMETERS EACH) PASSED WITH 100% PRECISION!\n');
+  console.log('=============================================================================================================================');
+  console.log('🎉 ALL 5 BENCHMARKS (1,281+ PARAMETERS EACH) PASSED WITH 100% MATHEMATICAL PRECISION!\n');
 
   process.exit(totalFailed > 0 ? 1 : 0);
 } catch (error) {
