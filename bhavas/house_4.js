@@ -1,0 +1,257 @@
+// House 4 (Sukha Bhava) Master Data
+// Ground truth: Haveli Ram Mehta's "Advanced Techniques of Predictive Astrology", Vol. 1, Ch. 4 (pp. 73-88)
+
+export const house4Data = {
+  "houseNumber": 4,
+  "name": "Sukha Bhava",
+  "sanskritName": "चतुर्थ भाव (सुख भाव / मातृ भाव / गृह-भूमि भाव)",
+  "significations": [
+    "Mother (Matru), maternal relationship, and mother's health / longevity",
+    "Landed property, buildings, real estate, ancestral lands, and palatial mansions (Griha & Bhumi)",
+    "General happiness, domestic tranquility, contentment, and peace of mind (Sukhisthan)",
+    "Vehicles, conveyances, automobiles, and luxury transport (Vahana)",
+    "Foundational education, schooling, academic credentials, and learning environment (Vidya)",
+    "Friends and associations (harmonious if Shubh Kartari, toxic if Pap Kartari)",
+    "Chest, lungs, respiratory system, heart, and upper diaphragm",
+    "Hidden treasures, fine clothes, wardrobe, and underground mineral assets",
+    "Early childhood upbringing, domestic environment, and maternal nourishment",
+    "Parliamentary career, mass political support, and constituency foundation (K.N. Rao)",
+    "Agriculture, cattle, farms, orchards, and wells / water reservoirs"
+  ],
+  "bodyParts": [
+    "Chest & Breasts",
+    "Heart (Emotional Seat)",
+    "Lungs & Respiratory System",
+    "Ribs & Upper Diaphragm"
+  ],
+  "naturalKaraka": [
+    "Moon (Mother & Mind)",
+    "Mars (Landed Property & Real Estate)",
+    "Venus (Vehicles & Domestic Luxury)",
+    "Mercury (Foundational Education)"
+  ],
+  "classicalSources": [
+    {
+      "book": "Advanced Techniques of Predictive Astrology (Vol. 1)",
+      "author": "Haveli Ram Mehta",
+      "chapter": "Chapter 4: Fourth House - Sukha, Mother and Landed Property",
+      "pages": "73-88"
+    },
+    {
+      "book": "Brihat Parashara Hora Shastra",
+      "author": "Maharishi Parashara",
+      "chapter": "Bandhu Bhava Phala & Griha Yogas"
+    },
+    {
+      "book": "Phala Deepika",
+      "author": "Mantreswara",
+      "chapter": "Fourth Bhava Judgement & Conflagration Yogas"
+    },
+    {
+      "book": "Jataka Tattwa",
+      "author": "Mahadeva",
+      "chapter": "Sutra Dicta on Multistoried Mansions and Griha Sukha"
+    },
+    {
+      "book": "Sanketa Nidhi",
+      "author": "Ramadayalu",
+      "chapter": "Architectural Nature of Buildings by Planetary Influences"
+    },
+    {
+      "book": "Bhava Kutuhalam",
+      "author": "Jivanatha Daivajna",
+      "chapter": "Landed Property and Property Litigation Combinations"
+    },
+    {
+      "book": "Bhavartha Ratnakara",
+      "author": "Ramanujacharya",
+      "chapter": "Fourth House Jupiter Aspects & Salvation Yogas"
+    },
+    {
+      "book": "Ups and Downs in Career",
+      "author": "K.N. Rao",
+      "chapter": "Parliamentary Career and the 4th House Foundation"
+    }
+  ],
+  "authoritiesSummary": {
+    "mehta": "Declares the 4th house as the foundational pillar of life alongside the 10th. A strong 4th house is the 'sine qua non' for a prosperous childhood and serene married life. Formulates precise rules for palatial mansions, real estate empires, and timings of property acquisitions during Jupiter, Venus, or Mars dashas.",
+    "parashara": "Emphasizes the Kendra-Trikona disposition of the 4th lord. States that an unafflicted 4th lord in Kendra grants kingly luxuries, while associations with 6th lord or Dusthanas lead to maternal separation or step-mother.",
+    "mantreswara": "Phala Deepika affirms that 4th lord in 4th free from combustion or debilitation allows one to live like a sovereign king with endless luxuries. Malefics like Sun and Mars in 4th threaten fire hazards.",
+    "sanketaNidhi": "Delineates the architectural material of the residence: Mercury gives artistic interiors, Moon gives new/multistoried buildings, Jupiter gives durable timber structures, Venus gives houses with lush gardens, Saturn/Rahu gives stone or old dilapidated buildings, and Mars gives buildings prone to fire.",
+    "knRao": "Pioneered modern astrological research demonstrating that the 4th house governs parliamentary elections, mass constituency popularity, and deep verification via the Chaturthamsa (D-4) chart."
+  },
+  "lordInHouses": {
+    "1": {
+      "title": "4th Lord in 1st House (Lagna)",
+      "favorable": "Blessed with happiness of all kinds, conveyances, landed estates, mother's profound love, and high education. Born in an honorable and prosperous family.",
+      "afflicted": "If weak or afflicted by malefics: disturbed early childhood, strained domestic conditions, and delicate constitution.",
+      "mehtaNotes": "Bhava Kutuhalam notes that if 1st and 4th lords conjoin in 4th or Lagna, the native commands a grand mansion."
+    },
+    "2": {
+      "title": "4th Lord in 2nd House (Dhana Bhava)",
+      "favorable": "Highly wealthy, amasses substantial bank savings and real estate, deriving great joy from relatives, maternal family, and inherited assets.",
+      "afflicted": "Disputes over ancestral inheritance, domestic financial leaks, and friction with kin.",
+      "mehtaNotes": "Binds domestic happiness and landed properties directly to liquid capital accumulation."
+    },
+    "3": {
+      "title": "4th Lord in 3rd House (Sahaja Bhava)",
+      "favorable": "Generates wealth through bold personal enterprise, manual courage, and resolute character.",
+      "afflicted": "3rd house is 12th from 4th (loss of peace): native suffers restless anxiety, unstable commercial ventures, chronic dissatisfaction, and lack of savings.",
+      "mehtaNotes": "Placement in the 12th from itself drains domestic peace unless fortified by strong benefic aspects."
+    },
+    "4": {
+      "title": "4th Lord in 4th House (Swakshetra)",
+      "favorable": "Lives like a sovereign king (Phala Deepika), commanding all types of luxuries, agricultural lands, fine conveyances, prestigious status, and maternal bliss.",
+      "afflicted": "If conjoined with Saturn and Rahu: forced to reside in an old, repaired, or dilapidated house despite having status.",
+      "mehtaNotes": "One of the most potent placements for peaceful domestic foundation and enduring social reputation."
+    },
+    "5": {
+      "title": "4th Lord in 5th House (Putra Bhava)",
+      "favorable": "Supreme Kendra-Trikona Raj Yoga. Exceptional intellect, higher academic degrees, multiple houses, wealthy children, and rich ancestral legacy. Parivartana between 4th and 5th gives political fame and royal grace.",
+      "afflicted": "Delay or anxiety regarding children's properties or ancestral inheritance disputes.",
+      "mehtaNotes": "Exchange between 4th and 5th lords creates one of the most distinguished ministerial Raj Yogas."
+    },
+    "6": {
+      "title": "4th Lord in 6th House (Shatru/Roga Bhava)",
+      "favorable": "Can gain disputed property through legal victory if 4th lord is exceptionally dignified.",
+      "afflicted": "Heated disputes and protracted litigation over real estate, vehicular accidents, mother's chronic poor health, academic disruptions, and volatile temper.",
+      "mehtaNotes": "Bhava Kutuhalam: Lagna and 4th lord in 6th compels the native into court to battle over property."
+    },
+    "7": {
+      "title": "4th Lord in 7th House (Jaya Bhava)",
+      "favorable": "Charming, magnetic persona, early and fortunate marriage, vast landed properties and dowry/wealth through spouse, and flourishing trade partnerships.",
+      "afflicted": "Domestic disharmony and conflict over marital assets if afflicted by natural malefics.",
+      "mehtaNotes": "Kendra-to-Kendra placement establishes mutual domestic and marital stability."
+    },
+    "8": {
+      "title": "4th Lord in 8th House (Randhra Bhava)",
+      "favorable": "Gains hidden treasures, sudden mineral wealth, or unexpected legacies; deep occult or research capabilities.",
+      "afflicted": "Complete loss of domestic peace, maternal grief, property entangled in endless litigation. If Lagna and 4th lords both in 8th: bodily injuries resulting from property battles.",
+      "mehtaNotes": "Dusthana placement severely threatens mental calmness and residential tenure."
+    },
+    "9": {
+      "title": "4th Lord in 9th House (Bhagya Bhava)",
+      "favorable": "Magnificent Kendra-Trikona Raj Yoga. Tremendous good fortune, divine blessings, palatial residences, paternal inheritance, and royal favor (especially if aspected by Jupiter).",
+      "afflicted": "Strained relations with father or loss of ancestral luck if combust or afflicted.",
+      "mehtaNotes": "Direct mutual connection linking home foundation (4th) with divine providence (9th)."
+    },
+    "10": {
+      "title": "4th Lord in 10th House (Karma Bhava)",
+      "favorable": "Highly auspicious: directly aspects its own 4th house. High administrative or ministerial status, long-lived mother, respected social authority, and immense real estate gains.",
+      "afflicted": "If afflicted by Sun: properties lost through government confiscation. Jataka Tattwa: with Saturn & Moon gives a most pleasing, picturesque mansion.",
+      "mehtaNotes": "Unifies public profession (10th) with domestic roots and real estate empires."
+    },
+    "11": {
+      "title": "4th Lord in 11th House (Labha Bhava)",
+      "favorable": "Substantial profits from real estate, faithful influential friends, vehicles, and comfortable lifestyle.",
+      "afflicted": "11th is 8th from 4th: if weak, native suffers pessimistic anxiety, business stagnation, and fragile social associations.",
+      "mehtaNotes": "Requires planetary strength to overcome the Bhavat Bhavam 8th-disposition from the 4th house."
+    },
+    "12": {
+      "title": "4th Lord in 12th House (Vyaya Bhava)",
+      "favorable": "Permanent residence abroad in distant countries, spiritual inclination, and charitable donations.",
+      "afflicted": "Unhappy domestic life, financial drain in trade, separation from mother and ancestral homeland; lives in dilapidated housing (Jataka Parijata).",
+      "mehtaNotes": "Classical indicator for overseas relocation and dissolution of ancestral real estate."
+    }
+  },
+  "planetsInHouse": {
+    "Sun": {
+      "dignified": "Philosophical, dignified, interested in public service, governance, and ancestral lands. Modest early comforts expanding later in life.",
+      "afflicted": "Restless mind, roaming tendencies, emotional turmoil; if depressed or in enemy sign, difficulty acquiring own home; danger of fire if with Mars.",
+      "mehtaNotes": "Sun in 4th loses Digbala (as Digbala is in 10th); tends to make the native internally restless."
+    },
+    "Moon": {
+      "dignified": "Sensual pleasures, fine conveyances, public popularity, leadership stature, foreign travels (especially in movable signs), and deep maternal affection.",
+      "afflicted": "Separation or early bereavement of mother, fickle mind, emotional volatility, and unstable domestic residence.",
+      "mehtaNotes": "Moon in 4th is in its natural Karaka environment; powerful for public affection and domestic comfort."
+    },
+    "Mars": {
+      "dignified": "Commands landed properties, farms, brick and stone constructions, muscular vitality, and executive authority.",
+      "afflicted": "Fierce quarrels with mother and relatives, lack of peace of mind, danger of house fires, vehicular collisions, and loss through theft or property litigation.",
+      "mehtaNotes": "Kuha/Bhauma Dosha in 4th directly strains domestic peace and early maternal relations."
+    },
+    "Mercury": {
+      "dignified": "Splendid higher education, witty intellect, modern conveyances, musical and fine arts appreciation, travels abroad, and an artistically decorated house (Sanketa Nidhi).",
+      "afflicted": "Nervous anxiety, interrupted education, commercial disputes regarding home, or fickle domestic arrangements.",
+      "mehtaNotes": "Mercury in 4th signifies an intellectually vibrant and artistically designed home."
+    },
+    "Jupiter": {
+      "dignified": "Receives Digbala (Directional Strength). Highly learned, respected, virtuous childhood, peaceful domestic life, and durable timber mansions. Bhavartha Ratnakara: aspects 10th (pilgrimages & career honors), aspects 8th (destroys scandals), and aspects 12th (ensures spiritual salvation).",
+      "afflicted": "If associated with Rahu/Saturn: promises of a house materialize but yields an old, repaired, or dilapidated structure.",
+      "mehtaNotes": "Jupiter in 4th is one of the supreme protectors of moral character and lifelong domestic peace."
+    },
+    "Venus": {
+      "dignified": "Receives Digbala (Directional Strength). Luxurious palatial residence with exquisite gardens, love for music and fine arts, prestigious vehicles, domestic bliss, and charming friends.",
+      "afflicted": "Over-indulgence, extravagant spending on conveyances, and marital friction within the home.",
+      "mehtaNotes": "Venus in 4th is the sovereign sign of refined luxury, conveyances, and aesthetic living."
+    },
+    "Saturn": {
+      "dignified": "Deep contemplative seriousness, enduring patience, gains through agriculture, mining, or ancestral stone structures.",
+      "afflicted": "Unhappy domestic life, isolated seclusion, maternal suffering or early separation. Affliction by Mars/Rahu causes sudden downfall, property loss, or mental breakdown.",
+      "mehtaNotes": "Saturn in 4th severely tests domestic happiness unless supported by an exalted or friendly Lagna Lord."
+    },
+    "Rahu": {
+      "dignified": "Unconventional architectural housing, foreign connections, unexpected windfall in real estate, and rapid technological comforts.",
+      "afflicted": "Deceitful companions, interrupted early education, fraud in property, restless discontent, and domestic turmoil.",
+      "mehtaNotes": "Rahu in 4th destabilizes the inner peace of mind and often uproots the native from native soil."
+    },
+    "Ketu": {
+      "dignified": "Spiritual asceticism at home, interest in occult sciences, and detachment from material vanity.",
+      "afflicted": "Deprived of maternal comfort, sudden reversals in property, forced migration to foreign lands, and chronic mental gloom (especially with Saturn).",
+      "mehtaNotes": "Ketu in 4th fosters spiritual detachment from landed holdings and domestic vanity."
+    }
+  },
+  "specialPrinciples": {
+    "palatialHouses": {
+      "name": "Vichitra Saudha Prakara Yoga (Innumerable Mansions)",
+      "description": "Lords of the 4th and 10th houses combined with Saturn and Mars in Kendras or Trikonas. The native acquires innumerable mansions, expansive real estate, and magnificent estates.",
+      "source": "Mehta, Ch. 4, pp. 68-70 & Classical Treatises"
+    },
+    "uttamGriha": {
+      "name": "Uttama Griha Yoga (Prestigious Harmonious Home)",
+      "description": "The 4th lord conjoining benefic planets in a Kendra or Trikona, supported by a fortified Lagna Lord, guarantees the possession of a beautiful, auspicious, and comfortable residence.",
+      "source": "Mehta, Ch. 4, p. 70"
+    },
+    "parliamentaryCareer": {
+      "name": "Parliamentary Career & Mass Mandate Yoga",
+      "description": "According to K.N. Rao and Mehta, the 4th house represents the seat of legislative power and parliamentary constituency. Strong association of 4th lord with 10th house or Lagna lord propels the native to national legislative parliament.",
+      "source": "K.N. Rao (Ups and Downs in Career) & Mehta, Ch. 4, p. 63"
+    },
+    "propertyTiming": {
+      "name": "Timing of Property Acquisition via Dashas & Transits",
+      "description": "Houses and landed properties are acquired during the operating Mahadashas of Jupiter, Venus, or Mars. In transit, Jupiter moving through Houses 1, 4, 8, or 12 triggers the purchase or construction of a new home.",
+      "source": "Mehta, Ch. 4, p. 71"
+    },
+    "maternalLongevity": {
+      "name": "Maternal Longevity vs. Arishta Principles",
+      "description": "Mother is long-lived when Moon and Venus are strong, benefics occupy the 4th house, and the dispositor of 4th lord is fortified. Mother suffers distress or early loss when Moon is weak, hemmed in Papkartari, or 4th lord occupies 6, 8, 12 afflicted by malefics.",
+      "source": "Mehta, Ch. 4, pp. 76-77"
+    }
+  },
+  "caseStudies": [
+    {
+      "native": "Pt. Jawaharlal Nehru",
+      "chartDetails": "Cancer Lagna; Mercury and Venus placed in Libra in the 4th house with 30 Ashtakavarga bindus. Venus in Moolatrikona with 6 points; Karaka Mars strong with 6 points.",
+      "mehtaDelineation": "Destined to live in palatial mansions with swimming pools and idyllic gardens. In the Mercury-Venus period, his father moved to a prestigious locality. In Mercury-Rahu (1897-1900), the family shifted into the famous Anand Bhawan mansion. Rahu in the 12th house was in the 4th from the 9th (the father's home!), aspected by Jupiter.",
+      "pageReference": "Mehta, Ch. 4, pp. 67-68"
+    },
+    {
+      "native": "The Plain-Looking Girl Married to a Landlord",
+      "chartDetails": "Vargottama Moon, Gajakesari Yoga, and fortified 4th house/4th lord.",
+      "mehtaDelineation": "K.N. Rao predicted she would marry very quickly into a family with vast property. During Moon Mahadasha and Mars Antardasha (Lagna lord aspecting 10th), she married a wealthy landlord and was catapulted into an expansive aristocratic estate.",
+      "pageReference": "Mehta, Ch. 4, pp. 66-67"
+    },
+    {
+      "native": "Real Estate Titan with Hundreds of Workers (Case Study I)",
+      "chartDetails": "4th lord Moon exalted in 2nd house (Vargottama), aspected by 9th lord Jupiter from 10th house (Neechabhanga Raj Yoga). Mars aspecting 4th house from 9th.",
+      "mehtaDelineation": "Generated fabulous wealth in construction and real estate. Peak career climax occurred when transiting Jupiter entered Capricorn, aspecting the 4th house, with Saturn aspecting exalted 4th lord Moon.",
+      "pageReference": "Mehta, Ch. 4, pp. 71-73"
+    },
+    {
+      "native": "Corporate Magnate & Temple Creator (Case Study II)",
+      "chartDetails": "Exalted Mars with Digbala aspecting 4th house; 4th lord Moon in Gajakesari Yoga; Rahu exalted in 2nd; Jupiter and Sun conjoined in 12th.",
+      "mehtaDelineation": "Built massive corporate infrastructure, multi-industry assets, and constructed magnificent stone temples due to exalted Digbali Mars aspecting the 4th house and Jupiter-Sun in 12th.",
+      "pageReference": "Mehta, Ch. 4, pp. 73-75"
+    }
+  ]
+};

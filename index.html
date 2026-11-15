@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jyotish Gemini Studio | Vedic Astrology & Research Portal</title>
+  <meta name="description"
+    content="High-precision Vedic Astrology software with Swiss Ephemeris accuracy, Shodashvarga, Ashtakavarga, Vimshottari Dasha, and interactive Databank Analytics.">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function() {
+      const saved = localStorage.getItem('astrotools_theme') || 'dark';
+      if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="logo-group">
+        <div class="logo-icon">🪐</div>
+        <div class="logo-text">
+          <h1>Jyotish Gemini Studio</h1>
+          <p>Precision Vedic Astrology Engine • Shodashvarga • Research Databank</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <a href="studio.html" class="btn btn-primary btn-sm" style="text-decoration: none;">🔮 Kundali Studio</a>
+        <a href="databank.html" class="btn btn-secondary btn-sm" style="text-decoration: none;">🗂️ Profiles Databank</a>
+        <a href="analytics.html" class="btn btn-secondary btn-sm" style="text-decoration: none;">📊 Analytics Hub</a>
+        <button id="btn-theme-toggle" class="btn-theme-pill" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <span id="theme-toggle-icon">☀️</span> <span id="theme-toggle-text">Light</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="portal-container">
+
+    <!-- Hero Section -->
+    <div class="portal-hero">
+      <div class="portal-badge">✨ Swiss Ephemeris Precision • Sub-Arcminute Accuracy</div>
+      <h2>Vedic Astrology Studio & Databank</h2>
+      <p>
+        Calculate full natal horoscopes, Shodashvarga, Sripati Bhava Chalit, and Vimshottari Dasha,
+        or explore research analytics across verified natal charts.
+      </p>
+    </div>
+
+    <!-- Main Birth Details Entry Card -->
+    <div class="portal-card">
+      <div class="portal-card-header">
+        <div class="portal-card-title">
+          <span>✨</span> Chart Input Mode
+        </div>
+        <div class="mode-toggle-group">
+          <button type="button" id="btn-portal-mode-birth" class="btn btn-sm btn-primary">🗓️ Calculate from Birth
+            Details</button>
+          <button type="button" id="btn-portal-mode-paste" class="btn btn-sm btn-secondary">📜 Paste Raw Text</button>
+        </div>
+      </div>
+
+      <!-- Mode 1: Birth Details Form -->
+      <form id="portal-birth-form">
+        <div id="portal-section-birth">
+          <div class="portal-grid-row">
+            <div class="field-group">
+              <label for="portal-name">Native / Client Name (Optional)</label>
+              <input type="text" id="portal-name" class="text-input" placeholder="e.g. Client Name">
+            </div>
+            <div class="field-group">
+              <label for="portal-gender">Gender</label>
+              <select id="portal-gender" class="custom-select text-input">
+                <option value="male" selected>Male ♂</option>
+                <option value="female">Female ♀</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="portal-grid-row">
+            <div class="field-group">
+              <label for="portal-date">Date of Birth *</label>
+              <input type="date" id="portal-date" class="text-input" required>
+            </div>
+            <div class="field-group">
+              <label for="portal-time">Time of Birth (HH:MM:SS) *</label>
+              <input type="time" id="portal-time" class="text-input" step="1" required>
+            </div>
+          </div>
+
+          <!-- City Autocomplete & Atlas Search -->
+          <div class="field-group" style="position: relative; margin-bottom: 12px;">
+            <label for="portal-city-input">Place of Birth (Atlas Search 7,000+ Cities)</label>
+            <input type="text" id="portal-city-input" class="text-input"
+              placeholder="Search cities (e.g. New Delhi, Mumbai, London, New York)..." value="New Delhi, India"
+              autocomplete="off">
+            <div id="portal-city-suggestions" class="suggestions-box"></div>
+          </div>
+
+          <!-- Quick City Chips -->
+          <div class="quick-cities-strip" style="margin-bottom: 16px;">
+            <span class="strip-label">Popular:</span>
+            <button type="button" class="chip-btn portal-chip-btn active" data-city="New Delhi, India"
+              data-lat="28.6139" data-lon="77.2090" data-tz="5.5">New Delhi</button>
+            <button type="button" class="chip-btn portal-chip-btn" data-city="Mumbai, India" data-lat="19.0760"
+              data-lon="72.8777" data-tz="5.5">Mumbai</button>
+            <button type="button" class="chip-btn portal-chip-btn" data-city="Bengaluru, India" data-lat="12.9716"
+              data-lon="77.5946" data-tz="5.5">Bengaluru</button>
+            <button type="button" class="chip-btn portal-chip-btn" data-city="Dehradun, India" data-lat="30.3165"
+              data-lon="78.0322" data-tz="5.5">Dehradun</button>
+            <button type="button" class="chip-btn portal-chip-btn" data-city="London, UK" data-lat="51.5074"
+              data-lon="-0.1278" data-tz="0">London</button>
+            <button type="button" class="chip-btn portal-chip-btn" data-city="New York, USA" data-lat="40.7128"
+              data-lon="-74.0060" data-tz="-5">New York</button>
+          </div>
+
+          <!-- Fine-tune Coordinates -->
+          <details
+            style="margin-bottom: 16px; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 10px 14px; background: rgba(0,0,0,0.15);">
+            <summary style="font-size: 0.78rem; color: var(--gold-light); cursor: pointer; font-weight: 600;">
+              ⚙️ Fine-Tune Geographic Coordinates & Timezone
+            </summary>
+            <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-top: 10px;">
+              <div class="field-group">
+                <label for="portal-lat">Latitude (°)</label>
+                <input type="number" id="portal-lat" class="text-input" value="28.6139" step="0.0001">
+              </div>
+              <div class="field-group">
+                <label for="portal-lon">Longitude (°)</label>
+                <input type="number" id="portal-lon" class="text-input" value="77.2090" step="0.0001">
+              </div>
+              <div class="field-group">
+                <label for="portal-tz">Timezone Offset (Hours)</label>
+                <input type="number" id="portal-tz" class="text-input" value="5.5" step="0.5">
+              </div>
+            </div>
+          </details>
+
+          <button type="submit" class="btn btn-primary portal-btn-submit">
+            🚀 Calculate & Open Kundali Studio ↗
+          </button>
+        </div>
+      </form>
+
+      <!-- Mode 2: Paste Coordinates Form -->
+      <div id="portal-section-paste" style="display: none;">
+        <div class="field-group">
+          <label for="portal-raw-input">Raw Coordinates (Jagannatha Hora / AstroSage / Parashara format)</label>
+          <textarea id="portal-raw-input" class="raw-textarea" style="height: 140px;"
+            placeholder="Paste planetary table here (e.g. Sun Pisces 00-40-34, Moon Aries 03-17-28)..."></textarea>
+        </div>
+        <div style="display: flex; gap: 10px; margin-top: 12px;">
+          <button type="button" id="btn-portal-paste-sample" class="btn btn-secondary btn-sm">✨ Pre-fill Sample
+            Chart</button>
+          <button type="button" id="btn-portal-launch-paste" class="btn btn-primary btn-sm" style="flex: 1;">🚀 Parse &
+            Open Kundali Studio ↗</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Benchmark Profiles (1-Click Launch) -->
+    <div style="margin-bottom: 36px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+        <h3 class="portal-benchmark-heading" style="font-size: 1rem; color: var(--text-main); font-weight: 700; display: flex; align-items: center; gap: 8px;">
+          <span>⚡</span> Benchmark Kundalis (1-Click Launch)
+        </h3>
+        <a href="databank.html" class="portal-view-all-link" style="font-size: 0.78rem; color: var(--gold-primary); text-decoration: none; font-weight: 600;">View All
+          <span class="footer-databank-count">92</span> Profiles →</a>
+      </div>
+      <div id="portal-featured-profiles"
+        style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px;">
+        <!-- Dynamically rendered from storage.js -->
+      </div>
+    </div>
+
+    <!-- Navigation Hubs -->
+    <div class="portal-hub-grid">
+      <a href="databank.html" class="portal-hub-card">
+        <div>
+          <div style="font-size: 2rem; margin-bottom: 10px;">🗂️</div>
+          <h3 class="portal-hub-title" style="font-size: 1.15rem; color: var(--text-main); font-weight: 700; margin-bottom: 6px;">Client Profiles Databank</h3>
+          <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5;">
+            Browse, search, edit, and organize all <strong style="color: var(--gold-primary);"><span
+                id="portal-databank-count">92</span> verified client charts</strong>.
+            Stored offline in your browser with zero server dependencies and full JSON backup export.
+          </p>
+        </div>
+        <div class="portal-hub-cta"
+          style="margin-top: 18px; font-size: 0.82rem; color: var(--gold-primary); font-weight: 700; display: flex; align-items: center; gap: 4px;">
+          Open Databank Manager <span>→</span>
+        </div>
+      </a>
+
+      <a href="analytics.html" class="portal-hub-card">
+        <div>
+          <div style="font-size: 2rem; margin-bottom: 10px;">📊</div>
+          <h3 class="portal-hub-title" style="font-size: 1.15rem; color: var(--text-main); font-weight: 700; margin-bottom: 6px;">Astro-Analytics & Research Hub</h3>
+          <p style="font-size: 0.82rem; color: var(--text-muted); line-height: 1.5;">
+            Explore statistical cross-tabulations across the entire databank: Planets × Houses matrix,
+            Planets × Signs matrix, retrograde frequencies, planetary dignities, and multi-planet conjunctions.
+          </p>
+        </div>
+        <div class="portal-hub-cta"
+          style="margin-top: 18px; font-size: 0.82rem; color: var(--gold-primary); font-weight: 700; display: flex; align-items: center; gap: 4px;">
+          Explore Research Analytics <span>→</span>
+        </div>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Unified Global Footer -->
+  <footer class="app-unified-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span style="font-size: 1.6rem;">✨</span>
+            <span class="brand-title">Jyotish Gemini Studio</span>
+          </div>
+          <p class="brand-desc">
+            Professional Vedic Astrology computational suite and research engine. Powered by high-precision ephemeris
+            algorithms, classical Parashari & Jaimini principles, Sripati Bhava Chalit, complete Shodashvarga, Shadbala,
+            and cross-databank statistical analytics.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Navigation</h4>
+          <a href="index.html">🏠 Home Portal</a>
+          <a href="studio.html">🔮 Kundali Studio</a>
+          <a href="databank.html">🗂️ Client Databank</a>
+          <a href="analytics.html">📊 Research Analytics</a>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Calculation Engine</h4>
+          <span>• IAU-2006 Lahiri (Chitra Paksha) Ayanamsha</span>
+          <span>• Complete Shodashvarga (D1 to D60) Divisional Charts</span>
+          <span>• Sripati Unequal Bhava Chalit & Mid-Cusps</span>
+          <span>• Complete Shadbala & Bhava Bala Numerical Vectors</span>
+          <span>• 120-Year Vimshottari Mahadasha & Antardasha Hierarchy</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Jyotish Gemini Studio. 100% Client-Side & Offline Execution in Browser.
+        </div>
+        <div class="footer-pills">
+          <span class="footer-pill">Swiss Ephemeris Accuracy</span>
+          <span class="footer-pill"><span class="footer-databank-count">102</span> Databank Profiles</span>
+          <span class="footer-pill">Sub-Arcminute Precision</span>
+          <span class="footer-pill">Parashara & Jaimini</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/portal.js"></script>
+</body>
+
+</html>

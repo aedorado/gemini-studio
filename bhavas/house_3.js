@@ -1,0 +1,257 @@
+// House 3 (Sahaja Bhava) Master Data
+// Ground truth: Haveli Ram Mehta's "Advanced Techniques of Predictive Astrology", Vol. 1, Ch. 3 (pp. 61-72)
+
+export const house3Data = {
+  "houseNumber": 3,
+  "name": "Sahaja Bhava",
+  "sanskritName": "तृतीय भाव (सहज भाव / पराक्रम भाव / भ्रातृ भाव)",
+  "significations": [
+    "Younger co-born (younger brother or sister) and fraternal relationships",
+    "Courage, valour (Parakrama), fighting spirit, nerves of steel, and killer instinct in competition",
+    "Throat, vocal cords, singing ability, voice modulation, and devotional Sangeet / Bhajans",
+    "Artistic talents, acting, dancing, instrumental music, fine arts, and creative hobbies",
+    "Short journeys, local travels, wanderlust, and frequent mobility",
+    "Hands, arms, shoulders, collar bones, and manual dexterity / sportsmanship",
+    "Ears, auditory acuity, and hearing health",
+    "Communication, correspondence, writing, journalism, printing, publishing, and postal channels",
+    "Father's death / Maraka to father (being the 7th house counted from the 9th house of father)",
+    "Secondary house of longevity (Bhavat Bhavam: 8th from the 8th house)",
+    "Relatives, neighbors, peers, and casual associations",
+    "Mental stability, perseverance, and willpower (Sage Satyacharya)"
+  ],
+  "bodyParts": [
+    "Throat & Vocal Cords",
+    "Right Ear",
+    "Shoulders & Collar Bones",
+    "Arms & Hands (Manual Dexterity)",
+    "Upper Respiratory Tract"
+  ],
+  "naturalKaraka": [
+    "Mars"
+  ],
+  "classicalSources": [
+    {
+      "book": "Advanced Techniques of Predictive Astrology (Vol. 1)",
+      "author": "Haveli Ram Mehta",
+      "chapter": "Chapter 3: Signification of Third House - Sahaj, Parikarma, Younger Co-born and Short Journeys",
+      "pages": "61-72"
+    },
+    {
+      "book": "Brihat Parashara Hora Shastra",
+      "author": "Maharishi Parashara",
+      "chapter": "Sahaja Bhava Phala & Parakrama Yogas"
+    },
+    {
+      "book": "Sarvartha Chintamani",
+      "author": "Venkatesha Daivajna",
+      "chapter": "Chapter on Third House - Brothers, Courage & Sickness"
+    },
+    {
+      "book": "Uttara Kalamrita",
+      "author": "Kalidasa",
+      "chapter": "Bhava Karakatvas - 3rd Bhava Attributes"
+    },
+    {
+      "book": "Chamatkar Chintamani",
+      "author": "Bhatt Narayana",
+      "chapter": "Third House Planetary Dispositions"
+    },
+    {
+      "book": "Bhavartha Ratnakara",
+      "author": "Ramanujacharya",
+      "chapter": "Third House & Courage Yogas"
+    },
+    {
+      "book": "Satyajatakam",
+      "author": "Sage Satyacharya",
+      "chapter": "Principles on Mental Stability, Voice & 3rd Lord"
+    },
+    {
+      "book": "Ups and Downs in Career",
+      "author": "K.N. Rao",
+      "chapter": "Sports, Heroism and Malefics in Upachaya Houses"
+    }
+  ],
+  "authoritiesSummary": {
+    "mehta": "Highlights the 3rd house as the core seat of Parakrama (valour), artistic talent, and younger siblings. Malefics in the 3rd house confer 'nerves of steel' and competitive killer instinct vital for sports champions, military leaders, and political statesmen. Association of artistic planets (Moon, Mercury, Venus, Jupiter) develops vocal perfection, fine arts, and devotional music.",
+    "parashara": "Declares the 3rd house as the house of valour and self-efforts (Bahubala). If the 3rd Bhava, its lord, and Karaka Mars are well-disposed with full strength, the person achieves supreme worldly success by their own initiatives.",
+    "satyacharya": "Focuses on mental stability, voice, and steadfastness. Affirms that when the 3rd lord occupies the 10th house in signs of Mercury or Venus, it produces eminent singers, actors, dancers, or musical instrumentalists.",
+    "sarvarthaChintamani": "Assigns medicine, education, friends, and short journeys to the 3rd. Formulates precise mathematical Yogas for the birth, sex, timing of prosperity, and premature demise of siblings.",
+    "kalidasa": "Uttara Kalamrita attributes war, wandering, near relations, wholesome food, refined hobbies, and noble family descent to the 3rd house."
+  },
+  "lordInHouses": {
+    "1": {
+      "title": "3rd Lord in 1st House (Tanu Bhava)",
+      "favorable": "Acquires wealth through personal hard work and self-effort. Courageous, lean, energetic physique. Bestows strong inclination for performing arts, acting, singing, and dancing.",
+      "afflicted": "If severely afflicted by malefics, the native becomes illiterate, sickly, quarrelsome, or physically frail.",
+      "mehtaNotes": "Example: N.T. Rama Rao had 3rd lord Jupiter in Lagna forming Gajakesari Yoga with 10th lord Moon, aspected by Venus, propelling him into acting legend and Chief Minister."
+    },
+    "2": {
+      "title": "3rd Lord in 2nd House (Dhana Bhava)",
+      "favorable": "Financial gains assisted by siblings, neighbors, or through writing, communication, and craft trades if supported by benefics.",
+      "afflicted": "Morally depraved, unscrupulous, mean-minded, and unhappy. Prone to squandering family assets and discord with relatives.",
+      "mehtaNotes": "Classical texts warn that 3rd lord in the 2nd tends to disrupt domestic tranquility unless restrained by benefic Jupiter."
+    },
+    "3": {
+      "title": "3rd Lord in 3rd House (Swakshetra)",
+      "favorable": "Extremely brave with exceptional perseverance and steadfast character. Fortunate for younger brothers, wealth, and happiness. Distinguishes oneself in sports, fine arts, or hobbies. Blessed with loyal friends.",
+      "afflicted": "Excessive audacity or friction with siblings if joined by combust or malefic planets.",
+      "mehtaNotes": "Example: Lata Mangeshkar has 3rd lord Moon in 3rd house with 5 Ashtakavarga bindus and Saraswati Yoga, yielding world-renowned vocal mastery."
+    },
+    "4": {
+      "title": "3rd Lord in 4th House (Sukha Bhava)",
+      "favorable": "When strong, brings abundance of wealth, academic success, and domestic peace of mind through family cooperation.",
+      "afflicted": "If afflicted and Karaka Mars lacks strength, native loses ancestral lands and is forced to live in other people's rented houses.",
+      "mehtaNotes": "Direct influence of the house of effort on the house of domestic foundation and vehicles."
+    },
+    "5": {
+      "title": "3rd Lord in 5th House (Putra Bhava)",
+      "favorable": "Harmonious and affectionate relationship with brothers. Native holds high administrative or governmental office with creative brilliance.",
+      "afflicted": "Unfavorable for progeny; delays or denial in birth of children, or painful strained relationships with offspring.",
+      "mehtaNotes": "Mehta highlights that weak 3rd lord in 5th impacts the happiness and longevity of children."
+    },
+    "6": {
+      "title": "3rd Lord in 6th House (Shatru Bhava)",
+      "favorable": "Forms Harsha Vipreeta Raja Yoga, conferring prosperity and triumph over rivals. Brothers achieve eminence as doctors, surgeons, or military commanders. Superb for athletics and competitive sports.",
+      "afflicted": "Subject to chronic ailments, continuous harassment by enemies, and strained relations with maternal uncles.",
+      "mehtaNotes": "3rd lord conjoining 6th lord in the 6th creates fierce competitive drive and athletic supremacy."
+    },
+    "7": {
+      "title": "3rd Lord in 7th House (Jaya Bhava)",
+      "favorable": "One of the brothers settles overseas and achieves great fortune. Partnerships flourish through active initiative.",
+      "afflicted": "Prone to moral laxity and extramarital intrigues unless guarded by strong Lagna and 9th lords. Displeasure or punishment from rulers.",
+      "mehtaNotes": "7th is 5th from 3rd, hence strong 3rd lord promotes the sibling's good fortune in distant foreign lands."
+    },
+    "8": {
+      "title": "3rd Lord in 8th House (Randhra Bhava)",
+      "favorable": "Forms Sarala Vipreeta Raja Yoga. Outstanding for deep research, investigation, occult studies, and original development of art.",
+      "afflicted": "Severe health vulnerabilities, dangerous illnesses, risk of legal complications or criminal prosecution, and unhappy marital relations.",
+      "mehtaNotes": "As 3rd is 8th from 8th (Bhavat Bhavam), an afflicted 3rd lord in the 8th double-impacts stamina and longevity."
+    },
+    "9": {
+      "title": "3rd Lord in 9th House (Bhagya Bhava)",
+      "favorable": "Receives valuable support from brothers. Good fortune elevates steadily after marriage. Righteous travels and pilgrimages.",
+      "afflicted": "Strained relations with father. Compelled to undertake aimless long-distance travels with dissatisfaction.",
+      "mehtaNotes": "Mutual aspect between 3rd and 9th ties self-effort directly to divine grace and paternal fortune."
+    },
+    "10": {
+      "title": "3rd Lord in 10th House (Karma Bhava)",
+      "favorable": "Rises to prominence through self-made enterprise and relentless industry. Brothers occupy respected status. Sage Satyacharya notes that in signs of Mercury or Venus, it makes one a celebrated singer, actor, dancer, or instrumentalist.",
+      "afflicted": "Suffers from an unfaithful, cruel-hearted spouse and discord with executive bosses.",
+      "mehtaNotes": "Direct link between personal skills (3rd) and public career / national recognition (10th)."
+    },
+    "11": {
+      "title": "3rd Lord in 11th House (Labha Bhava)",
+      "favorable": "Becomes wealthy through self-effort and leads a prosperous, fulfilling life with large fraternal gains and influential networks.",
+      "afflicted": "Degraded character, forced into menial servitude under others, and financial exploitation by associates.",
+      "mehtaNotes": "Upachaya-to-Upachaya connection (3rd to 11th) maximizes commercial success and enterprise."
+    },
+    "12": {
+      "title": "3rd Lord in 12th House (Vyaya Bhava)",
+      "favorable": "Forms Vimala Vipreeta Raja Yoga. Wealth gains through marital partner or overseas opportunities. Generous, charitable disposition.",
+      "afflicted": "Heavy financial losses through brothers and father. Hard-hearted nature and fruitless expenses.",
+      "mehtaNotes": "Indicates expenditure on brother's behalf or younger sibling settling permanently in foreign countries."
+    }
+  },
+  "planetsInHouse": {
+    "Sun": {
+      "dignified": "Healthy, wealthy, wise, modest, and commanding royal respect (Chamatkar Chintamani). In masculine signs: active in public, municipal, and educational governance. In Gemini, Libra, or Sagittarius: author, publisher, professor, or lawyer. Dr. B.V. Raman considers 3rd house the most auspicious placement for the Sun.",
+      "afflicted": "If heavily afflicted, friction with brothers, arrogance, and ear or shoulder complaints.",
+      "mehtaNotes": "Sun in 3rd gives immense courage, leadership drive, and victory over adversaries."
+    },
+    "Moon": {
+      "dignified": "Love of knowledge, success in intellectual pursuits, fond of clothes, food, and short journeys. Kind, affectionate spouse, protective of brothers. Creative literary voice.",
+      "afflicted": "Fickle-minded (Bhavartha Ratnakara), family discord, illicit attractions, respiratory and throat infections, miserly, bilious, and risky travel accidents.",
+      "mehtaNotes": "Third lord Moon in 3rd (like Lata Mangeshkar) gives immortal vocal sweet melodiousness."
+    },
+    "Mars": {
+      "dignified": "Courageous, immense drive, heroic stamina to overcome all opposition. Strength of arms, acquires riches by hard labor, royal honors, lean muscular frame. Gives 'killer instinct' in sports and military.",
+      "afflicted": "Tends to deny younger brother, especially if endowed with 6 or more Ashtakavarga bindus (e.g., Pt. Jawaharlal Nehru). Bone fractures, blood impurities, suicidal rashness, and violent disputes with siblings.",
+      "mehtaNotes": "Mars in 3rd is eldest or youngest among brothers. Mars in Scorpio gives little wealth as it boosts 8th house poverty, but enhances longevity."
+    },
+    "Merc": {
+      "dignified": "Sharp memory, splendid education, highly profitable career in writing, printing, or publishing. Cheerful, mathematical genius, eloquent speech, and literary artistry.",
+      "afflicted": "Meek, thoughtless, gloomy, anxious, dishonest, eccentric, or subject to nervous ailments and unprofitable business journeys.",
+      "mehtaNotes": "Mercury governs communication and manual craft; in 3rd it produces prolific writers and analytical scholars."
+    },
+    "Jupt": {
+      "dignified": "Cultured, philosophical, kind, optimistic, and distinguished in teaching, lecturing, writing, and literature. Gains through travel, siblings, and honorable friends.",
+      "afflicted": "Miserly, ungrateful, discredited, crafty, lack of affection for family, digestive weakness, and loss of reputation.",
+      "mehtaNotes": "Has elder brother but no elder sister. Strong Jupiter in 3rd augments intellect and moral integrity."
+    },
+    "Venu": {
+      "dignified": "Exquisite aesthetic taste, deep love for music, fine arts, and literature. Mature, optimistic mind surrounded by friends and relatives. Gains from pleasure journeys.",
+      "afflicted": "Unfavorable for marriage: indicates marital delays, strife, multiple unions, or separation. Loss of business taste and sensual overindulgence.",
+      "mehtaNotes": "While Venus in 3rd bestows consummate artistic and musical refinement, it introduces marital turbulence."
+    },
+    "Satn": {
+      "dignified": "Responsible, tactful, diplomatic, profound contemplative concentration, interest in philosophy, writing, and deep research. Brothers prosper if Saturn is exalted or in own sign.",
+      "afflicted": "Immediate younger sibling is usually a sister. Loss or discord with brothers, gloomy mental disposition, chronic obstacles before any achievement, melancholy, and lethargy.",
+      "mehtaNotes": "Saturn in 3rd tests patience but builds monumental endurance and perseverance."
+    },
+    "Rahu": {
+      "dignified": "Strong as a lion, intrepid courage, fortunate, wealthy, and imposing personality (especially in Leo). Wide circle of friends and profitable travels, writing, or publishing.",
+      "afflicted": "Native is often the eldest or youngest among siblings of the same sex. Deceitful tendencies and sudden disputes with neighbors or brethren.",
+      "mehtaNotes": "Rahu in 3rd is one of the classic planetary positions for triumph over enemies and fearless initiative."
+    },
+    "Ketu": {
+      "dignified": "Intrepid courage, destroys rivals, skilled in manual arts, famous, fortunate spouse, and tasty food. Enjoys physical stamina and longevity.",
+      "afflicted": "Mental anxiety, fear of enemies, estrangement from brethren and neighbors, and hazardous, unprofitable journeys.",
+      "mehtaNotes": "Ketu in 3rd in friendly or exaltation signs grants deep inner fortitude and spiritual resolve."
+    }
+  },
+  "specialPrinciples": {
+    "killerInstinctAndSports": {
+      "name": "Nerves of Steel & Heroism (Killer Instinct in Sports)",
+      "description": "According to K.N. Rao and Mehta, the will to fight and win are the distinct gifts of natural malefics located in the 3rd and 6th houses (Upachaya houses). These placements bestow 'nerves of steel' and the relentless determination essential for sports championships, military defense, and political battles.",
+      "rule": "Malefics (Mars, Saturn, Rahu, Sun) in 3rd or 6th, well-associated with Lagna lord or Yogakaraka."
+    },
+    "vocalAndArtisticTalent": {
+      "name": "Saraswati & Devotional Sangeet Combinations",
+      "description": "The 3rd house represents the throat, vocal cords, and artistic expression. Association of benefic and artistic planets (Moon, Mercury, Venus, Jupiter) with the 3rd house or 3rd lord produces musicians, playback singers, devotional Kirtan vocalists, actors, and dancers.",
+      "rule": "Artistic planets (Venus, Mercury, Moon, Jupiter) owning, occupying, or aspecting the 3rd house."
+    },
+    "siblingDenialOrLoss": {
+      "name": "Yogas for Denial or Early Loss of Younger Siblings",
+      "description": "Mars in 3rd with 6 or more Ashtakavarga bindus frequently denies younger brothers. 3rd house or 3rd lord hemmed in Papkartari, debilitated in Navamsa, or conjoined with combust malefics in Dusthanas (6, 8, 12) damages the longevity of co-borns.",
+      "rule": "Mars in 3rd with >= 6 bindus, or 3rd lord/Karaka Mars afflicted in 8th house."
+    },
+    "mentalMakeup": {
+      "name": "Mental Makeup from 3rd Lord Conjunctions",
+      "description": "3rd lord conjoining Sun makes one exceptionally brave; with Moon gives mental patience; with Mars gives wrathful and fiery temper; with Mercury confers Satvik intellect; with Jupiter grants profound wisdom; with Venus induces sensual passions; with Saturn causes gloomy depression; with Rahu/Ketu gives outward bravado.",
+      "source": "Sarvartha Chintamani & Mehta, Ch. 3, p. 72"
+    }
+  },
+  "caseStudies": [
+    {
+      "native": "Pt. Jawaharlal Nehru",
+      "chartDetails": "Cancer Lagna, Moon in Lagna, Mars in 3rd house (Virgo) with 6 Ashtakavarga bindus.",
+      "mehtaDelineation": "Mars in the 3rd house endowed with 6 bindus gave him legendary courage, executive drive, and leadership to battle British rule. However, exactly as per Mehta's rule, Mars in the 3rd house with 6 bindus denied him any younger brother.",
+      "pageReference": "Mehta, Ch. 3, p. 66"
+    },
+    {
+      "native": "Lata Mangeshkar",
+      "chartDetails": "Taurus Lagna, 3rd lord Moon in 3rd house (Cancer) with 5 Ashtakavarga bindus, Saraswati Yoga with Venus in 4th Kendra, Mercury exalted in 5th aspected by Jupiter.",
+      "mehtaDelineation": "The 3rd lord Moon placed in its own sign in the 3rd house with high Ashtakavarga strength and classical Saraswati Yoga produced world-acclaimed vocal mastery and an incomparable singing career.",
+      "pageReference": "Mehta, Ch. 3, p. 63"
+    },
+    {
+      "native": "Shiraz Shaheed",
+      "chartDetails": "Youngest Indian woman golf champion. 3rd house reinforced by malefics, Lagna lord, and Yogakaraka Venus, aspected by Mars and Jupiter.",
+      "mehtaDelineation": "K.N. Rao and Mehta cite this chart to demonstrate how natural malefics in the 3rd house confer 'nerves of steel' and the fierce killer instinct required to win international athletic championships.",
+      "pageReference": "Mehta, Ch. 3, pp. 63-64"
+    },
+    {
+      "native": "Swami Prabhupada",
+      "chartDetails": "Founder of ISKCON. Exalted 9th lord Mercury conjoins Venus (Dharma Karmadhipati Yoga) in 9th aspecting the 3rd house. 3rd lord Jupiter in 9th with Sun and Ketu.",
+      "mehtaDelineation": "The aspect of 5th lord Venus and exalted Mercury onto the 3rd house produced his divine devotional music (Hare Krishna Kirtan), while 3rd lord Jupiter with Sun-Ketu fulfilled the classical combination of founding temples worldwide.",
+      "pageReference": "Mehta, Ch. 3, pp. 61-62"
+    },
+    {
+      "native": "N.T. Rama Rao",
+      "chartDetails": "Celebrated Telugu superstar actor and Chief Minister. 3rd lord Jupiter in Lagna forming Gajakesari Yoga with 10th lord Moon, aspected by Venus.",
+      "mehtaDelineation": "Angular disposition of the 3rd lord in Lagna conjoined with royal planets and aspected by Venus produces legendary artistic, theatrical, and cinematic stardom.",
+      "pageReference": "Mehta, Ch. 3, p. 62"
+    }
+  ]
+};

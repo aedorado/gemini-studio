@@ -1,0 +1,274 @@
+// House 5 (Putra Bhava) Master Data
+// Ground truth: Haveli Ram Mehta's "Advanced Techniques of Predictive Astrology", Vol. 1, Ch. 5 (pp. 89-113)
+
+export const house5Data = {
+  "houseNumber": 5,
+  "name": "Putra Bhava",
+  "sanskritName": "पञ्चम भाव (पुत्र भाव / बुद्धि भाव / पूर्व-पुण्य भाव)",
+  "significations": [
+    "Progeny, children, sons and daughters, fertility, and lineage continuation (Suta & Santana)",
+    "Past life merits and accumulated auspicious karma (Purva Punya)",
+    "High intellect, discriminating intellect, retentive memory, and genius (Teekshna Buddhi)",
+    "Higher education, university degrees, academic brilliance, and specialized learning (Vidya)",
+    "Wisdom, divine knowledge, and philosophical depth (Gyan)",
+    "Royalty, political authority, state honors, and ministerial posts (Raja Chhatra)",
+    "Fall from power and loss of position (being the 8th house from the 10th house)",
+    "Mantras, sacred hymns, spiritual initiation, and ritual penance (Mantra Siddhi & Upasana)",
+    "Literary composition, epics (Kavyas & Prabandhas), books, drama, and authorship",
+    "Speculative investments, stock market trading, lotteries, and games of chance (Dhana Labha)",
+    "Romance, courtship, dating, affairs of the heart, and emotional vitality (Prema)",
+    "Paternal grandfather (being the 9th house from the 9th house - Bhavat Bhavam)"
+  ],
+  "bodyParts": [
+    "Stomach & Gastric Region",
+    "Upper Abdomen & Epigastrium",
+    "Pancreas & Spleen",
+    "Liver & Gallbladder (Digestive Fire / Jatharagni)",
+    "Spinal Cord & Heart-Consciousness Center"
+  ],
+  "naturalKaraka": [
+    "Jupiter (Primary Karaka for Children, Progeny & Divine Wisdom)",
+    "Sun (Purva Punya, Creative Soul Spark & High Ideals)",
+    "Mercury (Analytical Intellect, Logic & Learning Ability)"
+  ],
+  "classicalSources": [
+    {
+      "book": "Advanced Techniques of Predictive Astrology (Vol. 1)",
+      "author": "Haveli Ram Mehta",
+      "chapter": "Chapter 5: Fifth House - Suta, Children, High Learning, Purva Punya",
+      "pages": "89-113"
+    },
+    {
+      "book": "Planets and Children",
+      "author": "K.N. Rao",
+      "chapter": "Chapter 14: Timing Birth of Children & Double Transit Technique"
+    },
+    {
+      "book": "Brihat Parashara Hora Shastra",
+      "author": "Maharishi Parashara",
+      "chapter": "Suta Bhava Phala, Putra Dosha & Santan Yoga"
+    },
+    {
+      "book": "Phala Deepika",
+      "author": "Mantreswara",
+      "chapter": "Fifth Bhava Phala, Anapathya Yoga & Progeny Timing"
+    },
+    {
+      "book": "Jataka Parijata",
+      "author": "Vaidyanatha Dikshita",
+      "chapter": "Suta Bhava Adhyaya & Beeja-Kshetra Sphuta"
+    },
+    {
+      "book": "Jaimini Upadesha Sutras",
+      "author": "Maharishi Jaimini",
+      "chapter": "Putra Bhava, Karkamsa Authorship & Genius Yogas"
+    },
+    {
+      "book": "Karma and Rebirth in Hindu Astrology",
+      "author": "K.N. Rao",
+      "chapter": "The Enigma of Progeny & Past-Life Linkages"
+    }
+  ],
+  "lordPlacements": {
+    "1": {
+      "title": "5th Lord in 1st House (Lagna)",
+      "positive": "Magistrate, judge, minister, or high government advisor. Erudite scholar, God-fearing, honorable, commanding respect and authority. Blessed with brilliant, obedient children who elevate family prestige.",
+      "negative": "If severely afflicted, native becomes deceitful, proud, speculative gambler, or head of swindlers. May suffer delays or loss of firstborn.",
+      "classicalText": "According to Parashara, 5th lord in Lagna makes the native a master of many servants, celebrated magistrate or minister, highly learned, with limited but illustrious progeny.",
+      "source": "Mehta, Ch. 5, p. 89; Parashara, Ch. 24"
+    },
+    "2": {
+      "title": "5th Lord in 2nd House (Dhana Bhava)",
+      "positive": "Maha Dhana Yoga. Wealth acquired through intellect, counsel, educational institutions, or governmental patronage. Blessed with an eloquent, sweet voice, noble family, loving spouse, and worthy children.",
+      "negative": "If afflicted by malefics, native suffers throat/asthmatic troubles, disturbed family peace, and heavy losses through speculative ventures.",
+      "classicalText": "Mantreswara states that the 5th lord in the 2nd confers handsome wealth through literary pursuits, sovereign recognition, and an affectionate, noble lineage.",
+      "source": "Mehta, Ch. 5, p. 89; Phala Deepika"
+    },
+    "3": {
+      "title": "5th Lord in 3rd House (Sahaja Bhava)",
+      "positive": "Gifted with literary flair, dramatic or musical abilities, courage, and enterprising spirit. Blessed with affectionate younger brothers and multiple children who achieve distinction in creative or commercial fields.",
+      "negative": "If afflicted, disputes with siblings, deceptive tendencies, and anxieties regarding children's conduct or welfare.",
+      "classicalText": "Parashara notes that 5th lord in the 3rd makes one dear to kin, heroic, an articulate writer or publisher, blessed with progeny.",
+      "source": "Mehta, Ch. 5, p. 90; Parashara, Ch. 24"
+    },
+    "4": {
+      "title": "5th Lord in 4th House (Sukha Bhava)",
+      "positive": "Ministerial advisor to the government or state institutions. Blessed with maternal longevity, expansive residences, vehicles, academic credentials, and idyllic domestic tranquility. Children enjoy inherited estates.",
+      "negative": "If afflicted, difficulties regarding progeny's health, or maternal friction. Breaks in foundational schooling.",
+      "classicalText": "Sage Parashara states 5th lord in 4th makes one happy as a king's minister, commanding palatial estates, vehicles, and long-lived affectionate mother.",
+      "source": "Mehta, Ch. 5, p. 90; Parashara, Ch. 24"
+    },
+    "5": {
+      "title": "5th Lord in 5th House (Swakshetra)",
+      "positive": "Exceptional Trikona strength. Erudite scholar, brilliant mathematician, author, philosopher, or head of religious/educational academies. High government favorite. Progeny attains great eminence and honors.",
+      "negative": "If afflicted by natural malefics, causes fickle-mindedness, sharp tongue, and potential arishta (longevity vulnerability) to the first child.",
+      "classicalText": "When 5th lord is in 5th, native becomes a profound scholar of scriptures, celebrated mathematician, author of repute, and enjoys governmental benevolence.",
+      "source": "Mehta, Ch. 5, p. 90; Saravali"
+    },
+    "6": {
+      "title": "5th Lord in 6th House (Shatru Bhava)",
+      "positive": "Maternal uncle is prosperous and influential. Victory over adversaries in academic competitions, civil services, or legal debates.",
+      "negative": "Severe Putra Dosha. Discord and friction between father and children. Interrupted education, delayed progeny or adoption. Hostility with sons if afflicted.",
+      "classicalText": "According to Parashara and Mehta, 5th lord in 6th creates enmity with children, breaks in educational career, or adoption by maternal uncle.",
+      "source": "Mehta, Ch. 5, p. 90; Parashara, Ch. 24"
+    },
+    "7": {
+      "title": "5th Lord in 7th House (Jaya Bhava)",
+      "positive": "Learned, highly respected, prosperous, and universally admired. Marriage to an accomplished, cultured partner. One of the children settles abroad and acquires immense international wealth and distinction.",
+      "negative": "If afflicted by malefics or eunuch planets, causes friction with spouse, speculative setbacks, or sorrow regarding children.",
+      "classicalText": "Parashara states that 5th lord in 7th grants honor, virtuous spouse, and brilliant children who flourish in foreign lands.",
+      "source": "Mehta, Ch. 5, p. 90; Parashara, Ch. 24"
+    },
+    "8": {
+      "title": "5th Lord in 8th House (Randhra Bhava)",
+      "positive": "Maha Vigyan & Mantra Siddhi Yoga. Awakening of Kundalini, profound intuition, mastery over occult sciences, astrology, and tantric disciplines. Unexpected inheritance.",
+      "negative": "Disruptions in collegiate education, chronic gastric or respiratory/intestinal ailments, financial instability, and grief on account of progeny.",
+      "classicalText": "5th lord in 8th causes breaks in formal education, but when supported by benefics, triggers esoteric wisdom, occult research, and spiritual Mantra Siddhi.",
+      "source": "Mehta, Ch. 5, p. 90; Mehta & K.N. Rao"
+    },
+    "9": {
+      "title": "5th Lord in 9th House (Bhagya Bhava)",
+      "positive": "Supreme Trikona Raj Yoga (Dharma-Santana Raja Yoga). Head of religious or educational institutions, internationally published author, virtuous, righteous, and blessed with divine grace. Children become eminent scholars.",
+      "negative": "If afflicted, sudden setbacks in fortune, philosophical conflicts with father, or unfulfilled ambitions.",
+      "classicalText": "K.N. Rao calls the 5th and 9th combination the 'spiritual promise of the horoscope.' Association of 5th, 9th, and 8th lords gives rise to Maha Vigyan Yoga.",
+      "source": "Mehta, Ch. 5, p. 90; K.N. Rao"
+    },
+    "10": {
+      "title": "5th Lord in 10th House (Karma Bhava)",
+      "positive": "Paramount Kendra-Trikona Raj Yoga. High administrative authority, presidential/ministerial honors, celebrated professional career, landed property, religious philanthropy, and public fame.",
+      "negative": "If afflicted, professional reversals due to administrative scandals or controversies involving subordinates.",
+      "classicalText": "Parashara proclaims: 5th lord in the 10th house confers royal status, vast properties, executive power, and illustrious public renown.",
+      "source": "Mehta, Ch. 5, p. 90; Parashara, Ch. 24"
+    },
+    "11": {
+      "title": "5th Lord in 11th House (Labha Bhava)",
+      "positive": "Paramount Dhana & Progeny Yoga. Immense gains through intellectual pursuits, publication of books, advisory roles, and financial speculation. Blessed with virtuous, prosperous children who bring great wealth.",
+      "negative": "If afflicted, financial gains come with severe mental stress; shallow or superficial scholarship.",
+      "classicalText": "5th lord in 11th makes one an esteemed author, highly wealthy, respected by kings, blessed with flourishing progeny.",
+      "source": "Mehta, Ch. 5, p. 90; Phala Deepika"
+    },
+    "12": {
+      "title": "5th Lord in 12th House (Vyaya Bhava)",
+      "positive": "Moksha Yoga. Intense spiritual detachment, pilgrimages to sacred shrines, association with holy sadhus and hermits. Deep meditative consciousness.",
+      "negative": "Aimless wandering, expenditures on speculative losses, children live in distant lands or face alienation from parents. Breaks in education.",
+      "classicalText": "Parashara notes 5th lord in 12th deprives one of domestic comfort through progeny (children relocate far away), turning the mind towards renunciation and liberation.",
+      "source": "Mehta, Ch. 5, p. 91; Parashara, Ch. 24"
+    }
+  },
+  "occupants": {
+    "Sun": {
+      "title": "Sun in 5th House",
+      "effects": "Grants sharp intelligence, dignified demeanor, regal bearing, and success in political science or government service. In fiery signs (Aries, Leo, Sagittarius), it confers high ministerial authority and fame, though usually gives a small family or difficult childbirth. In airy signs (Gemini, Libra, Aquarius), native excels as a writer, lecturer, or publisher.",
+      "conditions": "If afflicted by Saturn or Mars, creates arrogance, impulsive losses in speculation, and difficulties or sorrow regarding children.",
+      "classicalCitation": "Mehta, Ch. 5, p. 91; Parashara"
+    },
+    "Moon": {
+      "title": "Moon in 5th House",
+      "effects": "Patient, gentle, handsome, noble parentage, and accomplished in fine arts and music. Blessed with obedient and prosperous children; firstborn is typically a daughter. Strong speculative acumen in games of chance and stock trading. In watery signs, produces doctors or lawyers.",
+      "conditions": "Afflicted Moon causes melancholic disposition, unstable mind, and erratic memory.",
+      "classicalCitation": "Mehta, Ch. 5, pp. 91-92; Saravali"
+    },
+    "Mars": {
+      "title": "Mars in 5th House",
+      "effects": "High dynamic drive, sharp mathematical aptitude, voracious appetite, strong physical digestion, and leadership in technical, engineering, police, or military careers.",
+      "conditions": "Afflicted Mars causes impulsive anger, speculative disasters, abortions or surgical childbirth, and friction with progeny.",
+      "classicalCitation": "Mehta, Ch. 5, p. 92; Phala Deepika"
+    },
+    "Mercury": {
+      "title": "Mercury in 5th House",
+      "effects": "Exceptional intellect, literary authorship, wit, and linguistic fluency. In fiery signs, grants proficiency in mathematics, astrology, and dancing. In earthy signs, expertise in physics, grammar, palmistry, and accountancy. Children are intellectually gifted.",
+      "conditions": "Afflicted Mercury causes sarcastic speech, nervous restlessness, and obstacles in education.",
+      "classicalCitation": "Mehta, Ch. 5, p. 92; Saravali"
+    },
+    "Jupiter": {
+      "title": "Jupiter in 5th House",
+      "effects": "Karako Bhava Nashaya exception evaluated: Jupiter here bestows profound wisdom, versatile genius, mastery of scriptures, righteous counsel, high administrative rank, and pious children who achieve international fame.",
+      "conditions": "If severely afflicted, native experiences delays in childbirth or ideological friction with sons.",
+      "classicalCitation": "Mehta, Ch. 5, p. 92; Jaimini Sutras"
+    },
+    "Venus": {
+      "title": "Venus in 5th House",
+      "effects": "Gifted artist, novelist, poet, dramatist, and connoisseur of aesthetic luxuries. Grants charming romantic vitality, wealth, and virtuous, affectionate children. Venus with Rahu gives international romantic connections.",
+      "conditions": "Affliction causes over-indulgence in sensual pleasures and emotional entanglements.",
+      "classicalCitation": "Mehta, Ch. 5, p. 92; Brihat Jataka"
+    },
+    "Saturn": {
+      "title": "Saturn in 5th House",
+      "effects": "Methodical, persevering, disciplined researcher, deep thinker, and champion of labor laws, democracy, and technical sciences. Children born later in life are grounded and responsible.",
+      "conditions": "Afflicted Saturn creates delayed childbirth, melancholia, dull memory, and heavy burdens through progeny.",
+      "classicalCitation": "Mehta, Ch. 5, p. 92; Phala Deepika"
+    },
+    "Rahu": {
+      "title": "Rahu in 5th House",
+      "effects": "Sharp unconventional intellect, expertise in computer sciences, programming, electronic media, aerospace, and cutting-edge research.",
+      "conditions": "Unless aspected by Jupiter or dignified, Rahu causes delay/denial of progeny (Sarpa Dosha / ancestral curses), speculative volatility, and digestive acidity.",
+      "classicalCitation": "Mehta, Ch. 5, p. 92; K.N. Rao"
+    },
+    "Ketu": {
+      "title": "Ketu in 5th House",
+      "effects": "Profound Mantra Siddhi, deep spiritual intuition, fascination with precision instruments, metaphysics, and liberation (Moksha).",
+      "conditions": "Harmful for smooth childbirth; creates emotional detachment or physical separation from children.",
+      "classicalCitation": "Mehta, Ch. 5, p. 92; Jataka Parijata"
+    }
+  },
+  "specialPrinciples": {
+    "doubleTransitTiming": {
+      "name": "K.N. Rao's Double Transit Childbirth Timing Technique",
+      "description": "Original research by K.N. Rao validated across hundreds of charts: Within 9 months of childbirth, both Saturn and Jupiter must simultaneously aspect or transit: (1) 5th House, (2) 5th Lord, (3) 9th House, or (4) 9th Lord. Mars aspects within 75 days, and the Moon provides the final hourly trigger.",
+      "source": "Mehta, Ch. 5, pp. 97-99 & K.N. Rao, 'Planets and Children'"
+    },
+    "beejaKshetraSphuta": {
+      "name": "Beeja & Kshetra Sphuta Vitality Diagnosis",
+      "description": "Unique Parashari & Vaidyanatha mathematical formula: Beeja Sphuta (for males) = Sun + Venus + Jupiter (mod 360). Kshetra Sphuta (for females) = Mars + Moon + Jupiter (mod 360). Odd signs in Rasi and Navamsa confirm robust male vitality; even signs confirm female reproductive capacity.",
+      "source": "Mehta, Ch. 5, pp. 86-88; Jataka Parijata"
+    },
+    "sharpIntellect": {
+      "name": "Teekshna Buddhi & Granthakara (Sharp Intellect & Authorship) Yogas",
+      "description": "Fortified Mercury, 5th lord in Kendra/Trikona, and Shubh Kartari on the 5th house produce brilliant memory and intellectual genius. Moon-Jupiter or Moon-Mercury-Venus in 5th or Karkamsa Navamsa creates renowned authors, dramatists, and poets.",
+      "source": "Mehta, Ch. 5, pp. 82-84; Jaimini Sutras"
+    },
+    "progenyDenialDelay": {
+      "name": "Anapathya Yoga & Ancestral Curses (Progeny Denial & Delay)",
+      "description": "Afflictions by Rahu, Mars, and Saturn on the 5th house and 5th lord, coupled with a debilitated or combust Jupiter, delay or deny progeny due to Sarpa Dosha or ancestral karmic debts.",
+      "source": "Mehta, Ch. 5, pp. 93-96; Mantreswara"
+    }
+  },
+  "caseStudies": [
+    {
+      "native": "Pt. Jawaharlal Nehru (Birth of Indira Gandhi - 19 Nov 1917)",
+      "chartDetails": "Cancer Lagna; 5th lord Mars in Virgo (3rd house); 9th lord Jupiter in Taurus (11th house).",
+      "mehtaDelineation": "When Indira Gandhi was born, transiting Saturn in Cancer aspected natal 5th lord Mars in Virgo. Transiting Jupiter in Taurus aspected the 5th house (Scorpio). Transiting Mars in Leo aspected the 5th house. Moon in Capricorn aspected Lagna.",
+      "pageReference": "Mehta, Ch. 5, p. 97"
+    },
+    {
+      "native": "Indira Gandhi (Birth of Rajiv Gandhi - 20 Aug 1944)",
+      "chartDetails": "Cancer Lagna; 5th lord Mars in Leo (2nd house); 9th lord Jupiter in Gemini (12th house).",
+      "mehtaDelineation": "Transiting Saturn in Gemini aspected natal 5th lord Mars in Leo. Transiting Jupiter in Leo was conjoined with 5th lord Mars. Transiting Mars in Virgo aspected the 9th house (Pisces). Both Jupiter and Saturn simultaneously activated the sensitive points.",
+      "pageReference": "Mehta, Ch. 5, p. 97"
+    },
+    {
+      "native": "Indira Gandhi (Birth of Sanjay Gandhi - Dec 1946)",
+      "chartDetails": "Cancer Lagna; 5th lord Mars in Leo; 9th house Pisces.",
+      "mehtaDelineation": "Transiting Saturn in Gemini aspected 5th lord Mars in Leo. Transiting Jupiter in Virgo aspected both the 9th house (Pisces) and natal 9th lord Jupiter. Fulfills the double transit condition with textbook precision.",
+      "pageReference": "Mehta, Ch. 5, p. 97"
+    },
+    {
+      "native": "Lal Bahadur Shastri (Birth of Son - 9 Apr 1936)",
+      "chartDetails": "Sagittarius Lagna; 5th house Aries; 5th lord Mars.",
+      "mehtaDelineation": "Transiting Saturn aspected the 5th lord, and transiting Jupiter aspected the 5th house (Aries), while transiting Mars was in Aries itself.",
+      "pageReference": "Mehta, Ch. 5, p. 97"
+    },
+    {
+      "native": "Choudhary Charan Singh (Birth of Son - 14 Sep 1927)",
+      "chartDetails": "Scorpio Lagna; 5th house Pisces; 5th lord Jupiter.",
+      "mehtaDelineation": "Transiting Jupiter aspected his 5th lord, and transiting Saturn aspected his 5th house, while Mars in Virgo aspected the 5th house.",
+      "pageReference": "Mehta, Ch. 5, p. 97"
+    },
+    {
+      "native": "The Illustrious Couple ('Karma and Rebirth' Case Study)",
+      "chartDetails": "Father and Mother charts with 5th lord Jupiter placed in the 10th Kendra with exalted luminaries.",
+      "mehtaDelineation": "5th lord Jupiter in the 10th Kendra forming Gajakesari Yoga unafflicted by malefics. Produced noble, devoted children who attained international prominence and spiritual elevation.",
+      "pageReference": "Mehta, Ch. 5, pp. 100-102"
+    }
+  ]
+};

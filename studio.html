@@ -1,0 +1,2014 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jyotish Gemini Studio | Vedic Astrology Software & AI Consultation Engine</title>
+  <meta name="description"
+    content="Calculate Shodashvarga, Ashtakavarga, Vimshottari Dasha, and Gochar Transits from birth details or coordinates, and generate AI prompts for Gemini.">
+  <link rel="stylesheet" href="style.css?v=38">
+  <script>
+    (function() {
+      const saved = localStorage.getItem('astrotools_theme') || 'dark';
+      if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="logo-group">
+        <div class="logo-icon">🪐</div>
+        <div class="logo-text">
+          <h1>Jyotish Gemini Studio</h1>
+          <p>Full Vedic Astrology Engine • Shodashvarga • Ashtakavarga • Gochar Transits • Gemini AI</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-secondary btn-sm"
+          style="text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">🏠 Portal</a>
+        <div id="active-profile-pill" class="active-profile-pill is-unsaved">
+          <span id="active-profile-icon">✨</span>
+          <span id="active-profile-text"><span>New / Unsaved</span></span>
+          <button id="btn-unlink-profile" class="btn-unlink-badge" style="display: none;"
+            title="Unlink profile to treat as new unsaved chart">✕ New</button>
+        </div>
+        <a href="databank.html" id="btn-open-databank" class="btn btn-secondary btn-sm"
+          style="text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">🗂️ Databank (<span id="profile-count-badge">0</span>)</a>
+        <a href="analytics.html" id="btn-open-analytics" class="btn btn-secondary btn-sm"
+          style="text-decoration: none; display: inline-flex; align-items: center; gap: 5px;">📊 Analytics</a>
+        <button id="btn-save-current-profile" class="btn btn-secondary btn-sm">💾 Save Profile</button>
+        <button id="btn-header-gemini" class="btn btn-gemini btn-sm">✨ Open Gemini Prompt</button>
+        <button id="btn-theme-toggle" class="btn-theme-pill" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <span id="theme-toggle-icon">☀️</span> <span id="theme-toggle-text">Light</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-content">
+
+    <!-- Quick Stat Chips -->
+    <div class="summary-bar">
+      <div class="stat-chip" style="border-color: rgba(99, 102, 241, 0.4); background: rgba(99, 102, 241, 0.08);">
+        <span class="label">Native / Client</span>
+        <span id="stat-native" class="value" style="color: #A5B4FC; font-weight: 700;">New Client</span>
+      </div>
+      <div class="stat-chip">
+        <span class="label">Ascendant (Lagna)</span>
+        <span id="stat-lagna" class="value highlight-cyan">—</span>
+      </div>
+      <div class="stat-chip">
+        <span class="label">Moon Sign & Nakshatra</span>
+        <span id="stat-moon" class="value highlight-gold">—</span>
+      </div>
+      <div class="stat-chip">
+        <span class="label">Current Active Dasha</span>
+        <span id="stat-dasha" class="value">—</span>
+      </div>
+      <div class="stat-chip">
+        <span class="label">Sarvashtakavarga (SAV)</span>
+        <span id="stat-sav" class="value highlight-gold">—</span>
+      </div>
+    </div>
+
+    <!-- Birth Panchanga Strip (Five Limbs of Time) -->
+    <div class="panchanga-strip" id="panchanga-strip">
+      <div class="panchanga-chip">
+        <span class="panchanga-label">Tithi</span>
+        <span class="panchanga-val" id="panchanga-tithi">—</span>
+      </div>
+      <div class="panchanga-chip">
+        <span class="panchanga-label">Vaara (Day)</span>
+        <span class="panchanga-val" id="panchanga-vaara">—</span>
+      </div>
+      <div class="panchanga-chip">
+        <span class="panchanga-label">Janma Nakshatra</span>
+        <span class="panchanga-val" id="panchanga-nakshatra">—</span>
+      </div>
+      <div class="panchanga-chip">
+        <span class="panchanga-label">Nitya Yoga</span>
+        <span class="panchanga-val" id="panchanga-yoga">—</span>
+      </div>
+      <div class="panchanga-chip">
+        <span class="panchanga-label">Karana</span>
+        <span class="panchanga-val" id="panchanga-karana">—</span>
+      </div>
+    </div>
+
+    <!-- Static Profile Information Strip (Visible when viewing a client profile) -->
+    <div id="profile-static-strip" class="profile-static-strip" style="display: none;">
+      <div class="profile-static-left">
+        <div class="profile-static-avatar" id="static-avatar">AS</div>
+        <div>
+          <div class="profile-static-title">
+            <h2 id="static-name">Client Name</h2>
+            <span class="profile-gender-badge" id="static-gender-badge">Male ♂</span>
+            <span class="profile-type-badge" id="static-type-badge">Saved Profile</span>
+          </div>
+          <div class="profile-static-meta">
+            <span id="static-datetime">🗓️ 15 Mar 1994, 12:00:00</span>
+            <span id="static-location">📍 New Delhi, India</span>
+            <span class="static-coord-pill" id="static-coords">28.6139° N, 77.2090° E • UTC+05:30</span>
+            <span class="static-notes-pill" id="static-notes" style="display: none;"></span>
+          </div>
+        </div>
+      </div>
+      <div class="profile-static-right">
+        <button type="button" id="btn-toggle-edit-panel" class="btn btn-secondary btn-sm"
+          style="display: inline-flex; align-items: center; gap: 6px;">
+          <span>✏️</span> <span id="btn-toggle-edit-text">Edit Birth Details</span>
+        </button>
+        <a href="databank.html" class="btn btn-secondary btn-sm"
+          style="display: inline-flex; align-items: center; gap: 6px; text-decoration: none;">
+          <span>🗂️</span> Databank
+        </a>
+        <button type="button" id="btn-strip-new-chart" class="btn btn-secondary btn-sm"
+          style="display: inline-flex; align-items: center; gap: 6px;" title="Start fresh draft chart">
+          <span>➕</span> New Chart
+        </button>
+      </div>
+    </div>
+
+    <!-- Input Card with Mode Switcher -->
+    <section class="input-panel" id="section-input-panel">
+      <div class="panel-header">
+        <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
+          <h2 class="panel-title">
+            <span>✨</span> Chart Input Mode:
+          </h2>
+          <div class="mode-toggle-group">
+            <button id="btn-mode-birth" class="btn btn-sm btn-primary">🗓️ Calculate from Birth Details</button>
+            <button id="btn-mode-paste" class="btn btn-sm btn-secondary">📜 Paste Raw Text Coordinates</button>
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <label for="reference-date" style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">Transit /
+            Target Date:</label>
+          <input type="date" id="reference-date" class="text-input" style="padding: 4px 8px; font-size: 0.8rem;">
+          <button id="btn-today-date" class="btn btn-secondary btn-sm" style="padding: 4px 8px;">Today</button>
+        </div>
+      </div>
+
+      <!-- Mode 1: Birth Details Form -->
+      <div id="section-mode-birth" class="birth-details-card">
+        <div class="birth-grid">
+          <div class="field-group">
+            <label for="birth-name">Native / Client Name</label>
+            <input type="text" id="birth-name" class="text-input" value="" placeholder="e.g. Client Name">
+          </div>
+          <div class="field-group">
+            <label for="birth-gender">Gender</label>
+            <select id="birth-gender" class="custom-select text-input">
+              <option value="male" selected>Male ♂</option>
+              <option value="female">Female ♀</option>
+            </select>
+          </div>
+          <div class="field-group">
+            <label for="birth-date">Date of Birth</label>
+            <input type="date" id="birth-date" class="text-input" value="1994-03-15">
+          </div>
+          <div class="field-group">
+            <label for="birth-time">Time of Birth (HH:MM:SS)</label>
+            <input type="time" id="birth-time" class="text-input" value="12:00" step="1">
+          </div>
+          <div class="field-group" style="position: relative;">
+            <label for="city-search-input">City / Place of Birth (Atlas Search)</label>
+            <input type="text" id="city-search-input" class="text-input"
+              placeholder="Search 7,000+ cities (e.g. Jaipur, Varanasi)..." value="New Delhi, India" autocomplete="off">
+            <div id="city-suggestions-box" class="suggestions-box"></div>
+          </div>
+        </div>
+
+        <!-- Quick City Chips -->
+        <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: 10px; align-items: center;">
+          <span style="font-size: 0.72rem; color: var(--text-dim);">Quick Picks:</span>
+          <button type="button" class="chip-btn" data-city="New Delhi">New Delhi</button>
+          <button type="button" class="chip-btn" data-city="Varanasi">Varanasi</button>
+          <button type="button" class="chip-btn" data-city="Ujjain">Ujjain</button>
+          <button type="button" class="chip-btn" data-city="Jaipur">Jaipur</button>
+          <button type="button" class="chip-btn" data-city="Mumbai">Mumbai</button>
+          <button type="button" class="chip-btn" data-city="Bengaluru">Bengaluru</button>
+          <button type="button" class="chip-btn" data-city="London">London</button>
+          <button type="button" class="chip-btn" data-city="New York">New York</button>
+        </div>
+
+        <div class="coords-row" id="custom-coords-row"
+          style="margin-top: 12px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px;">
+          <div class="field-group">
+            <label for="birth-lat">Latitude (°N/°S)</label>
+            <input type="number" id="birth-lat" class="text-input" value="28.6139" step="0.0001">
+          </div>
+          <div class="field-group">
+            <label for="birth-lon">Longitude (°E/°W)</label>
+            <input type="number" id="birth-lon" class="text-input" value="77.2090" step="0.0001">
+          </div>
+          <div class="field-group">
+            <label for="birth-tz">Timezone Offset (Hours)</label>
+            <input type="number" id="birth-tz" class="text-input" value="5.5" step="0.5">
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 10px; margin-top: 16px;">
+          <button id="btn-calc-from-birth" class="btn btn-primary">
+            🚀 Calculate Full Kundali (Sub-Arcminute Ephemeris)
+          </button>
+          <span style="font-size: 0.78rem; color: var(--text-dim); display: flex; align-items: center;">
+            ✓ NASA JPL VSOP87 Models + IAU Lahiri Ayanamsha
+          </span>
+        </div>
+      </div>
+
+      <!-- Mode 2: Paste Raw Text Area -->
+      <div id="section-mode-paste" style="display: none;">
+        <div class="input-grid">
+          <div class="textarea-wrapper">
+            <textarea id="raw-input" class="raw-textarea" placeholder="Paste planetary positions here..."></textarea>
+            <div style="display: flex; gap: 10px; margin-top: 6px;">
+              <button id="btn-parse-calc" class="btn btn-primary">⚡ Calculate All Astrological Systems</button>
+              <button id="btn-clear-input" class="btn btn-secondary btn-sm">Clear</button>
+            </div>
+          </div>
+          <div class="input-side-settings">
+            <p style="font-size: 0.8rem; color: var(--gold-light); font-weight: 600;">
+              Paste software coordinates directly:
+            </p>
+            <p style="font-size: 0.76rem; color: var(--text-muted); line-height: 1.45;">
+              Copy-paste directly from Jagannatha Hora, AstroSage, or Parashara's Light. Our parser automatically
+              normalizes DMS degrees, signs, retrograde flags, and nakshatras.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs-nav" id="main-tabs">
+      <button class="tab-btn active" data-tab="tab-chart">🔮 Interactive Kundali</button>
+      <button class="tab-btn" data-tab="tab-numerology" style="color: #F59E0B;">🔢 Vedic Numerology</button>
+      <button class="tab-btn" data-tab="tab-planets">📊 Planetary Table</button>
+      <button class="tab-btn" data-tab="tab-shodashvarga">☸️ Shodashvarga (16 Vargas)</button>
+      <button class="tab-btn" data-tab="tab-ashtakavarga">📈 Ashtakavarga</button>
+      <button class="tab-btn" data-tab="tab-shadbala" style="color: #34D399;">⚖️ Shadbala & Bhavabala</button>
+      <button class="tab-btn" data-tab="tab-dasha">⏳ Dashas (Vimshottari & Yogini)</button>
+      <button class="tab-btn" data-tab="tab-transits" style="color: #38BDF8;">🌌 Time-Machine & Sade Sati</button>
+      <button class="tab-btn" data-tab="tab-jaimini" style="color: #F59E0B;">💎 Jaimini & Chara Karakas</button>
+      <button class="tab-btn" data-tab="tab-milan" style="color: #EC4899;">💑 Kundali Milan (36 Gunas)</button>
+      <button class="tab-btn" data-tab="tab-friendship" style="color: #C084FC;">🤝 Maitri Chakra (Friendship)</button>
+      <button class="tab-btn" data-tab="tab-drishti" style="color: #FCD34D;">👁️ Drishti & Aspects</button>
+      <button class="tab-btn" data-tab="tab-yogas" style="color: #FBBF24;">🧘 Yogas Studio (D-A-R-E & 300)</button>
+      <button class="tab-btn" data-tab="tab-bhavas" style="color: #F59E0B;">🏛️ 12 Bhavas Studio</button>
+      <button class="tab-btn" data-tab="tab-timeline" style="color: #60A5FA;">📅 Life Events Timeline</button>
+      <button class="tab-btn" data-tab="tab-gemini" style="color: #A78BFA;">🤖 Gemini AI Prompt</button>
+    </nav>
+
+    <!-- Tab 1: Interactive Kundali Chart -->
+    <div id="tab-chart" class="tab-content active">
+      <div class="chart-viewer-card">
+        <div class="chart-controls">
+          <div class="chart-select-group">
+            <label for="varga-select">Divisional Chart (Varga):</label>
+            <select id="varga-select" class="custom-select">
+              <option value="D1" selected>D1 - Rashi (Lagna Chart)</option>
+              <option value="CHALIT">Bhava Chalit (Sripati Chart)</option>
+              <option value="D9">D9 - Navamsha (Dharma & Spouse)</option>
+              <option value="D10">D10 - Dashamsha (Career & Status)</option>
+              <option value="D2">D2 - Hora (Wealth)</option>
+              <option value="D3">D3 - Drekkana (Courage & Siblings)</option>
+              <option value="D4">D4 - Chaturthamsha (Fortune & Property)</option>
+              <option value="D7">D7 - Saptamsha (Children & Progeny)</option>
+              <option value="D12">D12 - Dwadamsha (Parents & Ancestry)</option>
+              <option value="D16">D16 - Shodashamsha (Vehicles & Luxuries)</option>
+              <option value="D20">D20 - Vimshamsha (Spiritual Progress)</option>
+              <option value="D24">D24 - Chaturvimshamsha (Learning & Intellect)</option>
+              <option value="D27">D27 - Saptavimshamsha (Strengths & Weaknesses)</option>
+              <option value="D30">D30 - Trimshamsha (Misfortunes & Arishta)</option>
+              <option value="D40">D40 - Khavedamsha (Auspiciousness)</option>
+              <option value="D45">D45 - Akshavedamsha (Moral Character)</option>
+              <option value="D60">D60 - Shashtiamsha (Past Karma Root)</option>
+            </select>
+          </div>
+
+          <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+            <label class="transit-overlay-toggle" title="Display live transiting grahas in cyan inside chart houses">
+              <input type="checkbox" id="chk-transit-overlay">
+              <span class="toggle-track">
+                <span class="toggle-thumb"></span>
+              </span>
+              <span class="toggle-text">🪐 Overlay Transits</span>
+            </label>
+
+            <label class="transit-overlay-toggle"
+              title="Show Jaimini Padas: AL (Gold), UL (Pink), A7 (Purple) on D1 chart">
+              <input type="checkbox" id="chk-jaimini-overlay" checked>
+              <span class="toggle-track">
+                <span class="toggle-thumb"></span>
+              </span>
+              <span class="toggle-text">💎 AL / UL / A7 Padas</span>
+            </label>
+
+            <div style="display: flex; gap: 8px;">
+              <button id="btn-chart-north" class="btn btn-sm btn-primary">North Indian (Diamond)</button>
+              <button id="btn-chart-south" class="btn btn-sm btn-secondary">South Indian (Square)</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="chart-display-container">
+          <div>
+            <div class="chart-svg-box" id="chart-svg-container"></div>
+            <!-- External Live Transits Ribbon (Outside of Chart) -->
+            <div id="chart-transit-badge-bar"
+              style="display: none; margin-top: 8px; padding: 6px 12px; background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 6px; font-size: 0.78rem; color: #38BDF8; font-weight: 600; text-align: center;">
+              ⟳ Live Gochar Transits Active (Cyan)
+            </div>
+            <!-- Chart Notations Legend Strip -->
+            <div class="chart-legend-strip"
+              style="display: flex; gap: 10px; justify-content: center; align-items: center; margin-top: 8px; font-size: 0.74rem; color: var(--text-muted); flex-wrap: wrap;">
+              <span style="display: inline-flex; align-items: center; gap: 3px;"><span
+                  style="color: #34D399; font-weight: bold;">ᴱˣ</span> Exalted</span>
+              <span style="display: inline-flex; align-items: center; gap: 3px;"><span
+                  style="color: #F87171; font-weight: bold;">ᴰᵇ</span> Debilitated</span>
+              <span style="display: inline-flex; align-items: center; gap: 3px;"><span
+                  style="color: #FBBF24; font-weight: bold;">ᴹᵀ</span> Moolatrikona</span>
+              <span style="display: inline-flex; align-items: center; gap: 3px;"><span
+                  style="color: #F59E0B; font-weight: bold;">ᴼʷⁿ</span> Own</span>
+              <span style="display: inline-flex; align-items: center; gap: 3px;"><span
+                  style="color: #F97316; font-weight: bold;">ᶜᵒᵐ</span> Combust 🔥</span>
+              <span style="display: inline-flex; align-items: center; gap: 3px;"><span
+                  style="color: #EF4444; font-weight: bold;">ᴿ</span> Retrograde</span>
+              <span id="chart-legend-padas" style="display: inline-flex; align-items: center; gap: 8px;">
+                <span style="color: #F59E0B; font-weight: bold;">● AL</span>
+                <span style="color: #F472B6; font-weight: bold;">● UL</span>
+                <span style="color: #A855F7; font-weight: bold;">● A7</span>
+              </span>
+            </div>
+          </div>
+          <div class="chart-sidebar-info">
+            <div
+              style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 6px; margin-bottom: 2px;">
+              <h3 id="chart-varga-title" style="color: var(--gold-light); font-size: 1.15rem;">D1 - Rashi Chart</h3>
+              <span id="chart-native-badge"
+                style="font-size: 0.8rem; font-weight: 700; color: #A5B4FC; background: rgba(99, 102, 241, 0.15); padding: 2px 8px; border-radius: 4px; border: 1px solid rgba(99, 102, 241, 0.3);">Anurag
+                Sharma</span>
+            </div>
+            <p id="chart-varga-desc" style="font-size: 0.85rem; color: var(--text-muted);">Physical body, general
+              destiny, core personality.</p>
+            <div id="chart-placements-summary" class="table-responsive" style="margin-top: 10px;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: Planetary Positions Table -->
+    <div id="tab-planets" class="tab-content">
+      <div class="table-responsive">
+        <table class="data-table" id="table-planets">
+          <thead>
+            <tr>
+              <th>Planet</th>
+              <th>Sign</th>
+              <th>Degrees (DMS)</th>
+              <th>Absolute Longitude</th>
+              <th>Nakshatra</th>
+              <th>Pada</th>
+              <th>House (from Lagna)</th>
+              <th>D1 Dignity</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-planets"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Tab 3: Shodashvarga 16-Varga Matrix -->
+    <div id="tab-shodashvarga" class="tab-content">
+      <div style="margin-bottom: 14px; display: flex; justify-content: space-between; align-items: center;">
+        <span style="font-size: 0.85rem; color: var(--text-muted);">
+          Complete 16 Divisional Charts (Shodashvarga) matrix as per Brihat Parashara Hora Shastra (BPHS).
+        </span>
+        <div id="vargottama-summary-tag"></div>
+      </div>
+      <div class="table-responsive">
+        <table class="data-table" id="table-shodashvarga">
+          <thead id="thead-shodashvarga"></thead>
+          <tbody id="tbody-shodashvarga"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Tab 4: Ashtakavarga Matrix & SAV Chart -->
+    <div id="tab-ashtakavarga" class="tab-content">
+      <div class="ashtaka-grid-container">
+        <div class="chart-viewer-card">
+          <h3 style="font-size: 1rem; color: var(--gold-light); margin-bottom: 12px;">Sarvashtakavarga (SAV) Points per
+            Bhava (Houses 1 to 12)</h3>
+          <div class="sav-bar-chart" id="sav-visual-bars"></div>
+          <div
+            style="display: flex; justify-content: space-between; font-size: 0.78rem; color: var(--text-muted); margin-top: 10px;">
+            <span>🟢 ≥ 28: Strong / Auspicious House</span>
+            <span>🔴 &lt; 25: Vulnerable House</span>
+            <span id="sav-bench-note">Canonical Total: 337 Bindus</span>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="data-table" id="table-ashtakavarga">
+            <thead id="thead-ashtakavarga">
+              <tr>
+                <th>Planet / Graha</th>
+                <th>Aries</th>
+                <th>Taurus</th>
+                <th>Gemini</th>
+                <th>Cancer</th>
+                <th>Leo</th>
+                <th>Virgo</th>
+                <th>Libra</th>
+                <th>Scorpio</th>
+                <th>Sagittarius</th>
+                <th>Capricorn</th>
+                <th>Aquarius</th>
+                <th>Pisces</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody id="tbody-ashtakavarga"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: Shadbala (Sixfold Planetary Strength) -->
+    <div id="tab-shadbala" class="tab-content">
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+
+        <!-- Executive Summary Cards -->
+        <div class="shadbala-kpi-grid">
+          <div class="card shadbala-kpi-card" style="border-left: 4px solid #34D399;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <span
+                style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); font-weight: 700;">Leader
+                Graha (Most Powerful)</span>
+              <span style="font-size: 1.25rem;">👑</span>
+            </div>
+            <div id="shadbala-top-planet"
+              style="font-size: 1.35rem; font-weight: 800; color: #34D399; margin: 6px 0 2px 0;">--</div>
+            <div id="shadbala-top-desc" style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.4;">--</div>
+          </div>
+
+          <div class="card shadbala-kpi-card" style="border-left: 4px solid #F87171;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <span
+                style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); font-weight: 700;">Challenged
+                Graha (Needs Remediation)</span>
+              <span style="font-size: 1.25rem;">⚠️</span>
+            </div>
+            <div id="shadbala-weak-planet"
+              style="font-size: 1.35rem; font-weight: 800; color: #F87171; margin: 6px 0 2px 0;">--</div>
+            <div id="shadbala-weak-desc" style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.4;">--
+            </div>
+          </div>
+
+          <div class="card shadbala-kpi-card" style="border-left: 4px solid var(--accent-cyan);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <span
+                style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); font-weight: 700;">Chart
+                Potency Quotient</span>
+              <span style="font-size: 1.25rem;">⚡</span>
+            </div>
+            <div id="shadbala-overall-potency"
+              style="font-size: 1.35rem; font-weight: 800; color: var(--accent-cyan); margin: 6px 0 2px 0;">--</div>
+            <div id="shadbala-overall-desc" style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.4;">--
+            </div>
+          </div>
+        </div>
+
+        <!-- Comparative Visual Strength Progress Bars -->
+        <div class="card" style="padding: 20px 24px;">
+          <div
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 18px;">
+            <div>
+              <h4
+                style="font-size: 1.05rem; font-weight: 700; color: var(--gold-light); margin: 0; display: flex; align-items: center; gap: 8px;">
+                <span>📊</span> Planetary Strength vs Parashari Required Quota
+              </h4>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin: 4px 0 0 0;">
+                Values in Rupas (1 Rupa = 60 Virupas). Dashed line marks 100% minimum required threshold for full
+                positive results.
+              </p>
+            </div>
+            <div style="display: flex; gap: 14px; font-size: 0.76rem;">
+              <span style="display: inline-flex; align-items: center; gap: 5px;"><span
+                  style="display: inline-block; width: 10px; height: 10px; background: #34D399; border-radius: 2px;"></span>
+                Balavan (≥100%)</span>
+              <span style="display: inline-flex; align-items: center; gap: 5px;"><span
+                  style="display: inline-block; width: 10px; height: 10px; background: #FBBF24; border-radius: 2px;"></span>
+                Madhyama (85-99%)</span>
+              <span style="display: inline-flex; align-items: center; gap: 5px;"><span
+                  style="display: inline-block; width: 10px; height: 10px; background: #F87171; border-radius: 2px;"></span>
+                Nirbala (&lt;85%)</span>
+            </div>
+          </div>
+          <div id="shadbala-bars-container" style="display: flex; flex-direction: column; gap: 14px;"></div>
+        </div>
+
+        <!-- Master Shadbala 6-Bala Matrix Table -->
+        <div class="card" style="padding: 0; overflow: hidden;">
+          <div
+            style="padding: 18px 22px 14px 22px; border-bottom: 1px solid var(--border-subtle); background: rgba(255, 255, 255, 0.015); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+            <div>
+              <h4
+                style="font-size: 1.05rem; font-weight: 700; color: var(--text-main); margin: 0; display: flex; align-items: center; gap: 8px;">
+                <span>🏛️</span> Master Sixfold Strength Breakdown Matrix (षड्बल चक्र)
+              </h4>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin: 4px 0 0 0;">
+                Component strengths in Virupas. Classical minimums derived from Sage Parashara's Brihat Parashara Hora
+                Shastra.
+              </p>
+            </div>
+            <span
+              style="font-size: 0.76rem; font-weight: 600; color: #34D399; background: rgba(52, 211, 153, 0.1); border: 1px solid rgba(52, 211, 153, 0.25); padding: 4px 10px; border-radius: 6px;">7
+              Grahas Analyzed</span>
+          </div>
+          <div class="table-responsive" style="border: none; border-radius: 0;">
+            <table class="data-table" id="table-shadbala">
+              <thead>
+                <tr>
+                  <th style="padding: 12px 16px;">Rank</th>
+                  <th style="padding: 12px 16px;">Graha</th>
+                  <th style="padding: 12px 16px;"
+                    title="Positional Strength: Uchcha (exaltation), Saptavargaja (7 vargas), Ojhayugma, Kendra, Drekkana">
+                    Sthana</th>
+                  <th style="padding: 12px 16px;"
+                    title="Directional Strength: 1st (Jupiter/Mercury), 4th (Moon/Venus), 7th (Saturn), 10th (Sun/Mars)">
+                    Dig</th>
+                  <th style="padding: 12px 16px;"
+                    title="Temporal Strength: Day/Night (Natonnatha), Lunar Phase (Paksha), Tribhaga, Ayana">Kala</th>
+                  <th style="padding: 12px 16px;"
+                    title="Motional Strength: Retrogression speed (Retrograde = 60 Virupas)">Chesta</th>
+                  <th style="padding: 12px 16px;" title="Natural Inherent Luminosity (Sun 60 to Saturn 8.57)">Naisargika
+                  </th>
+                  <th style="padding: 12px 16px;" title="Aspectual Strength (Benefic vs Malefic aspects)">Drik</th>
+                  <th style="padding: 12px 16px;">Total Virupas</th>
+                  <th style="padding: 12px 16px;">Total Rupas</th>
+                  <th style="padding: 12px 16px;">Req. Quota</th>
+                  <th style="padding: 12px 16px;">Ratio %</th>
+                  <th style="padding: 12px 16px;">Verdict</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-shadbala"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Classical Detailed Component Breakdown Matrix (Ochcha Bala, Saptavargaja Bala, etc.) -->
+        <div class="card" style="padding: 0; overflow: hidden; border: 1px solid rgba(52, 211, 153, 0.25);">
+          <div
+            style="padding: 18px 22px 14px 22px; border-bottom: 1px solid var(--border-subtle); background: rgba(52, 211, 153, 0.04); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+            <div>
+              <h4
+                style="font-size: 1.05rem; font-weight: 700; color: #34D399; margin: 0; display: flex; align-items: center; gap: 8px;">
+                <span>🔬</span> Detailed Classical Sub-Component Matrix (सविस्तर षड्बल चक्र)
+              </h4>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin: 4px 0 0 0;">
+                Complete line-item breakdown of all Parashari sub-strengths (Ochcha, Saptavargaja, Ojayugma, Kendra,
+                Drekkana, Paksha, Ayana, etc.) in Virupas.
+              </p>
+            </div>
+            <span
+              style="font-size: 0.76rem; font-weight: 600; color: #34D399; background: rgba(52, 211, 153, 0.12); border: 1px solid rgba(52, 211, 153, 0.3); padding: 4px 10px; border-radius: 6px;">Canonical
+              AstroSage Layout</span>
+          </div>
+          <div class="table-responsive" style="border: none; border-radius: 0;">
+            <table class="data-table" id="table-shadbala-detailed">
+              <thead>
+                <tr>
+                  <th style="padding: 12px 16px; width: 250px; text-align: left;">Bala Component (बल घटक)</th>
+                  <th style="padding: 12px 14px; text-align: right; color: #F59E0B;">SUN ☉</th>
+                  <th style="padding: 12px 14px; text-align: right; color: #E2E8F0;">MOON ☽</th>
+                  <th style="padding: 12px 14px; text-align: right; color: #EF4444;">MARS ♂</th>
+                  <th style="padding: 12px 14px; text-align: right; color: #10B981;">MER ☿</th>
+                  <th style="padding: 12px 14px; text-align: right; color: #FBBF24;">JUP ♃</th>
+                  <th style="padding: 12px 14px; text-align: right; color: #EC4899;">VEN ♀</th>
+                  <th style="padding: 12px 14px; text-align: right; color: #8B5CF6;">SAT ♄</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-shadbala-detailed"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Classical Guidance on the 6 Balas -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;">
+          <div class="card" style="padding: 16px;">
+            <h5 style="color: var(--gold-light); font-size: 0.9rem; margin: 0 0 6px 0;">1. Sthana Bala (Positional)</h5>
+            <p style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.45; margin: 0;">
+              Derived from sign dignity, exaltation distance, angles (Kendras), and 7 divisional charts. Governs worldly
+              reputation, status, and stability of results.
+            </p>
+          </div>
+          <div class="card" style="padding: 16px;">
+            <h5 style="color: var(--accent-cyan); font-size: 0.9rem; margin: 0 0 6px 0;">2. Dig Bala (Directional)</h5>
+            <p style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.45; margin: 0;">
+              Peak directional pull: Jupiter/Mercury in 1st (East), Sun/Mars in 10th (South), Saturn in 7th (West),
+              Moon/Venus in 4th (North). Confers clear purpose, leadership, and public influence.
+            </p>
+          </div>
+          <div class="card" style="padding: 16px;">
+            <h5 style="color: #F472B6; font-size: 0.9rem; margin: 0 0 6px 0;">3. Kala Bala (Temporal)</h5>
+            <p style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.45; margin: 0;">
+              Strength gained from day vs night birth (Natonnatha), bright vs dark fortnight (Paksha), and hourly
+              planetary rulers. Determines auspicious timing and rhythm of life events.
+            </p>
+          </div>
+          <div class="card" style="padding: 16px;">
+            <h5 style="color: #A855F7; font-size: 0.9rem; margin: 0 0 6px 0;">4. Chesta Bala (Motional)</h5>
+            <p style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.45; margin: 0;">
+              Reflects orbital velocity and retrogression. Retrograde Grahas receive full 60 Virupas because their
+              closeness to Earth imparts extraordinary persistence and internal conviction.
+            </p>
+          </div>
+          <div class="card" style="padding: 16px;">
+            <h5 style="color: #38BDF8; font-size: 0.9rem; margin: 0 0 6px 0;">5. Naisargika Bala (Natural)</h5>
+            <p style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.45; margin: 0;">
+              Inherent cosmic luminosity. Sun is naturally most powerful (60 Virupas), followed by Moon, Venus, Jupiter,
+              Mercury, Mars, and Saturn (8.57 Virupas).
+            </p>
+          </div>
+          <div class="card" style="padding: 16px;">
+            <h5 style="color: #34D399; font-size: 0.9rem; margin: 0 0 6px 0;">6. Drik Bala (Aspectual)</h5>
+            <p style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.45; margin: 0;">
+              Net aspectual influence from other Grahas. Aspects from benefics (Guru, Shukra, Budha) elevate
+              performance; harsh malefic gaze adds friction and tests endurance.
+            </p>
+          </div>
+        </div>
+
+        <!-- Section Divider -->
+        <div
+          style="height: 1px; background: linear-gradient(90deg, transparent, rgba(245, 158, 11, 0.4), transparent); margin: 16px 0;">
+        </div>
+
+        <!-- Bhavabala Header & Title -->
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+          <div>
+            <h3
+              style="font-size: 1.25rem; font-weight: 800; color: #F59E0B; margin: 0; display: flex; align-items: center; gap: 8px;">
+              <span>🏰</span> Bhavabala — Twelvefold House Strengths (भावबल चक्र)
+            </h3>
+            <p style="font-size: 0.82rem; color: var(--text-muted); margin: 4px 0 0 0;">
+              Classical Parashari potency of all 12 Houses (Bhavas). Evaluates Bhavadhipati (Lord strength), Bhavdig
+              (House directional pull), and Bhavdrishti (Aspectual gaze).
+            </p>
+          </div>
+          <span
+            style="font-size: 0.76rem; font-weight: 600; color: #F59E0B; background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.25); padding: 4px 12px; border-radius: 6px;">12
+            Bhavas Analyzed</span>
+        </div>
+
+        <!-- Bhavabala KPI Cards -->
+        <div class="shadbala-kpi-grid">
+          <div class="card shadbala-kpi-card" style="border-left: 4px solid #F59E0B;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <span
+                style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); font-weight: 700;">Dominant
+                Bhava (Highest Potency)</span>
+              <span style="font-size: 1.25rem;">🏆</span>
+            </div>
+            <div id="bhavabala-top-house"
+              style="font-size: 1.25rem; font-weight: 800; color: #F59E0B; margin: 6px 0 2px 0;">--</div>
+            <div id="bhavabala-top-desc" style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.4;">--
+            </div>
+          </div>
+
+          <div class="card shadbala-kpi-card" style="border-left: 4px solid #F87171;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <span
+                style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); font-weight: 700;">Vulnerable
+                Bhava (Needs Focus)</span>
+              <span style="font-size: 1.25rem;">⚠️</span>
+            </div>
+            <div id="bhavabala-weak-house"
+              style="font-size: 1.25rem; font-weight: 800; color: #F87171; margin: 6px 0 2px 0;">--</div>
+            <div id="bhavabala-weak-desc" style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.4;">--
+            </div>
+          </div>
+
+          <div class="card shadbala-kpi-card" style="border-left: 4px solid var(--accent-cyan);">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <span
+                style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); font-weight: 700;">Average
+                House Strength</span>
+              <span style="font-size: 1.25rem;">📊</span>
+            </div>
+            <div id="bhavabala-avg-potency"
+              style="font-size: 1.25rem; font-weight: 800; color: var(--accent-cyan); margin: 6px 0 2px 0;">--</div>
+            <div id="bhavabala-avg-desc" style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.4;">--
+            </div>
+          </div>
+        </div>
+
+        <!-- Comparative House Strength Visual Progress Bars -->
+        <div class="card" style="padding: 20px 24px;">
+          <div
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 18px;">
+            <div>
+              <h4
+                style="font-size: 1.05rem; font-weight: 700; color: #F59E0B; margin: 0; display: flex; align-items: center; gap: 8px;">
+                <span>📈</span> House Potency Index (Bhavabala in Rupas)
+              </h4>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin: 4px 0 0 0;">
+                Classical Parashari benchmark: ≥6.0 Rupas indicates an auspicious, high-yielding house.
+              </p>
+            </div>
+            <div style="display: flex; gap: 14px; font-size: 0.76rem;">
+              <span style="display: inline-flex; align-items: center; gap: 5px;"><span
+                  style="display: inline-block; width: 10px; height: 10px; background: #34D399; border-radius: 2px;"></span>
+                Balavan (≥6.5 R)</span>
+              <span style="display: inline-flex; align-items: center; gap: 5px;"><span
+                  style="display: inline-block; width: 10px; height: 10px; background: #FBBF24; border-radius: 2px;"></span>
+                Madhyama (5.5-6.4 R)</span>
+              <span style="display: inline-flex; align-items: center; gap: 5px;"><span
+                  style="display: inline-block; width: 10px; height: 10px; background: #F87171; border-radius: 2px;"></span>
+                Nirbala (&lt;5.5 R)</span>
+            </div>
+          </div>
+          <div id="bhavabala-bars-container" style="display: flex; flex-direction: column; gap: 12px;"></div>
+        </div>
+
+        <!-- Master Twelvefold House Strength Breakdown Table (Bhavabala Table) -->
+        <div class="card" style="padding: 0; overflow: hidden;">
+          <div
+            style="padding: 18px 22px 14px 22px; border-bottom: 1px solid var(--border-subtle); background: rgba(255, 255, 255, 0.015); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+            <div>
+              <h4
+                style="font-size: 1.05rem; font-weight: 700; color: var(--text-main); margin: 0; display: flex; align-items: center; gap: 8px;">
+                <span>🏛️</span> Master Bhavabala Matrix (भावबल चक्र)
+              </h4>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin: 4px 0 0 0;">
+                Full mathematical breakdown across all 12 houses according to Brihat Parashara Hora Shastra.
+              </p>
+            </div>
+            <span
+              style="font-size: 0.76rem; font-weight: 600; color: #F59E0B; background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.25); padding: 4px 10px; border-radius: 6px;">12
+              Houses Breakdown</span>
+          </div>
+          <div class="table-responsive" style="border: none; border-radius: 0;">
+            <table class="data-table" id="table-bhavabala">
+              <thead>
+                <tr>
+                  <th style="padding: 12px 16px;">Rank</th>
+                  <th style="padding: 12px 16px;">Bhava (House)</th>
+                  <th style="padding: 12px 16px;">Sign & Lord</th>
+                  <th style="padding: 12px 16px;" title="Lord Strength: Shadbala of the planet ruling this Bhava">
+                    Bhavadhipati</th>
+                  <th style="padding: 12px 16px;"
+                    title="Directional Strength: Biped (1st), Water (4th), Insect (7th), Quadruped (10th)">Bhavdig</th>
+                  <th style="padding: 12px 16px;"
+                    title="Aspectual Strength: Net gaze of benefics vs malefics on house cusp">Bhavdrishti</th>
+                  <th style="padding: 12px 16px;">Total Virupas</th>
+                  <th style="padding: 12px 16px;">Total Rupas</th>
+                  <th style="padding: 12px 16px;">Parashari Verdict</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-bhavabala"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Master Horizontal Twelvefold House Matrix (Canonical AstroSage Layout) -->
+        <div class="card" style="padding: 0; overflow: hidden; border: 1px solid rgba(245, 158, 11, 0.25);">
+          <div
+            style="padding: 18px 22px 14px 22px; border-bottom: 1px solid var(--border-subtle); background: rgba(245, 158, 11, 0.04); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+            <div>
+              <h4
+                style="font-size: 1.05rem; font-weight: 700; color: #F59E0B; margin: 0; display: flex; align-items: center; gap: 8px;">
+                <span>🏛️</span> Canonical Bhavabala Strength Matrix (भावबल चक्र)
+              </h4>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin: 4px 0 0 0;">
+                Cross-comparative strength matrix across all 12 Bhavas (Adhipati, Dig, Drishti, Virupas & Rupas).
+              </p>
+            </div>
+            <span
+              style="font-size: 0.76rem; font-weight: 600; color: #F59E0B; background: rgba(245, 158, 11, 0.12); border: 1px solid rgba(245, 158, 11, 0.3); padding: 4px 10px; border-radius: 6px;">Houses
+              1 to 12</span>
+          </div>
+          <div class="table-responsive" style="border: none; border-radius: 0;">
+            <table class="data-table" id="table-bhavabala-horizontal">
+              <thead>
+                <tr>
+                  <th style="padding: 12px 16px; width: 220px; text-align: left;">Bhavabala Factor (घटक)</th>
+                  <th style="padding: 12px 8px; text-align: center; color: var(--gold-light);">1</th>
+                  <th style="padding: 12px 8px; text-align: center; color: var(--gold-light);">2</th>
+                  <th style="padding: 12px 8px; text-align: center; color: var(--gold-light);">3</th>
+                  <th style="padding: 12px 8px; text-align: center; color: var(--gold-light);">4</th>
+                  <th style="padding: 12px 8px; text-align: center; color: var(--gold-light);">5</th>
+                  <th style="padding: 12px 8px; text-align: center; color: var(--gold-light);">6</th>
+                  <th style="padding: 12px 8px; text-align: center; color: var(--gold-light);">7</th>
+                  <th style="padding: 12px 8px; text-align: center; color: var(--gold-light);">8</th>
+                  <th style="padding: 12px 8px; text-align: center; color: var(--gold-light);">9</th>
+                  <th style="padding: 12px 8px; text-align: center; color: var(--gold-light);">10</th>
+                  <th style="padding: 12px 8px; text-align: center; color: var(--gold-light);">11</th>
+                  <th style="padding: 12px 8px; text-align: center; color: var(--gold-light);">12</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-bhavabala-horizontal"></tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Tab 5: Vimshottari Dasha Explorer -->
+    <!-- Tab 5: Dasha Command Center (Vimshottari, Yogini & Dual Dasha) -->
+    <div id="tab-dasha" class="tab-content">
+      <div class="dasha-container">
+        <!-- Sub-Tab Mode Switcher -->
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 8px;">
+          <div>
+            <h3 style="font-size: 1.15rem; color: var(--gold-light); font-weight: 700; margin: 0;">⏳ Vedic Dasha Command
+              Center</h3>
+            <p style="font-size: 0.78rem; color: var(--text-muted); margin: 2px 0 0 0;">Dual-Dasha timing engine
+              benchmarked against M.S. Mehta (Chapters XV & XVI) and K.N. Rao</p>
+          </div>
+          <div class="mode-toggle-group">
+            <button type="button" id="subtab-dasha-vimshottari" class="btn btn-sm btn-primary">⏳ Vimshottari
+              (120y)</button>
+            <button type="button" id="subtab-dasha-yogini" class="btn btn-sm btn-secondary">✨ Yogini Dasha
+              (36y)</button>
+            <button type="button" id="subtab-dasha-dual" class="btn btn-sm btn-secondary">⚡ Dual-Dasha
+              Convergence</button>
+          </div>
+        </div>
+
+        <!-- Section 1: Vimshottari View -->
+        <div id="view-dasha-vimshottari">
+          <div id="current-dasha-banner" class="current-dasha-hero"></div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 14px;">
+            <h4 style="font-size: 0.95rem; color: var(--text-main);">Full 120-Year Vimshottari Mahadasha Cycle</h4>
+            <span style="font-size: 0.78rem; color: var(--text-muted);">Click any Mahadasha row to expand Antardashas &
+              Pratyantardashas</span>
+          </div>
+          <div class="dasha-tree-list" id="dasha-tree-container"></div>
+        </div>
+
+        <!-- Section 2: Yogini Dasha View -->
+        <div id="view-dasha-yogini" style="display: none;">
+          <div id="current-yogini-banner" class="current-dasha-hero"
+            style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.12), rgba(59, 130, 246, 0.12)); border-color: rgba(16, 185, 129, 0.4);">
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 14px;">
+            <h4 style="font-size: 0.95rem; color: var(--text-main);">36-Year Yogini Dasha Cyclic System (Cycles 1, 2, 3)
+            </h4>
+            <span style="font-size: 0.78rem; color: var(--text-muted);">Click any Yogini row to expand sub-periods and
+              classical Mansagri/Mehta predictions</span>
+          </div>
+          <div class="dasha-tree-list" id="yogini-tree-container"></div>
+        </div>
+
+        <!-- Section 3: Dual-Dasha Convergence Matrix -->
+        <div id="view-dasha-dual" style="display: none;">
+          <div id="dual-dasha-convergence-card"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 6: Time-Machine Transits & Shani Sade Sati -->
+    <div id="tab-transits" class="tab-content">
+      <div class="chart-viewer-card">
+
+        <!-- Interactive Time-Machine Navigation Bar -->
+        <div class="time-machine-bar">
+          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <span style="font-size: 1.1rem;">⏳</span>
+            <div>
+              <h4 style="font-size: 0.92rem; color: var(--accent-cyan); font-weight: 700;">Transit Time-Machine</h4>
+              <p style="font-size: 0.74rem; color: var(--text-muted);">Scrub to any past or future date to compute JPL
+                VSOP87 planetary transits</p>
+              <div id="transit-date-label"
+                style="font-size: 0.76rem; color: var(--gold-light); font-weight: 600; margin-top: 3px;"></div>
+            </div>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <input type="date" id="time-machine-date" class="text-input"
+              style="padding: 4px 10px; font-size: 0.8rem; width: 140px;">
+            <div class="time-jump-group">
+              <button type="button" class="btn-time-jump" data-jump="-365d">⏪ -1Y</button>
+              <button type="button" class="btn-time-jump" data-jump="-30d">◀ -1M</button>
+              <button type="button" class="btn-time-jump" data-jump="-7d">◂ -7D</button>
+              <button type="button" class="btn-time-jump" data-jump="today"
+                style="color: var(--gold-light); border-color: var(--gold-primary);">⚡ Today</button>
+              <button type="button" class="btn-time-jump" data-jump="+7d">▸ +7D</button>
+              <button type="button" class="btn-time-jump" data-jump="+30d">▶ +1M</button>
+              <button type="button" class="btn-time-jump" data-jump="+365d">⏩ +1Y</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Gochar Kundali (Transits Time-Machine Chart) -->
+        <div class="tm-chart-card" id="tm-chart-card" style="margin-bottom: 22px;">
+          <!-- Header & Controls -->
+          <div
+            style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 14px;">
+            <div>
+              <h4 id="tm-chart-title"
+                style="font-size: 1.05rem; color: var(--gold-light); font-weight: 700; margin: 0; display: flex; align-items: center; gap: 8px;">
+                <span>🌌</span> Gochar Kundali (Transits on Calibrated Date)
+              </h4>
+              <p id="tm-chart-subtitle" style="font-size: 0.76rem; color: var(--text-muted); margin: 3px 0 0 0;">
+                Showing natal houses with live transiting Grahas (cyan ⟳) in their transit positions.
+              </p>
+            </div>
+
+            <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+              <!-- Lagna Reference: Lagna vs Moon -->
+              <div class="btn-group"
+                style="display: inline-flex; background: rgba(0,0,0,0.3); border-radius: 6px; padding: 2px; border: 1px solid var(--border-subtle);">
+                <button type="button" id="btn-tm-ref-lagna" class="btn btn-xs btn-primary"
+                  style="font-size: 0.74rem; padding: 4px 9px;">Lagna Kundali</button>
+                <button type="button" id="btn-tm-ref-moon" class="btn btn-xs btn-secondary"
+                  style="font-size: 0.74rem; padding: 4px 9px;">Chandra (Moon) Lagna</button>
+              </div>
+
+              <!-- Style: North vs South -->
+              <div class="btn-group"
+                style="display: inline-flex; background: rgba(0,0,0,0.3); border-radius: 6px; padding: 2px; border: 1px solid var(--border-subtle);">
+                <button type="button" id="btn-tm-style-north" class="btn btn-xs btn-primary"
+                  style="font-size: 0.74rem; padding: 4px 9px;">North (Diamond)</button>
+                <button type="button" id="btn-tm-style-south" class="btn btn-xs btn-secondary"
+                  style="font-size: 0.74rem; padding: 4px 9px;">South (Square)</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Focused Event Banner (Active when jumped from life event) -->
+          <div id="tm-event-banner"
+            style="display: none; margin-bottom: 14px; padding: 10px 14px; background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 8px; font-size: 0.82rem; color: #38BDF8; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px;">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 1.15rem;" id="tm-event-banner-icon">🎯</span>
+              <div>
+                <strong id="tm-event-banner-title">Calibrated to Life Event</strong>
+                <div id="tm-event-banner-subtitle"
+                  style="font-size: 0.74rem; color: var(--text-muted); margin-top: 1px;"></div>
+              </div>
+            </div>
+            <button type="button" id="btn-tm-clear-event" class="btn btn-xs btn-secondary"
+              style="font-size: 0.72rem; padding: 4px 8px; border-color: rgba(56, 189, 248, 0.4); color: #38BDF8;">✕
+              Reset to Today</button>
+          </div>
+
+          <!-- Dual Display: Full-Width Expansive Grid (Large Chart + High-Legibility Insights) -->
+          <div class="tm-chart-grid-layout">
+            <!-- Left Column: Large, High-Legibility Kundali Chart -->
+            <div class="tm-chart-col">
+              <div class="tm-chart-svg-wrapper" id="tm-chart-svg-container"></div>
+              <div class="tm-chart-legend-bar">
+                <span>Natal Grahas: <strong style="color: var(--text-main);">Main</strong></span>
+                <span>•</span>
+                <span>Transiting Grahas: <strong style="color: #38BDF8;">Cyan ⟳</strong></span>
+                <span>•</span>
+                <span style="color: var(--gold-light);">Houses: <strong>Orange</strong></span>
+              </div>
+            </div>
+
+            <!-- Right Column: Expansive, Highly Legible Summary & Planetary Alignments -->
+            <div id="tm-chart-summary-panel" class="tm-summary-col">
+              <!-- Populated dynamically via renderTimeMachineChart() -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Shani Sade Sati & Kantaka Shani Hero Card -->
+        <div id="sade-sati-container"></div>
+
+        <!-- Sade Sati & Transit Alerts -->
+        <div id="transit-alerts-container"
+          style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 20px;"></div>
+
+        <!-- Transit Table Header & Action Note -->
+        <div
+          style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px;">
+          <div>
+            <h4 style="font-size: 0.96rem; color: var(--gold-light); font-weight: 700; margin-bottom: 2px;">
+              Planetary Transit (Gochar) Analysis & Astrological Synthesizer
+            </h4>
+            <p style="font-size: 0.76rem; color: var(--text-muted);">
+              Synthesizing Classical Janma Rashi Gochara (Moon Houses) and Sarvashtakavarga (SAV) Bindus.
+            </p>
+          </div>
+          <a href="#gochar-methodology-card"
+            style="font-size: 0.74rem; color: var(--accent-cyan); text-decoration: none; display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px; background: rgba(56, 189, 248, 0.08); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 6px; font-weight: 600;">
+            <span>📖</span> Evaluation Methodology Guide ↓
+          </a>
+        </div>
+
+        <!-- Transit Table -->
+        <div class="table-responsive">
+          <table class="data-table" id="table-transits">
+            <thead>
+              <tr>
+                <th>Transiting Graha</th>
+                <th>Transit Sign & Degrees</th>
+                <th>Nakshatra (Pada)</th>
+                <th>House from Lagna</th>
+                <th>House from Moon (Gochar)</th>
+                <th>SAV Bindus (Base: 28)</th>
+                <th>Transit Quality</th>
+                <th>Motion</th>
+              </tr>
+            </thead>
+            <tbody id="tbody-transits"></tbody>
+          </table>
+        </div>
+
+        <!-- Bhava Siddhi Kala (Classical Event Fruition Timing - APA Notes, pp. 172-175) -->
+        <div id="bhava-siddhi-container" style="margin-top: 24px;"></div>
+
+        <!-- Classical Gochar & Ashtakavarga Evaluation Methodology Guide -->
+        <div id="gochar-methodology-card" class="card"
+          style="margin-top: 24px; padding: 20px; background: rgba(14, 19, 34, 0.85); border: 1px solid var(--border-subtle); border-radius: var(--radius-lg);">
+          <div
+            style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border-subtle); padding-bottom: 12px; margin-bottom: 16px; flex-wrap: wrap; gap: 8px;">
+            <div style="display: flex; align-items: center; gap: 10px;">
+              <span style="font-size: 1.3rem;">📜</span>
+              <div>
+                <h4 style="font-size: 1.02rem; color: var(--gold-light); font-weight: 700; margin: 0;">
+                  Classical Transit & Ashtakavarga Evaluation Methodology
+                </h4>
+                <p style="font-size: 0.75rem; color: var(--text-muted); margin: 2px 0 0 0;">
+                  How Transit Quality is calculated per <em>Phaladeepika (Ch. 26)</em>, <em>Brihat Parasara Hora
+                    Shastra</em>, & <em>Sarvashtakavarga Paddhati</em>
+                </p>
+              </div>
+            </div>
+            <span class="badge badge-neutral" style="font-size: 0.72rem; padding: 3px 8px;">Classical Standard</span>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 16px;">
+            <!-- Pillar 1: Houses from Natal Moon (Janma Rashi Gochara) -->
+            <div
+              style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 14px;">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+                <span style="font-size: 1rem;">🌙</span>
+                <strong style="color: var(--accent-cyan); font-size: 0.88rem;">1. Janma Rashi (Natal Moon) Rule</strong>
+              </div>
+              <p style="font-size: 0.76rem; color: var(--text-main); line-height: 1.5; margin-bottom: 10px;">
+                In classical Vedic astrology, transits are evaluated primarily from the <strong>Natal Moon (Janma
+                  Rashi)</strong> because the Moon represents the Mind (<em>Manas</em>) and directly experiences joy and
+                grief in the physical realm.
+              </p>
+              <div style="display: flex; flex-direction: column; gap: 6px; font-size: 0.74rem;">
+                <div
+                  style="background: rgba(239, 68, 68, 0.08); border-left: 3px solid #EF4444; padding: 6px 8px; border-radius: 4px;">
+                  <strong style="color: #F87171;">🪐 Saturn & 🔴 Mars:</strong>
+                  <span style="color: var(--text-muted);">Auspicious <strong>ONLY in 3 houses (3, 6, 11)</strong> from
+                    Moon (Upachayas). In all other 9 houses, their malefic fire causes friction, delays, Sade Sati (12,
+                    1, 2), Kantaka (4), or Ashtama (8).</span>
+                </div>
+                <div
+                  style="background: rgba(16, 185, 129, 0.08); border-left: 3px solid #10B981; padding: 6px 8px; border-radius: 4px;">
+                  <strong style="color: #34D399;">💖 Venus (Shukra):</strong>
+                  <span style="color: var(--text-muted);">Auspicious in <strong>9 houses (1, 2, 3, 4, 5, 8, 9, 11,
+                      12)</strong> from Moon! Unfavorable in only 3 houses (6, 7, 10). Bestows pleasure, harmony, and
+                    material ease.</span>
+                </div>
+                <div
+                  style="background: rgba(245, 158, 11, 0.08); border-left: 3px solid #F59E0B; padding: 6px 8px; border-radius: 4px;">
+                  <strong style="color: #FBBF24;">♃ Jupiter (Guru):</strong>
+                  <span style="color: var(--text-muted);">Auspicious in <strong>5 houses (2, 5, 7, 9, 11)</strong> from
+                    Moon (<em>Guru Bala</em>). Brings divine grace, wisdom, expansion, and marriage/children
+                    blessings.</span>
+                </div>
+                <div
+                  style="background: rgba(255, 255, 255, 0.04); border-left: 3px solid var(--border-subtle); padding: 6px 8px; border-radius: 4px;">
+                  <strong style="color: var(--text-main);">☀️ Sun:</strong>
+                  <span style="color: var(--text-muted);">Auspicious in <strong>3, 6, 10, 11</strong> from Moon.</span>
+                </div>
+                <div
+                  style="background: rgba(255, 255, 255, 0.04); border-left: 3px solid var(--border-subtle); padding: 6px 8px; border-radius: 4px;">
+                  <strong style="color: var(--text-main);">☿ Mercury:</strong>
+                  <span style="color: var(--text-muted);">Auspicious in <strong>2, 4, 6, 8, 10, 11</strong> from
+                    Moon.</span>
+                </div>
+                <div
+                  style="background: rgba(255, 255, 255, 0.04); border-left: 3px solid var(--border-subtle); padding: 6px 8px; border-radius: 4px;">
+                  <strong style="color: var(--text-main);">🌙 Moon:</strong>
+                  <span style="color: var(--text-muted);">Auspicious in <strong>1, 3, 6, 7, 10, 11</strong> from
+                    Moon.</span>
+                </div>
+                <div
+                  style="background: rgba(255, 255, 255, 0.04); border-left: 3px solid var(--border-subtle); padding: 6px 8px; border-radius: 4px;">
+                  <strong style="color: var(--text-main);">☊ ☋ Rahu & Ketu:</strong>
+                  <span style="color: var(--text-muted);">Auspicious in <strong>3, 6, 11</strong> from Moon
+                    (Upachayas).</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pillar 2: Sarvashtakavarga (SAV) Shield -->
+            <div
+              style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 14px;">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+                <span style="font-size: 1rem;">🛡️</span>
+                <strong style="color: var(--gold-light); font-size: 0.88rem;">2. Sarvashtakavarga (SAV) Shield</strong>
+              </div>
+              <p style="font-size: 0.76rem; color: var(--text-main); line-height: 1.5; margin-bottom: 10px;">
+                While the house placement shows the <em>intrinsic flavor</em> of the transit, the <strong>SAV
+                  Bindus</strong> in that transited rashi dictate <strong>concrete material capacity & astral
+                  protection</strong>.
+              </p>
+              <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.74rem;">
+                <div
+                  style="border: 1px solid rgba(255, 255, 255, 0.06); padding: 8px; border-radius: 6px; background: rgba(0, 0, 0, 0.2);">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                    <strong style="color: var(--text-main);">Standard Baseline</strong>
+                    <span class="badge badge-neutral" style="font-size: 0.68rem;">28 Bindus</span>
+                  </div>
+                  <span style="color: var(--text-muted);">337 total SAV points distributed across 12 signs gives an
+                    exact mean of ~28 points. 28 is neutral equilibrium.</span>
+                </div>
+                <div
+                  style="border: 1px solid rgba(16, 185, 129, 0.2); padding: 8px; border-radius: 6px; background: rgba(16, 185, 129, 0.04);">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                    <strong style="color: #34D399;">High Support (Kavach / Shield)</strong>
+                    <span class="badge badge-exalted" style="font-size: 0.68rem;">≥ 30 Bindus</span>
+                  </div>
+                  <span style="color: var(--text-muted);">Acts as an astral shock-absorber. Even if Saturn or Mars is in
+                    a difficult house (e.g. 8th or Sade Sati), 30+ bindus cushions the impact and protects the native.
+                    In a good house, it brings immense success.</span>
+                </div>
+                <div
+                  style="border: 1px solid rgba(148, 163, 184, 0.2); padding: 8px; border-radius: 6px; background: rgba(148, 163, 184, 0.04);">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                    <strong style="color: #94A3B8;">Average Support</strong>
+                    <span class="badge badge-neutral" style="font-size: 0.68rem;">25 – 29 Bindus</span>
+                  </div>
+                  <span style="color: var(--text-muted);">Balanced manifestation. Results require standard disciplined
+                    effort with steady progress.</span>
+                </div>
+                <div
+                  style="border: 1px solid rgba(239, 68, 68, 0.2); padding: 8px; border-radius: 6px; background: rgba(239, 68, 68, 0.04);">
+                  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px;">
+                    <strong style="color: #F87171;">Low Support (Karmic Friction)</strong>
+                    <span class="badge badge-debilitated" style="font-size: 0.68rem;">
+                      < 25 Bindus</span>
+                  </div>
+                  <span style="color: var(--text-muted);">Depleted astral vitality. Even an intrinsically auspicious
+                    transit house cannot bear full fruit without bindus; difficult transits strike with full
+                    resistance.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pillar 3: Synthesized Quality Matrix -->
+            <div
+              style="background: rgba(255, 255, 255, 0.02); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 14px;">
+              <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 10px;">
+                <span style="font-size: 1rem;">⚖️</span>
+                <strong style="color: var(--accent-purple); font-size: 0.88rem;">3. Synthesized Transit Quality
+                  Matrix</strong>
+              </div>
+              <p style="font-size: 0.76rem; color: var(--text-main); line-height: 1.5; margin-bottom: 10px;">
+                Our engine synthesizes the <strong>Moon House</strong> and <strong>SAV Bindus</strong> into the final
+                verdict shown in the table:
+              </p>
+              <div style="display: flex; flex-direction: column; gap: 6px; font-size: 0.73rem;">
+                <div
+                  style="display: flex; align-items: center; justify-content: space-between; padding: 6px 8px; background: rgba(16, 185, 129, 0.08); border-radius: 4px;">
+                  <span class="badge badge-exalted">🌟 Fortified & Auspicious</span>
+                  <span style="color: var(--text-muted); text-align: right;">Shubha House + SAV ≥ 30</span>
+                </div>
+                <div
+                  style="display: flex; align-items: center; justify-content: space-between; padding: 6px 8px; background: rgba(16, 185, 129, 0.05); border-radius: 4px;">
+                  <span class="badge badge-exalted">✨ Favorable</span>
+                  <span style="color: var(--text-muted); text-align: right;">Shubha House + SAV 25–29</span>
+                </div>
+                <div
+                  style="display: flex; align-items: center; justify-content: space-between; padding: 6px 8px; background: rgba(148, 163, 184, 0.06); border-radius: 4px;">
+                  <span class="badge badge-neutral">⚖️ Mixed (Low Bindus)</span>
+                  <span style="color: var(--text-muted); text-align: right;">Shubha House + SAV < 25</span>
+                </div>
+                <div
+                  style="display: flex; align-items: center; justify-content: space-between; padding: 6px 8px; background: rgba(56, 189, 248, 0.08); border-radius: 4px;">
+                  <span class="badge badge-friend">🛡️ Protected (SAV Shield)</span>
+                  <span style="color: var(--text-muted); text-align: right;">Ashubha House + SAV ≥ 30</span>
+                </div>
+                <div
+                  style="display: flex; align-items: center; justify-content: space-between; padding: 6px 8px; background: rgba(239, 68, 68, 0.06); border-radius: 4px;">
+                  <span class="badge badge-debilitated">⚡ Testing / Resistance</span>
+                  <span style="color: var(--text-muted); text-align: right;">Ashubha House + SAV 25–29</span>
+                </div>
+                <div
+                  style="display: flex; align-items: center; justify-content: space-between; padding: 6px 8px; background: rgba(239, 68, 68, 0.1); border-radius: 4px;">
+                  <span class="badge badge-debilitated">⚠️ Low Support (Friction)</span>
+                  <span style="color: var(--text-muted); text-align: right;">Ashubha House + SAV < 25</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 7: Parashari Drishti (Aspects) Matrix -->
+    <div id="tab-drishti" class="tab-content">
+      <div class="chart-viewer-card">
+        <div style="margin-bottom: 16px;">
+          <h3 style="font-size: 1.15rem; color: var(--gold-light); font-weight: 700;">Parashari Planetary Aspects
+            (Drishti Matrix)</h3>
+          <p style="font-size: 0.82rem; color: var(--text-muted);">
+            Complete Parashari 7th aspects & special full aspects (Mars 4th/8th, Jupiter & Rahu/Ketu 5th/9th, Saturn
+            3rd/10th) on planets and bhavas.
+          </p>
+        </div>
+
+        <!-- Mutual Aspects (Sambandha) -->
+        <div style="margin-bottom: 20px;">
+          <h4 style="font-size: 0.92rem; color: var(--accent-cyan); margin-bottom: 8px;">Key Mutual Planetary Aspects
+            (Paraspara Drishti):</h4>
+          <div id="mutual-aspects-list" style="display: flex; flex-direction: column; gap: 8px;"></div>
+        </div>
+
+        <!-- Planet-to-Planet Aspect Table -->
+        <div class="card" style="padding: 0; overflow: hidden; margin-bottom: 24px;">
+          <div
+            style="padding: 16px 20px; border-bottom: 1px solid var(--border-subtle); background: rgba(255, 255, 255, 0.015);">
+            <h4
+              style="font-size: 0.98rem; font-weight: 700; color: var(--text-main); margin: 0; display: flex; align-items: center; gap: 8px;">
+              <span>🔭</span> Direct Aspects on Other Grahas
+            </h4>
+          </div>
+          <div class="table-responsive" style="border: none; border-radius: 0;">
+            <table class="data-table" id="table-aspects-planets">
+              <thead>
+                <tr>
+                  <th>Aspecting Planet</th>
+                  <th>From House</th>
+                  <th>Aspect Type</th>
+                  <th>Aspected Planet</th>
+                  <th>Target House</th>
+                  <th>Mutual Aspect?</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-aspects-planets"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- House-by-House Aspects Breakdown -->
+        <div class="card" style="padding: 0; overflow: hidden; margin-bottom: 12px;">
+          <div
+            style="padding: 18px 22px 14px 22px; border-bottom: 1px solid var(--border-subtle); background: rgba(255, 255, 255, 0.015); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+            <div>
+              <h4
+                style="font-size: 1.05rem; font-weight: 700; color: var(--gold-light); margin: 0; display: flex; align-items: center; gap: 8px;">
+                <span>🏛️</span> Planetary Influences on Each Bhava (Houses 1 to 12)
+              </h4>
+              <p style="font-size: 0.8rem; color: var(--text-muted); margin: 5px 0 0 0;">
+                Comprehensive Bhava breakdown detailing resident Grahas and incoming full Parashari Drishtis.
+              </p>
+            </div>
+            <span
+              style="font-size: 0.76rem; font-weight: 600; color: var(--accent-cyan); background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.25); padding: 4px 10px; border-radius: 6px;">12
+              Bhavas</span>
+          </div>
+          <div class="table-responsive" style="border: none; border-radius: 0;">
+            <table class="data-table" id="table-aspects-houses">
+              <thead>
+                <tr>
+                  <th>Bhava (House)</th>
+                  <th>Sign</th>
+                  <th>Occupying Grahas</th>
+                  <th>Aspecting Grahas (Drishti)</th>
+                  <th style="text-align: center;">Aspect Count</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-aspects-houses"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 8: Classical Yogas Studio (D-A-R-E & BV Raman 300) -->
+    <div id="tab-yogas" class="tab-content">
+      <div class="yogas-studio-wrapper">
+        <!-- Top Header & Sub-Navigation -->
+        <div class="yogas-header-card">
+          <div
+            style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 14px;">
+            <div>
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 1.5rem;">🧘</span>
+                <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-main); margin: 0;">Classical Yogas Studio</h3>
+                <span class="badge badge-gold" style="font-size: 0.72rem;">BPHS Compliant</span>
+              </div>
+              <p style="font-size: 0.82rem; color: var(--text-muted); margin: 6px 0 0 0;">
+                Rigorous Vedic detection powered by Brihat Parashara Hora Shastra, Mehta Chapter XIX (D-A-R-E), and B.V.
+                Raman's 300 Important Combinations.
+              </p>
+            </div>
+
+            <!-- Sub-Tab Toggle Switcher -->
+            <div class="mode-toggle-group">
+              <button type="button" id="subtab-yogas-dare" class="btn btn-sm btn-primary">⚡ D-A-R-E Executive
+                Matrix</button>
+              <button type="button" id="subtab-yogas-300" class="btn btn-sm btn-secondary">📚 BV Raman 300
+                Encyclopedia</button>
+            </div>
+          </div>
+
+          <!-- Summary Metric Counters -->
+          <div class="yogas-metrics-strip" id="yogas-metrics-bar">
+            <div class="yoga-metric-chip active" data-filter="all">
+              <span class="metric-val" id="cnt-yogas-total">0</span>
+              <span class="metric-lbl">Total Detected</span>
+            </div>
+            <div class="yoga-metric-chip" data-filter="R">
+              <span class="metric-val highlight-gold" id="cnt-yogas-raja">0</span>
+              <span class="metric-lbl">👑 Raja [R]</span>
+            </div>
+            <div class="yoga-metric-chip" data-filter="D">
+              <span class="metric-val highlight-cyan" id="cnt-yogas-dhana">0</span>
+              <span class="metric-lbl">💰 Dhana [D]</span>
+            </div>
+            <div class="yoga-metric-chip" data-filter="E">
+              <span class="metric-val" style="color: #A78BFA;" id="cnt-yogas-exchanges">0</span>
+              <span class="metric-lbl">🔄 Exchanges [E]</span>
+            </div>
+            <div class="yoga-metric-chip" data-filter="A">
+              <span class="metric-val" style="color: #F87171;" id="cnt-yogas-arishta">0</span>
+              <span class="metric-lbl">⚠️ Arishta [A]</span>
+            </div>
+            <div class="yoga-metric-chip" data-filter="neutralized">
+              <span class="metric-val" style="color: #FBBF24;" id="cnt-yogas-neutralized">0</span>
+              <span class="metric-lbl">⚖️ Neutralized</span>
+            </div>
+            <div class="yoga-metric-chip" data-filter="N">
+              <span class="metric-val" style="color: #38BDF8;" id="cnt-yogas-nabhas">0</span>
+              <span class="metric-lbl">🌌 Nabhas & Special</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sub-View 1: D-A-R-E Executive Matrix -->
+        <div id="subview-yogas-dare" class="yogas-subview">
+          <div class="yogas-filter-bar">
+            <div class="filter-chips-group" id="dare-filter-chips">
+              <button type="button" class="chip-filter active" data-dare="all">All Yogas</button>
+              <button type="button" class="chip-filter" data-dare="R">👑 Raja Yogas [R]</button>
+              <button type="button" class="chip-filter" data-dare="D">💰 Dhana Yogas [D]</button>
+              <button type="button" class="chip-filter" data-dare="E">🔄 Exchanges (Parivartana) [E]</button>
+              <button type="button" class="chip-filter" data-dare="A">⚠️ Arishta & Challenges [A]</button>
+              <button type="button" class="chip-filter highlight-neutralized" data-dare="neutralized">⚖️ Neutralized /
+                Bhanga</button>
+              <button type="button" class="chip-filter" data-dare="N">🌌 Nabhas & Planetary [N]</button>
+            </div>
+            <div class="yogas-search-box">
+              <input type="text" id="search-dare-yogas" class="text-input"
+                placeholder="🔍 Search detected yogas by name, planet, house...">
+            </div>
+          </div>
+
+          <div class="yogas-grid" id="yogas-container">
+            <!-- Dynamic D-A-R-E Yoga Cards -->
+          </div>
+        </div>
+
+        <!-- Sub-View 2: BV Raman 300 Combinations Encyclopedia -->
+        <div id="subview-yogas-300" class="yogas-subview" style="display: none;">
+          <div class="yogas-filter-bar">
+            <div class="filter-chips-group" id="raman-filter-chips">
+              <button type="button" class="chip-filter active" data-cat="all">All 300 Yogas</button>
+              <button type="button" class="chip-filter highlight-active" data-cat="detected">✨ Active in Chart (<span
+                  id="raman-active-badge">0</span>)</button>
+              <button type="button" class="chip-filter highlight-neutralized" data-cat="neutralized">⚖️ Neutralized
+                (<span id="raman-neutralized-badge">0</span>)</button>
+              <button type="button" class="chip-filter" data-cat="Raja">👑 Raja & Power</button>
+              <button type="button" class="chip-filter" data-cat="Dhana">💰 Dhana & Wealth</button>
+              <button type="button" class="chip-filter" data-cat="Lunar">🌙 Lunar Yogas</button>
+              <button type="button" class="chip-filter" data-cat="Solar">☀️ Solar Yogas</button>
+              <button type="button" class="chip-filter" data-cat="Nabhasa">🌌 Nabhasa</button>
+              <button type="button" class="chip-filter" data-cat="Arishta">⚠️ Afflictions</button>
+            </div>
+            <div class="yogas-search-box">
+              <input type="text" id="search-raman-yogas" class="text-input"
+                placeholder="🔍 Search all 300 Raman yogas by name, ID, planet, effect...">
+            </div>
+          </div>
+
+          <div style="margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 0.78rem; color: var(--text-muted);" id="raman-showing-status">Showing 300
+              yogas</span>
+            <span style="font-size: 0.75rem; color: var(--gold-light);">Ref: B.V. Raman "Three Hundred Important
+              Combinations"</span>
+          </div>
+
+          <div class="yogas-grid" id="raman-300-container">
+            <!-- Dynamic Raman 300 Cards -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: 🏛️ 12 Bhavas Studio (House Delineation) -->
+    <div id="tab-bhavas" class="tab-content">
+      <div class="bhavas-container">
+        <!-- Hero Header -->
+        <div class="bhavas-hero">
+          <div class="bhavas-hero-title">
+            <h2>🏛️ 12 Bhavas Studio — Predictive House Analysis</h2>
+            <p>
+              Source-backed classical delineation based on <strong>MS Mehta's <em>Advanced Techniques of Predictive
+                  Astrology</em></strong>, Sage Parashara's <em>BPHS</em>, <em>Phala Deepika</em>, and <em>Jataka
+                Parijata</em>. Complete evaluation of house lords, occupant grahas, Parashari aspects, and classical
+              yogas.
+            </p>
+          </div>
+          <div class="bhavas-provenance-tag">
+            <span>📖 Classical Provenance</span>
+            <span style="opacity: 0.6;">|</span>
+            <span>Mehta Vol. 1 (pp. 29–42)</span>
+          </div>
+        </div>
+
+        <!-- 12 Sub-Tabs Pills Nav -->
+        <div class="bhavas-subtabs-nav" id="bhavas-subtabs-container">
+          <!-- Dynamically populated or rendered 12 house pill buttons -->
+        </div>
+
+        <!-- Active House Dynamic Container -->
+        <div class="bhava-content-panel" id="bhava-active-house-container">
+          <!-- Rendered dynamically by renderBhavasView() -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: 📅 Life Events & Rectification Timeline -->
+    <div id="tab-timeline" class="tab-content">
+      <div class="timeline-container">
+        <!-- Hero Header -->
+        <div class="timeline-hero">
+          <div class="timeline-hero-text">
+            <span class="timeline-badge">Empirical Verification & BTR</span>
+            <h2>📅 Major Life Events Timeline & Planetary Correlator</h2>
+            <p>
+              Log your verified life milestones (marriage, career jumps, land purchase, foreign moves, etc.) to
+              calculate the exact Vimshottari Dasha (MD › AD › PD) and Gochar Transits at that historical date. Crucial
+              for <strong>Birth Time Rectification (BTR)</strong> and calibrating Gemini AI consultation prompts.
+            </p>
+          </div>
+          <div class="timeline-hero-actions">
+            <button id="btn-add-life-event" class="btn btn-primary">✨ + Log Life Event</button>
+            <button id="btn-export-timeline" class="btn btn-secondary btn-sm" title="Download Life Events as JSON">📥
+              Export Events (JSON)</button>
+          </div>
+        </div>
+
+        <!-- Quick Category Suggestion Chips -->
+        <div class="event-quick-chips-wrapper">
+          <span class="quick-chips-label">Quick Suggestions:</span>
+          <div class="event-quick-chips" id="quick-category-chips"></div>
+        </div>
+
+        <!-- Summary Stats Bar -->
+        <div class="timeline-stats-bar">
+          <div class="timeline-stat-chip">
+            <span class="label">Total Logged Events</span>
+            <span class="val highlight-gold" id="stat-total-events">0</span>
+          </div>
+          <div class="timeline-stat-chip">
+            <span class="label">Earliest Event</span>
+            <span class="val" id="stat-earliest-event">—</span>
+          </div>
+          <div class="timeline-stat-chip">
+            <span class="label">Latest Event</span>
+            <span class="val" id="stat-latest-event">—</span>
+          </div>
+          <div class="timeline-stat-chip">
+            <span class="label">Primary MD Lords</span>
+            <span class="val" id="stat-events-dashas" style="color: var(--accent-cyan);">—</span>
+          </div>
+        </div>
+
+        <!-- Timeline Cards Container -->
+        <div class="timeline-tree" id="timeline-events-container"></div>
+
+        <!-- Life Event Modal -->
+        <div id="life-event-modal" class="modal-backdrop" style="display: none;">
+          <div class="modal-dialog">
+            <div class="modal-header">
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <span style="font-size: 1.4rem;" id="modal-event-icon">📅</span>
+                <div>
+                  <h3 id="modal-event-heading" style="margin: 0; font-size: 1.15rem; color: var(--text-main);">Log Major Life Event
+                  </h3>
+                  <p style="margin: 2px 0 0; font-size: 0.78rem; color: var(--text-muted);">Correlate real-world
+                    milestones with cosmic clockwork</p>
+                </div>
+              </div>
+              <button type="button" id="btn-close-event-modal" class="modal-close"
+                style="background: none; border: none; font-size: 1.5rem; color: var(--text-muted); cursor: pointer;">&times;</button>
+            </div>
+
+            <div class="modal-body" style="padding: 20px 24px; overflow-y: auto;">
+              <input type="hidden" id="event-edit-id" value="">
+
+              <div class="form-group" style="margin-bottom: 14px;">
+                <label for="event-category-select" class="form-label"
+                  style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 6px;">Event
+                  Category & Astrological Significator:</label>
+                <select id="event-category-select" class="custom-select" style="width: 100%;"></select>
+                <div id="event-category-hint" class="event-theme-hint"
+                  style="margin-top: 6px; font-size: 0.75rem; color: var(--accent-cyan); background: rgba(56, 189, 248, 0.08); padding: 6px 10px; border-radius: 6px; border: 1px solid rgba(56, 189, 248, 0.2);">
+                </div>
+              </div>
+
+              <div class="form-row"
+                style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px;">
+                <div class="form-group">
+                  <label for="event-date-input" class="form-label"
+                    style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 6px;">Event
+                    Date:</label>
+                  <input type="date" id="event-date-input" class="text-input" style="width: 100%;" required>
+                </div>
+                <div class="form-group">
+                  <label for="event-nature-select" class="form-label"
+                    style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 6px;">Nature
+                    / Outcome (Optional):</label>
+                  <select id="event-nature-select" class="custom-select" style="width: 100%;">
+                    <option value="" selected>— Leave Blank (Unspecified) —</option>
+                    <option value="positive">🌟 Auspicious / Elevation / Joy</option>
+                    <option value="challenging">⚡ Challenging / Crisis / Upheaval</option>
+                    <option value="neutral">⚖️ Neutral / Transitional / Mixed</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 14px;">
+                <label for="event-title-input" class="form-label"
+                  style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 6px;">One-Liner
+                  Headline / Summary:</label>
+                <input type="text" id="event-title-input" class="text-input"
+                  placeholder="e.g. Got married in Varanasi, Joined Google as Staff Engineer, Purchased 3BHK flat..."
+                  style="width: 100%;">
+              </div>
+
+              <div class="form-group" style="margin-bottom: 14px;">
+                <label for="event-notes-input" class="form-label"
+                  style="font-size: 0.8rem; font-weight: 600; color: var(--text-muted); display: block; margin-bottom: 6px;">Detailed
+                  Notes (Optional):</label>
+                <textarea id="event-notes-input" class="raw-textarea" style="height: 60px;"
+                  placeholder="Optional context, key people, cities, emotional impact, or exact timing..."></textarea>
+              </div>
+
+              <!-- Live Astrological Calculation Preview in Modal -->
+              <div id="event-modal-live-preview" class="event-modal-preview-box">
+                <div
+                  style="font-size: 0.78rem; font-weight: 700; color: var(--gold-light); margin-bottom: 6px; display: flex; align-items: center; gap: 6px;">
+                  <span>⚡</span> Live Planetary Calculation on this Date:
+                </div>
+                <div id="modal-preview-dasha" style="font-size: 0.8rem; color: var(--text-main); margin-bottom: 4px;">—</div>
+                <div id="modal-preview-transits"
+                  style="font-size: 0.76rem; color: var(--text-muted); line-height: 1.4;">—</div>
+              </div>
+            </div>
+
+            <div class="modal-footer"
+              style="padding: 16px 24px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: flex-end; gap: 10px;">
+              <button type="button" id="btn-cancel-event-modal" class="btn btn-secondary">Cancel</button>
+              <button type="button" id="btn-save-life-event" class="btn btn-primary">💾 Save Event</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Tab 9: Gemini AI Prompt Studio -->
+    <div id="tab-gemini" class="tab-content">
+      <div class="gemini-studio">
+        <div class="gemini-header">
+          <div>
+            <span class="gemini-badge">Gemini.google.com Ready</span>
+            <h2 style="font-size: 1.25rem; font-weight: 700; margin-top: 6px; color: var(--text-main);">AI Astrology Consultation
+              Prompt Generator</h2>
+            <p style="font-size: 0.82rem; color: var(--text-muted);">
+              Generates an impeccably structured prompt with Panchanga, Shodashvarga, Ashtakavarga, Dasha, Drishti, and
+              Gochar Transits.
+            </p>
+          </div>
+
+          <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <button id="btn-copy-prompt" class="btn btn-primary">📋 Copy Prompt to Clipboard</button>
+            <a id="btn-open-gemini" href="https://gemini.google.com/app" target="_blank" rel="noopener noreferrer"
+              class="btn btn-gemini">
+              🚀 Open Gemini in New Tab
+            </a>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 12px;">
+          <label
+            style="font-size: 0.82rem; color: var(--text-muted); font-weight: 600; display: block; margin-bottom: 8px;">
+            Select Consultation Focus Preset:
+          </label>
+          <div class="prompt-presets-grid" id="preset-buttons-container"></div>
+        </div>
+
+        <div id="custom-question-group" style="display: none; margin-bottom: 16px;">
+          <label for="custom-question-input"
+            style="font-size: 0.82rem; color: var(--text-muted); font-weight: 600; display: block; margin-bottom: 6px;">
+            Your Specific Question to Gemini:
+          </label>
+          <textarea id="custom-question-input" class="raw-textarea" style="height: 80px;"
+            placeholder="e.g. Will the upcoming Jupiter transit through Cancer be favorable for my career transition?"></textarea>
+        </div>
+
+        <div class="prompt-preview-header">
+          <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <span style="font-size: 0.82rem; font-weight: 600; color: var(--text-muted);">Live Generated AI Prompt
+              Preview:</span>
+            <span class="prompt-meta-pill" id="prompt-char-count">0 characters</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <button id="btn-copy-prompt-inline" class="btn btn-secondary btn-sm"
+              style="display: inline-flex; align-items: center; gap: 5px;">
+              📋 Copy Prompt
+            </button>
+            <button id="btn-select-all-prompt" class="btn btn-secondary btn-sm"
+              style="display: inline-flex; align-items: center; gap: 5px;" title="Select entire prompt text">
+              📑 Select All
+            </button>
+          </div>
+        </div>
+
+        <pre class="prompt-preview-box" id="prompt-preview-box"></pre>
+
+        <div class="prompt-preview-footer">
+          <button id="btn-copy-prompt-bottom" class="btn btn-primary btn-sm"
+            style="display: inline-flex; align-items: center; gap: 6px;">
+            📋 Copy Full Prompt to Clipboard
+          </button>
+          <a id="btn-open-gemini-bottom" href="https://gemini.google.com/app" target="_blank" rel="noopener noreferrer"
+            class="btn btn-gemini btn-sm" style="display: inline-flex; align-items: center; gap: 6px;">
+            🚀 Open Gemini in New Tab
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: 💎 Jaimini Astrology & Chara Karakas -->
+    <div id="tab-jaimini" class="tab-content">
+      <div class="chart-viewer-card jaimini-container">
+        <div>
+          <h3 style="font-size: 1.15rem; color: var(--gold-light); font-weight: 700;">Jaimini Upadesha: 7 Chara Karakas
+            & Arudha Padas</h3>
+          <p style="font-size: 0.82rem; color: var(--text-muted);">
+            Classical Maharishi Jaimini Sutras system. Karakas are assigned dynamically based on highest to lowest
+            longitudinal degrees within their respective signs.
+          </p>
+        </div>
+
+        <!-- Special Padas (AL, UL, A7) -->
+        <div>
+          <h4 style="font-size: 0.92rem; color: var(--accent-cyan); margin-bottom: 10px;">Jaimini Manifest Padas:</h4>
+          <div id="jaimini-padas-container"
+            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px;"></div>
+        </div>
+
+        <!-- 7 Chara Karakas Table -->
+        <div>
+          <h4 style="font-size: 0.92rem; color: var(--text-main); margin-bottom: 10px;">7 Chara Karakas (Degree
+            Hierarchy):</h4>
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Karaka</th>
+                  <th>Graha</th>
+                  <th>Degree in Sign</th>
+                  <th>Rashi Placement</th>
+                  <th>Role & Archetype</th>
+                  <th>Core Life Manifestation</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-jaimini-karakas"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: 💑 Kundali Milan (36 Gunas Ashtakoota Matchmaking) -->
+    <div id="tab-milan" class="tab-content">
+      <div class="chart-viewer-card milan-container">
+        <div>
+          <h3 style="font-size: 1.15rem; color: #F472B6; font-weight: 700;">Kundali Milan & Compatibility Engine</h3>
+          <p style="font-size: 0.82rem; color: var(--text-muted);">
+            Classical 36 Guna Ashtakoota matchmaking, Mangal Dosha (Kuja Dosha) analysis, and relational longevity
+            scoring.
+          </p>
+        </div>
+
+        <!-- Person Selectors -->
+        <div class="milan-selection-card">
+          <div class="milan-grid-2col">
+            <!-- Groom Box -->
+            <div class="milan-person-box">
+              <h4 style="font-size: 0.92rem; color: var(--accent-cyan); margin-bottom: 10px;">🤵 Groom (Var)</h4>
+              <label for="milan-select-groom"
+                style="font-size: 0.78rem; color: var(--text-muted); display: block; margin-bottom: 4px;">Choose from
+                Databank or Active Chart:</label>
+              <select id="milan-select-groom" class="custom-select" style="width: 100%; margin-bottom: 10px;">
+                <option value="current" selected>Active Natal Chart</option>
+              </select>
+              <div id="milan-groom-summary" style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.4;">
+              </div>
+            </div>
+
+            <!-- Bride Box -->
+            <div class="milan-person-box">
+              <h4 style="font-size: 0.92rem; color: #F472B6; margin-bottom: 10px;">👰 Bride (Kanya)</h4>
+              <label for="milan-select-bride"
+                style="font-size: 0.78rem; color: var(--text-muted); display: block; margin-bottom: 4px;">Choose from
+                Databank:</label>
+              <select id="milan-select-bride" class="custom-select" style="width: 100%; margin-bottom: 10px;">
+                <!-- Populated dynamically -->
+              </select>
+              <div id="milan-bride-summary" style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.4;">
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 16px; text-align: center;">
+            <button id="btn-calculate-milan" class="btn btn-primary" style="padding: 8px 24px;">⚡ Calculate 36 Guna
+              Milan & Mangal Dosha</button>
+          </div>
+        </div>
+
+        <!-- Milan Results Display -->
+        <div id="milan-results-container" style="display: none; flex-direction: column; gap: 16px;"></div>
+      </div>
+    </div>
+
+    <!-- Tab: 🤝 Maitri Chakra (Planetary Friendship Tables) -->
+    <div id="tab-friendship" class="tab-content">
+      <div class="chart-viewer-card">
+        <div style="margin-bottom: 20px;">
+          <h3
+            style="font-size: 1.18rem; color: #C084FC; font-weight: 700; display: flex; align-items: center; gap: 8px;">
+            <span>🤝</span> Maitri Chakra (Planetary Friendship Engine)
+          </h3>
+          <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 4px;">
+            Maharishi Parashara's classical planetary relationships (BPHS Ch. 15): Inherent Permanent Friendship
+            (Naisargika),
+            Natal House-based Temporal Friendship (Tatkalika), and the synthesized Five-Fold Compound Friendship
+            (Panchadha Maitri).
+          </p>
+        </div>
+
+        <div class="maitri-grid">
+          <!-- Card 1: Five-Fold Friendship (Panchadha Maitri) -->
+          <div class="maitri-card" style="border-color: rgba(192, 132, 252, 0.3);">
+            <div class="maitri-header">
+              <div class="maitri-title" style="color: #E9D5FF;">
+                <span>🌟</span> 1. Five-Fold Compound Friendship (Panchadha Maitri)
+              </div>
+              <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                <span class="badge-maitri-intimate">Intimate (Adhi Mitra)</span>
+                <span class="badge-maitri-friend">Friend (Mitra)</span>
+                <span class="badge-maitri-neutral">Neutral (Sama)</span>
+                <span class="badge-maitri-enemy">Enemy (Shatru)</span>
+                <span class="badge-maitri-bitter">Bitter (Adhi Shatru)</span>
+              </div>
+            </div>
+            <div class="maitri-desc">
+              The compound synthesis of Permanent and Temporal friendships. Dictates Parashari dignity in Varga charts
+              and Saptavargaja Bala.
+            </div>
+            <div class="maitri-table-wrapper">
+              <table class="maitri-table" id="table-fivefold-friendship">
+                <!-- Dynamically populated -->
+              </table>
+            </div>
+          </div>
+
+          <!-- Card 2: Permanent Friendship (Naisargika Maitri) -->
+          <div class="maitri-card">
+            <div class="maitri-header">
+              <div class="maitri-title" style="color: var(--gold-light);">
+                <span>📜</span> 2. Permanent Friendship (Naisargika Maitri)
+              </div>
+              <span
+                style="font-size: 0.74rem; color: var(--text-dim); background: rgba(255,255,255,0.04); padding: 3px 8px; border-radius: 4px;">
+                Classical Parashari Moolatrikona Rule
+              </span>
+            </div>
+            <div class="maitri-desc">
+              Fixed natural affinities between grahas based on planetary rulership of the 2nd, 4th, 5th, 8th, 9th, and
+              12th signs from a planet's Moolatrikona sign.
+            </div>
+            <div class="maitri-table-wrapper">
+              <table class="maitri-table" id="table-permanent-friendship">
+                <!-- Dynamically populated -->
+              </table>
+            </div>
+          </div>
+
+          <!-- Card 3: Temporal Friendship (Tatkalika Maitri) -->
+          <div class="maitri-card">
+            <div class="maitri-header">
+              <div class="maitri-title" style="color: #38BDF8;">
+                <span>🎯</span> 3. Temporal Friendship (Tatkalika Maitri)
+              </div>
+              <span
+                style="font-size: 0.74rem; color: var(--text-dim); background: rgba(255,255,255,0.04); padding: 3px 8px; border-radius: 4px;">
+                Chart-Specific Natal House Separation
+              </span>
+            </div>
+            <div class="maitri-desc">
+              Calculated dynamically for this chart: Grahas placed in the 2nd, 3rd, 4th, 10th, 11th, and 12th houses
+              from a planet become its Temporal Friends; grahas in the 1st (same sign), 5th, 6th, 7th, 8th, and 9th
+              houses become Temporal Enemies.
+            </div>
+            <div class="maitri-table-wrapper">
+              <table class="maitri-table" id="table-temporal-friendship">
+                <!-- Dynamically populated -->
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab: 🔢 Vedic Numerology & 120-Year Dasha Studio -->
+    <div id="tab-numerology" class="tab-content">
+      <div id="numerology-container"></div>
+    </div>
+
+  </main>
+
+  <!-- Unified Global Footer -->
+  <footer class="app-unified-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span style="font-size: 1.6rem;">✨</span>
+            <span class="brand-title">Jyotish Gemini Studio</span>
+          </div>
+          <p class="brand-desc">
+            Professional Vedic Astrology computational suite and research engine. Powered by high-precision ephemeris
+            algorithms, classical Parashari & Jaimini principles, Sripati Bhava Chalit, complete Shodashvarga, Shadbala,
+            and cross-databank statistical analytics.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Navigation</h4>
+          <a href="index.html">🏠 Home Portal</a>
+          <a href="studio.html">🔮 Kundali Studio</a>
+          <a href="databank.html">🗂️ Client Databank</a>
+          <a href="analytics.html">📊 Research Analytics</a>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Calculation Engine</h4>
+          <span>• IAU-2006 Lahiri (Chitra Paksha) Ayanamsha</span>
+          <span>• Complete Shodashvarga (D1 to D60) Divisional Charts</span>
+          <span>• Sripati Unequal Bhava Chalit & Mid-Cusps</span>
+          <span>• Complete Shadbala & Bhava Bala Numerical Vectors</span>
+          <span>• 120-Year Vimshottari Mahadasha & Antardasha Hierarchy</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Jyotish Gemini Studio. 100% Client-Side & Offline Execution in Browser.
+        </div>
+        <div class="footer-pills">
+          <span class="footer-pill">Swiss Ephemeris Accuracy</span>
+          <span class="footer-pill"><span class="footer-databank-count">102</span> Databank Profiles</span>
+          <span class="footer-pill">Sub-Arcminute Precision</span>
+          <span class="footer-pill">Parashara & Jaimini</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Client Databank & Profile Management Modal -->
+  <div id="databank-modal" class="modal-backdrop" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span style="font-size: 1.4rem;">🗂️</span>
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-main);">Client Databank & Chart Profiles</h3>
+            <p style="font-size: 0.78rem; color: var(--text-muted);">Save, organize, export and import client charts
+              with zero external servers.</p>
+          </div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <a href="databank.html" class="btn btn-secondary btn-sm"
+            style="text-decoration: none; padding: 4px 10px; font-size: 0.75rem;">Full Page ↗</a>
+          <button id="btn-close-databank" class="btn-icon" title="Close">✕</button>
+        </div>
+      </div>
+
+      <div class="modal-body">
+        <!-- Quick Save Current Section -->
+        <div class="modal-section-box" id="save-profile-box"
+          style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 14px 16px;">
+          <div
+            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
+            <h4
+              style="font-size: 0.88rem; color: var(--gold-light); margin: 0; display: flex; align-items: center; gap: 6px;">
+              <span>💾</span> Save Current Chart
+            </h4>
+            <span id="save-modal-profile-status"
+              style="font-size: 0.74rem; padding: 2px 10px; border-radius: 12px; background: rgba(245,158,11,0.12); border: 1px solid rgba(245,158,11,0.3); color: var(--gold-light);">
+              ✨ New Unsaved Chart
+            </span>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 12px;">
+            <div>
+              <label for="save-profile-name"
+                style="display: block; font-size: 0.72rem; color: var(--text-muted); margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px;">Profile
+                Name</label>
+              <input type="text" id="save-profile-name" class="text-input" placeholder="Profile Name (e.g. Client Name)"
+                style="width: 100%;">
+            </div>
+            <div>
+              <label for="save-profile-notes"
+                style="display: block; font-size: 0.72rem; color: var(--text-muted); margin-bottom: 4px; text-transform: uppercase; letter-spacing: 0.5px;">Notes
+                / Tags</label>
+              <input type="text" id="save-profile-notes" class="text-input"
+                placeholder="Notes (e.g. Career focus, D10 yogas)" style="width: 100%;">
+            </div>
+          </div>
+          <div style="display: flex; justify-content: flex-end; align-items: center; gap: 10px; flex-wrap: wrap;">
+            <button id="btn-update-profile" class="btn btn-primary btn-sm"
+              style="display: none; align-items: center; gap: 6px;">
+              🔄 Update Profile
+            </button>
+            <button id="btn-save-as-new" class="btn btn-primary btn-sm"
+              style="display: inline-flex; align-items: center; gap: 6px;">
+              💾 Save New Profile
+            </button>
+          </div>
+        </div>
+
+        <!-- Profiles List -->
+        <div style="margin-top: 18px;">
+          <div
+            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 8px;">
+            <h4 style="font-size: 0.88rem; color: var(--text-main);">Saved Profiles (<span
+                id="databank-total-count">0</span>):</h4>
+            <input type="text" id="filter-profiles-input" class="text-input"
+              style="padding: 4px 10px; font-size: 0.78rem; width: 200px;" placeholder="Filter profiles...">
+          </div>
+          <div id="profiles-list-container" class="profiles-list-scroll">
+            <!-- Profiles rendered dynamically -->
+          </div>
+        </div>
+
+        <!-- Import / Export Section -->
+        <div class="modal-footer-actions"
+          style="margin-top: 18px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; border-top: 1px solid var(--border-subtle); padding-top: 14px;">
+          <div style="display: flex; gap: 10px;">
+            <button id="btn-export-profiles" class="btn btn-secondary btn-sm">📥 Export All Profiles (JSON)</button>
+            <label class="btn btn-secondary btn-sm"
+              style="cursor: pointer; margin: 0; display: inline-flex; align-items: center;">
+              📤 Import Profiles (JSON)
+              <input type="file" id="import-profiles-file" accept=".json" style="display: none;">
+            </label>
+          </div>
+          <span style="font-size: 0.75rem; color: var(--text-dim);">100% Client-side • Stored in browser
+            localStorage</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast-notice">
+    <span>✓</span> <span id="toast-message">Prompt copied to clipboard!</span>
+  </div>
+
+  <script type="module" src="js/app.js?v=38"></script>
+</body>
+
+</html>

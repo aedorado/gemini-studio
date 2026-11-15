@@ -1,0 +1,27 @@
+{
+  "name": "astro-tools",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Vedic Astrology Calculator (Shodashvarga, Ashtakavarga, Dasha) & Gemini AI Consultation Studio",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "test": "node tests/run_all_tests.js && node tests/test_sade_sati_and_bhava_siddhi.js && node tests/test_numerology.js"
+  },
+  "keywords": [
+    "astrology",
+    "vedic",
+    "jyotish",
+    "shodashvarga",
+    "ashtakavarga",
+    "vimshottari-dasha",
+    "gemini",
+    "ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "astronomy-engine": "^2.1.19",
+    "city-timezones": "^1.3.4"
+  }
+}

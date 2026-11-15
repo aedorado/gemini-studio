@@ -1,0 +1,208 @@
+{
+  "houseNumber": 8,
+  "name": "Ayur Bhava / Randhra Bhava",
+  "sanskritName": "अष्टम भाव (आयु भाव / रन्ध्र भाव / मृत्यु भाव)",
+  "significations": [
+    "Longevity, span of life, and circumstances of mortality (Ayu & Mrityu Nimitta)",
+    "Sudden unearned wealth, inheritances, legacies, wills, insurance payouts, and dowry (Virasat & Daiva Labha)",
+    "Occult knowledge, astrology, metaphysics, mysticism, and esoteric sciences (Guhya Vidya & Sadhana)",
+    "Chronic, lingering, or difficult-to-diagnose ailments (Dirgha Roga)",
+    "Sudden reversals, unexpected transformations, crises, windfalls, and unforeseen catastrophic changes",
+    "Humiliation, intrigues, scandals, loss of reputation, and false accusations (Apamana & Apavada)",
+    "Treasury and accumulated finances of the spouse/business partner (2nd from 7th house)",
+    "Deep research, investigative work, forensics, archaeology, mining, and psychoanalysis",
+    "Marital longevity and auspiciousness of the marital knot in female charts (Mangalya Sthana)",
+    "Deepest Moksha Trikona (Transmutation of consciousness, Kundalini awakening, and spiritual transition)"
+  ],
+  "bodyParts": [
+    "External and Internal Generative Organs (Genitalia)",
+    "Excretory System, Anus, and Rectum",
+    "Pelvic Floor, Perineum, and Prostate / Cervix",
+    "Chronic Cellular Longevity and Vital Stamina (Ojas Transmutation)",
+    "Lower Pelvic Cavity and Scrotum"
+  ],
+  "naturalKaraka": [
+    "Saturn (Primary Universal Ayushkaraka for Longevity, Ageing, Enduring Time & Chronic Disease)",
+    "Ketu (Secondary Karaka for Occult Mysteries, Guhya Vidya, Deep Research & Moksha)",
+    "Mars (Secondary Karaka for Surgery, Sudden Accidents, Trauma, and Bone Marrow Vitality)"
+  ],
+  "classicalSources": [
+    {
+      "book": "Advanced Techniques of Predictive Astrology (Vol. 1)",
+      "author": "Haveli Ram Mehta",
+      "chapter": "Chapter 8: Eighth House - House of Longevity, Sudden Gains, Occult and Humiliation",
+      "pages": "165-172"
+    },
+    {
+      "book": "Brihat Parashara Hora Shastra",
+      "author": "Maharishi Parashara",
+      "chapter": "Ayurdaya, Randhra Bhava Phala, Chhidra Grahas & 22nd Drekkana"
+    },
+    {
+      "book": "Phala Deepika",
+      "author": "Mantreswara",
+      "chapter": "Chapter 6: Sarala Vipareeta Raja Yoga, Ch. 13: Ayurdaya & Eighth Bhava Phala"
+    },
+    {
+      "book": "Jataka Parijata",
+      "author": "Vaidyanatha Dikshita",
+      "chapter": "Randhra Bhava Adhyaya, Asura Yoga & 64th Navamsa"
+    },
+    {
+      "book": "Uttara Kalamrita",
+      "author": "Kalidasa",
+      "chapter": "Randhra Bhava Karakatvas & Death Transformations"
+    }
+  ],
+  "lordPlacements": {
+    "1": {
+      "title": "8th Lord in 1st House (Lagna Bhava)",
+      "text": "According to Parashara, 8th lord in the ascendant makes physical health sensitive, gives bodily wounds, and brings displeasure from superiors or debts if afflicted. However, MS Mehta highlights vital classical exceptions: this rule does not damage Aries or Libra Ascendants where the 8th lord is identical to the Lagna lord (Mars for Aries, Venus for Libra), granting robust vitality, legacies, and long life. Similarly, for Pisces Ascendant, 8th lord Venus is exalted in the 1st house, producing a wealthy, handsome native with commanding presence and longevity. A well-fortified 8th lord in Lagna grants longevity and deep metaphysical intuition.",
+      "positive": "Long life when dignified, legacies, deep occult and investigative insight, immune resilience when Lagna lord is identical or friendly.",
+      "negative": "If weak or afflicted: susceptibility to bodily injuries, chronic fatigue, financial encumbrances, and friction with superiors.",
+      "shlokaReference": "Mehta, Ch. 8, p. 166; Parashara, Ch. 24, Sl. 85"
+    },
+    "2": {
+      "title": "8th Lord in 2nd House (Dhana Bhava)",
+      "text": "The 8th lord in the 2nd directly aspects its own 8th house, protecting the 8th house and conferring sudden wealth, inheritance, insurance receipts, and long life. However, its presence in the 2nd (speech, eyes, family, wealth accumulation) can cause dental or vision sensitivity, irregular dietary routines, and domestic friction. Because the 2nd is a primary Maraka house, mutual Dasha periods require health vigilance.",
+      "positive": "Inheritance from ancestors or spouse, sudden windfalls, direct aspect strengthens 8th house longevity and metaphysical study.",
+      "negative": "Speech may be blunt or harsh, visual/dental sensitivities, fluctuating family harmony, domestic separations during unfavorable sub-dashas.",
+      "shlokaReference": "Mehta, Ch. 8, p. 166; Bhavartha Ratnakara"
+    },
+    "3": {
+      "title": "8th Lord in 3rd House (Sahaja Bhava - Bhavat Bhavam)",
+      "text": "The 3rd house is 8th from the 8th (Bhavat Bhavam), making this placement highly conducive to long life and courage under duress. However, its direct 7th aspect onto the 9th house (Dharma & Pitru Bhava) carries severe implications for the father's fortune and longevity, as aspects of the 6th or 8th lord onto the 9th require careful scrutiny. Native may face misunderstandings with younger siblings or sudden travel abroad.",
+      "positive": "Conducive to long life (Bhavat Bhavam rule), fearless disposition, writing or research in esoteric/historical subjects.",
+      "negative": "Afflicts father's longevity or paternal patrimony via direct 7th aspect; tension with co-borns, nervous restlessness.",
+      "shlokaReference": "Mehta, Ch. 8, p. 166; Phala Deepika"
+    },
+    "4": {
+      "title": "8th Lord in 4th House (Sukha Bhava)",
+      "text": "The 8th lord entering the 4th house disturbs mental peace, domestic stability, and creates vulnerabilities for the mother's health. Obstacles in acquiring ancestral lands or conveyances may emerge; vehicles may suffer breakdowns, accidents, or theft. Native may experience betrayal by trusted associates or sudden relocations away from the ancestral home.",
+      "positive": "Deep connection with ancient properties, underground resources, mines, or hidden agricultural land if aspected by benefics.",
+      "negative": "Disturbed peace of mind, health challenges for mother, vehicular mishaps, delays in real estate transactions.",
+      "shlokaReference": "Mehta, Ch. 8, p. 166; Parashara, Ch. 24, Sl. 88"
+    },
+    "5": {
+      "title": "8th Lord in 5th House (Putra / Buddhi Bhava)",
+      "text": "Parashara notes few children or anxiety concerning progeny when afflicted. However, Girish Chand Sharma and Mehta emphasize that because the 8th rules dead objects/antiquities and the 5th rules intellect/education, this placement prompts the study of history, archaeology, ancient languages (Sanskrit, Latin, Greek), and occult sciences. In Gemini and Virgo Ascendants, Saturn as 8th lord is exalted or friendly in the 5th; in Leo and Aquarius, the 8th lord is in its own sign in the 5th; in Pisces Ascendant, it frequently makes the native a mining engineer or earth scientist.",
+      "positive": "Scholarly mastery of ancient history, archaeology, Sanskrit/esoteric sciences, mining engineering, and speculative windfalls when dignified.",
+      "negative": "Delays or emotional anxieties regarding progeny, digestive/pancreatic vulnerability, speculative volatility if afflicted.",
+      "shlokaReference": "Mehta, Ch. 8, pp. 166-167; BPHS Ch. 24"
+    },
+    "6": {
+      "title": "8th Lord in 6th House (Shatru / Roga Bhava)",
+      "text": "Produces Sarala Vipareeta Raja Yoga (or Harsha-Sarala combination): grants complete triumph over rivals, adversaries, and litigation through the unexpected downfall or retreat of opponents. In childhood, the native must be guarded against water dangers, toxins, and poisonous bites (especially potent if Rahu is involved). In modern times, it highlights adverse drug reactions or pharmaceutical sensitivity.",
+      "positive": "Sarala Vipareeta Raja Yoga: victorious over competitors, sudden breakthroughs during adversity, resilience in high-stakes conflicts.",
+      "negative": "Childhood water/poison vulnerability, susceptibility to adverse pharmaceutical reactions, periodic intestinal inflammation.",
+      "shlokaReference": "Mehta, Ch. 8, p. 167; Phala Deepika 6.65"
+    },
+    "7": {
+      "title": "8th Lord in 7th House (Kalatra Bhava)",
+      "text": "The 8th lord entering the house of marriage damages marital harmony and causes severe friction or separation in the first union. Mehta quotes K.N. Rao: 'In the ending of any marriage the role of the 8th house or planet in the 8th is well known.' If conjoined with malefics, business partnerships suffer severe deceit or commercial losses. However, the partner may possess unearned wealth, legacies, or substantial financial holdings.",
+      "positive": "Partner brings legacies, foreign assignments, or financial assets; interest in psychology and joint business ventures.",
+      "negative": "First marriage subjected to intense turbulence, legal separation, or divorce; losses in open partnerships if afflicted.",
+      "shlokaReference": "Mehta, Ch. 8, p. 167; K.N. Rao Matrimonial Observations"
+    },
+    "8": {
+      "title": "8th Lord in 8th House (Swakshetra - Ayur Sthana)",
+      "text": "The 8th lord in its own sign constitutes a premier shield for longevity, granting Purnayu (long life) and physical stamina to survive grave medical emergencies. The native possesses natural occult, astrological, and psychic inclinations, inheriting ancestral assets without legal dispute. If weak or afflicted, longevity is reduced to medium and the native may face unwarranted suspicions or blame others excessively.",
+      "positive": "Long lifespan (Purnayu), unassailable inheritance, master of Guhya Vidya (astrology, esoteric philosophies), peaceful transition.",
+      "negative": "If weak or associated with malefics: medium longevity, defensive mindset, chronic lingering ailments in advanced age.",
+      "shlokaReference": "Mehta, Ch. 8, p. 167; Parashara, Ch. 24, Sl. 92"
+    },
+    "9": {
+      "title": "8th Lord in 9th House (Bhagya / Dharma Bhava)",
+      "text": "Classical texts warn that the 8th lord in the 9th can create an unconventional, heterodox approach to traditional religion, philosophical skepticism, and impediments to the father's fortune or health. Obstacles in securing paternal patrimony may arise. However, Mehta cites former Prime Minister P.V. Narasimha Rao (whose 9th lord Venus occupied the 8th under the Rahu-Ketu axis), demonstrating that this axis creates unexpected political ascension and profound philosophical depth through crisis.",
+      "positive": "Deep philosophical re-evaluation, transformative foreign pilgrimages, unexpected rise to power through historical upheavals.",
+      "negative": "Strained relations with religious orthodoxies, paternal health vulnerabilities, disputes over inheritance from father.",
+      "shlokaReference": "Mehta, Ch. 8, pp. 167-168; P.V. Narasimha Rao Benchmark"
+    },
+    "10": {
+      "title": "8th Lord in 10th House (Karma Bhava)",
+      "text": "The 8th lord in the house of status causes sudden fluctuations in profession, career reversals, or public scandals if afflicted. Laxmanan's rule applies: when the 8th lord is stronger than the Lagna and 10th lords, the native is vulnerable to disgrace or sudden dismissal. If aspected by benefics, it grants career in deep research, forensics, surgery, mining, taxation, or crisis management.",
+      "positive": "Excellence in confidential investigations, surgery, mining, geology, occult consultations, and sudden appointments to high responsibility.",
+      "negative": "Professional instability, unexpected demotions or public controversy during Dasha periods if Lagna lord is weak.",
+      "shlokaReference": "Mehta, Ch. 8, p. 168; R. Laxmanan Career Rule"
+    },
+    "11": {
+      "title": "8th Lord in 11th House (Labha Bhava)",
+      "text": "The native may experience financial hardship or poverty in early boyhood, followed by substantial financial prosperity and stability in mature life. Conjunction of the 8th lord with natural benefics in the 11th grants long life and immense wealth through sudden windfalls, legal settlements, wills, insurance policies, or high-risk investments.",
+      "positive": "Large monetary gains through inheritances, insurance, corporate windfalls, or partner's fortune; long life with benefics.",
+      "negative": "Financial struggle in boyhood, strained relationships with elder siblings, periodic interruptions in regular cash flow.",
+      "shlokaReference": "Mehta, Ch. 8, p. 168; BPHS Ch. 24"
+    },
+    "12": {
+      "title": "8th Lord in 12th House (Vyaya Bhava)",
+      "text": "Forms Sarala Vipareeta Raja Yoga (or Vimala-Sarala mix). While classical texts caution against squandering wealth on futile endeavors when conjoined with malefics, a well-disposed 8th lord in the 12th creates unexpected overseas triumphs, spiritual detachment, and protection against catastrophic losses. The native outlives hidden adversaries and finds peaceful seclusion.",
+      "positive": "Sarala Vipareeta Raja Yoga: sudden gains from foreign lands, spiritual liberation (Moksha orientation), triumph over secret foes.",
+      "negative": "If conjoined with malefics: wasteful expenditures, short life if heavily afflicted, eye or sleep disturbances.",
+      "shlokaReference": "Mehta, Ch. 8, p. 168; Phala Deepika 6.65"
+    }
+  },
+  "grahaOccupants": {
+    "Sun": {
+      "title": "Sun in 8th House (Surya in Randhra Bhava)",
+      "text": "The Sun as the natural Karaka of the soul and vitality is ill-at-ease in the 8th house. Mehta notes it can make one proud, restless, and subject to hard struggle with poor vision or few children. Early demise of father or sudden fevers may occur. However, Mehta records a crucial classical exemption: if the Sun is placed in Taurus or Aquarius in the 8th house, it bestows substantial inheritance and legacies! Endows sudden recognition from superiors or state legacies.",
+      "positive": "Inheritance when placed in Taurus or Aquarius; legacy from superiors, interest in esoteric mysteries, endurance under duress.",
+      "negative": "Weak eyesight, cardiac/circulatory sensitivity, fevers, conflict with authority, vulnerability to sudden heat-induced ailments.",
+      "shlokaReference": "Mehta, Ch. 8, p. 168; Saravali"
+    },
+    "Moon": {
+      "title": "Moon in 8th House (Chandra in Randhra Bhava)",
+      "text": "The Moon in the 8th gives sensitivity to fluid imbalances, phlegm, asthma, epilepsy, and digestive sluggishness. In Cancer, Taurus, or own sign, the native is long-lived. Mehta details the classical 'Moon as a Protector' rule: the Moon protects life if birth is during the day and Moon is in the dark half (Krishna Paksha), or if birth is at night and Moon is in the bright half (Shukla Paksha), provided the Sun is not within 30 degrees. Heightens psychic powers, making one a profound yogi or intuitive practitioner if in Aquarius, Gemini, Libra, or Cancer. In Aries, Leo, or Sagittarius, it brings great wealth through inheritance.",
+      "positive": "Exceptional psychic intuition, interest in the occult, inheritance of property (especially in Aries, Leo, Sagittarius), Ayur protection under Day/Night Paksha rule.",
+      "negative": "Emotional mood swings, phobias, respiratory/phlegmatic sensitivities, water danger if Moon is dark and afflicted.",
+      "shlokaReference": "Mehta, Ch. 8, pp. 168-169; Jataka Parijata"
+    },
+    "Mars": {
+      "title": "Mars in 8th House (Mangala in Randhra Bhava)",
+      "text": "Mars in the 8th house creates Kuja Dosha (Manglik alignment), impacting marital longevity and requiring careful horoscope matching. Indicates sudden, acute, or surgical events. In watery signs: danger from water or renal/fluid toxicity; in fiery signs: danger from fire, burns, weapons, or acute inflammatory fevers; in airy signs: vehicular or airborne travel risks. However, a well-dignified Mars produces brilliant surgeons, forensic pathologists, high-risk politicians, and adepts in Hatha Yoga and Tantra.",
+      "positive": "Mastery in surgery, forensic science, engineering, Hatha Yoga, courage in life-threatening situations, decisive willpower.",
+      "negative": "Kuja Dosha (Manglik), surgical interventions, blood/ulcer/piles sensitivities, sudden accidents, friction in joint finances.",
+      "shlokaReference": "Mehta, Ch. 8, p. 169; Chamatkar Chintamani"
+    },
+    "Mercury": {
+      "title": "Mercury in 8th House (Budha in Randhra Bhava)",
+      "text": "Mercury in the 8th forms part of classical Chandradhi or Lagnadhi Yoga, conferring long life, public reputation, and intellectual wealth. The native possesses an inquisitive, scientific mind inclined toward research, mathematics, astrology, and higher literature. End is peaceful and dignified. If afflicted by Mars and Saturn, it can trigger nervous tremors, anxiety disorders, or acute pain in the thighs and stomach.",
+      "positive": "Forms Adhi Yoga: grants longevity, intellectual renown, wealth from state/literary royalty, peaceful departure, occult flair.",
+      "negative": "If afflicted: nervous system vulnerability, speech or cognitive anxiety, financial complications with business partners.",
+      "shlokaReference": "Mehta, Ch. 8, pp. 169-170; Phala Deepika"
+    },
+    "Jupiter": {
+      "title": "Jupiter in 8th House (Guru in Randhra Bhava)",
+      "text": "When Jupiter occupies the 8th, classical texts note Asura Yoga, warning of self-interested pretension or digestive colitis if afflicted. However, as the supreme natural benefic, Jupiter in the house of longevity grants Purnayu (long life) and guarantees a serene, conscious, and peaceful passing. Furthermore, as the spiritual Karaka in the 8th Moksha Trikona, it is sublime for Vedantic wisdom, Kundalini awakening, and spiritual immortality, as exemplified by the benchmark horoscope of Adi Shankaracharya discussed by Mehta.",
+      "positive": "Long life (Purnayu), peaceful departure, spiritual immortality, mastery of Vedanta and Kundalini yoga, protection from sudden calamity.",
+      "negative": "Asura Yoga traits if afflicted: stubborn pride, colitis/hepatic sluggishness, delays in children's affairs.",
+      "shlokaReference": "Mehta, Ch. 8, pp. 170-171; Adi Shankaracharya Benchmark"
+    },
+    "Venus": {
+      "title": "Venus in 8th House (Shukra in Randhra Bhava)",
+      "text": "Venus in the 8th causes Asura Yoga and forms part of Adhi Yoga through its direct 7th aspect onto the 2nd house of wealth. As a natural benefic in the house of longevity, it grants a long life, inheritance through women or cattle/vehicles, and delayed financial prosperity. The native pays off paternal debts and meets a peaceful end in a sacred place. However, as the Kalatra Karaka relegated to the 8th, it requires scrutiny for marital fidelity and renal/reproductive health.",
+      "positive": "Long life, forms Adhi Yoga aspecting 2nd house of wealth, legacies, peaceful departure in a holy sanctuary, unearned gains.",
+      "negative": "Marital misunderstandings, reproductive/urinary tract sensitivities, diabetes vulnerability, extravagance if afflicted.",
+      "shlokaReference": "Mehta, Ch. 8, p. 171; Phala Deepika"
+    },
+    "Saturn": {
+      "title": "Saturn in 8th House (Shani in Randhra Bhava)",
+      "text": "Saturn is the natural Ayushkaraka (Significator of Longevity), and its residence in its own significator house (Karako Bhava Nashaya exception) is universally praised for granting exceptionally long life (Purnayu) and natural death in old age. Gain through legacy, business partnership, or marriage is indicated when dignified. However, as a natural malefic, its aspects on the 10th (career delays), 2nd (speech/wealth hardships), and 5th (few children/delayed joy) demand disciplined endurance.",
+      "positive": "Exceptional longevity (Ayushkaraka in 8th), natural departure in advanced age, inheritance, interest in ancient relics and occult history.",
+      "negative": "Aspects on 10th, 2nd, and 5th create career and financial delays; chronic lingering ailments (rheumatics, Vata vitiation) if afflicted.",
+      "shlokaReference": "Mehta, Ch. 8, pp. 171-172; Parashara & Raman"
+    },
+    "Rahu": {
+      "title": "Rahu in 8th House (Rahu in Randhra Bhava)",
+      "text": "Rahu in the 8th creates an undiplomatic, eccentric, and sharp temperament. It brings sudden gains from governmental or unorthodox sources, followed by unexpected drains. In health, it causes gastritis, reproductive sensitivities, and obscure illnesses that defy standard medical diagnosis. When well-placed, it gives honor from rulers, foreign travel, noble deeds, and contentment in advanced age.",
+      "positive": "Deep research acumen, foreign relocations, sudden windfall gains from unconventional sources, contentment in later years.",
+      "negative": "Difficult-to-diagnose ailments, gastritis, susceptibility to food toxicities or venomous bites, friction with superiors.",
+      "shlokaReference": "Mehta, Ch. 8, p. 172; BPHS"
+    },
+    "Ketu": {
+      "title": "Ketu in 8th House (Ketu in Randhra Bhava)",
+      "text": "Ketu is comfortable in the 8th house as a Moksha Karaka in the Moksha Trikona. Mehta highlights that in Scorpio, Virgo, Aries, or Gemini, Ketu brings gain of wealth from the government, brilliance in athletic or strategic pursuits, bravery, and long life. If afflicted, it can cause hemorrhoids, fistula, secret dental/facial conditions, and difficulty recovering loaned capital.",
+      "positive": "Profound occult and metaphysical intuition, surgical precision, spiritual detachment, government patronage in friendly signs.",
+      "negative": "Piles/fistula vulnerability, wounds from sharp implements, difficulty recovering loans, secret physical ailments.",
+      "shlokaReference": "Mehta, Ch. 8, p. 172; Phala Deepika"
+    }
+  }
+}

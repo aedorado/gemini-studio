@@ -1,0 +1,246 @@
+{
+  "houseNumber": 6,
+  "name": "Shatru Bhava",
+  "sanskritName": "षष्ठ भाव (शत्रु भाव / रोग भाव / ऋण भाव)",
+  "significations": [
+    "Diseases, acute illnesses, bodily infirmities, and recovery potential (Roga & Vyadhi)",
+    "Enemies, adversaries, rivals, competitors, and hostile forces (Shatru & Ripu)",
+    "Debts, financial loans, liabilities, and repayment capacity (Rina)",
+    "Litigation, lawsuits, legal disputes, court cases, and arbitration (Vivada)",
+    "Mental anxieties, grief, distress, and psychological stress (Chinta & Shoka)",
+    "Maternal uncles, aunts, and maternal cousins (Matula Bhava)",
+    "Armed forces, police, defence personnel, security, and commanders (Sena & Yuddha)",
+    "Servants, employees, domestic staff, and subordinates (Bhritya & Sevaka)",
+    "Wounds, cuts, burns, surgeries, and physical injuries (Kshata & Vran)",
+    "Accidents and unexpected physical hazards",
+    "Competitive examinations, athletic contests, sports, and debates (Spardha)",
+    "Upachaya house of growth, elevation, and overcoming obstacles (3rd, 6th, 10th, 11th)",
+    "Step-mother (according to Maharishi Parashara)",
+    "Self-control over senses, appetites, and passions (Jitendriya vs. Sensuality)"
+  ],
+  "bodyParts": [
+    "Kidneys & Renal System",
+    "Lower Abdomen & Intestines (Small & Large Intestine)",
+    "Digestive Tract, Appendix, & Bowels",
+    "Groin, Navel Center & Inguinal Region",
+    "Immune System & Cellular Defence"
+  ],
+  "naturalKaraka": [
+    "Saturn (Primary Karaka for Diseases, Debts, Subordinates, Chronic Sufferings & Endurance)",
+    "Mars (Primary Karaka for Enemies, Surgical Operations, Accidents, Wounds & Litigations)"
+  ],
+  "classicalSources": [
+    {
+      "book": "Advanced Techniques of Predictive Astrology (Vol. 1)",
+      "author": "Haveli Ram Mehta",
+      "chapter": "Chapter 6: Sixth House - Shatru Bhava (Debts, Diseases, Enemies & Litigation)",
+      "pages": "114-123"
+    },
+    {
+      "book": "Brihat Parashara Hora Shastra",
+      "author": "Maharishi Parashara",
+      "chapter": "Shatru Bhava Phala, Harsha Yoga & Roga Nidan"
+    },
+    {
+      "book": "Phala Deepika",
+      "author": "Mantreswara",
+      "chapter": "Sixth Bhava Phala, Vipareeta Raja Yoga & Competitive Triumph"
+    },
+    {
+      "book": "Jataka Parijata",
+      "author": "Vaidyanatha Dikshita",
+      "chapter": "Shatru Bhava Adhyaya & Medical Astrological Diagnostics"
+    },
+    {
+      "book": "Bhavartha Ratnakara",
+      "author": "Ramanujacharya",
+      "chapter": "Sixth House Formulations & Moon/Venus Specifics"
+    }
+  ],
+  "lordPlacements": {
+    "1": {
+      "title": "6th Lord in 1st House (Lagna)",
+      "positive": "Sage Satyacharya notes this position gives authority and high administrative command. Native can become a minister of war, defense official, or high prison warden. Capable of crushing enemies and commanding immense respect (Jataka Alankara).",
+      "negative": "Parashara notes native may suffer from bodily ailments, boils, or skin diseases during 6th lord Dasha. Trouble from governmental authorities or litigation. If 6th lord is stronger than Lagna lord, native faces frequent friction with adversaries and limited progeny.",
+      "classicalText": "According to Parashara, 6th lord in Lagna makes the native rich, famous, courageous, and capable of overcoming enemies, but may suffer health infirmities and anxieties regarding children.",
+      "source": "Mehta, Ch. 6, p. 115; Parashara, Ch. 24; Satyacharya"
+    },
+    "2": {
+      "title": "6th Lord in 2nd House (Dhana Bhava)",
+      "positive": "Courageous orator, bold in public speaking, capable of overcoming financial litigation. Living or earning in foreign lands.",
+      "negative": "Family discord, impediments in speech, dental/eye afflictions, and erratic eating habits. If severely afflicted, loss of ancestral wealth through theft or deception, and denial of younger siblings.",
+      "classicalText": "Mantreswara states that the 6th lord in the 2nd causes impediments in speech, dental and eye diseases, untimely meals, and family dissensions.",
+      "source": "Mehta, Ch. 6, p. 116; Phala Deepika"
+    },
+    "3": {
+      "title": "6th Lord in 3rd House (Sahaja Bhava)",
+      "positive": "Wealthy through self-exertion, fearless in enterprise, and capable of hard independent struggle.",
+      "negative": "Enmity and friction with siblings or co-borns. Violent temper, quarrelsome, uncompromising attitude. Susceptibility to ear complaints and financial losses caused by maternal uncles.",
+      "classicalText": "Parashara notes that 6th lord in 3rd produces enmity with brothers, ear troubles, and relentless hostility from peers.",
+      "source": "Mehta, Ch. 6, p. 116; Parashara, Ch. 24"
+    },
+    "4": {
+      "title": "6th Lord in 4th House (Sukha Bhava)",
+      "positive": "Maternal uncle may be prosperous. When fortified by benefics, success in civil engineering, dispute resolution, or medical clinics.",
+      "negative": "Maternal health suffers; friction with mother. Old or dilapidated domestic residence. Breaks and obstacles in academic education. Danger of litigation over agricultural land or conveyances.",
+      "classicalText": "Sage Parashara states 6th lord in 4th causes domestic quarrels, maternal suffering, breaks in education, and disputes over landed properties.",
+      "source": "Mehta, Ch. 6, p. 116; Parashara, Ch. 24"
+    },
+    "5": {
+      "title": "6th Lord in 5th House (Putra Bhava)",
+      "positive": "Adoption or generous patronage from maternal relatives. High intellectual acumen in competitive debates, legal drafting, or medical diagnosis.",
+      "negative": "Putra Dosha: Friction or alienation between native and children. Interrupted academic pursuits or spiritual penance. Children may suffer recurrent illnesses.",
+      "classicalText": "According to Parashara and Mehta, 6th lord in 5th causes enmity with one's own children, breaks in educational curriculum, and health anxieties regarding offspring.",
+      "source": "Mehta, Ch. 6, p. 116; Parashara, Ch. 24"
+    },
+    "6": {
+      "title": "6th Lord in 6th House (Swakshetra)",
+      "positive": "Tremendous Upachaya vitality! Native possesses supreme capacity to combat diseases, debts, and external adversaries. Maternal uncle is prosperous. If joined with Saturn, commands armed forces or police. Progressive rise in fortune and landed estates.",
+      "negative": "If afflicted by malefics, persistent bodily ailments and friction with subordinates during unfavorable sub-dashas.",
+      "classicalText": "When 6th lord is in 6th, native is blessed with robust immune vitality, vanquishes all foes, commands faithful servants, and enjoys growing agricultural income.",
+      "source": "Mehta, Ch. 6, p. 116; Saravali"
+    },
+    "7": {
+      "title": "6th Lord in 7th House (Jaya Bhava)",
+      "positive": "Maternal uncle prospers abroad. Possibility of alliance connected with maternal kin. Strong business acumen in competitive bidding.",
+      "negative": "Marital friction; spouse suffers poor health or chronic complaints. Risk of litigation or divorce if afflicted. Parashara warns of financial loss through female partners or court settlements.",
+      "classicalText": "Parashara states that 6th lord in 7th leads to discord with spouse, health troubles for the partner, and losses through court litigation.",
+      "source": "Mehta, Ch. 6, p. 116; Parashara, Ch. 24"
+    },
+    "8": {
+      "title": "6th Lord in 8th House (Randhra Bhava)",
+      "positive": "Harsha Vipareeta Raja Yoga (if unafflicted by natural benefics/kendra lords). The destruction of one evil house lord by another Dusthana produces unexpected rise, triumph over conspiracies, and legacy.",
+      "negative": "If afflicted by malefic associations, chronic health ailments, susceptibility to debts, secret enemies, and generative/rectal disorders.",
+      "classicalText": "Mantreswara and Mehta note that 6th lord in 8th forms Harsha Vipareeta Raja Yoga, conferring sudden elevation through the fall of rivals, though longevity must be examined carefully.",
+      "source": "Mehta, Ch. 6, p. 116-117; Phala Deepika"
+    },
+    "9": {
+      "title": "6th Lord in 9th House (Bhagya Bhava)",
+      "positive": "Father may be associated with judiciary, legal administration, or medicine. Overcomes obstacles through righteous fortitude.",
+      "negative": "Friction and ideological disagreements with father. Fluctuations in fortune, loss of ancestral patrimony, and disputes during long-distance travels.",
+      "classicalText": "Parashara notes 6th lord in 9th causes enmity with father, fluctuating fortunes, and loss of paternal inheritance.",
+      "source": "Mehta, Ch. 6, p. 117; Parashara, Ch. 24"
+    },
+    "10": {
+      "title": "6th Lord in 10th House (Karma Bhava)",
+      "positive": "High executive status in defense, judiciary, police, arbitration, labor relations, or surgical medicine. Powerful competitive drive in professional rankings.",
+      "negative": "Professional hindrances, hostile workplace rivalries, frequent transfers, and public controversies. Mehta cautions against religious hypocrisy if afflicted.",
+      "classicalText": "Sage Parashara states 6th lord in 10th causes career obstacles, professional rivalries, and sudden shifts in authority, though it grants courage in executive service.",
+      "source": "Mehta, Ch. 6, p. 117; Parashara, Ch. 24"
+    },
+    "11": {
+      "title": "6th Lord in 11th House (Labha Bhava)",
+      "positive": "Paramount Upachaya combination (e.g. former Prime Minister I.K. Gujral). Highly qualified, efficient, gains through competitive victories, litigation awards, defense, or banking. Elder siblings occupy high judicial or administrative authority.",
+      "negative": "If afflicted, heavy monetary losses through speculative ventures, strained relations with elder siblings, or legal penalties.",
+      "classicalText": "Mehta highlights 6th lord in 11th (I.K. Gujral) as conferring exceptional qualifications, administrative eminence, and capacity to impose legal authority.",
+      "source": "Mehta, Ch. 6, p. 117; Parashara, Ch. 24"
+    },
+    "12": {
+      "title": "6th Lord in 12th House (Vyaya Bhava)",
+      "positive": "Harsha Vipareeta Raja Yoga! Complete annihilation of external enemies. Triumph over secret adversaries, foreign settlement, and expenditure directed toward charitable or medical causes.",
+      "negative": "If afflicted, squandering wealth on questionable habits, hospitalization expenses, and difficulties with foreign legal codes.",
+      "classicalText": "Parashara and Mantreswara affirm that 6th lord in 12th wipes out enemies, bestows Vipareeta Raja Yoga, and redirects expenditures into victorious ventures.",
+      "source": "Mehta, Ch. 6, p. 117; Phala Deepika"
+    }
+  },
+  "occupants": {
+    "Sun": {
+      "name": "Sun in 6th House (Shatru Nashaka)",
+      "text": "Splendid and celebrated. Satyacharya states Sun in 6th completely protects against sickness, enemies, sorrow, and debt. Native makes an illustrious administrator or politician. Overcomes all rivals through magnetic charisma. If afflicted by Saturn, recovery from ailments is sluggish; vulnerable to heart, eye, and spinal afflictions.",
+      "dignityModifiers": {
+        "exalted": "Supreme political triumph, invincible immunity, destroys opposition effortlessly, commanding magistrate.",
+        "debilitated": "Weak vitality, sluggish recovery from fevers, cardiac and eye sensitivity, friction with governmental superiors."
+      },
+      "source": "Mehta, Ch. 6, p. 118; Satyacharya"
+    },
+    "Moon": {
+      "name": "Moon in 6th House",
+      "text": "If full, exalted, or in own sign (Taurus/Cancer), Moon guards robustly against diseases and adversities, ensuring joyous longevity. If weak, waning, or afflicted, produces digestive slowness, Balaristha vulnerability in childhood, phlegmatic disorders, and strained maternal ties.",
+      "dignityModifiers": {
+        "exalted": "Magnificent health shielding, high emotional fortitude, victory over maternal disputes.",
+        "debilitated": "Mental anxieties, weak gastric fire (Jatharagni), chronic bronchial or fluid-retention ailments."
+      },
+      "source": "Mehta, Ch. 6, p. 118; Phala Deepika"
+    },
+    "Mars": {
+      "name": "Mars in 6th House (Kuja Upachaya Valour)",
+      "text": "Supreme warrior placement! Outstanding administrator, politician, and sports champion. Crushes opposition ruthlessly and wins legal battles decisively. If afflicted with Saturn, danger of surgeries, inflammatory boils, muscular injuries, or accidents with machinery and fire.",
+      "dignityModifiers": {
+        "exalted": "Unconquerable military or corporate commander, peerless litigator, extraordinary athletic stamina.",
+        "debilitated": "Blood impurities, muscular inflammation, vulnerability to surgical interventions or friction with subordinates."
+      },
+      "source": "Mehta, Ch. 6, p. 118; Saravali"
+    },
+    "Mercury": {
+      "name": "Mercury in 6th House",
+      "text": "Gifted with razor-sharp analytical intellect, razor-witted debating skills, and profound occult/sacred knowledge from holy masters. If afflicted, leads to nervous exhaustion, skin eruptions, dyspepsia, and generative system sensitivities.",
+      "dignityModifiers": {
+        "exalted": "Brilliant forensic analyst, invincible legal drafter, flawless accounting and logistical prowess.",
+        "debilitated": "Nervous debility, skin allergies, intestinal bowel sensitivity, interrupted educational endeavors."
+      },
+      "source": "Mehta, Ch. 6, p. 118-119; Parashara"
+    },
+    "Jupiter": {
+      "name": "Jupiter in 6th House (The Great Healer & Career Catalyst)",
+      "text": "Magnificent career catalyst because it casts its direct 9th drishti on the 10th House of Karma (e.g. Jawaharlal Nehru, who rose to supreme leadership). Vanquishes enemies effortlessly, amasses riches, and acts as a noble healer to society. If weak, indicates diabetes, liver sluggishness, or weak digestion.",
+      "dignityModifiers": {
+        "exalted": "Supreme statesman, divine protective armor against malice, revered social healer and jurist.",
+        "debilitated": "Hepatic or pancreatic vulnerabilities, high blood sugar, expenditure over disputes."
+      },
+      "source": "Mehta, Ch. 6, p. 119; Bhavartha Ratnakara"
+    },
+    "Venus": {
+      "name": "Venus in 6th House",
+      "text": "Generates proud and formidable adversaries who drink nectar like gods. Excessive expenditure leading to financial strains unless placed in Taurus, Libra, or Pisces where it produces wealth (Bhavartha Ratnakara). Vulnerability to kidney, ovarian, or urinary tract ailments.",
+      "dignityModifiers": {
+        "exalted": "Immense wealth through diplomatic maneuvers, cheerfulness, freedom from lasting litigation.",
+        "debilitated": "Marital discord, renal/urinary sensitivities, heavy debt through sensual indulgences."
+      },
+      "source": "Mehta, Ch. 6, p. 119; Bhavartha Ratnakara"
+    },
+    "Saturn": {
+      "name": "Saturn in 6th House (Invincible Fortress)",
+      "text": "Matchless warrior placement! The native is fearless against enemies, robbers, and sovereign authorities. A relentless worker of superhuman stamina capable of completing the most grueling assignments. If afflicted, causes chronic rheumatic complaints, eye injuries, or stubborn adversaries.",
+      "dignityModifiers": {
+        "exalted": "Invincible judicial or defense leader, supreme administrative mastery over labor and resources.",
+        "debilitated": "Chronic joint arthritis, nerve fatigue, stubborn litigations with domestic staff."
+      },
+      "source": "Mehta, Ch. 6, p. 119; Phala Deepika"
+    },
+    "Rahu": {
+      "name": "Rahu in 6th House (Shatru Samhara)",
+      "text": "Total destruction of all adversaries! Bestows unwavering valour, political astuteness, and regal authority. Native achieves phenomenal prominence abroad. Possesses exceptional immunity and enjoys conveyances, wealth, and worldly luxury.",
+      "dignityModifiers": {
+        "exalted": "Peerless conqueror of corporate and political arenas, commanding diplomat, immune from sorcery.",
+        "debilitated": "Occasional rectal or dental sensitivities, secret adversaries in foreign postings."
+      },
+      "source": "Mehta, Ch. 6, p. 119-120; Mantreswara"
+    },
+    "Ketu": {
+      "name": "Ketu in 6th House",
+      "text": "One of the finest positions for Ketu! Native earns far-reaching name and fame, free from sickness and chronic anxiety. Victorious in the most heated debates and intellectual controversies. Large-hearted, highly skilled, commanding high executive rank.",
+      "dignityModifiers": {
+        "exalted": "Spiritual invulnerability, flawless intuitive discernment in competitive arenas, honors from the state.",
+        "debilitated": "Minor vulnerability to insect bites, unfaithful subordinates, or eccentric dietary habits."
+      },
+      "source": "Mehta, Ch. 6, p. 120; Saravali"
+    }
+  },
+  "specialYogas": [
+    {
+      "name": "Harsha Vipareeta Raja Yoga",
+      "description": "6th Lord placed in 6th, 8th, or 12th house, free from association with trine/kendra lords. The native overcomes all rivals, gains sudden wealth through adversity, enjoys robust vitality, and emerges triumphant from legal disputes.",
+      "classicalRef": "Phala Deepika, Ch. 6, Sl. 63; Mehta, Ch. 6, p. 116"
+    },
+    {
+      "name": "Shatru Jayi Yoga (Conqueror of Foes)",
+      "description": "Natural malefics (Mars, Saturn, Sun, Rahu, Ketu) occupying the 6th house, or Lagna lord possessing superior Shadbala over 6th lord. Grants peerless competitive drive, crushing court adversaries and athletic rivals.",
+      "classicalRef": "Mehta, Ch. 6, p. 114; Parashara, Ch. 24"
+    },
+    {
+      "name": "Ayur-Jyotish Medical Vulnerability Profile",
+      "description": "Systematic Parashari diagnostics evaluating the 6th house, 6th lord, and graha aspects to pinpoint anatomical weaknesses (cardiac, hepatic, gastric, renal, or muscular) for preventive health regimens.",
+      "classicalRef": "Mehta, Ch. 6, pp. 118-120; Jataka Parijata"
+    }
+  ]
+}

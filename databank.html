@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Profiles Databank | Jyotish Gemini Studio</title>
+  <meta name="description" content="Manage, search, organize, export and import client Vedic Astrology charts and profiles. Stored 100% privately in browser.">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    (function() {
+      const saved = localStorage.getItem('astrotools_theme') || 'dark';
+      if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="logo-group">
+        <div class="logo-icon">🗂️</div>
+        <div class="logo-text">
+          <h1>Client Profiles Databank</h1>
+          <p>Jyotish Gemini Studio • Client Repository • 100% Client-Side & Private</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-secondary btn-sm" style="text-decoration: none;">🏠 Portal</a>
+        <a href="studio.html" class="btn btn-primary btn-sm" style="text-decoration: none;">🔮 Kundali Studio</a>
+        <a href="analytics.html" class="btn btn-secondary btn-sm" style="text-decoration: none;">📊 Analytics Hub</a>
+        <button id="btn-create-profile" class="btn btn-secondary btn-sm">✨ + Add Client</button>
+        <button id="btn-theme-toggle" class="btn-theme-pill" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <span id="theme-toggle-icon">☀️</span> <span id="theme-toggle-text">Light</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="databank-container">
+
+    <!-- Hero Stats & Sync Bar -->
+    <div class="databank-hero">
+      <div class="databank-hero-title">
+        <h2>
+          <span>🗃️</span> Astrological Client Repository
+        </h2>
+        <p>Save charts, organize consultation notes, and launch instant sub-arcminute Kundali calculations in one click.</p>
+        <div class="databank-privacy-pill">
+          <span class="privacy-dot"></span>
+          <span>100% Private Offline Storage • Zero Cloud Telemetry • Saved in LocalStorage</span>
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+        <div class="stat-chip" style="padding: 10px 18px; min-width: 140px;">
+          <span class="label">Total Profiles</span>
+          <span id="hero-profile-count" class="value highlight-gold">0</span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <div style="display: flex; gap: 8px;">
+            <button id="btn-export-databank" class="btn btn-secondary btn-sm">📥 Export (JSON)</button>
+            <label class="btn btn-secondary btn-sm" style="cursor: pointer; margin: 0; display: inline-flex; align-items: center; justify-content: center;">
+              📤 Import (JSON)
+              <input type="file" id="import-databank-file" accept=".json" style="display: none;">
+            </label>
+          </div>
+          <div style="display: flex; gap: 8px;">
+            <button id="btn-reset-databank" class="btn btn-secondary btn-sm" title="Reset databank to standard benchmark charts">🔄 Reset Benchmark Charts</button>
+            <button id="btn-clear-all" class="btn btn-secondary btn-sm" style="color: #EF4444;" title="Delete all profiles">🗑️ Clear All</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search & Filter Controls -->
+    <div class="databank-filter-bar">
+      <div class="databank-search-group">
+        <input type="text" id="databank-search-input" class="text-input" placeholder="🔍 Search clients by name, city, or consultation notes..." style="width: 100%;" autofocus>
+      </div>
+
+      <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+        <label for="databank-filter-mode" style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">Filter by Type:</label>
+        <select id="databank-filter-mode" class="custom-select" style="padding: 6px 12px; font-size: 0.8rem;">
+          <option value="all" selected>All Profiles</option>
+          <option value="birth">🗓️ Birth Details Charts</option>
+          <option value="paste">📜 Raw Coordinate Charts</option>
+        </select>
+
+        <label for="databank-sort-select" style="font-size: 0.78rem; color: var(--text-muted); font-weight: 600;">Sort:</label>
+        <select id="databank-sort-select" class="custom-select" style="padding: 6px 12px; font-size: 0.8rem;">
+          <option value="updated-desc" selected>Recently Updated</option>
+          <option value="name-asc">Name (A to Z)</option>
+          <option value="name-desc">Name (Z to A)</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Client Cards Grid -->
+    <div id="databank-cards-container" class="databank-grid">
+      <!-- Rendered dynamically by databank.js -->
+    </div>
+
+  </main>
+
+  <!-- Unified Global Footer -->
+  <footer class="app-unified-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span style="font-size: 1.6rem;">✨</span>
+            <span class="brand-title">Jyotish Gemini Studio</span>
+          </div>
+          <p class="brand-desc">
+            Professional Vedic Astrology computational suite and research engine. Powered by high-precision ephemeris algorithms, classical Parashari & Jaimini principles, Sripati Bhava Chalit, complete Shodashvarga, Shadbala, and cross-databank statistical analytics.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Navigation</h4>
+          <a href="index.html">🏠 Home Portal</a>
+          <a href="studio.html">🔮 Kundali Studio</a>
+          <a href="databank.html">🗂️ Client Databank</a>
+          <a href="analytics.html">📊 Research Analytics</a>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Calculation Engine</h4>
+          <span>• IAU-2006 Lahiri (Chitra Paksha) Ayanamsha</span>
+          <span>• Complete Shodashvarga (D1 to D60) Divisional Charts</span>
+          <span>• Sripati Unequal Bhava Chalit & Mid-Cusps</span>
+          <span>• Complete Shadbala & Bhava Bala Numerical Vectors</span>
+          <span>• 120-Year Vimshottari Mahadasha & Antardasha Hierarchy</span>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Jyotish Gemini Studio. 100% Client-Side & Offline Execution in Browser.
+        </div>
+        <div class="footer-pills">
+          <span class="footer-pill">Swiss Ephemeris Accuracy</span>
+          <span class="footer-pill"><span class="footer-databank-count">102</span> Databank Profiles</span>
+          <span class="footer-pill">Sub-Arcminute Precision</span>
+          <span class="footer-pill">Parashara & Jaimini</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Add / Edit Profile Modal -->
+  <div id="profile-edit-modal" class="modal-backdrop" style="display: none;">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <span style="font-size: 1.3rem;" id="modal-title-icon">✨</span>
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--text-main);" id="modal-heading-title">Create New Client Profile</h3>
+            <p style="font-size: 0.78rem; color: var(--text-muted);">Enter birth details or raw coordinates to save into your offline repository.</p>
+          </div>
+        </div>
+        <button id="btn-close-modal" class="btn-icon" title="Close">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <input type="hidden" id="edit-profile-id" value="">
+
+        <!-- Input Type Switcher -->
+        <div style="display: flex; gap: 10px; margin-bottom: 16px;">
+          <button type="button" id="modal-tab-birth" class="btn btn-sm btn-primary">🗓️ Birth Details Mode</button>
+          <button type="button" id="modal-tab-paste" class="btn btn-sm btn-secondary">📜 Raw Coordinates Mode</button>
+        </div>
+
+        <!-- Common Name & Notes & Gender -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr 130px; gap: 12px; margin-bottom: 14px;">
+          <div class="field-group">
+            <label for="form-client-name">Client Name *</label>
+            <input type="text" id="form-client-name" class="text-input" placeholder="e.g. Anurag, Priya S.">
+          </div>
+          <div class="field-group">
+            <label for="form-client-notes">Consultation Notes / Focus</label>
+            <input type="text" id="form-client-notes" class="text-input" placeholder="e.g. Career Transition, D10 & Saturn Transit">
+          </div>
+          <div class="field-group">
+            <label for="form-client-gender">Gender</label>
+            <select id="form-client-gender" class="custom-select text-input">
+              <option value="male">Male ♂</option>
+              <option value="female">Female ♀</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Mode 1: Birth Details Fields -->
+        <div id="modal-section-birth">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px;">
+            <div class="field-group">
+              <label for="form-birth-date">Date of Birth</label>
+              <input type="date" id="form-birth-date" class="text-input" value="1994-03-15">
+            </div>
+            <div class="field-group">
+              <label for="form-birth-time">Time of Birth (HH:MM:SS)</label>
+              <input type="time" id="form-birth-time" class="text-input" value="12:00:00" step="1">
+            </div>
+          </div>
+
+          <div class="field-group" style="position: relative; margin-bottom: 12px;">
+            <label for="form-city-input">Place of Birth (Atlas Search 7,000+ Cities)</label>
+            <input type="text" id="form-city-input" class="text-input" placeholder="Search cities (e.g. New Delhi, London, Tokyo)..." value="New Delhi, India" autocomplete="off">
+            <div id="form-city-suggestions" class="suggestions-box"></div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; margin-bottom: 16px;">
+            <div class="field-group">
+              <label for="form-lat">Latitude (°)</label>
+              <input type="number" id="form-lat" class="text-input" value="28.6139" step="0.0001">
+            </div>
+            <div class="field-group">
+              <label for="form-lon">Longitude (°)</label>
+              <input type="number" id="form-lon" class="text-input" value="77.2090" step="0.0001">
+            </div>
+            <div class="field-group">
+              <label for="form-tz">Timezone Offset (Hours)</label>
+              <input type="number" id="form-tz" class="text-input" value="5.5" step="0.5">
+            </div>
+          </div>
+        </div>
+
+        <!-- Mode 2: Raw Coordinates Fields -->
+        <div id="modal-section-paste" style="display: none; margin-bottom: 16px;">
+          <div class="field-group">
+            <label for="form-raw-coords">Raw Coordinates (Jagannatha Hora / AstroSage format)</label>
+            <textarea id="form-raw-coords" class="raw-textarea" style="height: 140px;" placeholder="Paste planetary table here..."></textarea>
+          </div>
+        </div>
+
+        <!-- Modal Submit Actions -->
+        <div style="display: flex; justify-content: flex-end; gap: 10px; border-top: 1px solid var(--border-subtle); padding-top: 14px;">
+          <button type="button" id="btn-cancel-modal" class="btn btn-secondary btn-sm">Cancel</button>
+          <button type="button" id="btn-save-profile" class="btn btn-primary btn-sm">💾 Save Client Profile</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast-notice">
+    <span>✓</span> <span id="toast-message">Notification</span>
+  </div>
+
+  <!-- In-App Delete Confirmation Modal (Replaces flaky browser confirm) -->
+  <div id="delete-confirm-modal" class="modal-backdrop" style="display: none; align-items: center; justify-content: center;">
+    <div class="modal-dialog" style="max-width: 440px; text-align: center; padding: 24px;">
+      <div style="font-size: 2.4rem; margin-bottom: 10px;">🗑️</div>
+      <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--text-main); margin-bottom: 8px;">Delete Client Profile?</h3>
+      <p id="delete-confirm-text" style="color: var(--text-muted); font-size: 0.88rem; margin-bottom: 22px; line-height: 1.4;">Are you sure you want to permanently delete this chart profile?</p>
+      <div style="display: flex; gap: 12px; justify-content: center;">
+        <button type="button" id="btn-cancel-delete" class="btn btn-secondary btn-sm" style="min-width: 100px;">Cancel</button>
+        <button type="button" id="btn-confirm-delete" class="btn btn-sm" style="min-width: 110px; background: #EF4444; color: white; border: none; font-weight: 600;">Yes, Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/databank.js"></script>
+</body>
+</html>

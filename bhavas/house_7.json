@@ -1,0 +1,240 @@
+{
+  "houseNumber": 7,
+  "name": "Kalatra Bhava",
+  "sanskritName": "सप्तम भाव (कलत्र भाव / जाया भाव / युवति भाव)",
+  "significations": [
+    "Marriage, spouse, marital bliss, and matrimonial harmony (Vivaha & Dampatya Sukha)",
+    "Business partnerships, contractual relationships, and commercial agreements",
+    "Foreign travels, foreign residence, and affairs in distant lands (farthest from 1st house / birthplace)",
+    "Public relations, diplomatic representation, and open alliances",
+    "Physical attraction, sexual harmony, and sensual enjoyment (Kama)",
+    "Trade, commerce, negotiations, and retail marketplaces",
+    "Maraka (Death-inflicting) house (2nd and 7th houses from Lagna)",
+    "Vitality, outward energy, and social charm (Mirror reflection of the 1st house)",
+    "Favors from employers and superiors (10th from 10th house)",
+    "Domestic peace and familial happiness (4th from 4th house)"
+  ],
+  "bodyParts": [
+    "Lower Abdomen & Pelvic Cavity",
+    "Kidneys & Renal/Urinary Tract",
+    "Internal Genital Organs (Uterus, Ovaries / Prostate, Seminal Vesicles)",
+    "Groin & Inguinal Canals",
+    "Secondary Sexual Characteristics"
+  ],
+  "naturalKaraka": [
+    "Venus (Primary Universal Karaka for Marriage, Spouse, Semen, Sensual Bliss & Romance)",
+    "Jupiter (Primary Karaka for Husband / Pati Karaka in female horoscopes)",
+    "Mars (Secondary Karaka for Physical Drive, Virility & Husband in female charts)"
+  ],
+  "classicalSources": [
+    {
+      "book": "Advanced Techniques of Predictive Astrology (Vol. 1)",
+      "author": "Haveli Ram Mehta",
+      "chapter": "Chapter 7: Seventh House - Jaya Bhava (Marriage, Partnership, Kuja Dosha & Marital Harmony)",
+      "pages": "124-164"
+    },
+    {
+      "book": "Brihat Parashara Hora Shastra",
+      "author": "Maharishi Parashara",
+      "chapter": "Jaya Bhava Phala, Upapada Lagna & Stri Jataka Adhyaya"
+    },
+    {
+      "book": "Phala Deepika",
+      "author": "Mantreswara",
+      "chapter": "Seventh Bhava Phala, Kalatra Dosha & Stri Jataka"
+    },
+    {
+      "book": "Jataka Parijata",
+      "author": "Vaidyanatha Dikshita",
+      "chapter": "Kalatra Bhava Adhyaya & Marital Yogas"
+    },
+    {
+      "book": "Bhavartha Ratnakara",
+      "author": "Ramanujacharya",
+      "chapter": "Seventh House Formulations & Two-Marriage Combinations"
+    }
+  ],
+  "lordPlacements": {
+    "1": {
+      "title": "7th Lord in 1st House (Lagna Bhava)",
+      "text": "The 7th lord in Lagna or Lagna lord in 7th makes one deeply attached to their spouse, as the ascendant is the direct mirror reflection of the 7th house and vice versa. It is a classical combination for marrying someone known since childhood or from familiar surroundings. Fosters frequent travel, diplomacy, and strong social presence. If the 7th lord is weak or aspected by malefics, it may cause liaisons or instability in relationships.",
+      "positive": "Affectionate spouse, union with a known acquaintance/childhood associate, charming demeanor, diplomatic success.",
+      "negative": "If afflicted by malefics: sensual restlessness, health vulnerability for spouse, friction if Lagna lord is weak.",
+      "shlokaReference": "Mehta, Ch. 7, p. 124; Parashara, Ch. 24, Sl. 73"
+    },
+    "2": {
+      "title": "7th Lord in 2nd House (Dhana Bhava)",
+      "text": "Bestows financial gain, dowry, or assets acquired through marriage and partnership. If well-fortified, spouse hails from a well-to-do family and contributes significantly to family prosperity. If 7th lord is in dual signs and heavily afflicted, more than one marriage is possible. Because both 2nd and 7th are Maraka houses, mutual periods require health vigilance.",
+      "positive": "Financial prosperity through spouse, wealthy matrimonial family, persuasive speech, joint family enrichment.",
+      "negative": "If afflicted: wavering sensual desires, multiple attachments in dual signs, Maraka health vulnerability during Dasha.",
+      "shlokaReference": "Mehta, Ch. 7, pp. 124-125; Bhavartha Ratnakara"
+    },
+    "3": {
+      "title": "7th Lord in 3rd House (Sahaja Bhava)",
+      "text": "Siblings may relocate abroad and attain prosperity. Endows the native with commercial enterprise, sales ability, and initiative through partnerships. If afflicted, causes friction with brothers or complications through close relatives.",
+      "positive": "Enterprising spouse, courageous initiative, success in trade/communication, siblings flourishing abroad.",
+      "negative": "If afflicted: relational friction with co-born, disputes involving in-laws or younger siblings.",
+      "shlokaReference": "Mehta, Ch. 7, p. 125"
+    },
+    "4": {
+      "title": "7th Lord in 4th House (Sukha Bhava)",
+      "text": "Confers an affectionate, cultured, and devoted spouse who brings domestic bliss, residential properties, and fine conveyances. Endows the native with high academic qualifications and multiple vehicles. If afflicted, domestic peace is disturbed, causing conveyance troubles and maternal-spousal friction.",
+      "positive": "Domestic tranquility, palatial residence, cultured partner, academic distinction, vehicle comfort.",
+      "negative": "If afflicted: lack of domestic harmony, real estate or vehicle disputes, emotional estrangement at home.",
+      "shlokaReference": "Mehta, Ch. 7, p. 125; Phala Deepika"
+    },
+    "5": {
+      "title": "7th Lord in 5th House (Putra Bhava)",
+      "text": "Magnificent linkage of the 5th house of romance/Purva Punya and the 7th house of marriage, indicating love marriage or early matrimonial alliance with a wealthy partner. Endows talented, high-achieving children. Classical treatises (Phala Deepika) warn that if heavily afflicted, it may cause delay in progeny or loss of spouse.",
+      "positive": "Romantic love marriage, early matrimonial settlement, prosperous partner, meritorious and creative children.",
+      "negative": "If afflicted: delayed conception, emotional disappointment, or marital distress during unfavorable Dashas.",
+      "shlokaReference": "Mehta, Ch. 7, p. 125; Phala Deepika"
+    },
+    "6": {
+      "title": "7th Lord in 6th House (Shatru Bhava)",
+      "text": "A Dusthana placement that requires careful attention. It causes delays in marriage for female natives and health sensitivities for the spouse. May indicate marriage with a maternal cousin or colleague. If Karaka Venus is also afflicted, it may indicate marital dissatisfaction or legal disputes. Jupiter's aspect significantly mitigates the affliction.",
+      "positive": "Success in professional arbitration, partner in medical/legal/civil service fields if fortified by benefics.",
+      "negative": "Spousal chronic illness, delay in matrimonial settlement, litigation, two marriages if heavily afflicted.",
+      "shlokaReference": "Mehta, Ch. 7, p. 125; Parashara, Ch. 24"
+    },
+    "7": {
+      "title": "7th Lord in 7th House (Swakshetra / Own Sign)",
+      "text": "Extremely auspicious Swakshetra placement. Bestows a charismatic personality, immense public popularity, and a spouse from a respectable, honorable family. Maharishi Parashara and Mantreswara emphasize that even a natural malefic as 7th lord in the 7th blesses the native with a virtuous, faithful spouse. If afflicted by evil planets, causes loneliness or sudden break in negotiations.",
+      "positive": "Handsome, virtuous, and devoted spouse; high social stature; thriving foreign business partnerships.",
+      "negative": "If heavily afflicted by malefics: haughty partner, loneliness, or sudden cancellation of engagements.",
+      "shlokaReference": "Mehta, Ch. 7, p. 126; Phala Deepika; Parashara"
+    },
+    "8": {
+      "title": "7th Lord in 8th House (Randhra Bhava)",
+      "text": "As the 8th house is 2nd from the 7th, the spouse may inherit or command substantial wealth. However, as 8th represents longevity and vulnerability, classical texts universally urge caution. K.N. Rao notes: 'In the ending of any marriage, the role of the 8th house or planet in the 8th is well known.' May cause health complications for spouse or separation unless benefic aspects intervene.",
+      "positive": "Spouse commands inherited wealth, financial gains through joint assets, interest in occult sciences.",
+      "negative": "Early health crisis for partner, prolonged distance, bitter divorce or separation if afflicted by malefics.",
+      "shlokaReference": "Mehta, Ch. 7, p. 126; K.N. Rao"
+    },
+    "9": {
+      "title": "7th Lord in 9th House (Bhagya Bhava)",
+      "text": "Supreme Kendra-Trikona Raj Yoga. Fortune flourishes after marriage and through overseas connections. Father of native or partner may reside abroad. Bestows an accomplished, noble, and virtuous spouse who supports religious and charitable pursuits. If afflicted in a female horoscope, it may cause last-minute change of groom or marital discord.",
+      "positive": "Fortune through marriage, international success, accomplished partner, divine blessings and high morality.",
+      "negative": "If weak or afflicted in female chart: marital friction, cancelled engagement, partner indifferent to spiritual values.",
+      "shlokaReference": "Mehta, Ch. 7, p. 126; Bhavartha Ratnakara"
+    },
+    "10": {
+      "title": "7th Lord in 10th House (Karma Bhava)",
+      "text": "Highly auspicious Kendra-Kendra linkage. The spouse actively contributes to the native's career, social prestige, and professional status. Indicates thriving international business, diplomacy, and professional success abroad. The spouse is career-oriented, capable, and widely respected.",
+      "positive": "Professional rise through spouse, international eminence, supportive working partner, high executive rank.",
+      "negative": "If afflicted: professional jealousy between partners, career obligations causing distance in marriage.",
+      "shlokaReference": "Mehta, Ch. 7, p. 126"
+    },
+    "11": {
+      "title": "7th Lord in 11th House (Labha Bhava)",
+      "text": "Magnificent Kama-Labha Dhana Yoga. Brings substantial wealth, prosperity, and expansive social networks through marriage. The spouse is wealthy, influential, and commands abundant resources. In dual signs with affliction, classical authors note multiple alliances.",
+      "positive": "Very wealthy spouse, continuous gains through in-laws and partnerships, fulfillment of matrimonial desires.",
+      "negative": "If afflicted in dual signs: marital wanderings, financial materialism overshadowing emotional intimacy.",
+      "shlokaReference": "Mehta, Ch. 7, p. 126; Parashara"
+    },
+    "12": {
+      "title": "7th Lord in 12th House (Vyaya Bhava)",
+      "text": "Indicates marriage in a distant land or relocation to a foreign country after marriage. Significant expenditures on spouse and luxury. If Karaka Venus is afflicted, the native may experience prolonged bachelorhood or emotional withdrawal. Benefic aspects produce peaceful foreign settlement.",
+      "positive": "Foreign marriage, relocation across oceans, spiritual and charitable partner, success abroad.",
+      "negative": "If afflicted: heavy expenditures, separation, clandestine romantic attachments, bedroom disharmony.",
+      "shlokaReference": "Mehta, Ch. 7, p. 126; Phala Deepika"
+    }
+  },
+  "occupants": {
+    "Sun": {
+      "title": "Sun in 7th House (Surya in Kalatra Bhava)",
+      "effects": "Promotes a proud, dignified, and authoritative spouse, often with governmental or administrative connections. However, Sun being a natural malefic and fiery planet creates ego friction, delay in marriage, or travelling distance. May cause eye strain or urinary sensitivity. Auspicious in Aries, Leo, or Sagittarius.",
+      "positive": "Partner of high social standing and integrity, executive reputation, official honors.",
+      "negative": "Ego clashes, late marriage, domestic aloofness, travelling distance between spouses.",
+      "classicalSource": "Mehta, Ch. 7, pp. 126-127; Phala Deepika"
+    },
+    "Moon": {
+      "title": "Moon in 7th House (Chandra in Kalatra Bhava)",
+      "effects": "Bestows an exceptionally handsome, gentle, emotional, and charming spouse. Confers early marriage and strong romantic attraction. Waxing Moon in 7th brings immense public popularity, trading wealth, and delightful journeys over water. Waning or afflicted Moon causes emotional moodiness and fickleness.",
+      "positive": "Charming, loving spouse; early marriage; public goodwill; pleasant domestic ambiance.",
+      "negative": "If waning or afflicted by Saturn/Rahu: emotional turbulence, wavering mind, over-sensitivity.",
+      "classicalSource": "Mehta, Ch. 7, pp. 127-128; Jataka Parijata"
+    },
+    "Mars": {
+      "title": "Mars in 7th House (Kuja in Kalatra Bhava - Manglik)",
+      "effects": "Constitutes classical Kuja Dosha (Manglik). Mars is bold, passionate, and impatient; in the 7th house it brings sudden quarrels, physical disputes, and aggressive temperament. Classical texts warn of separation or health vulnerabilities for spouse unless cancellations apply (e.g. Capricorn exaltation, Cancer debilitation, or Jupiter aspect).",
+      "positive": "Dynamic, courageous partner; athletic vitality; bold entrepreneurial drive when cancelled.",
+      "negative": "Severe Kuja Dosha, marital disharmony, explosive arguments, accidental injuries.",
+      "classicalSource": "Mehta, Ch. 7, pp. 128, 148-155; Parashara"
+    },
+    "Mercury": {
+      "title": "Mercury in 7th House (Budha in Kalatra Bhava)",
+      "effects": "Confers an articulate, youthful, intelligent, and commercially astute spouse. The partner is skilled in writing, speech, mathematics, or trade. Excellent for commercial partnerships and contracts. If Mercury is conjoined with 6th lord or in dual signs, multiple unions may occur.",
+      "positive": "Witty, youthful, highly educated spouse; brilliant commercial trade; diplomatic harmony.",
+      "negative": "If afflicted by malefics: nervous restlessness, superficiality, marital vacillation.",
+      "classicalSource": "Mehta, Ch. 7, pp. 128-129"
+    },
+    "Jupiter": {
+      "title": "Jupiter in 7th House (Guru in Kalatra Bhava)",
+      "effects": "One of the most auspicious placements in all of Jyotish. Confers a virtuous, wise, educated, and noble spouse from a distinguished family. Endows immense fortune after marriage, legal integrity, and high social honor. The spouse possesses sound moral character and religious devotion.",
+      "positive": "Noble and highly educated spouse, lifelong marital happiness, fortune after marriage, high public prestige.",
+      "negative": "If severely afflicted: spouse may have weight gain or liver vulnerability, occasional dogmatic pride.",
+      "classicalSource": "Mehta, Ch. 7, pp. 129-130; Bhavartha Ratnakara"
+    },
+    "Venus": {
+      "title": "Venus in 7th House (Shukra in Kalatra Bhava - Malavya Yoga)",
+      "effects": "In Taurus, Libra, or Pisces, generates the royal Malavya Mahapurusha Yoga, conferring supreme aesthetic charm, wealth, and romantic fruition. The partner is extraordinarily beautiful, graceful, and artistic. If afflicted by Mars/Rahu, sensual excess or extra-marital flirtations may arise.",
+      "positive": "Exquisite romantic harmony, artistic elegance, luxurious conveyances, Malavya Yoga prosperity.",
+      "negative": "If afflicted: excessive sensuality, marital jealousy, high expenditures on luxury.",
+      "classicalSource": "Mehta, Ch. 7, pp. 130, 133-134; Phala Deepika"
+    },
+    "Saturn": {
+      "title": "Saturn in 7th House (Shani in Kalatra Bhava)",
+      "effects": "Causes delay in marriage (often after age 28-30). Confers a mature, sober, industrious, and faithful spouse who may be older or serious in nature. Excellent for long-lasting partnerships if well placed. In Libra (exalted) or Capricorn/Aquarius (own signs), generates Sasa Mahapurusha Yoga. If afflicted, causes coldness, emotional distance, or grief.",
+      "positive": "Steadfast, faithful, and hard-working partner; durable marriage; Sasa Yoga in Libra/Aquarius.",
+      "negative": "Late marriage, melancholy, emotional coldness, marital fatigue if heavily afflicted.",
+      "classicalSource": "Mehta, Ch. 7, pp. 130-131; Phala Deepika"
+    },
+    "Rahu": {
+      "title": "Rahu in 7th House (Rahu in Kalatra Bhava)",
+      "effects": "Produces unorthodox, unconventional, or inter-cultural marriage. Mehta highlights a cardinal diagnostic rule: Rahu in the 7th alone or afflicted causes marital strife, infectious sensitivities, and separation; but if Rahu is aspected by Jupiter or conjoined with benefics (as in Mehta's Benchmark Horoscope A), it becomes completely harmless and confers worldly elevation.",
+      "positive": "When blessed by Jupiter's drishti: worldly elevation, brilliant unconventional partner, foreign prosperity.",
+      "negative": "When afflicted without benefic aspect: severe marital turbulence, deception, scandalous liaisons.",
+      "classicalSource": "Mehta, Ch. 7, pp. 131-132 (Horoscopes A & B)"
+    },
+    "Ketu": {
+      "title": "Ketu in 7th House (Ketu in Kalatra Bhava)",
+      "effects": "Gives a spiritually minded, detached, introspective, or simple partner. The native may feel periods of emotional aloofness or disinterest in worldly marital rituals. Journeys across waterways. In Scorpio, Ketu is gainful and confers sudden intuitive insights.",
+      "positive": "Spiritual partner, freedom from materialistic entanglements, gainful in Scorpio/Sagittarius.",
+      "negative": "Emotional distance, mysterious ailments of intestines/generative organs, communication gap.",
+      "classicalSource": "Mehta, Ch. 7, p. 132"
+    }
+  },
+  "classicalYogas": [
+    {
+      "name": "Malavya Mahapurusha Yoga",
+      "condition": "Venus occupies 7th house in Taurus, Libra, or Pisces (Kendra in own/exaltation sign).",
+      "effects": "Endows the native with supreme beauty, regal luxuries, exquisite marital happiness, and artistic eminence.",
+      "source": "Mehta, Ch. 7, p. 133; Phala Deepika"
+    },
+    {
+      "name": "K.N. Rao's Double Transit Marriage Sanction",
+      "condition": "Transiting Saturn and Jupiter simultaneously aspect or occupy the 4 Marriage Sensitive Points.",
+      "effects": "Unlocks the matrimonial window and brings marriage into manifest physical reality.",
+      "source": "K.N. Rao & Mehta, Ch. 7, p. 147"
+    },
+    {
+      "name": "Mehta's Rahu-Jupiter Marital Neutralization",
+      "condition": "Rahu in 7th house receives the direct trinal or 7th aspect of benefic Jupiter.",
+      "effects": "Completely neutralizes Rahu's maleficence in 7th, converting marital peril into public prosperity.",
+      "source": "Mehta, Ch. 7, pp. 131-132 (Horoscope A)"
+    },
+    {
+      "name": "Lagna Lord & 7th Lord Shadashtaka Discord",
+      "condition": "Lagna lord and 7th lord are posited in 6th and 8th positions from each other.",
+      "effects": "Generates emotional incompatibility, mutual friction, or separation unless benefics intervene.",
+      "source": "Mehta, Ch. 7, p. 135"
+    },
+    {
+      "name": "Kuja Dosha (Manglik Alignment)",
+      "condition": "Mars in 1st, 2nd, 4th, 7th, 8th, or 12th from Lagna, Moon, or Venus.",
+      "effects": "Requires horoscope matching for temperamental equilibrium; subject to classical Raman cancellations.",
+      "source": "Mehta, Ch. 7, pp. 148-155; B.V. Raman"
+    }
+  ]
+}

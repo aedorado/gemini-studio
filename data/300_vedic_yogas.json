@@ -1,0 +1,5933 @@
+[
+  {
+    "id": 1,
+    "name": "Gajakesari Yoga",
+    "category": "Lunar Yoga",
+    "participating_planets": [
+      "Jupiter",
+      "Moon"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Jupiter in a Kendra (1, 4, 7, 10) from the Moon.",
+    "effect": "Lasting reputation, polite/generous nature, administrative position or judicial authority.",
+    "modern_interpretation": "Executive leadership, public administration, judicial/legal authority.",
+    "neutralization": "Weakened if Jupiter or Moon own 6th/8th/11th or are afflicted by Saturn/Rahu.",
+    "relevance": "Very High",
+    "additional_info": "Operates strongly during Jupiter or Moon Dasa/Bhukti."
+  },
+  {
+    "id": 2,
+    "name": "Sunapha Yoga",
+    "category": "Lunar Yoga",
+    "participating_planets": [
+      "Moon",
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Saturn"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "Planets other than the Sun occupy the 2nd house from the Moon.",
+    "effect": "Self-earned wealth, high intelligence, good reputation, financial security.",
+    "modern_interpretation": "Entrepreneurial success, self-made financial assets, commercial skills.",
+    "neutralization": "Cancelled if forming planet is debilitated, combust, or afflicted by Rahu/Kethu.",
+    "relevance": "Very High",
+    "additional_info": "Nature of wealth depends on specific planet in 2nd from Moon."
+  },
+  {
+    "id": 3,
+    "name": "Anapha Yoga",
+    "category": "Lunar Yoga",
+    "participating_planets": [
+      "Moon",
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Saturn"
+    ],
+    "houses_involved": [
+      12
+    ],
+    "formation": "Planets other than the Sun occupy the 12th house from the Moon.",
+    "effect": "Well-formed body, generous disposition, self-respect, spiritual inclination.",
+    "modern_interpretation": "Philanthropy, overseas ventures, balanced temperament, spiritual maturity.",
+    "neutralization": "Impaired if 12th planet is severely afflicted or debilitated.",
+    "relevance": "High",
+    "additional_info": "Encourages healthy spending and charitable deeds."
+  },
+  {
+    "id": 4,
+    "name": "Dhurdhura Yoga",
+    "category": "Lunar Yoga",
+    "participating_planets": [
+      "Moon",
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Saturn"
+    ],
+    "houses_involved": [
+      2,
+      12
+    ],
+    "formation": "Planets other than the Sun occupy both 2nd and 12th houses from the Moon.",
+    "effect": "Bountiful wealth, high societal standing, conveyances, generous temperament.",
+    "modern_interpretation": "Multi-stream income, high mobility, luxury vehicle ownership.",
+    "neutralization": "Neutralized if forming planets are weak, combust, or hemmed by Rahu/Kethu.",
+    "relevance": "High",
+    "additional_info": "Acts as combination of Sunapha and Anapha."
+  },
+  {
+    "id": 5,
+    "name": "Kemadruma Yoga",
+    "category": "Lunar Yoga / Misfortune",
+    "participating_planets": [
+      "Moon"
+    ],
+    "houses_involved": [
+      2,
+      12
+    ],
+    "formation": "No planets occupy the 2nd or 12th houses from the Moon.",
+    "effect": "Poverty, mental sorrow, dependence on others, unrighteous actions, instability.",
+    "modern_interpretation": "Financial instability, feeling isolated, career fluctuations, emotional distress.",
+    "neutralization": "Kemadruma Bhanga occurs if Kendras from Lagna/Moon are occupied by planets or Moon aspected by benefics.",
+    "relevance": "Very High",
+    "additional_info": "Check Kemadruma Bhanga rules carefully as full Kemadruma is rare."
+  },
+  {
+    "id": 6,
+    "name": "Chandra Mangala Yoga",
+    "category": "Lunar Yoga / Dhana",
+    "participating_planets": [
+      "Moon",
+      "Mars"
+    ],
+    "houses_involved": [
+      1,
+      2,
+      9,
+      10,
+      11
+    ],
+    "formation": "Conjunction or mutual aspect between Moon and Mars.",
+    "effect": "Earnings through trade, aggressive commercial enterprise, or catering to base needs.",
+    "modern_interpretation": "Real estate trading, commercial sales, finance, hospitality business.",
+    "neutralization": "If Mars or Moon afflicted by 8th/12th lords, gains may come unethically.",
+    "relevance": "Very High",
+    "additional_info": "Highly favorable for wealth in 2nd, 9th, 10th, or 11th house."
+  },
+  {
+    "id": 7,
+    "name": "Adhi Yoga",
+    "category": "Lunar Yoga / Raja",
+    "participating_planets": [
+      "Moon",
+      "Mercury",
+      "Venus",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      6,
+      7,
+      8
+    ],
+    "formation": "Benefics occupy 6th, 7th, and 8th houses from the Moon.",
+    "effect": "Polite nature, administrative authority, immunity from enemies, long life.",
+    "modern_interpretation": "Corporate governance, strategic leadership, diplomatic immunity.",
+    "neutralization": "Weakened if benefics are combust or aspected by potent malefics.",
+    "relevance": "High",
+    "additional_info": "Evaluated from Lagna or Moon; results scale with benefic participation."
+  },
+  {
+    "id": 8,
+    "name": "Chatussagara Yoga",
+    "category": "Structural Yoga",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "All four Kendra houses (1, 4, 7, 10) occupied by planets.",
+    "effect": "High reputation, good health, widespread influence, lasting prosperity.",
+    "modern_interpretation": "Global recognition, well-rounded achievements, strong foundation.",
+    "neutralization": "Diminished if planets in Kendras are predominantly debilitated or combust.",
+    "relevance": "Mid",
+    "additional_info": "Creates a stable, robust astrological grid."
+  },
+  {
+    "id": 9,
+    "name": "Vasumathi Yoga",
+    "category": "Dhana Yoga",
+    "participating_planets": [
+      "Mercury",
+      "Venus",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      3,
+      6,
+      10,
+      11
+    ],
+    "formation": "Benefics occupy Upachaya houses (3, 6, 10, 11) from Lagna or Moon.",
+    "effect": "Absolute financial independence, immense accumulated wealth, self-made fortune.",
+    "modern_interpretation": "Financial autonomy, high net worth, successful investment portfolio.",
+    "neutralization": "Weakened if benefics are debilitated or afflicted by Saturn/Rahu.",
+    "relevance": "High",
+    "additional_info": "Upachayas represent growth over time; wealth accumulates steadily."
+  },
+  {
+    "id": 10,
+    "name": "Rajalakshana Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Jupiter",
+      "Venus",
+      "Mercury",
+      "Moon"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Jupiter, Venus, Mercury, and Moon occupy Lagna or Kendras.",
+    "effect": "Attractive appearance, high dignity, royal demeanor, societal respect.",
+    "modern_interpretation": "Public charisma, celebrity status, high social standing.",
+    "neutralization": "Neutralized if benefics are heavily afflicted by Sun/Mars/Saturn.",
+    "relevance": "Mid",
+    "additional_info": "Emphasizes personal magnetism and regal presence."
+  },
+  {
+    "id": 11,
+    "name": "Vanchana Chora Bheethi Yoga",
+    "category": "Misfortune Yoga",
+    "participating_planets": [
+      "Lagna Lord",
+      "Gulika",
+      "Rahu",
+      "Saturn"
+    ],
+    "houses_involved": [
+      1,
+      5,
+      9
+    ],
+    "formation": "Lagna occupied by malefic with Gulika in 5th/9th; or Gulika with Kendra lords; or Lagna lord with Rahu/Saturn/Kethu.",
+    "effect": "Persistent suspicion, fear of theft/swindling, financial losses through deceit.",
+    "modern_interpretation": "Cyber-fraud vulnerability, paranoia in partnerships, risk of financial scam.",
+    "neutralization": "Mitigated if Lagna lord receives Jupiter aspect or Vaiseshikamsa.",
+    "relevance": "Mid",
+    "additional_info": "Evaluates psychological security and loss through swindling."
+  },
+  {
+    "id": 12,
+    "name": "Sakata Yoga",
+    "category": "Lunar Yoga / Misfortune",
+    "participating_planets": [
+      "Moon",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      6,
+      8,
+      12
+    ],
+    "formation": "Moon in 6th, 8th, or 12th house from Jupiter.",
+    "effect": "Alternating financial gains and losses, poverty, stubbornness, misery.",
+    "modern_interpretation": "Cyclical financial volatility, career ups and downs, economic unpredictability.",
+    "neutralization": "Cancelled if Moon is in a Kendra from Lagna (Sakata Bhanga).",
+    "relevance": "Very High",
+    "additional_info": "Manifests during transit shifts of Moon relative to Jupiter."
+  },
+  {
+    "id": 13,
+    "name": "Amala Yoga",
+    "category": "Virtue & Fame",
+    "participating_planets": [
+      "Jupiter",
+      "Venus",
+      "Mercury"
+    ],
+    "houses_involved": [
+      10
+    ],
+    "formation": "A benefic planet occupies the 10th house from Lagna or Moon.",
+    "effect": "Spotless character, ethical prosperity, enduring fame, philanthropic deeds.",
+    "modern_interpretation": "High professional ethics, corporate responsibility, unblemished public record.",
+    "neutralization": "Weakened if the benefic planet is aspected by 8th/12th malefic lords.",
+    "relevance": "High",
+    "additional_info": "Ensures clean reputation regardless of wealth scale."
+  },
+  {
+    "id": 14,
+    "name": "Parvata Yoga",
+    "category": "Raja / Dhana",
+    "participating_planets": [
+      "Benefics",
+      "Lagna Lord",
+      "12th Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      6,
+      7,
+      8,
+      10,
+      12
+    ],
+    "formation": "Benefics in Kendras with 6th and 8th free or occupied by benefics; or lords of 1st and 12th in mutual Kendras.",
+    "effect": "Wealth, leadership of a town/organization, passion, lasting prosperity.",
+    "modern_interpretation": "Civic leadership, municipal/corporate presidency, real estate assets.",
+    "neutralization": "Neutralized if Lagna lord is debilitated or combust.",
+    "relevance": "High",
+    "additional_info": "Grants authority over local communities or administrative divisions."
+  },
+  {
+    "id": 15,
+    "name": "Kahala Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "4th Lord",
+      "9th Lord",
+      "10th Lord",
+      "Lagna Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Lords of 4th and 9th in mutual Kendras with a strong Lagna lord; or 4th lord exalted/own house aspected by 10th lord.",
+    "effect": "Daring nature, stubbornness, military or executive authority, commanding persona.",
+    "modern_interpretation": "Military/police leadership, corporate executive command, resolute decision-making.",
+    "neutralization": "Impaired if 4th or 9th lords are in debility without cancellation.",
+    "relevance": "Mid",
+    "additional_info": "Gives strong determination and unwillingness to yield."
+  },
+  {
+    "id": 16,
+    "name": "Vesi Yoga",
+    "category": "Solar Yoga",
+    "participating_planets": [
+      "Sun",
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Saturn"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "Planets other than the Moon occupy the 2nd house from the Sun.",
+    "effect": "Good fortune, happiness, balanced speech, fame (Subhavesi); or hardship if malefic (Papavesi).",
+    "modern_interpretation": "Effective communication, executive presence, public speaking skills.",
+    "neutralization": "Cancelled if planet in 2nd from Sun is combust or heavily afflicted.",
+    "relevance": "High",
+    "additional_info": "Evaluates solar energy expression in financial and vocal domains."
+  },
+  {
+    "id": 17,
+    "name": "Vasi Yoga",
+    "category": "Solar Yoga",
+    "participating_planets": [
+      "Sun",
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Saturn"
+    ],
+    "houses_involved": [
+      12
+    ],
+    "formation": "Planets other than the Moon occupy the 12th house from the Sun.",
+    "effect": "Prosperity, liberality, favor from ruling authorities, independent mind.",
+    "modern_interpretation": "Government support, institutional backing, international relations.",
+    "neutralization": "Impaired if 12th planet is in enemy sign or debilitated.",
+    "relevance": "High",
+    "additional_info": "Gives independence and executive favor."
+  },
+  {
+    "id": 18,
+    "name": "Obhayachari Yoga",
+    "category": "Solar Yoga",
+    "participating_planets": [
+      "Sun",
+      "Mercury",
+      "Venus",
+      "Mars",
+      "Jupiter",
+      "Saturn"
+    ],
+    "houses_involved": [
+      2,
+      12
+    ],
+    "formation": "Planets other than the Moon occupy both 2nd and 12th houses from the Sun.",
+    "effect": "Eloquence, well-proportioned body, wealth, popular affection.",
+    "modern_interpretation": "Charismatic leadership, high media presence, diplomatic skill.",
+    "neutralization": "Neutralized if Sun or flanking planets are heavily afflicted.",
+    "relevance": "High",
+    "additional_info": "Solar counterpart to Dhurdhura Yoga."
+  },
+  {
+    "id": 19,
+    "name": "Hamsa Yoga",
+    "category": "Panchamahapurusha",
+    "participating_planets": [
+      "Jupiter"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Jupiter occupies a Kendra house identical with own sign (Sagittarius, Pisces) or exaltation (Cancer).",
+    "effect": "Pure mind, righteous disposition, handsome body, high moral stature, judicial mind.",
+    "modern_interpretation": "Academic chancellorship, judicial elevation, ethical leadership, spiritual teaching.",
+    "neutralization": "Weakened if Jupiter is combust or heavily afflicted by Rahu/Saturn.",
+    "relevance": "Very High",
+    "additional_info": "One of 5 elite Mahapurusha Yogas; requires strong Shadbala."
+  },
+  {
+    "id": 20,
+    "name": "Malavya Yoga",
+    "category": "Panchamahapurusha",
+    "participating_planets": [
+      "Venus"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Venus occupies a Kendra house identical with own sign (Taurus, Libra) or exaltation (Pisces).",
+    "effect": "Wealth, luxury vehicles, sensory pleasures, fine learning, material luxury.",
+    "modern_interpretation": "Design/artistic stardom, luxury brand leadership, hospitality mogul, aesthetic success.",
+    "neutralization": "Nullified if Venus is combust, in enemy Navamsa, or afflicted by Mars without benefic aspect.",
+    "relevance": "Very High",
+    "additional_info": "Grants high material luxury and charm."
+  },
+  {
+    "id": 21,
+    "name": "Sasa Yoga",
+    "category": "Panchamahapurusha",
+    "participating_planets": [
+      "Saturn"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Saturn occupies a Kendra house identical with own sign (Capricorn, Aquarius) or exaltation (Libra).",
+    "effect": "Authority over servants, command over towns/villages, stern or questionable character, durable wealth.",
+    "modern_interpretation": "Industrialist, labor union leadership, mining/infrastructure magnate, executive director.",
+    "neutralization": "Neutralized if Moon is very strong and unafflicted, or if Saturn is in fall in Navamsa.",
+    "relevance": "Very High",
+    "additional_info": "Gives immense power over masses and durable material structures."
+  },
+  {
+    "id": 22,
+    "name": "Ruchaka Yoga",
+    "category": "Panchamahapurusha",
+    "participating_planets": [
+      "Mars"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Mars occupies a Kendra house identical with own sign (Aries, Scorpio) or exaltation (Capricorn).",
+    "effect": "Martial prowess, physical strength, leadership of armies, aggressive authority, victor in disputes.",
+    "modern_interpretation": "Defense top command, sports champion, surgical excellence, engineering tycoon.",
+    "neutralization": "Weakened if Mars is afflicted by Rahu/Saturn or debilitated in Navamsa.",
+    "relevance": "Very High",
+    "additional_info": "Grants high courage, physical energy, and executive drive."
+  },
+  {
+    "id": 23,
+    "name": "Bhadra Yoga",
+    "category": "Panchamahapurusha",
+    "participating_planets": [
+      "Mercury"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Mercury occupies a Kendra house identical with own sign (Gemini) or exaltation (Virgo).",
+    "effect": "Intellectual brilliance, long life, taciturn nature, high learning, mastery of arts and sciences.",
+    "modern_interpretation": "Tech founder, mathematical genius, publishing leader, scientific pioneer.",
+    "neutralization": "Combustion by Sun reduces efficacy unless Mercury is at deep exaltation padas.",
+    "relevance": "Very High",
+    "additional_info": "Premier yoga for intellect, trade, and scientific research."
+  },
+  {
+    "id": 24,
+    "name": "Budha-Aditya Yoga",
+    "category": "Solar / Intellect",
+    "participating_planets": [
+      "Sun",
+      "Mercury"
+    ],
+    "houses_involved": [
+      1,
+      2,
+      4,
+      5,
+      10,
+      11
+    ],
+    "formation": "Conjunction of Sun and Mercury in a favorable house.",
+    "effect": "High intelligence, skill in work, scholarly fame, executive capability.",
+    "modern_interpretation": "Analytical career, management consulting, software architecture, journalism.",
+    "neutralization": "Cancelled if Mercury is combust within 10 degrees of Sun or placed in 6th/8th/12th.",
+    "relevance": "Very High",
+    "additional_info": "Extremely common; requires Mercury unafflicted to yield full fruits."
+  },
+  {
+    "id": 25,
+    "name": "Mahabhagya Yoga",
+    "category": "Fortune Yoga",
+    "participating_planets": [
+      "Sun",
+      "Moon",
+      "Lagna"
+    ],
+    "houses_involved": [
+      1,
+      5,
+      9
+    ],
+    "formation": "Male born during day with Sun, Moon, and Lagna in odd signs; OR Female born during night with Sun, Moon, and Lagna in even signs.",
+    "effect": "Generosity, noble character, supreme fortune, long life, widespread popularity.",
+    "modern_interpretation": "National leadership, public patronage, effortless fortune.",
+    "neutralization": "Impaired if Sun or Moon is afflicted by Rahu/Kethu or in debility.",
+    "relevance": "High",
+    "additional_info": "Distinct gender-based solar/lunar alignment."
+  },
+  {
+    "id": 26,
+    "name": "Pushkala Yoga",
+    "category": "Fortune Yoga",
+    "participating_planets": [
+      "Lagna Lord",
+      "Moon",
+      "Chandra Lagna Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Lagna lord with Moon; Chandra Lagna lord in Kendra or friendly sign aspecting Lagna; Lagna occupied by strong planet.",
+    "effect": "Sweet speech, wealth, royal honors, happiness.",
+    "modern_interpretation": "Diplomatic success, public relations, wealth accumulation.",
+    "neutralization": "Neutralized if Lagna lord is debilitated or aspected by malefics.",
+    "relevance": "Mid",
+    "additional_info": "Combines Lagna and Chandra Lagna strengths."
+  },
+  {
+    "id": 27,
+    "name": "Lakshmi Yoga",
+    "category": "Dhana Yoga",
+    "participating_planets": [
+      "Lagna Lord",
+      "9th Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      9,
+      10
+    ],
+    "formation": "Strong Lagna lord with 9th lord placed in own/exaltation sign in a Kendra or Kona.",
+    "effect": "Immense wealth, noble integrity, attractive personality, high status.",
+    "modern_interpretation": "High net-worth investor, corporate founder, aristocratic wealth.",
+    "neutralization": "Cancelled if 9th lord is debilitated or in 6th/8th/12th.",
+    "relevance": "Very High",
+    "additional_info": "Premier wealth yoga in Vedic astrology."
+  },
+  {
+    "id": 28,
+    "name": "Gauri Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "10th Navamsa Lord",
+      "Lagna Lord",
+      "9th Lord",
+      "Moon"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      9,
+      10
+    ],
+    "formation": "Lord of 10th Navamsa exalted in 10th house combined with Lagna lord; OR 9th lord and Moon in own/exaltation signs in trine/Kendra.",
+    "effect": "Respectable family origin, extensive land ownership, religious nature, executive status.",
+    "modern_interpretation": "Real estate development, agricultural wealth, high ethical standing.",
+    "neutralization": "Impaired if Moon or 9th lord is afflicted by Saturn/Rahu.",
+    "relevance": "Mid",
+    "additional_info": "Emphasizes lineage and land assets."
+  },
+  {
+    "id": 29,
+    "name": "Bharathi Yoga",
+    "category": "Scholarship Yoga",
+    "participating_planets": [
+      "2nd Lord",
+      "5th Lord",
+      "11th Lord",
+      "9th Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      9,
+      10
+    ],
+    "formation": "Navamsa lord of 2nd, 5th, or 11th lord exalted and joining 9th lord.",
+    "effect": "Worldly fame, scholarly reputation, love of fine arts/music, attractive appearance.",
+    "modern_interpretation": "Academic tenure, literary accolades, artistic fame.",
+    "neutralization": "Weakened if 9th lord is combust or debilitated.",
+    "relevance": "Mid",
+    "additional_info": "Highlights refined culture and high erudition."
+  },
+  {
+    "id": 30,
+    "name": "Chapa Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Lagna Lord",
+      "4th Lord",
+      "10th Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      10
+    ],
+    "formation": "Lagna lord exalted with 4th and 10th lords exchanging houses.",
+    "effect": "Administrative power, control over public exchequers, military strength, executive authority.",
+    "modern_interpretation": "Finance ministry control, CFO role, treasury management, defense leadership.",
+    "neutralization": "Neutralized if Lagna lord is in 6th/8th/12th in Navamsa.",
+    "relevance": "Mid",
+    "additional_info": "Specific to fiscal and military control."
+  },
+  {
+    "id": 31,
+    "name": "Sreenatha Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "7th Lord",
+      "10th Lord",
+      "9th Lord"
+    ],
+    "houses_involved": [
+      10
+    ],
+    "formation": "Exalted 7th lord in 10th house with 10th lord combined with 9th lord (Sagittarius Lagna).",
+    "effect": "High political/spiritual power, aristocratic status, vast wealth.",
+    "modern_interpretation": "National political leadership, spiritual movement founder, prime executive.",
+    "neutralization": "Requires Sagittarius ascendant specifically; voided if 10th lord is combust.",
+    "relevance": "Low",
+    "additional_info": "Occurs specifically for Sagittarius ascendant with Mercury exalted in Virgo in 10th."
+  },
+  {
+    "id": 32,
+    "name": "Lagna Malika Yoga",
+    "category": "Malika Yoga",
+    "participating_planets": [
+      "All 7 Planets"
+    ],
+    "houses_involved": [
+      1
+    ],
+    "formation": "All 7 planets occupying 7 continuous houses starting from house 1.",
+    "effect": "Grants king, ruler, commander, wealthy.",
+    "modern_interpretation": "Sequential life stability, structured progression in life domains.",
+    "neutralization": "Cancelled if any of the forming planets are debilitated or in deep enemy signs without aspect.",
+    "relevance": "Low",
+    "additional_info": "Rare planetary chain formation across 7 continuous houses."
+  },
+  {
+    "id": 33,
+    "name": "Dhana Malika Yoga",
+    "category": "Malika Yoga",
+    "participating_planets": [
+      "All 7 Planets"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "All 7 planets occupying 7 continuous houses starting from house 2.",
+    "effect": "Grants highly wealthy, resolute, cultured.",
+    "modern_interpretation": "Sequential life stability, structured progression in life domains.",
+    "neutralization": "Cancelled if any of the forming planets are debilitated or in deep enemy signs without aspect.",
+    "relevance": "Low",
+    "additional_info": "Rare planetary chain formation across 7 continuous houses."
+  },
+  {
+    "id": 34,
+    "name": "Vikrama Malika Yoga",
+    "category": "Malika Yoga",
+    "participating_planets": [
+      "All 7 Planets"
+    ],
+    "houses_involved": [
+      3
+    ],
+    "formation": "All 7 planets occupying 7 continuous houses starting from house 3.",
+    "effect": "Grants brave, honored by ruler, surrounded by brothers.",
+    "modern_interpretation": "Sequential life stability, structured progression in life domains.",
+    "neutralization": "Cancelled if any of the forming planets are debilitated or in deep enemy signs without aspect.",
+    "relevance": "Low",
+    "additional_info": "Rare planetary chain formation across 7 continuous houses."
+  },
+  {
+    "id": 35,
+    "name": "Matru Malika Yoga",
+    "category": "Malika Yoga",
+    "participating_planets": [
+      "All 7 Planets"
+    ],
+    "houses_involved": [
+      4
+    ],
+    "formation": "All 7 planets occupying 7 continuous houses starting from house 4.",
+    "effect": "Grants comfortable homes, wealthy, good mother.",
+    "modern_interpretation": "Sequential life stability, structured progression in life domains.",
+    "neutralization": "Cancelled if any of the forming planets are debilitated or in deep enemy signs without aspect.",
+    "relevance": "Low",
+    "additional_info": "Rare planetary chain formation across 7 continuous houses."
+  },
+  {
+    "id": 36,
+    "name": "Putra Malika Yoga",
+    "category": "Malika Yoga",
+    "participating_planets": [
+      "All 7 Planets"
+    ],
+    "houses_involved": [
+      5
+    ],
+    "formation": "All 7 planets occupying 7 continuous houses starting from house 5.",
+    "effect": "Grants blessed with children, learned, virtuous.",
+    "modern_interpretation": "Sequential life stability, structured progression in life domains.",
+    "neutralization": "Cancelled if any of the forming planets are debilitated or in deep enemy signs without aspect.",
+    "relevance": "Low",
+    "additional_info": "Rare planetary chain formation across 7 continuous houses."
+  },
+  {
+    "id": 37,
+    "name": "Satru Malika Yoga",
+    "category": "Malika Yoga",
+    "participating_planets": [
+      "All 7 Planets"
+    ],
+    "houses_involved": [
+      6
+    ],
+    "formation": "All 7 planets occupying 7 continuous houses starting from house 6.",
+    "effect": "Grants victorious over enemies, wealthy.",
+    "modern_interpretation": "Sequential life stability, structured progression in life domains.",
+    "neutralization": "Cancelled if any of the forming planets are debilitated or in deep enemy signs without aspect.",
+    "relevance": "Low",
+    "additional_info": "Rare planetary chain formation across 7 continuous houses."
+  },
+  {
+    "id": 38,
+    "name": "Kalatra Malika Yoga",
+    "category": "Malika Yoga",
+    "participating_planets": [
+      "All 7 Planets"
+    ],
+    "houses_involved": [
+      7
+    ],
+    "formation": "All 7 planets occupying 7 continuous houses starting from house 7.",
+    "effect": "Grants handsome spouse, honored, influential.",
+    "modern_interpretation": "Sequential life stability, structured progression in life domains.",
+    "neutralization": "Cancelled if any of the forming planets are debilitated or in deep enemy signs without aspect.",
+    "relevance": "Low",
+    "additional_info": "Rare planetary chain formation across 7 continuous houses."
+  },
+  {
+    "id": 39,
+    "name": "Randra Malika Yoga",
+    "category": "Malika Yoga",
+    "participating_planets": [
+      "All 7 Planets"
+    ],
+    "houses_involved": [
+      8
+    ],
+    "formation": "All 7 planets occupying 7 continuous houses starting from house 8.",
+    "effect": "Grants troubled by debt, short-lived or tough struggles.",
+    "modern_interpretation": "Sequential life stability, structured progression in life domains.",
+    "neutralization": "Cancelled if any of the forming planets are debilitated or in deep enemy signs without aspect.",
+    "relevance": "Low",
+    "additional_info": "Rare planetary chain formation across 7 continuous houses."
+  },
+  {
+    "id": 40,
+    "name": "Bhagya Malika Yoga",
+    "category": "Malika Yoga",
+    "participating_planets": [
+      "All 7 Planets"
+    ],
+    "houses_involved": [
+      9
+    ],
+    "formation": "All 7 planets occupying 7 continuous houses starting from house 9.",
+    "effect": "Grants virtuous, spiritual, highly fortunate.",
+    "modern_interpretation": "Sequential life stability, structured progression in life domains.",
+    "neutralization": "Cancelled if any of the forming planets are debilitated or in deep enemy signs without aspect.",
+    "relevance": "Low",
+    "additional_info": "Rare planetary chain formation across 7 continuous houses."
+  },
+  {
+    "id": 41,
+    "name": "Karma Malika Yoga",
+    "category": "Malika Yoga",
+    "participating_planets": [
+      "All 7 Planets"
+    ],
+    "houses_involved": [
+      10
+    ],
+    "formation": "All 7 planets occupying 7 continuous houses starting from house 10.",
+    "effect": "Grants ethical, perform righteous deeds, famous.",
+    "modern_interpretation": "Sequential life stability, structured progression in life domains.",
+    "neutralization": "Cancelled if any of the forming planets are debilitated or in deep enemy signs without aspect.",
+    "relevance": "Low",
+    "additional_info": "Rare planetary chain formation across 7 continuous houses."
+  },
+  {
+    "id": 42,
+    "name": "Labha Malika Yoga",
+    "category": "Malika Yoga",
+    "participating_planets": [
+      "All 7 Planets"
+    ],
+    "houses_involved": [
+      11
+    ],
+    "formation": "All 7 planets occupying 7 continuous houses starting from house 11.",
+    "effect": "Grants highly prosperous, multiple revenue streams.",
+    "modern_interpretation": "Sequential life stability, structured progression in life domains.",
+    "neutralization": "Cancelled if any of the forming planets are debilitated or in deep enemy signs without aspect.",
+    "relevance": "Low",
+    "additional_info": "Rare planetary chain formation across 7 continuous houses."
+  },
+  {
+    "id": 43,
+    "name": "Vraya Malika Yoga",
+    "category": "Malika Yoga",
+    "participating_planets": [
+      "All 7 Planets"
+    ],
+    "houses_involved": [
+      12
+    ],
+    "formation": "All 7 planets occupying 7 continuous houses starting from house 12.",
+    "effect": "Grants spendthrift, charitable, generous.",
+    "modern_interpretation": "Sequential life stability, structured progression in life domains.",
+    "neutralization": "Cancelled if any of the forming planets are debilitated or in deep enemy signs without aspect.",
+    "relevance": "Low",
+    "additional_info": "Rare planetary chain formation across 7 continuous houses."
+  },
+  {
+    "id": 44,
+    "name": "Sankha Yoga",
+    "category": "Virtue Yoga",
+    "participating_planets": [
+      "5th Lord",
+      "6th Lord",
+      "Lagna Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      5,
+      6,
+      7,
+      10
+    ],
+    "formation": "Lords of 5th and 6th in mutual Kendras with a strong Lagna lord.",
+    "effect": "Humanitarian nature, high learning, landed properties, long life.",
+    "modern_interpretation": "Non-profit leadership, social reform, educational leadership.",
+    "neutralization": "Weakened if 5th or 6th lords are in debility.",
+    "relevance": "Mid",
+    "additional_info": "Gives philanthropic orientation and academic depth."
+  },
+  {
+    "id": 45,
+    "name": "Bheri Yoga",
+    "category": "Dhana / Health",
+    "participating_planets": [
+      "Venus",
+      "Lagna Lord",
+      "Jupiter",
+      "9th Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      9,
+      10
+    ],
+    "formation": "Venus, Lagna lord, and Jupiter in mutual Kendras with a strong 9th lord.",
+    "effect": "Disease-free long life, multiple income sources, happiness, high status.",
+    "modern_interpretation": "Health longevity, diversified wealth, executive peace.",
+    "neutralization": "Impaired if 9th lord is debilitated or combust.",
+    "relevance": "Mid",
+    "additional_info": "Focuses on health longevity alongside wealth."
+  },
+  {
+    "id": 46,
+    "name": "Mridanga Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Navamsa Lord of Exalted Planet",
+      "Lagna Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      5,
+      7,
+      9,
+      10
+    ],
+    "formation": "Navamsa lord of an exalted planet in a trine/Kendra in own/friendly/exalted sign with strong Lagna lord.",
+    "effect": "High influence, fame, royal honors, commanding respect.",
+    "modern_interpretation": "National accolades, executive leadership, distinguished service.",
+    "neutralization": "Neutralized if Lagna lord is combust or in Dusthana.",
+    "relevance": "Mid",
+    "additional_info": "Utilizes Navamsa dispositor strength."
+  },
+  {
+    "id": 47,
+    "name": "Parijatha Yoga",
+    "category": "Status & Wealth",
+    "participating_planets": [
+      "Lagna Lord Dispositor"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      5,
+      7,
+      9,
+      10
+    ],
+    "formation": "Lord of sign occupied by Lagna lord's dispositor (or Navamsa dispositor) in Kendra, Kona, own, or exaltation sign.",
+    "effect": "Mid-life and late-life prosperity, fame, authority, honor.",
+    "modern_interpretation": "Career culmination, senior executive authority, lasting legacy.",
+    "neutralization": "Impaired if dispositor is heavily afflicted by Saturn/Rahu.",
+    "relevance": "High",
+    "additional_info": "Famous yoga for progressive life success in middle/later years."
+  },
+  {
+    "id": 48,
+    "name": "Gaja Yoga",
+    "category": "Wealth Yoga",
+    "participating_planets": [
+      "7th Lord",
+      "11th Lord",
+      "Moon"
+    ],
+    "houses_involved": [
+      11
+    ],
+    "formation": "Lord of 9th from 11th (7th lord) in 11th with Moon, aspected by 11th lord.",
+    "effect": "Lasting wealth, cattle/property, financial abundance.",
+    "modern_interpretation": "Commercial real estate assets, institutional investment success.",
+    "neutralization": "Weakened if 11th lord is debilitated.",
+    "relevance": "Low",
+    "additional_info": "Niche combination for property and liquid assets."
+  },
+  {
+    "id": 49,
+    "name": "Kalanidhi Yoga",
+    "category": "Aristocratic Status",
+    "participating_planets": [
+      "Jupiter",
+      "Mercury",
+      "Venus"
+    ],
+    "houses_involved": [
+      2,
+      5
+    ],
+    "formation": "Conjunction or mutual aspect of Jupiter, Mercury, and Venus in 2nd or 5th house.",
+    "effect": "High passion, aristocratic status, immunity from disease, statesmanship.",
+    "modern_interpretation": "Cultural/diplomatic leadership, artistic expertise, refined lifestyle.",
+    "neutralization": "Neutralized if planets are combust or in debility.",
+    "relevance": "High",
+    "additional_info": "Excellent yoga for intellectual and cultural refine."
+  },
+  {
+    "id": 50,
+    "name": "Amsavatara Yoga",
+    "category": "Scholarly / Ruler",
+    "participating_planets": [
+      "Venus",
+      "Jupiter",
+      "Saturn"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Venus and Jupiter in Kendras, Lagna in movable sign, Saturn exalted in Kendra.",
+    "effect": "Spotless reputation, scholarly mastery, ruler status, philosopher king.",
+    "modern_interpretation": "University chancellor, philosophical leader, judicial statesman.",
+    "neutralization": "Voided if Saturn or Jupiter is combust.",
+    "relevance": "Low",
+    "additional_info": "Requires specific movable Lagna and exalted Saturn configuration."
+  },
+  {
+    "id": 51,
+    "name": "Harihara Brahma Yoga",
+    "category": "Wisdom / Victory",
+    "participating_planets": [
+      "Jupiter",
+      "Moon",
+      "Mercury",
+      "Sun",
+      "Venus",
+      "Mars"
+    ],
+    "houses_involved": [
+      2,
+      4,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "formation": "Benefics in 8th/12th from 2nd lord; OR Jupiter, Moon, Mercury in 4th, 9th, 8th from 7th lord; OR Sun, Venus, Mars in 4th, 10th, 11th from Lagna lord.",
+    "effect": "Mastery of sacred texts, truthfulness, victory over enemies, divine wisdom.",
+    "modern_interpretation": "Academic scholarship, philosophical mastery, spiritual authority.",
+    "neutralization": "Weakened if participating planets are debilitated.",
+    "relevance": "Low",
+    "additional_info": "Complex triad yoga representing Trinity energies."
+  },
+  {
+    "id": 52,
+    "name": "Kusuma Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Jupiter",
+      "Moon",
+      "Sun"
+    ],
+    "houses_involved": [
+      1,
+      7,
+      8
+    ],
+    "formation": "Jupiter in Lagna, Moon in 7th, and Sun in 8th from Moon.",
+    "effect": "Leadership, town foundation, unsullied fame, executive honor.",
+    "modern_interpretation": "City planning, infrastructure development, high civic honor.",
+    "neutralization": "Weakened if Sun is debilitated or Moon is waning/afflicted.",
+    "relevance": "Low",
+    "additional_info": "Combines Gajakesari elements with specific Solar placement."
+  },
+  {
+    "id": 53,
+    "name": "Matsya Yoga",
+    "category": "Wisdom & Compassion",
+    "participating_planets": [
+      "Malefics",
+      "Benefics"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      5,
+      8,
+      9
+    ],
+    "formation": "Malefics in Lagna and 9th; benefics and malefics in 5th; malefics in 4th and 8th.",
+    "effect": "Deep compassion, wisdom, learning, religious detachment.",
+    "modern_interpretation": "Spiritual teacher, humanitarian leader, philosophical scholar.",
+    "neutralization": "Altered if benefics dominate 1st and 9th.",
+    "relevance": "Very Low",
+    "additional_info": "Rare complex planetary distribution."
+  },
+  {
+    "id": 54,
+    "name": "Kurma Yoga",
+    "category": "Fame & Character",
+    "participating_planets": [
+      "Benefics"
+    ],
+    "houses_involved": [
+      1,
+      3,
+      5,
+      6,
+      7,
+      11
+    ],
+    "formation": "Benefics in 5th, 6th, 7th in own/friendly/exalted Navamsas; OR benefics in 1st, 3rd, 11th in own/exalted signs.",
+    "effect": "Worldly fame, courage, leadership, mild temperament, enduring legacy.",
+    "modern_interpretation": "Public statesman, philanthropist, corporate pillar.",
+    "neutralization": "Impaired if benefics are combust.",
+    "relevance": "Very Low",
+    "additional_info": "Geometric placement of benefic forces."
+  },
+  {
+    "id": 55,
+    "name": "Devendra Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Lagna Lord",
+      "11th Lord",
+      "2nd Lord",
+      "10th Lord"
+    ],
+    "houses_involved": [
+      1,
+      2,
+      10,
+      11
+    ],
+    "formation": "Lagna in fixed sign, Lagna lord and 11th lord exchanging places, and 2nd and 10th lords exchanging places.",
+    "effect": "Handsome appearance, military leadership, long life, vast authority.",
+    "modern_interpretation": "Military command, corporate C-suite, high executive office.",
+    "neutralization": "Requires fixed Lagna; voided if lords are debilitated in Navamsa.",
+    "relevance": "Low",
+    "additional_info": "Double house exchange (Parivarthana) yoga."
+  },
+  {
+    "id": 56,
+    "name": "Makuta Yoga",
+    "category": "Authority Yoga",
+    "participating_planets": [
+      "Jupiter",
+      "9th Lord",
+      "Saturn"
+    ],
+    "houses_involved": [
+      9,
+      10
+    ],
+    "formation": "Jupiter in 9th from 9th lord, benefic in 9th from Jupiter, and Saturn in 10th.",
+    "effect": "Authority over sports, forests, or unruly groups; commanding leader.",
+    "modern_interpretation": "Forestry administration, sports league executive, industrial security chief.",
+    "neutralization": "Neutralized if Saturn is in debility without cancellation.",
+    "relevance": "Low",
+    "additional_info": "Niche authority yoga."
+  },
+  {
+    "id": 57,
+    "name": "Chandika Yoga",
+    "category": "Aggressive Raja",
+    "participating_planets": [
+      "Sun",
+      "6th Lord",
+      "9th Lord"
+    ],
+    "houses_involved": [
+      1,
+      6,
+      9
+    ],
+    "formation": "Fixed Lagna aspected by 6th lord, with Sun combined with Navamsa lords of 6th and 9th lords.",
+    "effect": "Aggressive power, charitable nature, political status, dominance over rivals.",
+    "modern_interpretation": "Political warfare executive, crisis manager, assertive leadership.",
+    "neutralization": "Weakened if Sun is debilitated.",
+    "relevance": "Low",
+    "additional_info": "Combines Martian/Solar aggressive authority."
+  },
+  {
+    "id": 58,
+    "name": "Jaya Yoga",
+    "category": "Victory Yoga",
+    "participating_planets": [
+      "6th Lord",
+      "10th Lord"
+    ],
+    "houses_involved": [
+      6,
+      10
+    ],
+    "formation": "Lord of 6th debilitated and lord of 10th deeply exalted.",
+    "effect": "Universal victory over enemies, success in competitive ventures, long life.",
+    "modern_interpretation": "Litigation victory, market monopoly, corporate competitive triumph.",
+    "neutralization": "Impaired if 10th lord loses exaltation in Navamsa.",
+    "relevance": "High",
+    "additional_info": "Classic formula: weak enemies (6th) + strong career/karma (10th)."
+  },
+  {
+    "id": 59,
+    "name": "Vidyut Yoga",
+    "category": "Fiscal Control",
+    "participating_planets": [
+      "11th Lord",
+      "Venus",
+      "Lagna Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10,
+      11
+    ],
+    "formation": "Lord of 11th in deep exaltation combined with Venus in Kendra from Lagna lord.",
+    "effect": "Financial control, generous nature, immense wealth, royal position.",
+    "modern_interpretation": "Venture capital director, chief financial controller, luxury business leader.",
+    "neutralization": "Weakened if Venus is combust.",
+    "relevance": "Mid",
+    "additional_info": "Emphasizes exalted gains and Venusian luxury."
+  },
+  {
+    "id": 60,
+    "name": "Gandharva Yoga",
+    "category": "Arts & Fame",
+    "participating_planets": [
+      "10th Lord",
+      "Lagna Lord",
+      "Jupiter",
+      "Sun",
+      "Moon"
+    ],
+    "houses_involved": [
+      3,
+      7,
+      9,
+      11
+    ],
+    "formation": "10th lord in Kama Trikona (3, 7, 11), Lagna lord and Jupiter associated, Sun exalted/strong, Moon in 9th.",
+    "effect": "Unparalleled skill in fine arts, music, international fame, luxury.",
+    "modern_interpretation": "Global music star, celebrated artist, cultural icon.",
+    "neutralization": "Impaired if Moon or Sun is afflicted by Rahu.",
+    "relevance": "Low",
+    "additional_info": "Premier yoga for artistic genius and international fame."
+  },
+  {
+    "id": 61,
+    "name": "Siva Yoga",
+    "category": "Wisdom & Military",
+    "participating_planets": [
+      "5th Lord",
+      "9th Lord",
+      "10th Lord"
+    ],
+    "houses_involved": [
+      5,
+      9,
+      10
+    ],
+    "formation": "5th lord in 9th, 9th lord in 10th, and 10th lord in 5th.",
+    "effect": "Success in commerce, military command, divine wisdom, high prosperity.",
+    "modern_interpretation": "Defense leadership, executive commerce, spiritual philosophy.",
+    "neutralization": "Voided if any of the three house lords are debilitated.",
+    "relevance": "Mid",
+    "additional_info": "A triadic Parivarthana among Dharma, Karma, and Buddhi houses."
+  },
+  {
+    "id": 62,
+    "name": "Vishnu Yoga",
+    "category": "Eloquence & Wealth",
+    "participating_planets": [
+      "9th Lord",
+      "10th Lord",
+      "2nd Lord"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "9th and 10th lords in 2nd house along with Navamsa lord of 9th lord.",
+    "effect": "Immense wealth, diplomatic eloquence, long life, respected by rulers.",
+    "modern_interpretation": "Diplomatic envoy, corporate spokesperson, treasury secretary.",
+    "neutralization": "Weakened if 2nd house is afflicted by Saturn/Mars.",
+    "relevance": "Mid",
+    "additional_info": "Dharma-Karma combination manifesting in 2nd house of speech/wealth."
+  },
+  {
+    "id": 63,
+    "name": "Brahma Yoga",
+    "category": "Wisdom & Learning",
+    "participating_planets": [
+      "Jupiter",
+      "Venus",
+      "Mercury",
+      "9th Lord",
+      "11th Lord",
+      "10th Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Jupiter and Venus in Kendras from 9th and 11th lords respectively; Mercury in Kendra from Lagna or 10th lord.",
+    "effect": "High learning, long life, charitable deeds, divine scholarship.",
+    "modern_interpretation": "Research professor, chief academic officer, ethical leader.",
+    "neutralization": "Weakened if Mercury is combust.",
+    "relevance": "Mid",
+    "additional_info": "Supreme benefic intellectual combination."
+  },
+  {
+    "id": 64,
+    "name": "Indra Yoga",
+    "category": "Status & Courage",
+    "participating_planets": [
+      "5th Lord",
+      "11th Lord",
+      "Moon"
+    ],
+    "houses_involved": [
+      5,
+      11
+    ],
+    "formation": "Lords of 5th and 11th exchanging houses with Moon in 5th.",
+    "effect": "High courage, lasting fame, royal status, command over people.",
+    "modern_interpretation": "Political representative, executive leader, renowned figure.",
+    "neutralization": "Impaired if Moon is waning or afflicted.",
+    "relevance": "Low",
+    "additional_info": "Exchange between intelligence (5th) and gains (11th)."
+  },
+  {
+    "id": 65,
+    "name": "Ravi Yoga",
+    "category": "Scientific Fame",
+    "participating_planets": [
+      "Sun",
+      "10th Lord",
+      "Saturn"
+    ],
+    "houses_involved": [
+      3,
+      10
+    ],
+    "formation": "Sun in 10th house, and 10th lord in 3rd in conjunction with Saturn.",
+    "effect": "Respect from rulers, scientific learning, high intellectual passion.",
+    "modern_interpretation": "Scientific researcher, engineering leader, government advisor.",
+    "neutralization": "Weakened if Sun is in fall (Libra) in 10th.",
+    "relevance": "Mid",
+    "additional_info": "Solar 10th house prominence with technical Saturn influence."
+  },
+  {
+    "id": 66,
+    "name": "Garuda Yoga",
+    "category": "Speech & Honor",
+    "participating_planets": [
+      "Moon Navamsa Dispositor"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Navamsa lord of Moon exalted, birth during daytime in bright half (Shukla Paksha).",
+    "effect": "Polished speech, high respect, danger from poison in 34th year.",
+    "modern_interpretation": "Orator, ambassador, executive presence.",
+    "neutralization": "Neutralized if Moon is heavily afflicted.",
+    "relevance": "Low",
+    "additional_info": "Day birth / Shukla Paksha lunar Navamsa exalted yoga."
+  },
+  {
+    "id": 67,
+    "name": "Go Yoga",
+    "category": "Family & Wealth",
+    "participating_planets": [
+      "Jupiter",
+      "2nd Lord",
+      "Lagna Lord"
+    ],
+    "houses_involved": [
+      1,
+      2
+    ],
+    "formation": "Strong Jupiter in Moolathrikona with 2nd lord, and Lagna lord exalted.",
+    "effect": "High family origin, wealth, strength, respected by peers.",
+    "modern_interpretation": "Family enterprise successor, wealthy inheritance, respected leader.",
+    "neutralization": "Weakened if 2nd lord is combust.",
+    "relevance": "Low",
+    "additional_info": "Requires specific Moolathrikona Jupiter and exalted Lagna lord."
+  },
+  {
+    "id": 68,
+    "name": "Gola Yoga",
+    "category": "Scholarship",
+    "participating_planets": [
+      "Moon",
+      "Jupiter",
+      "Venus",
+      "Mercury"
+    ],
+    "houses_involved": [
+      1,
+      9
+    ],
+    "formation": "Full Moon in 9th with Jupiter and Venus, and Mercury in Navamsa Lagna.",
+    "effect": "Polite nature, scholarship, long life, administrative authority.",
+    "modern_interpretation": "Academic dean, cultural administrator, author.",
+    "neutralization": "Impaired if Moon is not full.",
+    "relevance": "Low",
+    "additional_info": "Full Moon 9th house benefic assembly."
+  },
+  {
+    "id": 69,
+    "name": "Thrilochana Yoga",
+    "category": "Intelligence & Career",
+    "participating_planets": [
+      "Sun",
+      "Moon",
+      "Mars"
+    ],
+    "houses_involved": [
+      1,
+      5,
+      9
+    ],
+    "formation": "Sun, Moon, and Mars in mutual trines (1st, 5th, 9th houses).",
+    "effect": "Smooth career progression, high intelligence, long life, victory over rivals.",
+    "modern_interpretation": "Strategic executive, management leader, military strategist.",
+    "neutralization": "Weakened if any of the three are in debility.",
+    "relevance": "High",
+    "additional_info": "Trinal harmony among Sun, Moon, and Mars."
+  },
+  {
+    "id": 70,
+    "name": "Kulavardhana Yoga",
+    "category": "Lineage Perpetuation",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      5
+    ],
+    "formation": "All planets placed in 5th from Lagna, Sun, or Moon.",
+    "effect": "Unbroken lineage, family perpetuation, prosperity of descendants.",
+    "modern_interpretation": "Family business legacy, strong ancestral succession.",
+    "neutralization": "Diminished if 5th house is occupied by malefic in fall.",
+    "relevance": "Very Low",
+    "additional_info": "Special structural 5th house concentration."
+  },
+  {
+    "id": 71,
+    "name": "Yupa Yoga",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "formation": "Planets in 1st, 2nd, 3rd, 4th contiguously.",
+    "effect": "Charitable, liberal nature, perform sacrifices.",
+    "modern_interpretation": "Philanthropy, community leadership.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "Low",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 72,
+    "name": "Ishu (Sara) Yoga",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      4,
+      5,
+      6,
+      7
+    ],
+    "formation": "Planets in 4th, 5th, 6th, 7th contiguously.",
+    "effect": "Authority over prisons or enforcement, stern ruler.",
+    "modern_interpretation": "Correctional governance, law enforcement chief.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "Low",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 73,
+    "name": "Sakti Yoga",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "formation": "Planets in 7th, 8th, 9th, 10th contiguously.",
+    "effect": "Slothful, impoverished, disliked by peers.",
+    "modern_interpretation": "Financial struggle, career stagnation.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "Low",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 74,
+    "name": "Danda Yoga",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      10,
+      11,
+      12,
+      1
+    ],
+    "formation": "Planets in 10th, 11th, 12th, 1st contiguously.",
+    "effect": "Domestic unhappiness, separation from family.",
+    "modern_interpretation": "Work-life imbalance, isolation.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "Low",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 75,
+    "name": "Nav Yoga",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "formation": "Planets in 7 contiguous houses from Lagna.",
+    "effect": "Water-related professions, miserly, celebrated.",
+    "modern_interpretation": "Maritime industry, logistics mogul.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "Low",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 76,
+    "name": "Kuta Yoga",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "formation": "Planets in 7 contiguous houses from 4th.",
+    "effect": "Untruthful, frequenting mountains/caves, guard.",
+    "modern_interpretation": "Mining inspector, remote research officer.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "Low",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 77,
+    "name": "Chhatra Yoga",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      1
+    ],
+    "formation": "Planets in 7 contiguous houses from 7th.",
+    "effect": "Mental strength, wealth in early and late life.",
+    "modern_interpretation": "Consistent life support, leadership umbrella.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "Low",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 78,
+    "name": "Chapa Yoga (Shape)",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      10,
+      11,
+      12,
+      1,
+      2,
+      3,
+      4
+    ],
+    "formation": "Planets in 7 contiguous houses from 10th.",
+    "effect": "Comfortable life, brave, protector of others.",
+    "modern_interpretation": "Defense officer, corporate protector.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "Low",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 79,
+    "name": "Ardha Chandra Yoga",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "formation": "Planets in 7 continuous houses starting from Panapara/Apoklima.",
+    "effect": "Fair features, lifelong happiness, leadership.",
+    "modern_interpretation": "Artistic appeal, public popularity.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "Mid",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 80,
+    "name": "Chandra Yoga (Shape)",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11
+    ],
+    "formation": "Planets occupying odd houses (1, 3, 5, 7, 9, 11).",
+    "effect": "Social status, high respect, fame.",
+    "modern_interpretation": "Public recognition, strategic positioning.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "Mid",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 81,
+    "name": "Gada Yoga",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      1,
+      4
+    ],
+    "formation": "Planets in two adjacent Kendras (1-4, 4-7, 7-10, 10-1).",
+    "effect": "Religious, wealthy, expert in scriptures.",
+    "modern_interpretation": "Financial wealth, religious scholar.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "Low",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 82,
+    "name": "Sakata Yoga (Shape)",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      1,
+      7
+    ],
+    "formation": "Planets in 1st and 7th houses only.",
+    "effect": "Physical/marital distress, manual labor, driver.",
+    "modern_interpretation": "Transport operator, partnership tension.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "Low",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 83,
+    "name": "Vihaga Yoga",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      4,
+      10
+    ],
+    "formation": "Planets in 4th and 10th houses only.",
+    "effect": "Frequent travel, roving disposition, guard.",
+    "modern_interpretation": "Flight crew, international consultant.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "Low",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 84,
+    "name": "Vajra Yoga",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Benefics in 1st/7th, Malefics in 4th/10th.",
+    "effect": "Handsome, brave, happy, athletic.",
+    "modern_interpretation": "Sports personality, decisive executive.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "Mid",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 85,
+    "name": "Yava Yoga",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Malefics in 1st/7th, Benefics in 4th/10th.",
+    "effect": "Happiness in mid-life, generous, wealthy.",
+    "modern_interpretation": "Mid-life career breakthrough.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "Mid",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 86,
+    "name": "Sringhataka Yoga",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      1,
+      5,
+      9
+    ],
+    "formation": "Planets in 1st, 5th, and 9th houses.",
+    "effect": "Smooth career, fortune, happy married life.",
+    "modern_interpretation": "Trinal life harmony, effortless luck.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "High",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 87,
+    "name": "Hala Yoga",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      2,
+      6,
+      10
+    ],
+    "formation": "Planets in 2-6-10, 3-7-11, or 4-8-12.",
+    "effect": "Agriculture, land management, hard worker.",
+    "modern_interpretation": "Agribusiness owner, supply chain manager.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "Mid",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 88,
+    "name": "Kamala Yoga",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "All four Kendras occupied by benefics/planets.",
+    "effect": "High prestige, virtues, spotless character.",
+    "modern_interpretation": "Prominent leader, societal icon.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "High",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 89,
+    "name": "Vapee Yoga",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      2,
+      5,
+      8,
+      11
+    ],
+    "formation": "Planets exclusively in Panaparas (2, 5, 8, 11) or Apoklimas (3, 6, 9, 12).",
+    "effect": "Hoarding wealth, steady financial growth.",
+    "modern_interpretation": "Wealth accumulation, private investor.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "Mid",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 90,
+    "name": "Samudra Yoga",
+    "category": "Nabhasa - Akriti",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      12
+    ],
+    "formation": "Planets occupying all six even houses.",
+    "effect": "Worry-free life, aristocratic status.",
+    "modern_interpretation": "Stable high-income lifestyle.",
+    "neutralization": "Akriti Yogas prevail over Sankhya and Asraya Yogas when overlapping.",
+    "relevance": "Mid",
+    "additional_info": "Nabhasa Yogas operate continuously throughout life without depending on Dasa periods."
+  },
+  {
+    "id": 91,
+    "name": "Vallaki (Veena) Yoga",
+    "category": "Nabhasa - Sankhya",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [],
+    "formation": "Planets distributed across any 7 signs.",
+    "effect": "Love of music, fine arts, high culture, eloquence.",
+    "modern_interpretation": "Artistic career, media personality.",
+    "neutralization": "Superseded if a specific Akriti Yoga coincides with the layout.",
+    "relevance": "Very High",
+    "additional_info": "Evaluates planetary distribution across 7 zodiac signs."
+  },
+  {
+    "id": 92,
+    "name": "Damini (Dama) Yoga",
+    "category": "Nabhasa - Sankhya",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [],
+    "formation": "Planets distributed across any 6 signs.",
+    "effect": "Charity, intellect, helpful nature, public leader.",
+    "modern_interpretation": "Philanthropist, community executive.",
+    "neutralization": "Superseded if a specific Akriti Yoga coincides with the layout.",
+    "relevance": "Very High",
+    "additional_info": "Evaluates planetary distribution across 6 zodiac signs."
+  },
+  {
+    "id": 93,
+    "name": "Pasa Yoga",
+    "category": "Nabhasa - Sankhya",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [],
+    "formation": "Planets distributed across any 5 signs.",
+    "effect": "Financial stability through legitimate means, large family.",
+    "modern_interpretation": "Corporate professional, family stability.",
+    "neutralization": "Superseded if a specific Akriti Yoga coincides with the layout.",
+    "relevance": "Very High",
+    "additional_info": "Evaluates planetary distribution across 5 zodiac signs."
+  },
+  {
+    "id": 94,
+    "name": "Kedara Yoga",
+    "category": "Nabhasa - Sankhya",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [],
+    "formation": "Planets distributed across any 4 signs.",
+    "effect": "Agriculture, helpfulness, land ownership.",
+    "modern_interpretation": "Real estate owner, agriculturalist.",
+    "neutralization": "Superseded if a specific Akriti Yoga coincides with the layout.",
+    "relevance": "Very High",
+    "additional_info": "Evaluates planetary distribution across 4 zodiac signs."
+  },
+  {
+    "id": 95,
+    "name": "Sula Yoga",
+    "category": "Nabhasa - Sankhya",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [],
+    "formation": "Planets distributed across any 3 signs.",
+    "effect": "Cruelty, courage, financial struggles.",
+    "modern_interpretation": "Risk-taking entrepreneur, aggressive persona.",
+    "neutralization": "Superseded if a specific Akriti Yoga coincides with the layout.",
+    "relevance": "Mid",
+    "additional_info": "Evaluates planetary distribution across 3 zodiac signs."
+  },
+  {
+    "id": 96,
+    "name": "Yuga Yoga",
+    "category": "Nabhasa - Sankhya",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [],
+    "formation": "Planets distributed across any 2 signs.",
+    "effect": "Poverty, heresy, isolation.",
+    "modern_interpretation": "Economic hardship, non-conformist.",
+    "neutralization": "Superseded if a specific Akriti Yoga coincides with the layout.",
+    "relevance": "Low",
+    "additional_info": "Evaluates planetary distribution across 2 zodiac signs."
+  },
+  {
+    "id": 97,
+    "name": "Gola Yoga (Sankhya)",
+    "category": "Nabhasa - Sankhya",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [],
+    "formation": "All planets concentrated in 1 sign.",
+    "effect": "Ignorance, poverty, manual labor.",
+    "modern_interpretation": "Severe single-point affliction.",
+    "neutralization": "Superseded if a specific Akriti Yoga coincides with the layout.",
+    "relevance": "Very Low",
+    "additional_info": "Evaluates planetary distribution across 1 zodiac signs."
+  },
+  {
+    "id": 98,
+    "name": "Rajju Yoga",
+    "category": "Nabhasa - Asraya",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [],
+    "formation": "All planets in movable signs (Aries, Cancer, Libra, Capricorn).",
+    "effect": "Roving disposition, pursuit of wealth abroad, high mobility.",
+    "modern_interpretation": "International business traveler, global career.",
+    "neutralization": "Superseded if an Akriti Yoga is present in the chart.",
+    "relevance": "Mid",
+    "additional_info": "Quadruplicity distribution focusing on Movable Signs."
+  },
+  {
+    "id": 99,
+    "name": "Musala Yoga",
+    "category": "Nabhasa - Asraya",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [],
+    "formation": "All planets in fixed signs (Taurus, Leo, Scorpio, Aquarius).",
+    "effect": "Fixed determination, proud, wealthy, steady career.",
+    "modern_interpretation": "Unwavering commitment, institutional executive.",
+    "neutralization": "Superseded if an Akriti Yoga is present in the chart.",
+    "relevance": "Mid",
+    "additional_info": "Quadruplicity distribution focusing on Fixed Signs."
+  },
+  {
+    "id": 100,
+    "name": "Nala Yoga",
+    "category": "Nabhasa - Asraya",
+    "participating_planets": [
+      "All Planets"
+    ],
+    "houses_involved": [],
+    "formation": "All planets in dual/common signs (Gemini, Virgo, Sagittarius, Pisces).",
+    "effect": "Sharp intellect, dual career paths, versatility.",
+    "modern_interpretation": "Multi-tasking executive, consultant.",
+    "neutralization": "Superseded if an Akriti Yoga is present in the chart.",
+    "relevance": "Mid",
+    "additional_info": "Quadruplicity distribution focusing on Common Signs."
+  },
+  {
+    "id": 101,
+    "name": "Srik (Mala) Yoga",
+    "category": "Nabhasa - Dala",
+    "participating_planets": [
+      "Benefics"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "All Kendras occupied exclusively by benefic planets.",
+    "effect": "Comfort, enjoyment, luxury, high moral standing.",
+    "modern_interpretation": "High material and psychological well-being.",
+    "neutralization": "Voided if any malefic enters Kendras.",
+    "relevance": "High",
+    "additional_info": "Pure benefic Kendra energy."
+  },
+  {
+    "id": 102,
+    "name": "Sarpa Yoga",
+    "category": "Nabhasa - Dala",
+    "participating_planets": [
+      "Malefics"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "All Kendras occupied exclusively by malefic planets.",
+    "effect": "Misery, cruelty, hardships, mental sorrow.",
+    "modern_interpretation": "Chronic stress, severe life challenges.",
+    "neutralization": "Cancelled if a strong benefic enters a Kendra.",
+    "relevance": "High",
+    "additional_info": "Pure malefic Kendra energy."
+  },
+  {
+    "id": 103,
+    "name": "Duryoga",
+    "category": "Misfortune Yoga",
+    "participating_planets": [
+      "10th Lord"
+    ],
+    "houses_involved": [
+      6,
+      8,
+      12
+    ],
+    "formation": "10th lord placed in the 6th, 8th, or 12th house.",
+    "effect": "Unrewarded manual labor, selfishness, career setbacks, lack of recognition.",
+    "modern_interpretation": "Professional obscurity, job instability, lack of career appreciation.",
+    "neutralization": "Cancelled if 10th lord is exalted or aspected by Lagna lord.",
+    "relevance": "Very High",
+    "additional_info": "Evaluates career placement in Dusthanas."
+  },
+  {
+    "id": 104,
+    "name": "Daridra Yoga",
+    "category": "Misfortune Yoga",
+    "participating_planets": [
+      "11th Lord"
+    ],
+    "houses_involved": [
+      6,
+      8,
+      12
+    ],
+    "formation": "11th lord placed in the 6th, 8th, or 12th house.",
+    "effect": "Debts, financial hardship, auditory issues, poverty, unfulfilled desires.",
+    "modern_interpretation": "Revenue deficit, debt burden, commercial losses.",
+    "neutralization": "Cancelled if 11th lord is in own sign or aspected by Jupiter.",
+    "relevance": "Very High",
+    "additional_info": "Evaluates financial gains lord in Dusthanas."
+  },
+  {
+    "id": 105,
+    "name": "Harsha Yoga",
+    "category": "Vipareeta Raja",
+    "participating_planets": [
+      "6th Lord"
+    ],
+    "houses_involved": [
+      6,
+      8,
+      12
+    ],
+    "formation": "6th lord placed in the 6th, 8th, or 12th house.",
+    "effect": "Immunity from disease, victory over rivals, financial stability, strong constitution.",
+    "modern_interpretation": "Competitive edge, crisis management success, legal triumph.",
+    "neutralization": "Impaired if 6th lord is associated with non-Dusthana house lords.",
+    "relevance": "Very High",
+    "additional_info": "Vipareeta Raja Yoga based on 6th house."
+  },
+  {
+    "id": 106,
+    "name": "Sarala Yoga",
+    "category": "Vipareeta Raja",
+    "participating_planets": [
+      "8th Lord"
+    ],
+    "houses_involved": [
+      6,
+      8,
+      12
+    ],
+    "formation": "8th lord placed in the 6th, 8th, or 12th house.",
+    "effect": "Longevity, fearlessness, financial unexpected gains, victory over obstacles.",
+    "modern_interpretation": "Crisis transformation, insurance/inheritance gains, resilience.",
+    "neutralization": "Impaired if 8th lord joins Kendra/Kona lords.",
+    "relevance": "Very High",
+    "additional_info": "Vipareeta Raja Yoga based on 8th house."
+  },
+  {
+    "id": 107,
+    "name": "Vimala Yoga",
+    "category": "Vipareeta Raja",
+    "participating_planets": [
+      "12th Lord"
+    ],
+    "houses_involved": [
+      6,
+      8,
+      12
+    ],
+    "formation": "12th lord placed in the 6th, 8th, or 12th house.",
+    "effect": "Frugality, independence, righteous conduct, happiness, reduced expenditure.",
+    "modern_interpretation": "Financial prudence, autonomy, low debt, inner peace.",
+    "neutralization": "Impaired if 12th lord is associated with benefics owning Kendras.",
+    "relevance": "Very High",
+    "additional_info": "Vipareeta Raja Yoga based on 12th house."
+  },
+  {
+    "id": 108,
+    "name": "Sareera Soukhya Yoga",
+    "category": "Health Yoga",
+    "participating_planets": [
+      "Lagna Lord",
+      "Jupiter",
+      "Venus"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Lagna lord, Jupiter, or Venus placed in a Kendra.",
+    "effect": "Longevity, physical comfort, political favors, robust health.",
+    "modern_interpretation": "General vitality, career comfort, government patronage.",
+    "neutralization": "Weakened if Lagna lord is debilitated.",
+    "relevance": "High",
+    "additional_info": "Core physical comfort indicator."
+  },
+  {
+    "id": 109,
+    "name": "Dehapushti Yoga",
+    "category": "Health Yoga",
+    "participating_planets": [
+      "Lagna Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Lagna lord in a movable sign aspected by a benefic planet.",
+    "effect": "Well-developed physical body, strength, vitality.",
+    "modern_interpretation": "Athletic physique, strong stamina.",
+    "neutralization": "Impaired if Lagna lord receives malefic aspect.",
+    "relevance": "Mid",
+    "additional_info": "Physical build indicator."
+  },
+  {
+    "id": 110,
+    "name": "Dehakashta Yoga",
+    "category": "Health Yoga",
+    "participating_planets": [
+      "Lagna Lord"
+    ],
+    "houses_involved": [
+      8
+    ],
+    "formation": "Lagna lord associated with a malefic or placed in the 8th house.",
+    "effect": "Physical discomfort, frequent illness, lack of bodily stamina.",
+    "modern_interpretation": "Low immunity, physical fatigue.",
+    "neutralization": "Cancelled if Lagna lord receives strong benefic aspect.",
+    "relevance": "High",
+    "additional_info": "Bodily hardship indicator."
+  },
+  {
+    "id": 111,
+    "name": "Rogagrastha Yoga",
+    "category": "Health Yoga",
+    "participating_planets": [
+      "Lagna Lord",
+      "6th Lord",
+      "8th Lord",
+      "12th Lord"
+    ],
+    "houses_involved": [
+      1
+    ],
+    "formation": "Lagna lord in Lagna combined with 6th, 8th, or 12th lord; OR weak Lagna lord in Kendra.",
+    "effect": "Weak constitution, predisposition to chronic ailments.",
+    "modern_interpretation": "Chronic health management required.",
+    "neutralization": "Mitigated by strong Jupiter aspect on Lagna.",
+    "relevance": "High",
+    "additional_info": "Illness susceptibility indicator."
+  },
+  {
+    "id": 112,
+    "name": "Krisanga Yoga (1)",
+    "category": "Health Yoga",
+    "participating_planets": [
+      "Lagna Lord"
+    ],
+    "houses_involved": [
+      1
+    ],
+    "formation": "Lagna lord or Navamsa Lagna in dry signs (Aries, Leo, Sagittarius, Gemini, Virgo) with malefic aspect.",
+    "effect": "Emaciated or lean body, thin frame.",
+    "modern_interpretation": "Ectomorphic body type, slender build.",
+    "neutralization": "Modified if aspected by Venus or Moon.",
+    "relevance": "Mid",
+    "additional_info": "Slender build indicator."
+  },
+  {
+    "id": 113,
+    "name": "Krisanga Yoga (2)",
+    "category": "Health Yoga",
+    "participating_planets": [
+      "Lagna Lord",
+      "Saturn"
+    ],
+    "houses_involved": [
+      1
+    ],
+    "formation": "Lagna lord in Saturnian sign/Navamsa aspected by Saturn.",
+    "effect": "Lean, spare physical structure, dry skin.",
+    "modern_interpretation": "Lean frame, low body mass index.",
+    "neutralization": "Modified by benefic aspects.",
+    "relevance": "Mid",
+    "additional_info": "Saturnian body structure."
+  },
+  {
+    "id": 114,
+    "name": "Dehasthoulya Yoga (1)",
+    "category": "Health Yoga",
+    "participating_planets": [
+      "Lagna Lord",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      1
+    ],
+    "formation": "Lagna lord in watery sign (Cancer, Scorpio, Pisces) associated with Jupiter/Venus.",
+    "effect": "Stoutness, corpulence, physical volume.",
+    "modern_interpretation": "Endomorphic body type, weight gain tendency.",
+    "neutralization": "Mitigated if Saturn aspects Lagna lord.",
+    "relevance": "Mid",
+    "additional_info": "Corpulence indicator."
+  },
+  {
+    "id": 115,
+    "name": "Dehasthoulya Yoga (2)",
+    "category": "Health Yoga",
+    "participating_planets": [
+      "Lagna"
+    ],
+    "houses_involved": [
+      1
+    ],
+    "formation": "Lagna in a watery sign with Jupiter or Venus occupying it.",
+    "effect": "Stout body structure, broad build.",
+    "modern_interpretation": "Tendency toward high BMI.",
+    "neutralization": "Mitigated by dry planet aspects.",
+    "relevance": "Mid",
+    "additional_info": "Watery Lagna stoutness."
+  },
+  {
+    "id": 116,
+    "name": "Dehasthoulya Yoga (3)",
+    "category": "Health Yoga",
+    "participating_planets": [
+      "Lagna Lord",
+      "Moon"
+    ],
+    "houses_involved": [
+      1
+    ],
+    "formation": "Lagna lord and Moon placed together in a watery sign.",
+    "effect": "Robust physical volume, soft skin.",
+    "modern_interpretation": "Soft build, fluid retention tendency.",
+    "neutralization": "Modified by Martian aspect.",
+    "relevance": "Mid",
+    "additional_info": "Lunar-watery build."
+  },
+  {
+    "id": 117,
+    "name": "Sada Sanchara Yoga",
+    "category": "Travel Yoga",
+    "participating_planets": [
+      "Lagna Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Lagna lord placed in a movable sign.",
+    "effect": "Roving disposition, frequent travel, dynamic lifestyle.",
+    "modern_interpretation": "High travel career, remote/nomadic work.",
+    "neutralization": "Reduced if Lagna lord is aspected by fixed Saturn.",
+    "relevance": "Mid",
+    "additional_info": "Movable Lagna lord travel indicator."
+  },
+  {
+    "id": 118,
+    "name": "Dhana Yoga 1",
+    "category": "Dhana Yoga",
+    "participating_planets": [
+      "Venus",
+      "Saturn"
+    ],
+    "houses_involved": [
+      5,
+      11
+    ],
+    "formation": "Venus in 5th house and Saturn in 11th house.",
+    "effect": "Immense wealth, luxury assets.",
+    "modern_interpretation": "High-net-worth portfolio.",
+    "neutralization": "Weakened if participating planets are debilitated or combust.",
+    "relevance": "High",
+    "additional_info": "Specific planetary combination generating high financial capacity."
+  },
+  {
+    "id": 119,
+    "name": "Dhana Yoga 2",
+    "category": "Dhana Yoga",
+    "participating_planets": [
+      "Sun",
+      "Jupiter",
+      "Moon"
+    ],
+    "houses_involved": [
+      5,
+      11
+    ],
+    "formation": "Sun in 5th house, Jupiter and Moon in 11th house.",
+    "effect": "High financial prosperity, political wealth.",
+    "modern_interpretation": "Government grants, financial investments.",
+    "neutralization": "Weakened if participating planets are debilitated or combust.",
+    "relevance": "High",
+    "additional_info": "Specific planetary combination generating high financial capacity."
+  },
+  {
+    "id": 120,
+    "name": "Dhana Yoga 3",
+    "category": "Dhana Yoga",
+    "participating_planets": [
+      "Saturn",
+      "Mercury",
+      "Mars"
+    ],
+    "houses_involved": [
+      5,
+      11
+    ],
+    "formation": "Saturn in 5th house, Mercury and Mars in 11th house.",
+    "effect": "Commercial wealth, industrial profits.",
+    "modern_interpretation": "Industrial revenue, tech profits.",
+    "neutralization": "Weakened if participating planets are debilitated or combust.",
+    "relevance": "High",
+    "additional_info": "Specific planetary combination generating high financial capacity."
+  },
+  {
+    "id": 121,
+    "name": "Dhana Yoga 4",
+    "category": "Dhana Yoga",
+    "participating_planets": [
+      "Jupiter",
+      "Mercury",
+      "Venus"
+    ],
+    "houses_involved": [
+      5,
+      11
+    ],
+    "formation": "Jupiter in 5th house, Mercury and Venus in 11th house.",
+    "effect": "Intellectual and creative wealth.",
+    "modern_interpretation": "Consulting revenue, creative profits.",
+    "neutralization": "Weakened if participating planets are debilitated or combust.",
+    "relevance": "High",
+    "additional_info": "Specific planetary combination generating high financial capacity."
+  },
+  {
+    "id": 122,
+    "name": "Dhana Yoga 5",
+    "category": "Dhana Yoga",
+    "participating_planets": [
+      "Mars",
+      "Venus"
+    ],
+    "houses_involved": [
+      5,
+      11
+    ],
+    "formation": "Mars in 5th house and Venus in 11th house.",
+    "effect": "Property wealth, luxury assets.",
+    "modern_interpretation": "Real estate investments.",
+    "neutralization": "Weakened if participating planets are debilitated or combust.",
+    "relevance": "High",
+    "additional_info": "Specific planetary combination generating high financial capacity."
+  },
+  {
+    "id": 123,
+    "name": "Dhana Yoga 6",
+    "category": "Dhana Yoga",
+    "participating_planets": [
+      "Lagna Lord",
+      "2nd Lord"
+    ],
+    "houses_involved": [
+      1
+    ],
+    "formation": "Lagna lord in 1st house associated with 2nd lord.",
+    "effect": "Self-acquired wealth, high financial autonomy.",
+    "modern_interpretation": "Entrepreneurial wealth.",
+    "neutralization": "Weakened if participating planets are debilitated or combust.",
+    "relevance": "High",
+    "additional_info": "Specific planetary combination generating high financial capacity."
+  },
+  {
+    "id": 124,
+    "name": "Dhana Yoga 7",
+    "category": "Dhana Yoga",
+    "participating_planets": [
+      "Lagna Lord",
+      "5th Lord"
+    ],
+    "houses_involved": [
+      1
+    ],
+    "formation": "Lagna lord in 1st house associated with 5th lord.",
+    "effect": "Wealth through intellect and speculation.",
+    "modern_interpretation": "Investment gains, stock portfolio.",
+    "neutralization": "Weakened if participating planets are debilitated or combust.",
+    "relevance": "High",
+    "additional_info": "Specific planetary combination generating high financial capacity."
+  },
+  {
+    "id": 125,
+    "name": "Dhana Yoga 8",
+    "category": "Dhana Yoga",
+    "participating_planets": [
+      "Lagna Lord",
+      "9th Lord"
+    ],
+    "houses_involved": [
+      1
+    ],
+    "formation": "Lagna lord in 1st house associated with 9th lord.",
+    "effect": "Fortunate inherited and earned wealth.",
+    "modern_interpretation": "Generational & earned fortune.",
+    "neutralization": "Weakened if participating planets are debilitated or combust.",
+    "relevance": "High",
+    "additional_info": "Specific planetary combination generating high financial capacity."
+  },
+  {
+    "id": 126,
+    "name": "Dhana Yoga 9",
+    "category": "Dhana Yoga",
+    "participating_planets": [
+      "Lagna Lord",
+      "11th Lord"
+    ],
+    "houses_involved": [
+      1
+    ],
+    "formation": "Lagna lord in 1st house associated with 11th lord.",
+    "effect": "Multi-stream business income.",
+    "modern_interpretation": "Enterprise revenue.",
+    "neutralization": "Weakened if participating planets are debilitated or combust.",
+    "relevance": "High",
+    "additional_info": "Specific planetary combination generating high financial capacity."
+  },
+  {
+    "id": 127,
+    "name": "Dhana Yoga 10",
+    "category": "Dhana Yoga",
+    "participating_planets": [
+      "2nd Lord",
+      "11th Lord"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "2nd lord in 2nd house associated with 11th lord.",
+    "effect": "Massive capital savings and liquid wealth.",
+    "modern_interpretation": "High treasury reserve.",
+    "neutralization": "Weakened if participating planets are debilitated or combust.",
+    "relevance": "High",
+    "additional_info": "Specific planetary combination generating high financial capacity."
+  },
+  {
+    "id": 128,
+    "name": "Dhana Yoga 11",
+    "category": "Dhana Yoga",
+    "participating_planets": [
+      "9th Lord",
+      "10th Lord"
+    ],
+    "houses_involved": [
+      9,
+      10
+    ],
+    "formation": "9th and 10th lords combined in 9th or 10th house.",
+    "effect": "Supreme fortune, executive wealth.",
+    "modern_interpretation": "C-suite wealth, capital gains.",
+    "neutralization": "Weakened if participating planets are debilitated or combust.",
+    "relevance": "Very High",
+    "additional_info": "Specific planetary combination generating high financial capacity."
+  },
+  {
+    "id": 129,
+    "name": "Bahudravyarjana Yoga",
+    "category": "Dhana Yoga",
+    "participating_planets": [
+      "Lagna Lord",
+      "2nd Lord",
+      "11th Lord"
+    ],
+    "houses_involved": [
+      1,
+      2,
+      11
+    ],
+    "formation": "Lagna lord in 2nd, 2nd lord in 11th, and 11th lord in Lagna.",
+    "effect": "Amassing vast wealth through multiple business endeavors.",
+    "modern_interpretation": "Serial entrepreneurship, conglomerate wealth.",
+    "neutralization": "Voided if any lord is debilitated without cancellation.",
+    "relevance": "Very High",
+    "additional_info": "Cyclic Parivarthana among 1st, 2nd, and 11th lords."
+  },
+  {
+    "id": 130,
+    "name": "Swaveeryaddhana Yoga 1",
+    "category": "Dhana Yoga",
+    "participating_planets": [
+      "Lagna Lord",
+      "Jupiter",
+      "2nd Lord"
+    ],
+    "houses_involved": [
+      1,
+      2,
+      4,
+      7,
+      10
+    ],
+    "formation": "Strong Lagna lord in Kendra with Jupiter, and 2nd lord in Vaiseshikamsa.",
+    "effect": "Wealth accumulated through personal talent and self-effort.",
+    "modern_interpretation": "Self-made professional fortune.",
+    "neutralization": "Impaired if 2nd lord is combust.",
+    "relevance": "High",
+    "additional_info": "Focuses on self-earned wealth."
+  },
+  {
+    "id": 131,
+    "name": "Swaveeryaddhana Yoga 2",
+    "category": "Dhana Yoga",
+    "participating_planets": [
+      "2nd Lord",
+      "Lagna Lord"
+    ],
+    "houses_involved": [
+      1,
+      2
+    ],
+    "formation": "2nd lord placed in Lagna with Lagna lord in 2nd house.",
+    "effect": "Self-made financial success through personal initiative.",
+    "modern_interpretation": "Independent business success.",
+    "neutralization": "Cancelled if 2nd lord is afflicted by 8th lord.",
+    "relevance": "High",
+    "additional_info": "Parivarthana between 1st and 2nd house lords."
+  },
+  {
+    "id": 132,
+    "name": "Swaveeryaddhana Yoga 3",
+    "category": "Dhana Yoga",
+    "participating_planets": [
+      "9th Lord",
+      "2nd Lord"
+    ],
+    "houses_involved": [
+      1,
+      9
+    ],
+    "formation": "9th lord in Lagna and 2nd lord in 9th house.",
+    "effect": "Wealth earned through ethical personal efforts and fortune.",
+    "modern_interpretation": "Fortunate self-earned wealth.",
+    "neutralization": "Weakened if 9th lord is in fall.",
+    "relevance": "High",
+    "additional_info": "1st and 9th lord wealth combination."
+  },
+  {
+    "id": 133,
+    "name": "Madhya Vayasi Dhana Yoga",
+    "category": "Dhana Timing",
+    "participating_planets": [
+      "2nd Lord",
+      "Lagna Lord",
+      "11th Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "2nd lord with Kalabala in Kendra with 1st and 11th lords.",
+    "effect": "Mid-life wealth accumulation (ages 30–50).",
+    "modern_interpretation": "Mid-career financial peak.",
+    "neutralization": "Impaired if 2nd lord is combust.",
+    "relevance": "Mid",
+    "additional_info": "Timing indicator for mid-life prosperity."
+  },
+  {
+    "id": 134,
+    "name": "Anthya Vayasi Dhana Yoga",
+    "category": "Dhana Timing",
+    "participating_planets": [
+      "1st Lord Dispositor",
+      "2nd Lord Dispositor"
+    ],
+    "houses_involved": [
+      1
+    ],
+    "formation": "Dispositor of 1st and 2nd lords strong in Lagna.",
+    "effect": "Late-life wealth accumulation and financial security in old age.",
+    "modern_interpretation": "Retirement security, late-life windfall.",
+    "neutralization": "Weakened if dispositor is debilitated.",
+    "relevance": "Mid",
+    "additional_info": "Timing indicator for late-life wealth."
+  },
+  {
+    "id": 135,
+    "name": "Balya Dhana Yoga",
+    "category": "Dhana Timing",
+    "participating_planets": [
+      "2nd Lord",
+      "10th Lord",
+      "Lagna Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "2nd and 10th lords in Kendra aspected by Navamsa lord of Lagna lord.",
+    "effect": "Early-life wealth accumulation and young prosperity.",
+    "modern_interpretation": "Young achiever, early career windfall.",
+    "neutralization": "Weakened if 2nd lord is combust.",
+    "relevance": "Mid",
+    "additional_info": "Timing indicator for early prosperity."
+  },
+  {
+    "id": 136,
+    "name": "Bhratrumooladdhanaprapti Yoga 1",
+    "category": "Dhana Source",
+    "participating_planets": [
+      "1st Lord",
+      "2nd Lord",
+      "3rd Lord"
+    ],
+    "houses_involved": [
+      3
+    ],
+    "formation": "1st and 2nd lords in 3rd house aspected by benefics.",
+    "effect": "Wealth gained through siblings, associates, or personal courage.",
+    "modern_interpretation": "Co-founder wealth with siblings/partners.",
+    "neutralization": "Weakened if 3rd house is afflicted.",
+    "relevance": "Mid",
+    "additional_info": "Sibling-assisted wealth."
+  },
+  {
+    "id": 137,
+    "name": "Bhratrumooladdhanaprapti Yoga 2",
+    "category": "Dhana Source",
+    "participating_planets": [
+      "3rd Lord",
+      "2nd Lord",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "3rd lord placed in 2nd house with Jupiter.",
+    "effect": "Financial gains through brothers, media, or communications.",
+    "modern_interpretation": "Media/publishing profits, sibling financial help.",
+    "neutralization": "Weakened if 3rd lord is in debility.",
+    "relevance": "Mid",
+    "additional_info": "3rd lord in 2nd house wealth."
+  },
+  {
+    "id": 138,
+    "name": "Matrumooladdhana Yoga",
+    "category": "Dhana Source",
+    "participating_planets": [
+      "2nd Lord",
+      "4th Lord"
+    ],
+    "houses_involved": [
+      2,
+      4
+    ],
+    "formation": "2nd lord combined with or aspected by 4th lord.",
+    "effect": "Wealth inherited or gained through mother, real estate, or vehicles.",
+    "modern_interpretation": "Maternal inheritance, real estate profits.",
+    "neutralization": "Impaired if 4th lord is afflicted by 8th lord.",
+    "relevance": "High",
+    "additional_info": "Maternal/real estate wealth."
+  },
+  {
+    "id": 139,
+    "name": "Putramooladdhana Yoga",
+    "category": "Dhana Source",
+    "participating_planets": [
+      "2nd Lord",
+      "5th Lord",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      2,
+      5
+    ],
+    "formation": "Strong 2nd lord associated with 5th lord or Jupiter.",
+    "effect": "Wealth gained through children, intellect, or financial investments.",
+    "modern_interpretation": "Returns from investments, wealth through children.",
+    "neutralization": "Weakened if 5th lord is combust.",
+    "relevance": "High",
+    "additional_info": "Investment/offspring wealth."
+  },
+  {
+    "id": 140,
+    "name": "Satrumooladdhana Yoga",
+    "category": "Dhana Source",
+    "participating_planets": [
+      "2nd Lord",
+      "6th Lord",
+      "Mars"
+    ],
+    "houses_involved": [
+      2,
+      6
+    ],
+    "formation": "Strong 2nd lord associated with 6th lord or Mars.",
+    "effect": "Wealth gained through competitors, legal settlements, or medical/defense fields.",
+    "modern_interpretation": "Litigation settlements, competitive market gains.",
+    "neutralization": "Risk of loss if 6th lord dominates 2nd lord.",
+    "relevance": "Mid",
+    "additional_info": "Wealth through competition/litigation."
+  },
+  {
+    "id": 141,
+    "name": "Kalatramooladdhana Yoga",
+    "category": "Dhana Source",
+    "participating_planets": [
+      "2nd Lord",
+      "7th Lord",
+      "Venus"
+    ],
+    "houses_involved": [
+      2,
+      7
+    ],
+    "formation": "Strong 2nd lord associated with 7th lord and Venus.",
+    "effect": "Wealth gained through spouse, in-laws, or business partnerships.",
+    "modern_interpretation": "Spousal inheritance, joint-venture profits.",
+    "neutralization": "Impaired if Venus is in fall.",
+    "relevance": "High",
+    "additional_info": "Wealth through spouse/partnership."
+  },
+  {
+    "id": 142,
+    "name": "Amaranantha Dhana Yoga",
+    "category": "Dhana Durability",
+    "participating_planets": [
+      "2nd Lord",
+      "Benefics"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "Multiple strong benefic planets occupying the 2nd house.",
+    "effect": "Life-long wealth continuity, never facing financial insolvency.",
+    "modern_interpretation": "Durable lifetime wealth.",
+    "neutralization": "Cancelled if 2nd house receives malefic aspect from Saturn/Rahu.",
+    "relevance": "High",
+    "additional_info": "Ensures financial security throughout life."
+  },
+  {
+    "id": 143,
+    "name": "Ayatnadhanalabha Yoga",
+    "category": "Dhana Windfall",
+    "participating_planets": [
+      "1st Lord",
+      "2nd Lord"
+    ],
+    "houses_involved": [
+      1,
+      2
+    ],
+    "formation": "Exchange of places (Parivarthana) between 1st and 2nd lords.",
+    "effect": "Effortless acquisition of wealth, windfalls, high luck.",
+    "modern_interpretation": "Unearned financial windfalls, easy gains.",
+    "neutralization": "Impaired if either lord is in debility.",
+    "relevance": "High",
+    "additional_info": "1st and 2nd lord Parivarthana."
+  },
+  {
+    "id": 144,
+    "name": "Daridra Yoga 1",
+    "category": "Daridra Yoga",
+    "participating_planets": [
+      "1st Lord",
+      "6th Lord"
+    ],
+    "houses_involved": [
+      6
+    ],
+    "formation": "1st lord in 6th house with 6th lord.",
+    "effect": "Financial hardship through disease/enemies.",
+    "modern_interpretation": "Health costs, legal debts.",
+    "neutralization": "Cancelled if the house lord receives exaltation or strong benefic aspect.",
+    "relevance": "High",
+    "additional_info": "Affliction pattern leading to financial depletion."
+  },
+  {
+    "id": 145,
+    "name": "Daridra Yoga 2",
+    "category": "Daridra Yoga",
+    "participating_planets": [
+      "1st Lord",
+      "8th Lord"
+    ],
+    "houses_involved": [
+      8
+    ],
+    "formation": "1st lord in 8th house with 8th lord.",
+    "effect": "Unexpected financial losses, debt.",
+    "modern_interpretation": "Chronic financial stress.",
+    "neutralization": "Cancelled if the house lord receives exaltation or strong benefic aspect.",
+    "relevance": "High",
+    "additional_info": "Affliction pattern leading to financial depletion."
+  },
+  {
+    "id": 146,
+    "name": "Daridra Yoga 3",
+    "category": "Daridra Yoga",
+    "participating_planets": [
+      "1st Lord",
+      "12th Lord"
+    ],
+    "houses_involved": [
+      12
+    ],
+    "formation": "1st lord in 12th house with 12th lord.",
+    "effect": "Heavy financial leaks, bankruptcy.",
+    "modern_interpretation": "High overhead costs.",
+    "neutralization": "Cancelled if the house lord receives exaltation or strong benefic aspect.",
+    "relevance": "High",
+    "additional_info": "Affliction pattern leading to financial depletion."
+  },
+  {
+    "id": 147,
+    "name": "Daridra Yoga 4",
+    "category": "Daridra Yoga",
+    "participating_planets": [
+      "2nd Lord"
+    ],
+    "houses_involved": [
+      6,
+      8,
+      12
+    ],
+    "formation": "2nd lord placed in 6th, 8th, or 12th house.",
+    "effect": "Depleted savings, financial debt.",
+    "modern_interpretation": "Lack of liquid capital.",
+    "neutralization": "Cancelled if the house lord receives exaltation or strong benefic aspect.",
+    "relevance": "Very High",
+    "additional_info": "Affliction pattern leading to financial depletion."
+  },
+  {
+    "id": 148,
+    "name": "Daridra Yoga 5",
+    "category": "Daridra Yoga",
+    "participating_planets": [
+      "5th Lord"
+    ],
+    "houses_involved": [
+      6,
+      8,
+      12
+    ],
+    "formation": "5th lord placed in 6th, 8th, or 12th house.",
+    "effect": "Losses through speculation, poor investment.",
+    "modern_interpretation": "Investment losses.",
+    "neutralization": "Cancelled if the house lord receives exaltation or strong benefic aspect.",
+    "relevance": "High",
+    "additional_info": "Affliction pattern leading to financial depletion."
+  },
+  {
+    "id": 149,
+    "name": "Daridra Yoga 6",
+    "category": "Daridra Yoga",
+    "participating_planets": [
+      "9th Lord"
+    ],
+    "houses_involved": [
+      6,
+      8,
+      12
+    ],
+    "formation": "9th lord placed in 6th, 8th, or 12th house.",
+    "effect": "Lack of fortune, financial struggle.",
+    "modern_interpretation": "Lack of luck, obstacles.",
+    "neutralization": "Cancelled if the house lord receives exaltation or strong benefic aspect.",
+    "relevance": "Very High",
+    "additional_info": "Affliction pattern leading to financial depletion."
+  },
+  {
+    "id": 150,
+    "name": "Daridra Yoga 7",
+    "category": "Daridra Yoga",
+    "participating_planets": [
+      "2nd Lord",
+      "Malefics"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "2nd lord combined with potent malefics in 2nd house.",
+    "effect": "Inability to hold wealth, financial waste.",
+    "modern_interpretation": "Financial instability.",
+    "neutralization": "Cancelled if the house lord receives exaltation or strong benefic aspect.",
+    "relevance": "High",
+    "additional_info": "Affliction pattern leading to financial depletion."
+  },
+  {
+    "id": 151,
+    "name": "Daridra Yoga 8",
+    "category": "Daridra Yoga",
+    "participating_planets": [
+      "11th Lord",
+      "Malefics"
+    ],
+    "houses_involved": [
+      11
+    ],
+    "formation": "11th lord combined with malefics in 6th or 8th.",
+    "effect": "Blocked revenue streams, income loss.",
+    "modern_interpretation": "Business revenue stagnation.",
+    "neutralization": "Cancelled if the house lord receives exaltation or strong benefic aspect.",
+    "relevance": "High",
+    "additional_info": "Affliction pattern leading to financial depletion."
+  },
+  {
+    "id": 152,
+    "name": "Daridra Yoga 9",
+    "category": "Daridra Yoga",
+    "participating_planets": [
+      "Moon",
+      "Sun"
+    ],
+    "houses_involved": [
+      12
+    ],
+    "formation": "Weak Moon with Sun in 12th house.",
+    "effect": "Financial drain through overseas or health.",
+    "modern_interpretation": "High personal expenditure.",
+    "neutralization": "Cancelled if the house lord receives exaltation or strong benefic aspect.",
+    "relevance": "Mid",
+    "additional_info": "Affliction pattern leading to financial depletion."
+  },
+  {
+    "id": 153,
+    "name": "Daridra Yoga 10",
+    "category": "Daridra Yoga",
+    "participating_planets": [
+      "Lagna Lord",
+      "Saturn"
+    ],
+    "houses_involved": [
+      12
+    ],
+    "formation": "Lagna lord debilitated in 12th with Saturn.",
+    "effect": "Extreme financial insolvency, poverty.",
+    "modern_interpretation": "Financial collapse.",
+    "neutralization": "Cancelled if the house lord receives exaltation or strong benefic aspect.",
+    "relevance": "High",
+    "additional_info": "Affliction pattern leading to financial depletion."
+  },
+  {
+    "id": 154,
+    "name": "Yukthi Samanwithavagmi Yoga 1",
+    "category": "Speech Yoga",
+    "participating_planets": [
+      "2nd Lord",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "2nd lord in Kendra/Kona exalted or combined with Jupiter.",
+    "effect": "Skilled, persuasive, eloquent public speaking.",
+    "modern_interpretation": "Public orator, keynote speaker, negotiator.",
+    "neutralization": "Weakened if 2nd lord is combust.",
+    "relevance": "High",
+    "additional_info": "Eloquence indicator."
+  },
+  {
+    "id": 155,
+    "name": "Yukthi Samanwithavagmi Yoga 2",
+    "category": "Speech Yoga",
+    "participating_planets": [
+      "2nd Lord",
+      "Venus"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "2nd lord in 2nd house associated with Venus.",
+    "effect": "Charming, poetic, melodious speech.",
+    "modern_interpretation": "Vocal artist, media host, diplomat.",
+    "neutralization": "Impaired if 2nd house is afflicted by Saturn.",
+    "relevance": "Mid",
+    "additional_info": "Charming speech indicator."
+  },
+  {
+    "id": 156,
+    "name": "Parihasaka Yoga",
+    "category": "Speech Yoga",
+    "participating_planets": [
+      "2nd Lord",
+      "Sun Navamsa Dispositor"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "Sun's Navamsa lord in 2nd house with Vaiseshikamsa.",
+    "effect": "Witty, humorous, satirical speech.",
+    "modern_interpretation": "Comedian, satirist, entertaining speaker.",
+    "neutralization": "Modified if Saturn aspects 2nd.",
+    "relevance": "Low",
+    "additional_info": "Humorous speech indicator."
+  },
+  {
+    "id": 157,
+    "name": "Asatyavadi Yoga",
+    "category": "Character Yoga",
+    "participating_planets": [
+      "2nd Lord",
+      "Saturn",
+      "Mars"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "2nd lord in house of Saturn/Mars with malefics in Kendras/Konas.",
+    "effect": "Untruthful nature, deceitful speech.",
+    "modern_interpretation": "Unreliable communication, dishonesty.",
+    "neutralization": "Cancelled if Jupiter aspects 2nd lord.",
+    "relevance": "Mid",
+    "additional_info": "Speech integrity indicator."
+  },
+  {
+    "id": 158,
+    "name": "Jada Yoga",
+    "category": "Speech Yoga",
+    "participating_planets": [
+      "2nd Lord"
+    ],
+    "houses_involved": [
+      10
+    ],
+    "formation": "2nd lord in 10th house combined with potent malefics.",
+    "effect": "Public nervousness, hesitation in assemblies.",
+    "modern_interpretation": "Stage fright, public speaking anxiety.",
+    "neutralization": "Mitigated by Mercury aspect.",
+    "relevance": "Mid",
+    "additional_info": "Public speaking inhibition."
+  },
+  {
+    "id": 159,
+    "name": "Bhaskara Yoga",
+    "category": "Intellect / Status",
+    "participating_planets": [
+      "Mercury",
+      "Sun",
+      "Moon",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      2,
+      5,
+      9,
+      11
+    ],
+    "formation": "Mercury in 2nd from Sun, Moon in 11th from Mercury, Jupiter in 5th/9th from Moon.",
+    "effect": "Scholarly, aristocratic status, deep learning, mathematical skill.",
+    "modern_interpretation": "Academic excellence, executive leadership.",
+    "neutralization": "Weakened if Mercury is combust.",
+    "relevance": "High",
+    "additional_info": "Solar-lunar-benefic intellectual chain."
+  },
+  {
+    "id": 160,
+    "name": "Marud Yoga",
+    "category": "Business & Speech",
+    "participating_planets": [
+      "Jupiter",
+      "Venus",
+      "Moon",
+      "Sun"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      5,
+      7,
+      9,
+      10
+    ],
+    "formation": "Jupiter in 5th/9th from Venus, Moon in 5th from Jupiter, Sun in Kendra from Moon.",
+    "effect": "Conversational skill, large business success, aristocratic demeanor.",
+    "modern_interpretation": "Executive commerce, charismatic business leader.",
+    "neutralization": "Impaired if Moon is waning.",
+    "relevance": "Mid",
+    "additional_info": "Complex benefic business network."
+  },
+  {
+    "id": 161,
+    "name": "Saraswathi Yoga",
+    "category": "Intellect & Arts",
+    "participating_planets": [
+      "Jupiter",
+      "Venus",
+      "Mercury"
+    ],
+    "houses_involved": [
+      1,
+      2,
+      4,
+      5,
+      7,
+      9,
+      10
+    ],
+    "formation": "Jupiter, Venus, and Mercury occupy 1st, 2nd, 4th, 5th, 7th, 9th, or 10th with strong Jupiter.",
+    "effect": "Poetic talent, high scholarship, literary fame, worldwide respect.",
+    "modern_interpretation": "Celebrated author, professor, intellectual leader.",
+    "neutralization": "Weakened if Mercury is combust or Jupiter debilitated.",
+    "relevance": "Very High",
+    "additional_info": "Supreme learning and literary yoga."
+  },
+  {
+    "id": 162,
+    "name": "Budha Yoga",
+    "category": "Raja / Intellect",
+    "participating_planets": [
+      "Jupiter",
+      "Moon",
+      "Rahu",
+      "Sun",
+      "Mars"
+    ],
+    "houses_involved": [
+      1,
+      2,
+      3
+    ],
+    "formation": "Jupiter in Lagna, Moon in Kendra, Rahu in 2nd from Moon, Sun/Mars in 3rd from Rahu.",
+    "effect": "Kingly comforts, intellectual power, executive authority.",
+    "modern_interpretation": "High political/corporate governance.",
+    "neutralization": "Weakened if Rahu is heavily afflicted.",
+    "relevance": "Low",
+    "additional_info": "Complex planetary sequence for power."
+  },
+  {
+    "id": 163,
+    "name": "Mooka Yoga",
+    "category": "Speech Affliction",
+    "participating_planets": [
+      "2nd Lord",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      8
+    ],
+    "formation": "2nd lord placed in 8th house combined with Jupiter.",
+    "effect": "Speech impediment, dumbness, or vocal weakness.",
+    "modern_interpretation": "Vocal cord disorder, speech difficulty.",
+    "neutralization": "Cancelled if benefic aspect on 2nd house.",
+    "relevance": "Mid",
+    "additional_info": "Speech disability indicator."
+  },
+  {
+    "id": 164,
+    "name": "Netranasa Yoga",
+    "category": "Vision Affliction",
+    "participating_planets": [
+      "10th Lord",
+      "6th Lord",
+      "2nd Lord"
+    ],
+    "houses_involved": [
+      1
+    ],
+    "formation": "10th and 6th lords placed in Lagna along with 2nd lord.",
+    "effect": "Loss of eye sight, severe ocular ailment.",
+    "modern_interpretation": "Visual impairment, eye health issue.",
+    "neutralization": "Mitigated by strong Sun aspect.",
+    "relevance": "Mid",
+    "additional_info": "Eye health indicator."
+  },
+  {
+    "id": 165,
+    "name": "Andha Yoga",
+    "category": "Vision Affliction",
+    "participating_planets": [
+      "Mercury",
+      "Moon",
+      "Sun",
+      "2nd Lord"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "Mercury and Moon in 2nd house, or 1st/2nd lords in 2nd with Sun.",
+    "effect": "Night blindness or congenital visual weakness.",
+    "modern_interpretation": "Night vision difficulty, eye health management.",
+    "neutralization": "Cancelled if Venus aspects 2nd house.",
+    "relevance": "Mid",
+    "additional_info": "Visual impairment indicator."
+  },
+  {
+    "id": 166,
+    "name": "Sumukha Yoga 1",
+    "category": "Appearance Yoga",
+    "participating_planets": [
+      "2nd Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "2nd lord in a Kendra aspected by benefic planets.",
+    "effect": "Smiling, attractive, pleasing face.",
+    "modern_interpretation": "Photogenic features, charming disposition.",
+    "neutralization": "Impaired if malefic aspects 2nd.",
+    "relevance": "Mid",
+    "additional_info": "Facial charm indicator."
+  },
+  {
+    "id": 167,
+    "name": "Sumukha Yoga 2",
+    "category": "Appearance Yoga",
+    "participating_planets": [
+      "2nd Lord",
+      "Venus"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "2nd lord in 2nd house with Venus.",
+    "effect": "Attractive facial features, pleasant demeanor.",
+    "modern_interpretation": "Charming appearance.",
+    "neutralization": "Modified by Saturn aspect.",
+    "relevance": "Mid",
+    "additional_info": "Facial aesthetics."
+  },
+  {
+    "id": 168,
+    "name": "Durmukha Yoga 1",
+    "category": "Appearance Yoga",
+    "participating_planets": [
+      "2nd Lord",
+      "Gulika"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "Malefics in 2nd house with 2nd lord in debility or with Gulika.",
+    "effect": "Repulsive or angry facial appearance, harsh expressions.",
+    "modern_interpretation": "Stern or harsh facial demeanor.",
+    "neutralization": "Mitigated by Jupiter aspect.",
+    "relevance": "Mid",
+    "additional_info": "Facial harshness indicator."
+  },
+  {
+    "id": 169,
+    "name": "Durmukha Yoga 2",
+    "category": "Appearance Yoga",
+    "participating_planets": [
+      "2nd Lord",
+      "Saturn",
+      "Mars"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "2nd lord combined with Saturn and Mars in a malefic Navamsa.",
+    "effect": "Strict, angry, or unpleasing facial disposition.",
+    "modern_interpretation": "Aggressive facial expression.",
+    "neutralization": "Cancelled if Venus aspects 2nd.",
+    "relevance": "Mid",
+    "additional_info": "Facial severity."
+  },
+  {
+    "id": 170,
+    "name": "Bhojana Soukhya Yoga",
+    "category": "Dietary Comfort",
+    "participating_planets": [
+      "2nd Lord"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "Strong 2nd lord in Vaiseshikamsa aspected by Jupiter or Venus.",
+    "effect": "Access to rich, delicious food, culinary enjoyment.",
+    "modern_interpretation": "Gourmet dining, food lover.",
+    "neutralization": "Impaired if 2nd lord is afflicted by Saturn.",
+    "relevance": "Mid",
+    "additional_info": "Culinary satisfaction indicator."
+  },
+  {
+    "id": 171,
+    "name": "Annadana Yoga",
+    "category": "Philanthropy",
+    "participating_planets": [
+      "2nd Lord",
+      "Jupiter",
+      "Mercury"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "2nd lord in Vaiseshikamsa with Jupiter and Mercury.",
+    "effect": "Philanthropic feeding of the poor, hospital food donations.",
+    "modern_interpretation": "Food charity founder, community feeding leadership.",
+    "neutralization": "Weakened if 2nd lord is combust.",
+    "relevance": "Mid",
+    "additional_info": "Food philanthropy indicator."
+  },
+  {
+    "id": 172,
+    "name": "Parannabhojana Yoga",
+    "category": "Dietary Dependence",
+    "participating_planets": [
+      "2nd Lord"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "2nd lord debilitated and aspected by a debilitated planet.",
+    "effect": "Dependence on others for food, lack of independent meals.",
+    "modern_interpretation": "Institutional food dependence, financial struggle.",
+    "neutralization": "Cancelled if 2nd lord receives Neechabhanga.",
+    "relevance": "Mid",
+    "additional_info": "Food dependence indicator."
+  },
+  {
+    "id": 173,
+    "name": "Sraddhannabhuktha Yoga",
+    "category": "Dietary Specific",
+    "participating_planets": [
+      "Saturn",
+      "2nd Lord"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "Saturn owning or occupying 2nd house, or aspecting 2nd lord.",
+    "effect": "Eating food associated with funeral rites or solemn occasions.",
+    "modern_interpretation": "Austerity food, ceremonial eating.",
+    "neutralization": "Neutralized if Jupiter aspects 2nd.",
+    "relevance": "Low",
+    "additional_info": "Specific dietary habit."
+  },
+  {
+    "id": 174,
+    "name": "Sarpaganda Yoga",
+    "category": "Danger Indicator",
+    "participating_planets": [
+      "Rahu",
+      "Mandi"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "Rahu in 2nd house combined with Mandi.",
+    "effect": "Danger from snakebite or poisonous reptile/insect.",
+    "modern_interpretation": "Venomous bite vulnerability, toxic hazard.",
+    "neutralization": "Cancelled if Jupiter aspects 2nd.",
+    "relevance": "Low",
+    "additional_info": "Venom danger indicator."
+  },
+  {
+    "id": 175,
+    "name": "Vakchalana Yoga",
+    "category": "Speech Affliction",
+    "participating_planets": [
+      "2nd Lord"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "Malefic owning 2nd house placed in cruel Navamsa without benefic aspects.",
+    "effect": "Stammering, faltering speech.",
+    "modern_interpretation": "Stuttering or speech hesitation.",
+    "neutralization": "Mitigated by Mercury aspect.",
+    "relevance": "Mid",
+    "additional_info": "Speech fluency indicator."
+  },
+  {
+    "id": 176,
+    "name": "Vishaprayoga Yoga",
+    "category": "Danger Indicator",
+    "participating_planets": [
+      "2nd Lord"
+    ],
+    "houses_involved": [
+      2
+    ],
+    "formation": "2nd house and 2nd lord afflicted by malefics in cruel Navamsas.",
+    "effect": "Risk of poisoning or toxic food ingestion.",
+    "modern_interpretation": "Food poisoning vulnerability, chemical exposure.",
+    "neutralization": "Mitigated by strong Jupiter aspect.",
+    "relevance": "Low",
+    "additional_info": "Toxin hazard indicator."
+  },
+  {
+    "id": 177,
+    "name": "Bhratruvriddhi Yoga",
+    "category": "Siblings Yoga",
+    "participating_planets": [
+      "3rd Lord",
+      "Mars"
+    ],
+    "houses_involved": [
+      3
+    ],
+    "formation": "3rd house, 3rd lord, or Mars aspected/joined by benefic planets.",
+    "effect": "Prosperity through brothers, harmonious sibling relationships.",
+    "modern_interpretation": "Strong fraternal support, successful business siblings.",
+    "neutralization": "Weakened if 3rd house receives malefic aspect.",
+    "relevance": "High",
+    "additional_info": "Sibling prosperity indicator."
+  },
+  {
+    "id": 178,
+    "name": "Sodaranasa Yoga",
+    "category": "Siblings Affliction",
+    "participating_planets": [
+      "Mars",
+      "3rd Lord"
+    ],
+    "houses_involved": [
+      8
+    ],
+    "formation": "Mars and 3rd lord placed in 8th house aspected by malefics.",
+    "effect": "Loss or absence of brothers/siblings.",
+    "modern_interpretation": "Bereavement or lack of fraternal support.",
+    "neutralization": "Cancelled if 3rd house receives benefic aspect.",
+    "relevance": "High",
+    "additional_info": "Sibling loss indicator."
+  },
+  {
+    "id": 179,
+    "name": "Ekabhagini Yoga",
+    "category": "Siblings Specific",
+    "participating_planets": [
+      "Mercury",
+      "3rd Lord",
+      "Mars",
+      "Saturn",
+      "Moon"
+    ],
+    "houses_involved": [
+      3
+    ],
+    "formation": "Mercury, 3rd lord, and Mars occupy 3rd, Moon, and Saturn respectively.",
+    "effect": "Having only one sister.",
+    "modern_interpretation": "Single female sibling.",
+    "neutralization": "Modified if 3rd house has multiple benefic aspects.",
+    "relevance": "Low",
+    "additional_info": "Specific sibling composition."
+  },
+  {
+    "id": 180,
+    "name": "Dwadasa Sahodara Yoga",
+    "category": "Siblings Specific",
+    "participating_planets": [
+      "3rd Lord",
+      "Mars",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      5,
+      7,
+      9,
+      10
+    ],
+    "formation": "3rd lord in Kendra with exalted Mars joining Jupiter in trine.",
+    "effect": "Having twelve siblings or very large family circle.",
+    "modern_interpretation": "Large extended family network.",
+    "neutralization": "Reduced by modern family planning factors.",
+    "relevance": "Very Low",
+    "additional_info": "Large family indicator."
+  },
+  {
+    "id": 181,
+    "name": "Sapthasankhya Sahodara Yoga",
+    "category": "Siblings Specific",
+    "participating_planets": [
+      "12th Lord",
+      "Mars",
+      "Moon",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      3
+    ],
+    "formation": "12th lord with Mars, and Moon in 3rd house with Jupiter.",
+    "effect": "Having seven brothers.",
+    "modern_interpretation": "Multiple male siblings.",
+    "neutralization": "Modified by modern demographics.",
+    "relevance": "Very Low",
+    "additional_info": "Multiple sibling indicator."
+  },
+  {
+    "id": 182,
+    "name": "Parakrama Yoga",
+    "category": "Courage Yoga",
+    "participating_planets": [
+      "3rd Lord",
+      "Mars"
+    ],
+    "houses_involved": [
+      3
+    ],
+    "formation": "3rd lord in benefic Navamsa with benefic aspects, Mars in benefic sign.",
+    "effect": "Great physical and mental courage, heroism, determination.",
+    "modern_interpretation": "Executive decisiveness, heroic leadership.",
+    "neutralization": "Weakened if Mars is debilitated.",
+    "relevance": "High",
+    "additional_info": "Courage and drive indicator."
+  },
+  {
+    "id": 183,
+    "name": "Yuddha Praveena Yoga",
+    "category": "Strategy Yoga",
+    "participating_planets": [
+      "3rd Lord Navamsa Dispositor"
+    ],
+    "houses_involved": [
+      3
+    ],
+    "formation": "Dispositor of Navamsa lord of 3rd lord in own Shadvargas.",
+    "effect": "Military strategy, warfare expertise, tactical intelligence.",
+    "modern_interpretation": "Strategic management, competitive warfare expert.",
+    "neutralization": "Weakened if 3rd lord is combust.",
+    "relevance": "Mid",
+    "additional_info": "Tactical strategy indicator."
+  },
+  {
+    "id": 184,
+    "name": "Yuddhatpoorvadridhachitta Yoga",
+    "category": "Courage Timing",
+    "participating_planets": [
+      "3rd Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Exalted 3rd lord combined with malefics in movable signs.",
+    "effect": "Courage before battle or crisis starts, proactive bravery.",
+    "modern_interpretation": "Proactive crisis leadership.",
+    "neutralization": "Impaired if 3rd lord is combust.",
+    "relevance": "Mid",
+    "additional_info": "Pre-crisis courage."
+  },
+  {
+    "id": 185,
+    "name": "Yuddhatpaschaddrudha Yoga",
+    "category": "Courage Timing",
+    "participating_planets": [
+      "3rd Lord"
+    ],
+    "houses_involved": [
+      3
+    ],
+    "formation": "3rd lord in fixed sign/Navamsa and cruel Shashtiamsa with debilitated dispositor.",
+    "effect": "Courage developed after battle/crisis starts, reactive resilience.",
+    "modern_interpretation": "Reactive crisis resilience.",
+    "neutralization": "Modified by benefic aspects.",
+    "relevance": "Mid",
+    "additional_info": "Post-crisis resilience."
+  },
+  {
+    "id": 186,
+    "name": "Satkathadisravana Yoga",
+    "category": "Culture & Virtue",
+    "participating_planets": [
+      "3rd Lord"
+    ],
+    "houses_involved": [
+      3
+    ],
+    "formation": "3rd house a benefic sign aspected by benefics, 3rd lord in benefic Navamsa.",
+    "effect": "Interest in sacred literature, religious discourses, high culture.",
+    "modern_interpretation": "Literary passion, philosophical interest.",
+    "neutralization": "Weakened if malefic enters 3rd.",
+    "relevance": "Mid",
+    "additional_info": "Cultural interest indicator."
+  },
+  {
+    "id": 187,
+    "name": "Uttama Griha Yoga",
+    "category": "Real Estate",
+    "participating_planets": [
+      "4th Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      5,
+      7,
+      9,
+      10
+    ],
+    "formation": "4th lord joining benefics in a Kendra or Kona.",
+    "effect": "Possession of excellent houses, comfortable residential real estate.",
+    "modern_interpretation": "Luxury homeownership, prime real estate assets.",
+    "neutralization": "Impaired if 4th lord is combust.",
+    "relevance": "High",
+    "additional_info": "Homeownership indicator."
+  },
+  {
+    "id": 188,
+    "name": "Vichitra Saudha Prakara Yoga",
+    "category": "Real Estate",
+    "participating_planets": [
+      "4th Lord",
+      "10th Lord",
+      "Saturn",
+      "Mars"
+    ],
+    "houses_involved": [
+      4,
+      10
+    ],
+    "formation": "4th and 10th lords combined with Saturn and Mars.",
+    "effect": "Ownership of palatial mansions, grand estates, large architecture.",
+    "modern_interpretation": "Estate ownership, real estate development mogul.",
+    "neutralization": "Weakened if Saturn is debilitated.",
+    "relevance": "Mid",
+    "additional_info": "Palatial real estate indicator."
+  },
+  {
+    "id": 189,
+    "name": "Ayatna Griha Prapta Yoga 1",
+    "category": "Real Estate Windfall",
+    "participating_planets": [
+      "1st Lord",
+      "7th Lord"
+    ],
+    "houses_involved": [
+      1,
+      4
+    ],
+    "formation": "Lords of 1st and 7th in Lagna or 4th aspected by benefics.",
+    "effect": "Effortless house acquisition, inheritance of real estate.",
+    "modern_interpretation": "Inherited residential property.",
+    "neutralization": "Impaired if 4th house receives malefic aspect.",
+    "relevance": "Mid",
+    "additional_info": "Effortless home acquisition."
+  },
+  {
+    "id": 190,
+    "name": "Ayatna Griha Prapta Yoga 2",
+    "category": "Real Estate Windfall",
+    "participating_planets": [
+      "4th Lord",
+      "9th Lord"
+    ],
+    "houses_involved": [
+      4
+    ],
+    "formation": "4th lord in 4th house combined with 9th lord.",
+    "effect": "Effortless acquisition of houses and land assets.",
+    "modern_interpretation": "Property inheritance windfall.",
+    "neutralization": "Weakened if 9th lord is in fall.",
+    "relevance": "High",
+    "additional_info": "Fortunate property acquisition."
+  },
+  {
+    "id": 191,
+    "name": "Grihanasa Yoga 1",
+    "category": "Real Estate Loss",
+    "participating_planets": [
+      "4th Lord"
+    ],
+    "houses_involved": [
+      12
+    ],
+    "formation": "4th lord placed in 12th house aspected by malefics.",
+    "effect": "Loss of real estate, house destruction, mortgage failure.",
+    "modern_interpretation": "Property foreclosure, real estate loss.",
+    "neutralization": "Cancelled if 4th lord receives Jupiter aspect.",
+    "relevance": "High",
+    "additional_info": "Property loss indicator."
+  },
+  {
+    "id": 192,
+    "name": "Grihanasa Yoga 2",
+    "category": "Real Estate Loss",
+    "participating_planets": [
+      "4th House",
+      "Mars",
+      "Saturn"
+    ],
+    "houses_involved": [
+      4
+    ],
+    "formation": "4th house occupied by Mars and Saturn in debility.",
+    "effect": "Loss of house through fire, dispute, or structural collapse.",
+    "modern_interpretation": "Property damage, land dispute loss.",
+    "neutralization": "Cancelled if Venus aspects 4th.",
+    "relevance": "Mid",
+    "additional_info": "Property dispute/damage indicator."
+  },
+  {
+    "id": 193,
+    "name": "Bandhu Pujya Yoga 1",
+    "category": "Family Honor",
+    "participating_planets": [
+      "4th Lord",
+      "Mercury"
+    ],
+    "houses_involved": [
+      1
+    ],
+    "formation": "Benefic 4th lord aspected by benefics with Mercury in Lagna.",
+    "effect": "High respect and affection from relatives and family.",
+    "modern_interpretation": "Family popularity, kin respect.",
+    "neutralization": "Impaired if Mercury is combust.",
+    "relevance": "Mid",
+    "additional_info": "Kinship honor indicator."
+  },
+  {
+    "id": 194,
+    "name": "Bandhu Pujya Yoga 2",
+    "category": "Family Honor",
+    "participating_planets": [
+      "4th Lord",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      4
+    ],
+    "formation": "4th lord combined with Jupiter in 4th house.",
+    "effect": "Deep reverence from relatives and local community.",
+    "modern_interpretation": "Community/family leadership.",
+    "neutralization": "Weakened if Jupiter is afflicted.",
+    "relevance": "Mid",
+    "additional_info": "Family veneration."
+  },
+  {
+    "id": 195,
+    "name": "Bandhubhisthyaktha Yoga",
+    "category": "Family Affliction",
+    "participating_planets": [
+      "4th Lord"
+    ],
+    "houses_involved": [
+      4
+    ],
+    "formation": "4th lord in evil Shashtiamsa or debility.",
+    "effect": "Desertion or alienation by relatives and family.",
+    "modern_interpretation": "Family alienation, kin dispute.",
+    "neutralization": "Mitigated by benefic aspect on 4th.",
+    "relevance": "Mid",
+    "additional_info": "Kinship alienation indicator."
+  },
+  {
+    "id": 196,
+    "name": "Matrudeerghayur Yoga 1",
+    "category": "Mother Longevity",
+    "participating_planets": [
+      "4th Lord",
+      "Moon"
+    ],
+    "houses_involved": [
+      4
+    ],
+    "formation": "Benefic in 4th house, 4th lord exalted, Moon strong and unafflicted.",
+    "effect": "Long life and high health for mother.",
+    "modern_interpretation": "Maternal longevity, strong mother bond.",
+    "neutralization": "Weakened if Moon receives malefic aspect.",
+    "relevance": "High",
+    "additional_info": "Mother longevity indicator."
+  },
+  {
+    "id": 197,
+    "name": "Matrudeerghayur Yoga 2",
+    "category": "Mother Longevity",
+    "participating_planets": [
+      "4th Lord",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "4th lord in Kendra combined with Jupiter.",
+    "effect": "Long, prosperous life for mother.",
+    "modern_interpretation": "Mother's well-being and long life.",
+    "neutralization": "Impaired if 4th lord is combust.",
+    "relevance": "High",
+    "additional_info": "Maternal well-being."
+  },
+  {
+    "id": 198,
+    "name": "Matrunasa Yoga 1",
+    "category": "Mother Loss",
+    "participating_planets": [
+      "Moon"
+    ],
+    "houses_involved": [
+      6,
+      8,
+      12
+    ],
+    "formation": "Moon hemmed between malefics or placed in 6th/8th/12th afflicted.",
+    "effect": "Early loss or health struggle for mother.",
+    "modern_interpretation": "Maternal bereavement, early mother health crisis.",
+    "neutralization": "Cancelled if Moon receives strong Jupiter aspect.",
+    "relevance": "High",
+    "additional_info": "Mother loss indicator."
+  },
+  {
+    "id": 199,
+    "name": "Matrunasa Yoga 2",
+    "category": "Mother Loss",
+    "participating_planets": [
+      "4th Lord",
+      "Mars",
+      "Saturn"
+    ],
+    "houses_involved": [
+      4
+    ],
+    "formation": "4th house occupied by Mars and Saturn without benefic aspect.",
+    "effect": "Early death or separation from mother.",
+    "modern_interpretation": "Early maternal loss.",
+    "neutralization": "Cancelled if Venus aspects 4th.",
+    "relevance": "High",
+    "additional_info": "Maternal loss indicator."
+  },
+  {
+    "id": 200,
+    "name": "Matrugami Yoga",
+    "category": "Severe Affliction",
+    "participating_planets": [
+      "Moon",
+      "Venus"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Moon/Venus in Kendra afflicted by malefics with malefic in 4th.",
+    "effect": "Incestuous or highly unethical sexual conduct.",
+    "modern_interpretation": "Severe moral transgression.",
+    "neutralization": "Cancelled by Jupiter aspect.",
+    "relevance": "Very Low",
+    "additional_info": "Severe ancient moral affliction."
+  },
+  {
+    "id": 201,
+    "name": "Sahodareesangama Yoga",
+    "category": "Severe Affliction",
+    "participating_planets": [
+      "7th Lord",
+      "Venus"
+    ],
+    "houses_involved": [
+      4
+    ],
+    "formation": "7th lord and Venus in 4th house afflicted by potent malefics.",
+    "effect": "Immoral relations with sister or close relative.",
+    "modern_interpretation": "Severe boundary transgression.",
+    "neutralization": "Cancelled by strong Jupiter aspect.",
+    "relevance": "Very Low",
+    "additional_info": "Severe ancient moral affliction."
+  },
+  {
+    "id": 202,
+    "name": "Kapata Yoga 1",
+    "category": "Character Yoga",
+    "participating_planets": [
+      "4th House",
+      "Saturn"
+    ],
+    "houses_involved": [
+      4
+    ],
+    "formation": "4th house occupied by Saturn or Rahu.",
+    "effect": "Hypocrisy, secrecy, diplomatic or insincere heart.",
+    "modern_interpretation": "Strategic secrecy, lack of transparency.",
+    "neutralization": "Cancelled if benefic occupies 4th.",
+    "relevance": "High",
+    "additional_info": "Secrecy/diplomacy indicator."
+  },
+  {
+    "id": 203,
+    "name": "Kapata Yoga 2",
+    "category": "Character Yoga",
+    "participating_planets": [
+      "4th Lord",
+      "Mars"
+    ],
+    "houses_involved": [
+      4
+    ],
+    "formation": "4th lord combined with Mars in a malefic Navamsa.",
+    "effect": "Guarded intention, manipulative behavior.",
+    "modern_interpretation": "Calculated maneuvering.",
+    "neutralization": "Mitigated by Jupiter aspect.",
+    "relevance": "High",
+    "additional_info": "Strategic manipulation."
+  },
+  {
+    "id": 204,
+    "name": "Kapata Yoga 3",
+    "category": "Character Yoga",
+    "participating_planets": [
+      "4th House",
+      "Gulika"
+    ],
+    "houses_involved": [
+      4
+    ],
+    "formation": "Gulika placed in 4th house without benefic aspect.",
+    "effect": "Deceitful nature, hidden agenda.",
+    "modern_interpretation": "Lack of candor.",
+    "neutralization": "Mitigated by Moon aspect.",
+    "relevance": "Mid",
+    "additional_info": "Hidden motives indicator."
+  },
+  {
+    "id": 205,
+    "name": "Nishkapata Yoga 1",
+    "category": "Character Yoga",
+    "participating_planets": [
+      "4th House",
+      "Benefics"
+    ],
+    "houses_involved": [
+      4
+    ],
+    "formation": "Benefic planet in 4th house, 4th lord unafflicted.",
+    "effect": "Pure heart, hating secrecy, transparent nature.",
+    "modern_interpretation": "Authenticity, open communication.",
+    "neutralization": "Impaired if malefic aspects 4th.",
+    "relevance": "High",
+    "additional_info": "Transparency indicator."
+  },
+  {
+    "id": 206,
+    "name": "Nishkapata Yoga 2",
+    "category": "Character Yoga",
+    "participating_planets": [
+      "4th Lord",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "4th lord combined with Jupiter in Kendra.",
+    "effect": "Unblemished integrity, honest disposition.",
+    "modern_interpretation": "High ethical integrity.",
+    "neutralization": "Weakened if 4th lord is combust.",
+    "relevance": "High",
+    "additional_info": "Ethical purity."
+  },
+  {
+    "id": 207,
+    "name": "Matru Satrutwa Yoga",
+    "category": "Mother Relationship",
+    "participating_planets": [
+      "Mercury",
+      "Lagna Lord",
+      "4th Lord"
+    ],
+    "houses_involved": [
+      1,
+      4
+    ],
+    "formation": "Mercury owning Lagna and 4th afflicted by malefics (Gemini Lagna).",
+    "effect": "Friction or antagonism with mother.",
+    "modern_interpretation": "Conflict with mother.",
+    "neutralization": "Mitigated by Venus aspect.",
+    "relevance": "Mid",
+    "additional_info": "Mother friction indicator."
+  },
+  {
+    "id": 208,
+    "name": "Matru Sneha Yoga",
+    "category": "Mother Relationship",
+    "participating_planets": [
+      "Lagna Lord",
+      "4th Lord"
+    ],
+    "houses_involved": [
+      1,
+      4
+    ],
+    "formation": "Common lord for 1st and 4th houses (Gemini or Sagittarius Lagna).",
+    "effect": "Cordial, affectionate relationship with mother.",
+    "modern_interpretation": "Strong maternal affection.",
+    "neutralization": "Impaired if house lord is in fall.",
+    "relevance": "Mid",
+    "additional_info": "Mother affection indicator."
+  },
+  {
+    "id": 209,
+    "name": "Vahana Yoga 1",
+    "category": "Conveyances",
+    "participating_planets": [
+      "Lagna Lord",
+      "4th Lord"
+    ],
+    "houses_involved": [
+      4,
+      9,
+      11
+    ],
+    "formation": "Lagna lord in 4th, 9th, or 11th house with strong 4th lord.",
+    "effect": "Acquisition of luxury vehicles, conveyances, smooth travel.",
+    "modern_interpretation": "Automobile/vehicle ownership, mobility comfort.",
+    "neutralization": "Weakened if 4th lord is debilitated.",
+    "relevance": "High",
+    "additional_info": "Vehicle acquisition indicator."
+  },
+  {
+    "id": 210,
+    "name": "Vahana Yoga 2",
+    "category": "Conveyances",
+    "participating_planets": [
+      "4th Lord",
+      "Venus"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "4th lord exalted and Venus in Kendra.",
+    "effect": "Luxury fleet ownership, high-end vehicles.",
+    "modern_interpretation": "High-end luxury vehicles.",
+    "neutralization": "Impaired if Venus is combust.",
+    "relevance": "High",
+    "additional_info": "Luxury vehicle indicator."
+  },
+  {
+    "id": 211,
+    "name": "Anapathya Yoga",
+    "category": "Offspring Affliction",
+    "participating_planets": [
+      "Jupiter",
+      "Lagna Lord",
+      "7th Lord",
+      "5th Lord"
+    ],
+    "houses_involved": [
+      5,
+      7,
+      8
+    ],
+    "formation": "Weakness/affliction of Jupiter, Lagna lord, 7th lord, and 5th lord.",
+    "effect": "Childlessness, difficulty in conceiving offspring.",
+    "modern_interpretation": "Infertility management, reproductive challenges.",
+    "neutralization": "Cancelled if benefic enters 5th or Jupiter receives aspect.",
+    "relevance": "High",
+    "additional_info": "Progeny hurdle indicator."
+  },
+  {
+    "id": 212,
+    "name": "Sarpasapa Yoga 1",
+    "category": "Offspring Affliction",
+    "participating_planets": [
+      "Rahu",
+      "Mars",
+      "5th House"
+    ],
+    "houses_involved": [
+      5
+    ],
+    "formation": "Rahu in 5th house aspected by Mars.",
+    "effect": "Loss of children due to serpent curse/ancestral affliction.",
+    "modern_interpretation": "Progeny obstacles, genetic health management.",
+    "neutralization": "Cancelled if Jupiter aspects 5th.",
+    "relevance": "Mid",
+    "additional_info": "Progeny ancestral hurdle."
+  },
+  {
+    "id": 213,
+    "name": "Sarpasapa Yoga 2",
+    "category": "Offspring Affliction",
+    "participating_planets": [
+      "Rahu",
+      "5th Lord"
+    ],
+    "houses_involved": [
+      5
+    ],
+    "formation": "Rahu in 5th house in sign of Mars (Aries/Scorpio).",
+    "effect": "Childlessness or reproductive complications.",
+    "modern_interpretation": "Reproductive health management.",
+    "neutralization": "Mitigated by Venus aspect.",
+    "relevance": "Mid",
+    "additional_info": "Progeny hurdle."
+  },
+  {
+    "id": 214,
+    "name": "Sarpasapa Yoga 3",
+    "category": "Offspring Affliction",
+    "participating_planets": [
+      "5th Lord",
+      "Rahu",
+      "Mars"
+    ],
+    "houses_involved": [
+      5
+    ],
+    "formation": "5th lord combined with Rahu and Mars in 5th house.",
+    "effect": "Delay or loss of progeny.",
+    "modern_interpretation": "Reproductive delays.",
+    "neutralization": "Cancelled by strong Jupiter aspect.",
+    "relevance": "Mid",
+    "additional_info": "Progeny delay."
+  },
+  {
+    "id": 215,
+    "name": "Sarpasapa Yoga 4",
+    "category": "Offspring Affliction",
+    "participating_planets": [
+      "Jupiter",
+      "Rahu",
+      "Mars"
+    ],
+    "houses_involved": [
+      5
+    ],
+    "formation": "Jupiter combined with Rahu and Mars in 5th house.",
+    "effect": "Obstacles in lineage perpetuation.",
+    "modern_interpretation": "Lineage perpetuation hurdle.",
+    "neutralization": "Mitigated by benefic aspect.",
+    "relevance": "Mid",
+    "additional_info": "Lineage hurdle."
+  },
+  {
+    "id": 216,
+    "name": "Pitrusapa Sutakshaya Yoga",
+    "category": "Offspring Affliction",
+    "participating_planets": [
+      "Sun",
+      "5th House"
+    ],
+    "houses_involved": [
+      5
+    ],
+    "formation": "Sun debilitated or in Saturnian Navamsas in 5th house.",
+    "effect": "Loss of children due to father's wrath/curse.",
+    "modern_interpretation": "Paternal lineage friction, progeny delay.",
+    "neutralization": "Cancelled if Sun receives Sun-dispositor aspect.",
+    "relevance": "Mid",
+    "additional_info": "Paternal affliction indicator."
+  },
+  {
+    "id": 217,
+    "name": "Matrusapa Sutakshaya Yoga",
+    "category": "Offspring Affliction",
+    "participating_planets": [
+      "5th Lord",
+      "8th Lord",
+      "Moon"
+    ],
+    "houses_involved": [
+      5,
+      6,
+      8
+    ],
+    "formation": "Exchange between 5th and 8th lords with Moon in 6th house.",
+    "effect": "Loss of children due to mother's curse/grief.",
+    "modern_interpretation": "Maternal lineage friction, progeny delay.",
+    "neutralization": "Mitigated by Jupiter aspect.",
+    "relevance": "Mid",
+    "additional_info": "Maternal lineage hurdle."
+  },
+  {
+    "id": 218,
+    "name": "Bhratrusapa Sutakshaya Yoga",
+    "category": "Offspring Affliction",
+    "participating_planets": [
+      "1st Lord",
+      "5th Lord",
+      "3rd Lord",
+      "Mars",
+      "Rahu"
+    ],
+    "houses_involved": [
+      5,
+      8
+    ],
+    "formation": "1st and 5th lords in 8th, 3rd lord with Mars/Rahu in 5th.",
+    "effect": "Loss of children due to brother's curse.",
+    "modern_interpretation": "Fraternal friction, progeny delay.",
+    "neutralization": "Cancelled by Jupiter aspect.",
+    "relevance": "Low",
+    "additional_info": "Fraternal lineage hurdle."
+  },
+  {
+    "id": 219,
+    "name": "Pretasapa Yoga",
+    "category": "Offspring Affliction",
+    "participating_planets": [
+      "Sun",
+      "Saturn",
+      "Moon",
+      "Rahu",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      1,
+      5,
+      7,
+      12
+    ],
+    "formation": "Sun and Saturn in 5th, weak Moon in 7th, Rahu in Lagna, Jupiter in 12th.",
+    "effect": "Loss of children due to ancestral spirit curse.",
+    "modern_interpretation": "Ancestral ritual management, progeny delay.",
+    "neutralization": "Mitigated by strong Jupiter aspect on Lagna.",
+    "relevance": "Low",
+    "additional_info": "Ancestral ritual indicator."
+  },
+  {
+    "id": 220,
+    "name": "Bahuputra Yoga 1",
+    "category": "Progeny Yoga",
+    "participating_planets": [
+      "Rahu",
+      "5th House"
+    ],
+    "houses_involved": [
+      5
+    ],
+    "formation": "Rahu in 5th house outside Saturn's Navamsa.",
+    "effect": "Large number of children, active family expansion.",
+    "modern_interpretation": "Multiple children.",
+    "neutralization": "Impaired if Rahu is in fall.",
+    "relevance": "Mid",
+    "additional_info": "Multiple children indicator."
+  },
+  {
+    "id": 221,
+    "name": "Bahuputra Yoga 2",
+    "category": "Progeny Yoga",
+    "participating_planets": [
+      "5th Lord",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "5th lord in Kendra with Jupiter.",
+    "effect": "Blessed with multiple dutiful children.",
+    "modern_interpretation": "Multiple children.",
+    "neutralization": "Weakened if 5th lord is combust.",
+    "relevance": "High",
+    "additional_info": "Multiple Dutiful Offspring."
+  },
+  {
+    "id": 222,
+    "name": "Dattaputra Yoga 1",
+    "category": "Adoption Yoga",
+    "participating_planets": [
+      "Mars",
+      "Saturn",
+      "5th House",
+      "Lagna Lord"
+    ],
+    "houses_involved": [
+      5
+    ],
+    "formation": "Mars and Saturn in 5th with Lagna lord in Mercury's sign.",
+    "effect": "Adoption of children, raising non-biological children.",
+    "modern_interpretation": "Child adoption, foster parenting.",
+    "neutralization": "Cancelled if 5th lord is exalted.",
+    "relevance": "Mid",
+    "additional_info": "Adoption indicator."
+  },
+  {
+    "id": 223,
+    "name": "Dattaputra Yoga 2",
+    "category": "Adoption Yoga",
+    "participating_planets": [
+      "5th Lord",
+      "Saturn"
+    ],
+    "houses_involved": [
+      5
+    ],
+    "formation": "5th lord combined with Saturn without benefic aspect.",
+    "effect": "Adoption or foster parenting.",
+    "modern_interpretation": "Foster care, child adoption.",
+    "neutralization": "Mitigated by Jupiter aspect.",
+    "relevance": "Mid",
+    "additional_info": "Foster parent indicator."
+  },
+  {
+    "id": 224,
+    "name": "Aputra Yoga",
+    "category": "Offspring Affliction",
+    "participating_planets": [
+      "5th Lord"
+    ],
+    "houses_involved": [
+      6,
+      8,
+      12
+    ],
+    "formation": "5th lord placed in 6th, 8th, or 12th house.",
+    "effect": "Absence of issues, difficulty in child birth.",
+    "modern_interpretation": "Lack of offspring, infertility management.",
+    "neutralization": "Cancelled if 5th lord receives Neechabhanga or Jupiter aspect.",
+    "relevance": "High",
+    "additional_info": "Absence of offspring indicator."
+  },
+  {
+    "id": 225,
+    "name": "Ekaputra Yoga",
+    "category": "Offspring Composition",
+    "participating_planets": [
+      "5th Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      5,
+      7,
+      9,
+      10
+    ],
+    "formation": "5th lord placed in a Kendra or Kona.",
+    "effect": "Having only one son or single child.",
+    "modern_interpretation": "Single child family.",
+    "neutralization": "Modified if multiple benefics aspect 5th.",
+    "relevance": "Mid",
+    "additional_info": "Single child indicator."
+  },
+  {
+    "id": 226,
+    "name": "Satputra / Suputra Yoga",
+    "category": "Offspring Virtues",
+    "participating_planets": [
+      "Jupiter",
+      "5th Lord",
+      "Sun"
+    ],
+    "houses_involved": [
+      5
+    ],
+    "formation": "Jupiter owning 5th house with Sun well-placed (Leo/Scorpio Lagna).",
+    "effect": "Blessed with a worthy, renowned, dutiful son.",
+    "modern_interpretation": "Accomplished, dutiful child.",
+    "neutralization": "Weakened if Jupiter is combust.",
+    "relevance": "High",
+    "additional_info": "Worthy child indicator."
+  },
+  {
+    "id": 227,
+    "name": "Kalanirdesat Putra Yoga 1",
+    "category": "Progeny Timing",
+    "participating_planets": [
+      "Jupiter",
+      "5th Lord",
+      "Venus"
+    ],
+    "houses_involved": [
+      5
+    ],
+    "formation": "Jupiter in 5th with 5th lord combined with Venus.",
+    "effect": "Birth of a son at specific mature age (32nd, 33rd, or 40th year).",
+    "modern_interpretation": "Mature age parenthood.",
+    "neutralization": "Impaired if Venus is in fall.",
+    "relevance": "Mid",
+    "additional_info": "Late progeny timing."
+  },
+  {
+    "id": 228,
+    "name": "Kalanirdesat Putra Yoga 2",
+    "category": "Progeny Timing",
+    "participating_planets": [
+      "5th Lord",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      9
+    ],
+    "formation": "5th lord in 9th house combined with Jupiter.",
+    "effect": "Parenthood at mature age.",
+    "modern_interpretation": "Fortunate progeny timing.",
+    "neutralization": "Weakened if 5th lord is combust.",
+    "relevance": "Mid",
+    "additional_info": "Mature parenthood timing."
+  },
+  {
+    "id": 229,
+    "name": "Kalanirdesat Putranasa Yoga 1",
+    "category": "Progeny Affliction",
+    "participating_planets": [
+      "Rahu",
+      "5th Lord",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      5
+    ],
+    "formation": "Rahu in 5th, 5th lord with malefic, Jupiter debilitated.",
+    "effect": "Grief through children at specific age (32nd or 40th year).",
+    "modern_interpretation": "Child-related stress in middle age.",
+    "neutralization": "Cancelled by Jupiter aspect.",
+    "relevance": "Mid",
+    "additional_info": "Progeny grief timing."
+  },
+  {
+    "id": 230,
+    "name": "Kalanirdesat Putranasa Yoga 2",
+    "category": "Progeny Affliction",
+    "participating_planets": [
+      "5th Lord",
+      "Saturn"
+    ],
+    "houses_involved": [
+      8
+    ],
+    "formation": "5th lord in 8th house combined with Saturn.",
+    "effect": "Loss or health struggle of child at specific age.",
+    "modern_interpretation": "Child health challenge.",
+    "neutralization": "Cancelled by benefic aspect.",
+    "relevance": "Mid",
+    "additional_info": "Child health timing."
+  },
+  {
+    "id": 231,
+    "name": "Buddhimaturya Yoga",
+    "category": "Intellect Yoga",
+    "participating_planets": [
+      "5th Lord"
+    ],
+    "houses_involved": [
+      5
+    ],
+    "formation": "5th lord as a benefic planet in a benefic sign/aspect.",
+    "effect": "High intelligence, refined moral character, sharp memory.",
+    "modern_interpretation": "High IQ, analytical brilliance.",
+    "neutralization": "Weakened if 5th lord is combust.",
+    "relevance": "High",
+    "additional_info": "High intelligence indicator."
+  },
+  {
+    "id": 232,
+    "name": "Theevrabuddhi Yoga",
+    "category": "Intellect Yoga",
+    "participating_planets": [
+      "5th Lord Navamsa Dispositor"
+    ],
+    "houses_involved": [
+      5
+    ],
+    "formation": "Navamsa lord of 5th lord aspected by benefic planets.",
+    "effect": "Precocious genius, extraordinary intellectual speed.",
+    "modern_interpretation": "Prodigy intelligence, rapid learning capacity.",
+    "neutralization": "Weakened if dispositor is debilitated.",
+    "relevance": "High",
+    "additional_info": "Genius intellect indicator."
+  },
+  {
+    "id": 233,
+    "name": "Buddhi Jada Yoga",
+    "category": "Intellect Affliction",
+    "participating_planets": [
+      "Lagna Lord",
+      "Saturn"
+    ],
+    "houses_involved": [
+      1,
+      5
+    ],
+    "formation": "Lagna lord with malefics, Saturn in 5th house aspecting Lagna lord.",
+    "effect": "Dull intellect, dunce, learning difficulty.",
+    "modern_interpretation": "Learning disability, cognitive slowness.",
+    "neutralization": "Cancelled if Mercury aspects 5th.",
+    "relevance": "High",
+    "additional_info": "Intellectual slowness indicator."
+  },
+  {
+    "id": 234,
+    "name": "Thrikalagnana Yoga",
+    "category": "Prophetic Intuition",
+    "participating_planets": [
+      "Jupiter"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      5,
+      7,
+      9,
+      10
+    ],
+    "formation": "Jupiter in Mrudwamsa in own Navamsa or Gopuramsa aspected by benefic.",
+    "effect": "Prophetic intuition, foresight into past, present, and future.",
+    "modern_interpretation": "Prophetic foresight, intuitive strategic vision.",
+    "neutralization": "Weakened if Jupiter is combust.",
+    "relevance": "Mid",
+    "additional_info": "Intuitive foresight indicator."
+  },
+  {
+    "id": 235,
+    "name": "Putra Sukha Yoga",
+    "category": "Offspring Happiness",
+    "participating_planets": [
+      "Jupiter",
+      "Venus",
+      "Mercury"
+    ],
+    "houses_involved": [
+      5
+    ],
+    "formation": "Jupiter and Venus in 5th house, or Mercury in 5th house.",
+    "effect": "Immense happiness, peace, and pride through children.",
+    "modern_interpretation": "Family joy through accomplished children.",
+    "neutralization": "Impaired if malefic enters 5th.",
+    "relevance": "High",
+    "additional_info": "Happiness through offspring."
+  },
+  {
+    "id": 236,
+    "name": "Jara Yoga",
+    "category": "Marital Affliction",
+    "participating_planets": [
+      "2nd Lord",
+      "7th Lord",
+      "10th Lord"
+    ],
+    "houses_involved": [
+      10
+    ],
+    "formation": "Lords of 2nd, 7th, and 10th placed in 10th house.",
+    "effect": "Extra-marital relations, questionable marital fidelity.",
+    "modern_interpretation": "Marital infidelity risk.",
+    "neutralization": "Cancelled if Jupiter aspects 10th.",
+    "relevance": "Mid",
+    "additional_info": "Marital fidelity indicator."
+  },
+  {
+    "id": 237,
+    "name": "Jarajaputra Yoga",
+    "category": "Offspring Affliction",
+    "participating_planets": [
+      "5th Lord",
+      "7th Lord",
+      "6th Lord"
+    ],
+    "houses_involved": [
+      5
+    ],
+    "formation": "Lords of 5th and 7th combined with 6th lord.",
+    "effect": "Illegitimate progeny or children born outside marriage.",
+    "modern_interpretation": "Non-marital child birth.",
+    "neutralization": "Mitigated by benefic aspect.",
+    "relevance": "Low",
+    "additional_info": "Illegitimate offspring indicator."
+  },
+  {
+    "id": 238,
+    "name": "Bahu Stree Yoga",
+    "category": "Marriage Yoga",
+    "participating_planets": [
+      "Lagna Lord",
+      "7th Lord"
+    ],
+    "houses_involved": [
+      1,
+      7
+    ],
+    "formation": "Lords of Lagna and 7th in mutual conjunction or mutual aspect.",
+    "effect": "Multiple wives, female paramours, high romantic attraction.",
+    "modern_interpretation": "Multiple romantic relationships, high charisma.",
+    "neutralization": "Impaired if 7th lord is debilitated.",
+    "relevance": "High",
+    "additional_info": "Romantic charisma/multiple partners."
+  },
+  {
+    "id": 239,
+    "name": "Satkalatra Yoga",
+    "category": "Marriage Yoga",
+    "participating_planets": [
+      "7th Lord",
+      "Venus",
+      "Jupiter",
+      "Mercury"
+    ],
+    "houses_involved": [
+      7
+    ],
+    "formation": "7th lord or Venus aspected by or combined with Jupiter or Mercury.",
+    "effect": "Virtuous, devoted, cultured spouse, happy marital life.",
+    "modern_interpretation": "Supportive, highly educated life partner.",
+    "neutralization": "Weakened if Venus is combust.",
+    "relevance": "Very High",
+    "additional_info": "Virtuous spouse indicator."
+  },
+  {
+    "id": 240,
+    "name": "Bhaga Chumbana Yoga",
+    "category": "Marital Passion",
+    "participating_planets": [
+      "7th Lord",
+      "Venus"
+    ],
+    "houses_involved": [
+      4
+    ],
+    "formation": "7th lord placed in 4th house combined with Venus.",
+    "effect": "Specific intense sexual passion and physical intimacy.",
+    "modern_interpretation": "High romantic/sexual passion.",
+    "neutralization": "Mitigated by Saturn aspect.",
+    "relevance": "Low",
+    "additional_info": "Sexual intimacy indicator."
+  },
+  {
+    "id": 241,
+    "name": "Bhagya Yoga",
+    "category": "Fortune Yoga",
+    "participating_planets": [
+      "Benefics"
+    ],
+    "houses_involved": [
+      1,
+      3,
+      5,
+      9
+    ],
+    "formation": "Strong benefic placed in 1st, 3rd, or 5th house aspecting 9th house.",
+    "effect": "Extreme good fortune, wealth, effortless success, high luck.",
+    "modern_interpretation": "High-net-worth prosperity, luck in ventures.",
+    "neutralization": "Weakened if benefic is combust.",
+    "relevance": "Very High",
+    "additional_info": "Fortune and luck indicator."
+  },
+  {
+    "id": 242,
+    "name": "Jananatpurvam Pitru Marana Yoga",
+    "category": "Paternal Loss",
+    "participating_planets": [
+      "Sun",
+      "8th Lord",
+      "12th Lord",
+      "6th Lord"
+    ],
+    "houses_involved": [
+      1,
+      5,
+      6,
+      8,
+      9,
+      12
+    ],
+    "formation": "Sun in 6/8/12, 8th lord in 9th, 12th lord in 1st, 6th lord in 5th.",
+    "effect": "Posthumous birth (father's death prior to birth).",
+    "modern_interpretation": "Paternal death before birth.",
+    "neutralization": "Cancelled if Sun receives strong dispositor aspect.",
+    "relevance": "Low",
+    "additional_info": "Posthumous birth indicator."
+  },
+  {
+    "id": 243,
+    "name": "Dhatrutwa Yoga",
+    "category": "Philanthropy",
+    "participating_planets": [
+      "9th Lord"
+    ],
+    "houses_involved": [
+      9
+    ],
+    "formation": "Exalted 9th lord aspected by benefic, with benefic in 9th house.",
+    "effect": "Deep generosity, large scale philanthropy, charitable institutions.",
+    "modern_interpretation": "Philanthropic foundation founder, major donor.",
+    "neutralization": "Weakened if 9th lord is combust.",
+    "relevance": "High",
+    "additional_info": "Philanthropy indicator."
+  },
+  {
+    "id": 244,
+    "name": "Apakeerti Yoga",
+    "category": "Reputation Affliction",
+    "participating_planets": [
+      "Sun",
+      "Saturn"
+    ],
+    "houses_involved": [
+      10
+    ],
+    "formation": "Sun and Saturn in 10th house in malefic Navamsas or aspected by malefics.",
+    "effect": "Bad reputation, public scandal, fall from grace.",
+    "modern_interpretation": "Public relations crisis, reputation loss.",
+    "neutralization": "Cancelled if Jupiter aspects 10th.",
+    "relevance": "Very High",
+    "additional_info": "Public scandal indicator."
+  },
+  {
+    "id": 245,
+    "name": "Major Exaltation Raja Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Exalted Planets"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10,
+      5,
+      9
+    ],
+    "formation": "Three or more planets exalted or in own signs in Kendras or Konas.",
+    "effect": "Elevates person to ruler, head of state, or chief executive status.",
+    "modern_interpretation": "President, CEO, sovereign political authority.",
+    "neutralization": "Cancelled if exalted planets are debilitated in Navamsa.",
+    "relevance": "Very High",
+    "additional_info": "Premier power yoga."
+  },
+  {
+    "id": 246,
+    "name": "Vakra/Debilitated Raja Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Retrograde Planets"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10,
+      5,
+      9
+    ],
+    "formation": "Debilitated planet retrograde or bright, occupying favorable house.",
+    "effect": "High position equal to a ruler, unexpected rise.",
+    "modern_interpretation": "Unconventional executive rise.",
+    "neutralization": "Impaired if planet loses retrograde motion.",
+    "relevance": "High",
+    "additional_info": "Retrograde debilitated power yoga."
+  },
+  {
+    "id": 247,
+    "name": "Digbala Raja Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Digbala Planets"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Two to four planets possessing Digbala (directional strength).",
+    "effect": "Rise from humble origin to high ruler status.",
+    "modern_interpretation": "Self-made corporate/political titan.",
+    "neutralization": "Weakened if planets are combust.",
+    "relevance": "Very High",
+    "additional_info": "Directional strength power yoga."
+  },
+  {
+    "id": 248,
+    "name": "Aquarius Exaltation Raja Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Venus",
+      "Exalted Planets"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Aquarius Lagna with Venus in it and four planets exalted.",
+    "effect": "Sovereign ruler status, supreme political authority.",
+    "modern_interpretation": "Head of state, national leader.",
+    "neutralization": "Specific to Aquarius Lagna.",
+    "relevance": "Low",
+    "additional_info": "Exalted state alignment."
+  },
+  {
+    "id": 249,
+    "name": "Kendra Benefic Raja Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Moon",
+      "Jupiter",
+      "Venus",
+      "Saturn"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      10
+    ],
+    "formation": "Moon in Lagna, Jupiter in 4th, Venus in 10th, Saturn exalted/own house.",
+    "effect": "Ruler or chief executive of vast domain.",
+    "modern_interpretation": "Prime minister, global CEO.",
+    "neutralization": "Voided if Moon is waning/afflicted.",
+    "relevance": "Mid",
+    "additional_info": "Kendra benefic dominance."
+  },
+  {
+    "id": 250,
+    "name": "Neechabhanga Raja Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Debilitated Planets"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Dispositor of a debilitated planet (or its exaltation lord) in a Kendra from Lagna or Moon.",
+    "effect": "Elevation from low birth or hardship to great fortune, power, and fame.",
+    "modern_interpretation": "Rags-to-riches success story, crisis-turned-triumph.",
+    "neutralization": "Nullified if the dispositor is itself combust or in 8th house.",
+    "relevance": "Very High",
+    "additional_info": "Most famous cancellation-elevation yoga in Vedic astrology."
+  },
+  {
+    "id": 251,
+    "name": "Chandra-Guru Raja Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Moon",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Strong Moon in Kendra (other than Lagna) aspected by Jupiter.",
+    "effect": "Power, wealth, high administrative influence.",
+    "modern_interpretation": "Corporate leadership, public executive.",
+    "neutralization": "Impaired if Moon is waning.",
+    "relevance": "High",
+    "additional_info": "Lunar-Jupiter Kendra alignment."
+  },
+  {
+    "id": 252,
+    "name": "Amsa Exaltation Raja Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Debilitated Planets"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Debilitated Rasi planets exalted in Navamsa.",
+    "effect": "High administrative power, ruler status.",
+    "modern_interpretation": "Late career executive elevation.",
+    "neutralization": "Weakened if Navamsa dispositor is afflicted.",
+    "relevance": "High",
+    "additional_info": "Navamsa elevation yoga."
+  },
+  {
+    "id": 253,
+    "name": "Tri-Kona Raja Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Jupiter",
+      "Mercury",
+      "9th Lord",
+      "11th Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Jupiter in Lagna, Mercury in Kendra aspected by 9th/11th lords.",
+    "effect": "High authority, prosperity, widespread respect.",
+    "modern_interpretation": "Government advisor, chief executive.",
+    "neutralization": "Weakened if Mercury is combust.",
+    "relevance": "Mid",
+    "additional_info": "Jupiter-Mercury Raja Yoga."
+  },
+  {
+    "id": 254,
+    "name": "Saturn Swa-uccha Raja Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Saturn",
+      "10th Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      5,
+      7,
+      9,
+      10
+    ],
+    "formation": "Saturn exalted/Moolathrikona in Kendra/Kona aspected by 10th lord.",
+    "effect": "Landed lord, infrastructure titan, ruler status.",
+    "modern_interpretation": "Infrastructure mogul, industrial chief.",
+    "neutralization": "Impaired if Saturn is combust.",
+    "relevance": "High",
+    "additional_info": "Exalted Saturn power yoga."
+  },
+  {
+    "id": 255,
+    "name": "Chandra-Mangala-Rahu Raja Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Moon",
+      "Mars",
+      "Rahu"
+    ],
+    "houses_involved": [
+      2,
+      3,
+      5
+    ],
+    "formation": "Moon and Mars in 2nd/3rd with Rahu in 5th.",
+    "effect": "Financial authority, commercial power.",
+    "modern_interpretation": "Financial controller, venture capital chief.",
+    "neutralization": "Weakened if Rahu is in fall.",
+    "relevance": "Mid",
+    "additional_info": "Commercial power yoga."
+  },
+  {
+    "id": 256,
+    "name": "Uttamamsa Raja Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "10th Lord"
+    ],
+    "houses_involved": [
+      9
+    ],
+    "formation": "10th lord in 9th house in exalted/friendly Navamsa with Uttamamsa.",
+    "effect": "High governance status, royal honor.",
+    "modern_interpretation": "Government minister, corporate president.",
+    "neutralization": "Weakened if 10th lord is combust.",
+    "relevance": "High",
+    "additional_info": "Uttamamsa 10th lord yoga."
+  },
+  {
+    "id": 257,
+    "name": "Gajakesari Fixed Lagna Raja Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Jupiter",
+      "Moon",
+      "Fixed Lagna Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      5,
+      7,
+      10
+    ],
+    "formation": "Jupiter in 5th, Moon in Kendra from Jupiter, Fixed Lagna lord in 10th.",
+    "effect": "Sovereign power, permanent political authority.",
+    "modern_interpretation": "Long-tenure ruler, stable chief executive.",
+    "neutralization": "Specific to fixed Lagnas.",
+    "relevance": "Mid",
+    "additional_info": "Fixed Lagna Gajakesari variant."
+  },
+  {
+    "id": 258,
+    "name": "Chandra Navamsa Dispositor Raja Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Moon Navamsa Dispositor",
+      "Mercury"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10,
+      5,
+      9
+    ],
+    "formation": "Navamsa dispositor of Moon in Kendra/Kona from Lagna/Mercury.",
+    "effect": "Elevated social status, wealth, executive power.",
+    "modern_interpretation": "Senior executive, celebrity status.",
+    "neutralization": "Weakened if dispositor is debilitated.",
+    "relevance": "High",
+    "additional_info": "Lunar Navamsa power yoga."
+  },
+  {
+    "id": 259,
+    "name": "Taurus Special Raja Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Moon",
+      "Saturn",
+      "Sun",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Taurus Lagna with Moon in it, Saturn in 10th, Sun in 4th, Jupiter in 7th.",
+    "effect": "Military commander, ruler, high defense executive.",
+    "modern_interpretation": "Defense chief, supreme corporate director.",
+    "neutralization": "Requires Taurus Lagna.",
+    "relevance": "Low",
+    "additional_info": "Taurus specific planetary grid."
+  },
+  {
+    "id": 260,
+    "name": "Navamsa Dispositor Movable Raja Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Lagna Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Lagna and Lagna lord in movable signs, with Navamsa dispositor of a debilitated planet in Kendra/Kona.",
+    "effect": "Royalty, literary prince, high executive.",
+    "modern_interpretation": "Literary giant, global leader.",
+    "neutralization": "Impaired if Lagna lord is combust.",
+    "relevance": "Low",
+    "additional_info": "Movable Lagna Navamsa yoga."
+  },
+  {
+    "id": 261,
+    "name": "Rahu-Saturn 10th Raja Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Rahu",
+      "Saturn",
+      "Lagna Lord",
+      "9th Lord"
+    ],
+    "houses_involved": [
+      10
+    ],
+    "formation": "Lagna lord with debilitated planet, Rahu and Saturn in 10th aspected by 9th lord.",
+    "effect": "High status, political power through mass support.",
+    "modern_interpretation": "Political reformer, mass movement leader.",
+    "neutralization": "Impaired if 9th lord is combust.",
+    "relevance": "Mid",
+    "additional_info": "Mass politics 10th house yoga."
+  },
+  {
+    "id": 262,
+    "name": "Dhana-Kendra Raja Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "11th Lord",
+      "9th Lord",
+      "2nd Lord",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Lords of 11th, 9th, or 2nd in Kendra from Moon, Jupiter owning 2nd, 5th, or 11th.",
+    "effect": "Respected leader, immense wealth, executive rank.",
+    "modern_interpretation": "C-suite executive, high investor.",
+    "neutralization": "Weakened if Jupiter is combust.",
+    "relevance": "High",
+    "additional_info": "Dhana-Kendra integration."
+  },
+  {
+    "id": 263,
+    "name": "Uncombust 9th Benefic Raja Yoga",
+    "category": "Raja Yoga",
+    "participating_planets": [
+      "Jupiter",
+      "Mercury",
+      "Venus",
+      "Moon"
+    ],
+    "houses_involved": [
+      9
+    ],
+    "formation": "Uncombust Jupiter, Mercury, Venus, or Moon in 9th with friendly planets.",
+    "effect": "Great statesmanship, ruler status, high fortune.",
+    "modern_interpretation": "National statesman, corporate chairman.",
+    "neutralization": "Voided if benefic becomes combust.",
+    "relevance": "Very High",
+    "additional_info": "9th house pure benefic dominance."
+  },
+  {
+    "id": 264,
+    "name": "Galakarna Yoga",
+    "category": "Medical Affliction",
+    "participating_planets": [
+      "Mandi",
+      "Rahu",
+      "Mars"
+    ],
+    "houses_involved": [
+      3
+    ],
+    "formation": "3rd house occupied by Mandi and Rahu (or Mars in Preta Puriha Shashtiamsa).",
+    "effect": "Severe ear afflictions, hearing impairment, otitis media.",
+    "modern_interpretation": "Auditory impairment, ear disease.",
+    "neutralization": "Cancelled if Jupiter aspects 3rd.",
+    "relevance": "Mid",
+    "additional_info": "Ear disease indicator."
+  },
+  {
+    "id": 265,
+    "name": "Vrana Yoga",
+    "category": "Medical Affliction",
+    "participating_planets": [
+      "6th Lord"
+    ],
+    "houses_involved": [
+      1,
+      8,
+      10
+    ],
+    "formation": "Malefic 6th lord placed in Lagna, 8th, or 10th house.",
+    "effect": "Malignant tumors, cancer, severe ulceration.",
+    "modern_interpretation": "Oncology risk, severe ulceration.",
+    "neutralization": "Mitigated by strong Jupiter aspect.",
+    "relevance": "Very High",
+    "additional_info": "Tumor/ulcer indicator."
+  },
+  {
+    "id": 266,
+    "name": "Sisnavyadhi Yoga",
+    "category": "Medical Affliction",
+    "participating_planets": [
+      "Mercury",
+      "6th Lord",
+      "8th Lord"
+    ],
+    "houses_involved": [
+      1
+    ],
+    "formation": "Mercury in Lagna combined with 6th and 8th lords.",
+    "effect": "Incurable sexual/genital diseases, venereal afflictions.",
+    "modern_interpretation": "Reproductive health disorder.",
+    "neutralization": "Mitigated by Venus aspect.",
+    "relevance": "Mid",
+    "additional_info": "Genital health indicator."
+  },
+  {
+    "id": 267,
+    "name": "Kalatrashanda Yoga",
+    "category": "Medical Affliction",
+    "participating_planets": [
+      "7th Lord",
+      "Venus"
+    ],
+    "houses_involved": [
+      6
+    ],
+    "formation": "7th lord placed in 6th house combined with Venus.",
+    "effect": "Frigidity or sexual dysfunction of spouse.",
+    "modern_interpretation": "Spousal sexual health challenges.",
+    "neutralization": "Cancelled by Jupiter aspect.",
+    "relevance": "Mid",
+    "additional_info": "Spousal reproductive health."
+  },
+  {
+    "id": 268,
+    "name": "Kushtaroga Yoga 1",
+    "category": "Medical Affliction",
+    "participating_planets": [
+      "Lagna Lord",
+      "Mars",
+      "Mercury"
+    ],
+    "houses_involved": [
+      4,
+      12
+    ],
+    "formation": "Lagna lord with Mars/Mercury in 4th or 12th house.",
+    "effect": "Leprosy, severe dermatological afflictions.",
+    "modern_interpretation": "Severe skin disease, psoriasis.",
+    "neutralization": "Mitigated by benefic aspect.",
+    "relevance": "High",
+    "additional_info": "Dermatological disease indicator."
+  },
+  {
+    "id": 269,
+    "name": "Kushtaroga Yoga 2",
+    "category": "Medical Affliction",
+    "participating_planets": [
+      "Jupiter",
+      "Saturn",
+      "Moon"
+    ],
+    "houses_involved": [
+      6
+    ],
+    "formation": "Jupiter, Saturn, and Moon placed together in 6th house.",
+    "effect": "Chronic skin diseases, leprosy.",
+    "modern_interpretation": "Chronic skin condition.",
+    "neutralization": "Cancelled by Sun aspect.",
+    "relevance": "High",
+    "additional_info": "Chronic skin ailment."
+  },
+  {
+    "id": 270,
+    "name": "Kshaya Roga Yoga",
+    "category": "Medical Affliction",
+    "participating_planets": [
+      "Rahu",
+      "Mandi",
+      "Lagna Lord"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      6,
+      7,
+      8,
+      10
+    ],
+    "formation": "Rahu in 6th, Mandi in Kendra, Lagna lord in 8th.",
+    "effect": "Pulmonary tuberculosis, consumption, respiratory failure.",
+    "modern_interpretation": "Severe pulmonary illness, chronic bronchitis.",
+    "neutralization": "Mitigated by strong Jupiter aspect.",
+    "relevance": "High",
+    "additional_info": "Respiratory disease indicator."
+  },
+  {
+    "id": 271,
+    "name": "Bandhana Yoga",
+    "category": "Confinement Yoga",
+    "participating_planets": [
+      "1st Lord",
+      "6th Lord",
+      "Saturn",
+      "Rahu",
+      "Kethu"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10,
+      5,
+      9
+    ],
+    "formation": "Lords of 1st and 6th in Kendra/Kona with Saturn, Rahu, or Kethu.",
+    "effect": "Incarceration, imprisonment, hostage crisis, house arrest.",
+    "modern_interpretation": "Legal custody, incarceration, hostage threat.",
+    "neutralization": "Cancelled if 1st lord is exalted.",
+    "relevance": "Very High",
+    "additional_info": "Incarceration indicator."
+  },
+  {
+    "id": 272,
+    "name": "Karascheda Yoga",
+    "category": "Physical Amputation",
+    "participating_planets": [
+      "Saturn",
+      "Jupiter"
+    ],
+    "houses_involved": [
+      3,
+      8,
+      9,
+      12
+    ],
+    "formation": "Saturn in 9th and Jupiter in 3rd (or 8th/12th).",
+    "effect": "Amputation or physical loss of hands/limbs.",
+    "modern_interpretation": "Limb injury, surgical amputation.",
+    "neutralization": "Cancelled by Venus aspect.",
+    "relevance": "Mid",
+    "additional_info": "Amputation risk indicator."
+  },
+  {
+    "id": 273,
+    "name": "Sirachcheda Yoga",
+    "category": "Severe Capital Hazard",
+    "participating_planets": [
+      "6th Lord",
+      "Venus",
+      "Sun",
+      "Saturn",
+      "Rahu"
+    ],
+    "houses_involved": [
+      1,
+      6
+    ],
+    "formation": "6th lord with Venus, Sun/Saturn with Rahu in cruel Shashtiamsa.",
+    "effect": "Execution, beheading, hanging, fatal neck injury.",
+    "modern_interpretation": "Fatal violence hazard, execution.",
+    "neutralization": "Cancelled by Jupiter aspect.",
+    "relevance": "Low",
+    "additional_info": "Fatal violence hazard."
+  },
+  {
+    "id": 274,
+    "name": "Durmarana Yoga",
+    "category": "Unnatural Death",
+    "participating_planets": [
+      "Moon",
+      "Saturn",
+      "Mandi",
+      "Rahu",
+      "Lagna Lord"
+    ],
+    "houses_involved": [
+      6,
+      8,
+      12
+    ],
+    "formation": "Moon in 6th, 8th, or 12th with Saturn/Mandi/Rahu aspected by Lagna lord.",
+    "effect": "Unnatural death (suicide, poisoning, drowning, accident).",
+    "modern_interpretation": "Accidental death risk, fatal emergency.",
+    "neutralization": "Cancelled if Jupiter aspects Moon.",
+    "relevance": "Very High",
+    "additional_info": "Unnatural death risk indicator."
+  },
+  {
+    "id": 275,
+    "name": "Yuddhe Marana Yoga",
+    "category": "Combat Death",
+    "participating_planets": [
+      "Mars",
+      "3rd Lord",
+      "Rahu",
+      "Saturn",
+      "Mandi"
+    ],
+    "houses_involved": [
+      6,
+      8
+    ],
+    "formation": "Mars owning 6th/8th combined with 3rd lord and Rahu/Saturn/Mandi in cruel Amsas.",
+    "effect": "Death in battle, military fatality, armed conflict casualty.",
+    "modern_interpretation": "Combat casualty, fatal assault.",
+    "neutralization": "Cancelled by Jupiter aspect.",
+    "relevance": "Mid",
+    "additional_info": "Combat fatality indicator."
+  },
+  {
+    "id": 276,
+    "name": "Sanghataka Marana Yoga 1",
+    "category": "Collective Fatality",
+    "participating_planets": [
+      "Malefics"
+    ],
+    "houses_involved": [
+      8
+    ],
+    "formation": "Multiple malefics in 8th house in Martian signs/Navamsas.",
+    "effect": "Collective death (earthquakes, air crashes, explosions).",
+    "modern_interpretation": "Mass casualty event vulnerability.",
+    "neutralization": "Cancelled by benefic aspect on 8th.",
+    "relevance": "Mid",
+    "additional_info": "Collective fatality risk."
+  },
+  {
+    "id": 277,
+    "name": "Sanghataka Marana Yoga 2",
+    "category": "Collective Fatality",
+    "participating_planets": [
+      "8th Lord",
+      "Saturn",
+      "Rahu"
+    ],
+    "houses_involved": [
+      8
+    ],
+    "formation": "8th lord combined with Saturn and Rahu in 8th house.",
+    "effect": "Mass disaster fatality.",
+    "modern_interpretation": "Mass disaster risk.",
+    "neutralization": "Mitigated by Jupiter aspect.",
+    "relevance": "Mid",
+    "additional_info": "Disaster fatality risk."
+  },
+  {
+    "id": 278,
+    "name": "Peenasaroga Yoga",
+    "category": "Medical Affliction",
+    "participating_planets": [
+      "Moon",
+      "Saturn"
+    ],
+    "houses_involved": [
+      6,
+      8,
+      12
+    ],
+    "formation": "Moon in 6th, Saturn in 8th, malefic in 12th, Lagna lord in malefic Navamsa.",
+    "effect": "Chronic nasal inflammation (Schneiderian Membrane), severe sinusitis.",
+    "modern_interpretation": "Chronic sinusitis, rhinitis.",
+    "neutralization": "Mitigated by Mercury aspect.",
+    "relevance": "Mid",
+    "additional_info": "Nasal disease indicator."
+  },
+  {
+    "id": 279,
+    "name": "Pittaroga Yoga",
+    "category": "Medical Affliction",
+    "participating_planets": [
+      "Sun"
+    ],
+    "houses_involved": [
+      6
+    ],
+    "formation": "Sun in 6th house with a malefic, aspected by another malefic.",
+    "effect": "Bilious complaints, liver disorders, Pitta imbalance.",
+    "modern_interpretation": "Hepatic/bilious illness, liver health.",
+    "neutralization": "Cancelled by Jupiter aspect.",
+    "relevance": "High",
+    "additional_info": "Liver/Pitta health indicator."
+  },
+  {
+    "id": 280,
+    "name": "Vikalangapatni Yoga",
+    "category": "Spousal Physical Affliction",
+    "participating_planets": [
+      "Sun",
+      "Venus"
+    ],
+    "houses_involved": [
+      5,
+      7,
+      9
+    ],
+    "formation": "Sun and Venus placed together in 5th, 7th, or 9th house.",
+    "effect": "Wife having deformed limbs or physical handicap.",
+    "modern_interpretation": "Spousal physical disability.",
+    "neutralization": "Cancelled by benefic aspect.",
+    "relevance": "Mid",
+    "additional_info": "Spousal physical disability."
+  },
+  {
+    "id": 281,
+    "name": "Putrakalatraheena Yoga",
+    "category": "Family Loss",
+    "participating_planets": [
+      "Moon",
+      "Malefics"
+    ],
+    "houses_involved": [
+      1,
+      5,
+      7,
+      12
+    ],
+    "formation": "Waning Moon in 5th, malefics in Lagna, 7th, and 12th.",
+    "effect": "Deprivation of family and children, severe domestic isolation.",
+    "modern_interpretation": "Domestic isolation, family loss.",
+    "neutralization": "Cancelled by Jupiter aspect on Lagna.",
+    "relevance": "High",
+    "additional_info": "Family isolation indicator."
+  },
+  {
+    "id": 282,
+    "name": "Bharyasahavyabhichara Yoga",
+    "category": "Marital Infidelity",
+    "participating_planets": [
+      "Venus",
+      "Saturn",
+      "Mars",
+      "Moon"
+    ],
+    "houses_involved": [
+      7
+    ],
+    "formation": "Venus, Saturn, and Mars joining Moon in 7th house.",
+    "effect": "Mutual marital infidelity, complex extra-marital affairs.",
+    "modern_interpretation": "Mutual marital infidelity.",
+    "neutralization": "Cancelled by Jupiter aspect on 7th.",
+    "relevance": "Mid",
+    "additional_info": "Marital infidelity indicator."
+  },
+  {
+    "id": 283,
+    "name": "Vamsacheda Yoga",
+    "category": "Lineage Extinction",
+    "participating_planets": [
+      "Moon",
+      "Venus"
+    ],
+    "houses_involved": [
+      4,
+      7,
+      10
+    ],
+    "formation": "Moon in 10th, Venus in 7th, malefics in 4th house.",
+    "effect": "Extinction of family lineage, lack of male heirs.",
+    "modern_interpretation": "Lineage end.",
+    "neutralization": "Cancelled by Jupiter in 5th.",
+    "relevance": "High",
+    "additional_info": "Lineage extinction indicator."
+  },
+  {
+    "id": 284,
+    "name": "Guhyaroga Yoga",
+    "category": "Medical Affliction",
+    "participating_planets": [
+      "Moon"
+    ],
+    "houses_involved": [
+      6,
+      8
+    ],
+    "formation": "Moon with malefics in Cancer or Scorpio Navamsa.",
+    "effect": "Diseases of private parts (piles, hernia, fistula).",
+    "modern_interpretation": "Colorectal/genital health issues.",
+    "neutralization": "Mitigated by Venus aspect.",
+    "relevance": "High",
+    "additional_info": "Excretory/reproductive health."
+  },
+  {
+    "id": 285,
+    "name": "Angaheena Yoga",
+    "category": "Physical Disability",
+    "participating_planets": [
+      "Moon",
+      "Mars",
+      "Saturn",
+      "Sun"
+    ],
+    "houses_involved": [
+      2,
+      7,
+      10
+    ],
+    "formation": "Moon in 10th, Mars in 7th, Saturn in 2nd from Sun.",
+    "effect": "Loss or paralysis of physical limbs.",
+    "modern_interpretation": "Paralysis, limb physical impairment.",
+    "neutralization": "Cancelled by Jupiter aspect.",
+    "relevance": "Mid",
+    "additional_info": "Paralysis risk indicator."
+  },
+  {
+    "id": 286,
+    "name": "Swetakushta Yoga",
+    "category": "Medical Affliction",
+    "participating_planets": [
+      "Mars",
+      "Saturn",
+      "Moon",
+      "Sun"
+    ],
+    "houses_involved": [
+      1,
+      2,
+      7,
+      12
+    ],
+    "formation": "Mars and Saturn in 2nd and 12th, Moon in Lagna, Sun in 7th.",
+    "effect": "White leprosy, Leucoderma, Vitiligo.",
+    "modern_interpretation": "Vitiligo, skin pigmentation disorder.",
+    "neutralization": "Mitigated by Jupiter aspect on Lagna.",
+    "relevance": "Mid",
+    "additional_info": "Vitiligo indicator."
+  },
+  {
+    "id": 287,
+    "name": "Pisacha Grastha Yoga",
+    "category": "Mental Obsession",
+    "participating_planets": [
+      "Rahu",
+      "Moon"
+    ],
+    "houses_involved": [
+      1,
+      5,
+      9
+    ],
+    "formation": "Rahu and Moon in Lagna, malefics in trines (5th/9th).",
+    "effect": "Affliction by evil spirits, severe mental obsession, paranoia.",
+    "modern_interpretation": "Severe psychiatric disorder, paranoia, psychosis.",
+    "neutralization": "Cancelled by strong Jupiter aspect on Lagna.",
+    "relevance": "High",
+    "additional_info": "Psychiatric obsession indicator."
+  },
+  {
+    "id": 288,
+    "name": "Andha Yoga 1",
+    "category": "Vision Blindness",
+    "participating_planets": [
+      "Sun",
+      "Rahu"
+    ],
+    "houses_involved": [
+      1,
+      5,
+      9
+    ],
+    "formation": "Sun and Rahu in Lagna with malefics in trines.",
+    "effect": "Congenital stone-blindness.",
+    "modern_interpretation": "Congenital blindness.",
+    "neutralization": "Cancelled by Venus aspect.",
+    "relevance": "High",
+    "additional_info": "Congenital blindness indicator."
+  },
+  {
+    "id": 289,
+    "name": "Andha Yoga 2",
+    "category": "Vision Blindness",
+    "participating_planets": [
+      "Mars",
+      "Moon",
+      "Saturn",
+      "Sun"
+    ],
+    "houses_involved": [
+      2,
+      6,
+      8,
+      12
+    ],
+    "formation": "Mars, Moon, Saturn, Sun in 2nd, 6th, 12th, 8th respectively.",
+    "effect": "Severe blindness.",
+    "modern_interpretation": "Complete vision loss.",
+    "neutralization": "Cancelled by Jupiter aspect.",
+    "relevance": "High",
+    "additional_info": "Blindness indicator."
+  },
+  {
+    "id": 290,
+    "name": "Vatharoga Yoga",
+    "category": "Medical Affliction",
+    "participating_planets": [
+      "Jupiter",
+      "Saturn"
+    ],
+    "houses_involved": [
+      1,
+      7
+    ],
+    "formation": "Jupiter in Lagna and Saturn in 7th house.",
+    "effect": "Rheumatic/windy complaints, Vatha neurological imbalance, arthritis.",
+    "modern_interpretation": "Rheumatoid arthritis, neurological Vatha disorder.",
+    "neutralization": "Cancelled by Mars aspect on 7th.",
+    "relevance": "High",
+    "additional_info": "Arthritis/Vatha health indicator."
+  },
+  {
+    "id": 291,
+    "name": "Matibhramana Yoga 1",
+    "category": "Mental Health",
+    "participating_planets": [
+      "Jupiter",
+      "Mars"
+    ],
+    "houses_involved": [
+      1,
+      7
+    ],
+    "formation": "Jupiter in Lagna and Mars in 7th house.",
+    "effect": "Insanity, violent mania, severe mental breakdown.",
+    "modern_interpretation": "Bipolar mania, severe psychiatric breakdown.",
+    "neutralization": "Cancelled by Moon aspect.",
+    "relevance": "High",
+    "additional_info": "Psychiatric breakdown indicator."
+  },
+  {
+    "id": 292,
+    "name": "Matibhramana Yoga 2",
+    "category": "Mental Health",
+    "participating_planets": [
+      "Saturn",
+      "Mars"
+    ],
+    "houses_involved": [
+      1,
+      5,
+      7,
+      9
+    ],
+    "formation": "Saturn in Lagna, Mars in 5th, 7th, or 9th house.",
+    "effect": "Chronic mental depression, insanity.",
+    "modern_interpretation": "Severe clinical depression, psychosis.",
+    "neutralization": "Cancelled by Jupiter aspect.",
+    "relevance": "High",
+    "additional_info": "Depression indicator."
+  },
+  {
+    "id": 293,
+    "name": "Matibhramana Yoga 3",
+    "category": "Mental Health",
+    "participating_planets": [
+      "Saturn",
+      "Moon"
+    ],
+    "houses_involved": [
+      12
+    ],
+    "formation": "Saturn and waning Moon in 12th house.",
+    "effect": "Schizophrenia, mental disorientation.",
+    "modern_interpretation": "Psychiatric disorientation.",
+    "neutralization": "Cancelled by Mercury aspect.",
+    "relevance": "High",
+    "additional_info": "Mental disorientation."
+  },
+  {
+    "id": 294,
+    "name": "Matibhramana Yoga 4",
+    "category": "Mental Health",
+    "participating_planets": [
+      "Moon",
+      "Mercury"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Moon and Mercury in Kendra afflicted by Sun/Saturn.",
+    "effect": "Nervous breakdown, mental instability.",
+    "modern_interpretation": "Nervous breakdown, panic disorder.",
+    "neutralization": "Mitigated by Jupiter aspect.",
+    "relevance": "High",
+    "additional_info": "Nervous breakdown indicator."
+  },
+  {
+    "id": 295,
+    "name": "Khalawata Yoga",
+    "category": "Physical Traits",
+    "participating_planets": [
+      "Lagna"
+    ],
+    "houses_involved": [
+      1
+    ],
+    "formation": "Malefic Lagna (Aries, Leo, Scorpio, Capricorn, Aquarius) aspected by malefics.",
+    "effect": "Premature baldness, hair loss.",
+    "modern_interpretation": "Premature male-pattern baldness.",
+    "neutralization": "Mitigated by Venus aspect.",
+    "relevance": "Mid",
+    "additional_info": "Baldness indicator."
+  },
+  {
+    "id": 296,
+    "name": "Nishturabhashi Yoga",
+    "category": "Speech Character",
+    "participating_planets": [
+      "Moon",
+      "Saturn"
+    ],
+    "houses_involved": [
+      1,
+      2,
+      4,
+      7,
+      10
+    ],
+    "formation": "Moon in conjunction with Saturn.",
+    "effect": "Harsh, blunt, cold, insensitive speech.",
+    "modern_interpretation": "Blunt communication style.",
+    "neutralization": "Cancelled if aspected by Jupiter.",
+    "relevance": "Very High",
+    "additional_info": "Harsh speech indicator."
+  },
+  {
+    "id": 297,
+    "name": "Rajabhrashta Yoga",
+    "category": "Nullification Yoga",
+    "participating_planets": [
+      "Aroodha Lagna Lord",
+      "Aroodha Dwadasa Lord"
+    ],
+    "houses_involved": [
+      1,
+      12
+    ],
+    "formation": "Conjunction of the lords of Aroodha Lagna and Aroodha Dwadasa.",
+    "effect": "Dramatic fall from a high position or rank, impeachment, political downfall.",
+    "modern_interpretation": "Political impeachment, corporate deposition, public fall.",
+    "neutralization": "Cancelled if Jupiter aspects Aroodha Lagna.",
+    "relevance": "Very High",
+    "additional_info": "Fall from power indicator."
+  },
+  {
+    "id": 298,
+    "name": "Raja Yoga Bhanga 1",
+    "category": "Nullification Yoga",
+    "participating_planets": [
+      "Saturn"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      10
+    ],
+    "formation": "Leo Lagna with Saturn exalted in Rasi but debilitated in Navamsa (Visakha 1st pada).",
+    "effect": "Complete nullification of Raja Yogas, leading to loss of status.",
+    "modern_interpretation": "Sudden loss of executive authority.",
+    "neutralization": "Specific to Leo Lagna Visakha pada 1.",
+    "relevance": "High",
+    "additional_info": "Specific Navamsa cancellation."
+  },
+  {
+    "id": 299,
+    "name": "Raja Yoga Bhanga 2",
+    "category": "Nullification Yoga",
+    "participating_planets": [
+      "Sun"
+    ],
+    "houses_involved": [
+      6,
+      8,
+      12
+    ],
+    "formation": "Sun at 10 degrees Libra (deep debility).",
+    "effect": "Nullification of solar Raja Yogas, loss of royal favor.",
+    "modern_interpretation": "Loss of government patronage.",
+    "neutralization": "Cancelled if Sun receives Neechabhanga.",
+    "relevance": "High",
+    "additional_info": "Deep debility cancellation."
+  },
+  {
+    "id": 300,
+    "name": "Gohanta Yoga",
+    "category": "Affliction Yoga",
+    "participating_planets": [
+      "Jupiter",
+      "Malefics"
+    ],
+    "houses_involved": [
+      1,
+      4,
+      7,
+      8,
+      10
+    ],
+    "formation": "Malefic without benefic aspects in a Kendra, and Jupiter in the 8th house.",
+    "effect": "Cruel occupation, butchery, severe ethical compromise.",
+    "modern_interpretation": "Ethical downfall, involvement in violent trades.",
+    "neutralization": "Cancelled if Jupiter receives benefic aspect in 8th.",
+    "relevance": "Mid",
+    "additional_info": "Ethical compromise indicator."
+  }
+]

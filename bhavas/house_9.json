@@ -1,0 +1,210 @@
+{
+  "houseNumber": 9,
+  "name": "Dharma Bhava / Bhagya Bhava",
+  "sanskritName": "नवम भाव (धर्म भाव / भाग्य भाव / पितृ भाव / गुरु भाव)",
+  "significations": [
+    "Fortune, prosperity, divine grace, and providential blessings (Bhagya & Daiva Anugraha)",
+    "Dharma, righteousness, moral ethics, piety, and cosmic order (Dharma Sthana)",
+    "Father, paternal heritage, and paternal longevity/prosperity (Pitri Bhava)",
+    "Preceptor, spiritual Guru, mentors, advisors, and sacred teachers (Guru Sthana)",
+    "Purva Punya (accumulated spiritual merits and fruits of righteous actions from past lifetimes)",
+    "Sacred pilgrimages, holy shrines, divine sanctuaries, and ashrams (Teertha Yatra)",
+    "Higher education, postgraduate research, jurisprudence, philosophy, and theological wisdom",
+    "Long-distance voyages, international travels, overseas ventures, and foreign residence",
+    "Intuition, forethought, divine inspiration, and transcendental vision (Pratibha)",
+    "Charities, religious endowments, constructing temples, and noble philanthropy (Dana & Ishta)",
+    "Grandchildren and dynastic continuation (Pautra Sukha — 5th from 5th house)",
+    "Proficiency in foreign languages, sacred treatises, authorship, and publishing"
+  ],
+  "bodyParts": [
+    "Thighs and Femoral Arteries",
+    "Hips and Pelvic Girdle",
+    "Arterial Blood Circulation & Hepatic Vessels (jointly with Jupiter)",
+    "Knees and Patellar Joints (transitional junction with 10th house)",
+    "Bone Marrow Nourishment & Sciatic Nerve Pathways"
+  ],
+  "naturalKaraka": [
+    "Jupiter (Supreme Universal Karaka for Dharma, Guru, Wisdom, Higher Law & Divine Grace)",
+    "Sun (Primary Universal Pitru Karaka for Father, Soul Identity & Sovereign Authority)"
+  ],
+  "classicalSources": [
+    {
+      "book": "Advanced Techniques of Predictive Astrology (Vol. 1)",
+      "author": "Haveli Ram Mehta",
+      "chapter": "Chapter 9: Ninth House - House of Dharma, Father and Long Journey",
+      "pages": "173-181"
+    },
+    {
+      "book": "Brihat Parashara Hora Shastra",
+      "author": "Maharishi Parashara",
+      "chapter": "Chapter 24: Bhava Phala Adhyaya (Dharma Bhava) & Pitru Bhava Vichara"
+    },
+    {
+      "book": "Phala Deepika",
+      "author": "Mantreswara",
+      "chapter": "Chapter 6: Dharma-Karmadhipati & Lakshmi Yoga, Chapter 14: Ninth Bhava Phala"
+    },
+    {
+      "book": "Bhavartha Ratnakara",
+      "author": "Ramanuja",
+      "chapter": "Bhagya Yoga Adhyaya & 9th Lord Exceptions"
+    },
+    {
+      "book": "Uttara Kalamrita",
+      "author": "Kalidasa",
+      "chapter": "Kanda 5: Ninth House Karakatvas, Teertha Yatra & Pitri Vichara"
+    }
+  ],
+  "lordPlacements": {
+    "1": {
+      "title": "9th Lord in 1st House (Lagna Bhava)",
+      "text": "A magnificent Kendra-Trikona Raj Yoga combination where the lord of fortune enters the house of the self. Endows the native with natural charm, spotless reputation, deep erudition, and immense popularity. In female horoscopes, it creates an exceptionally virtuous, fortunate, and auspicious homemaker. When conjoined with the Lagna lord, it bestows all kinds of riches, sovereign power, and substantial paternal inheritance. If with benefics, the native achieves top administrative or governmental office. Weak or in 6, 8, or 12 from Navamsa Lagna reduces fortune; with Rahu indicates deputation under a foreign government; with Mars grants high rank in the armed forces or police; with Saturn prompts deep study of law, history, or archaeology; with Mercury confers banking and financial leadership (except Scorpio Lagna).",
+      "positive": "Supreme Kendra-Trikona Raj Yoga: high administrative rank, noble character, inherited patrimony, lifelong providential protection, and fame.",
+      "negative": "If weak or afflicted in 6, 8, 12 in Navamsa: fluctuating fortunes, paternal friction, and delays in personal recognition.",
+      "shlokaReference": "Mehta, Ch. 9, p. 173; BPHS Ch. 24, Sl. 97"
+    },
+    "2": {
+      "title": "9th Lord in 2nd House (Dhana Bhava)",
+      "text": "The lord of fortune in the house of accumulated wealth creates an outstanding Dhana Yoga, making the native a respected scholar, sensuous, deeply cherished by family, and blessed with domestic happiness from spouse and sons. Conjoined with the 2nd lord, it brings abundant wealth through ancestral commercial enterprises, luxurious living, and refined culinary tastes. A mutual exchange (Parivartana) between the 2nd and 9th houses is considered among the most exalted Maha Dhana Yogas in Jyotish. If afflicted by malefics, paternal inheritances dwindle into legal disputes, and association with the 2nd and 8th lords simultaneously can invite public humiliation.",
+      "positive": "Maha Dhana Yoga: vast wealth accumulated through family enterprise, erudition, sweet eloquent speech, and domestic happiness.",
+      "negative": "If afflicted by malefics: litigation over ancestral assets, loss of inheritance, speech complications, or family friction.",
+      "shlokaReference": "Mehta, Ch. 9, p. 174; Bhavartha Ratnakara"
+    },
+    "3": {
+      "title": "9th Lord in 3rd House (Sahaja Bhava)",
+      "text": "Endows the native with fraternal affection, charming demeanor, courage, and virtue. When the 9th lord combines with the 3rd lord, brothers achieve distinction and prosperity. The native possesses an innate flair for writing on spirituality, theology, and philosophy, musical and instrumental mastery, and undertakes sacred pilgrimages and foreign travels. If conjoined with Saturn, the native travels to foreign lands or serves under foreign institutions. In Navamsa, if the 9th lord falls in 6, 8, or 12, results are moderate. If weak or afflicted, the native's writings or publications may trigger controversies, and the father's estate may suffer erosion.",
+      "positive": "Spiritual authorship, musical and artistic talents, fortunate younger brothers, noble pilgrimages, and fruitful foreign journeys.",
+      "negative": "If weak: controversial publications landing native in trouble, dissipation of paternal wealth, discord with co-borns.",
+      "shlokaReference": "Mehta, Ch. 9, p. 174; Phala Deepika"
+    },
+    "4": {
+      "title": "9th Lord in 4th House (Sukha Bhava)",
+      "text": "A celebrated Kendra-Trikona Raj Yoga of immense potency. Conjoins the house of luck with the house of landed property, vehicles, and maternal bliss. The native enjoys palatial houses, luxury conveyances, fertile lands, and enduring domestic joy. The mother is distinguished, prosperous, and long-lived, and the native is devoted to her. With the 4th lord, the native becomes highly learned and universally happy; with Venus, possesses numerous luxury cars and estates; if exalted, can rise to sovereign authority or Presidency; with Mercury, heads prestigious educational universities. Affliction (especially by Rahu) causes distress for mother and friction with father.",
+      "positive": "Raj Yoga: palatial real estate, luxury conveyances, devoted maternal relationship, high institutional leadership, and lifelong fortune.",
+      "negative": "If afflicted by Rahu/malefics: emotional distress regarding mother's health, property title disputes, and tension with father.",
+      "shlokaReference": "Mehta, Ch. 9, p. 174; Parashara Ch. 24, Sl. 100"
+    },
+    "5": {
+      "title": "9th Lord in 5th House (Putra / Buddhi Bhava)",
+      "text": "An immaculate alliance of the two most auspicious Dharma Trikonas (5th and 9th). The native is bold, charitable, deeply devoted to elders and preceptors, and endowed with brilliant intellect. Conjoined with the 5th lord, the native becomes an internationally celebrated scholar, receives immense financial and moral patronage from the father, and is blessed with distinguished, illustrious children who achieve global renown. It constitutes a premier hallmark for higher academic research, philosophical authorship, and mantra siddhi. If afflicted, obstacles in progeny or higher education and health concerns for the father may arise.",
+      "positive": "Supreme Trikona Sambandha: illustrious sons and grandchildren, divine mantra siddhi, academic distinction, father's prosperity, and literary genius.",
+      "negative": "If afflicted: delays or anxieties concerning children, academic interruptions, or paternal health vulnerabilities.",
+      "shlokaReference": "Mehta, Ch. 9, pp. 174-175; Phala Deepika 6.35"
+    },
+    "6": {
+      "title": "9th Lord in 6th House (Shatru / Roga Bhava)",
+      "text": "When the 9th lord is strong in the 6th, the native achieves high rank in the judiciary as a judge, magistrate, or legal counsel. Benefic associations ensure lucrative earnings, career advancement, numerous loyal attendants, and improvement in the father's constitution. Conjoined with Mars, it grants landed inheritance; with Mercury, royalties from published books; with Jupiter, immense wealth through teaching, jurisprudence, or institutional counsel. If the 9th lord is weak or heavily afflicted by malefics, it indicates severe debts, protracted legal battles, minimal fortune, friction with maternal relatives, and vulnerability for the father's health.",
+      "positive": "Distinction in judicial and legal careers, triumph in contentious litigation, recovery of father's health, and book royalties.",
+      "negative": "If weak or afflicted: crushing debts, intractable legal disputes, strained relations with father and maternal uncles, lack of fortune.",
+      "shlokaReference": "Mehta, Ch. 9, p. 175; BPHS Ch. 24"
+    },
+    "7": {
+      "title": "9th Lord in 7th House (Kalatra Bhava)",
+      "text": "A delightful Kendra-Trikona disposition connecting fortune with partnerships. The native is born into an affluent, respectable family, possesses widespread popularity, and enjoys a magnificent rise in fortune after marriage. Conjoined with the 7th lord, the native earns substantial wealth abroad, undertakes diplomatic assignments, and may permanently settle overseas. Conjoined with Mars, it confers landed properties in foreign countries; with Venus, an aristocratic, wealthy, and noble spouse whose dowry and family elevate the native's status. If weak or afflicted, the father's health may suffer, or matrimonial delays and ideological disputes may occur.",
+      "positive": "Fortune rises meteorically after marriage, aristocratic and wealthy spouse, diplomatic postings overseas, and commercial prosperity.",
+      "negative": "If weak: paternal health complications, ideological friction with spouse, or delays in solemnizing marriage.",
+      "shlokaReference": "Mehta, Ch. 9, p. 175; Parashara Ch. 24, Sl. 103"
+    },
+    "8": {
+      "title": "9th Lord in 8th House (Randhra Bhava)",
+      "text": "Classical texts generally caution that the 9th lord in the 8th can create hindrances in luck, paternal friction, and an unorthodox, heterodox approach to ancestral religion. However, MS Mehta records Sage Ramanuja's vital dictum from Bhavartha Ratnakara: 'Ninth lord in 8th can be bad only if 9th Bhava is also weak.' If the 9th lord is strong or supported by benefic aspects, it grants sudden unearned legacies, massive inheritances, deep esoteric research, and discovery of the occult mysteries of existence. Mehta cites the benchmark horoscope of former Prime Minister P.V. Narasimha Rao (whose 9th lord Venus in 8th under the nodal axis propelled him to national premiership through crisis).",
+      "positive": "Bhavartha Ratnakara Exception: massive inheritances, sudden elevation during national crisis, esoteric and astrological genius.",
+      "negative": "If weak and afflicted: impediments in fortunes, loss of paternal patrimony, estrangement from father, skepticism toward religion.",
+      "shlokaReference": "Mehta, Ch. 9, pp. 175-176; Bhavartha Ratnakara; P.V. Narasimha Rao Benchmark"
+    },
+    "9": {
+      "title": "9th Lord in 9th House (Swakshetra - Bhagya Sthana)",
+      "text": "The lord of fortune posited in its own sacred home constitutes a pristine, unblemished Bhagya Yoga. The native is exceptionally fortunate, deeply pious, truthful, and endowed with commanding charisma. Enjoys widespread public respect, lifelong divine grace, distinguished and obedient sons, and long life. Flocks of people benefit from the native's generous charities, dharamshalas, and temples. Paternal wealth multiplies multifold. If Mercury is exalted here or with benefics, the native achieves peerless intellectual and academic distinction.",
+      "positive": "Full Bhagya Yoga: unshakeable good fortune, divine protection, long life, noble progeny, religious devotion, and flourishing paternal legacy.",
+      "negative": "If afflicted by malefics: dogmatic religious stubbornness or unorthodoxy, yet core providential protection remains intact.",
+      "shlokaReference": "Mehta, Ch. 9, p. 176; Phala Deepika 6.35"
+    },
+    "10": {
+      "title": "9th Lord in 10th House (Karma Bhava)",
+      "text": "The sovereign jewel of Vedic predictive astrology: Dharma-Karmadhipati Raja Yoga! Conjoining the lord of the 9th Trikona with the 10th Kendra creates an epochal ruler, prime minister, cabinet minister, or military commander. The native is righteous, universally beloved, and celebrated for profound erudition and philanthropic endowments. Career scales dizzying heights with unassailable authority and immense wealth. If weak or afflicted by malefics, the native may suffer sudden loss of office, public disrepute, or punitive sanctions from rulers for unrighteous conduct.",
+      "positive": "Supreme Dharma-Karmadhipati Raja Yoga: royal status, ministerial rank, renowned public eminence, massive wealth, and noble governance.",
+      "negative": "If heavily afflicted: vocational downfall, entanglement in shady transactions, and punitive action by state authorities.",
+      "shlokaReference": "Mehta, Ch. 9, p. 176; Parashara Ch. 24, Sl. 106; Phala Deepika"
+    },
+    "11": {
+      "title": "9th Lord in 11th House (Labha Bhava)",
+      "text": "A celebrated alignment for exponential financial prosperity, continuous gains, and realized ambitions. The native is devoted to elders, virtuous, and performs meritorious deeds. When conjoined with the 11th lord, ancestral business flourishes dramatically. Conjoined with Moon in a watery sign, it grants fortune through maritime commerce, pearls, and overseas travel; with Mercury or Jupiter, lucrative returns through publishing, newspapers, universities, and authorship; with Venus, prosperity through hotels, cinemas, restaurants, and luxury arts. If afflicted by Rahu, Saturn, or Mandi, wealth may be acquired through questionable avenues, and friends may turn into adversaries.",
+      "positive": "Continuous financial cashflow, massive gains through educational, publishing, or corporate enterprises, and high fulfillment of goals.",
+      "negative": "If afflicted by malefics/Rahu: financial betrayal by trusted associates, unconventional wealth avenues, friction with elder siblings.",
+      "shlokaReference": "Mehta, Ch. 9, pp. 176-177; BPHS Ch. 24"
+    },
+    "12": {
+      "title": "9th Lord in 12th House (Vyaya Bhava)",
+      "text": "Because the 9th represents Dharma and the 12th represents Moksha (with the 12th being 4th from the 9th — Guru's Ashram), a dignified 9th lord in the 12th makes the native a profound moralist, mystic, or spiritual seeker. Mehta observes that many foreign seekers who travel to India to reside in Guru Ashrams possess this exact configuration. If afflicted, it causes depletion of fortune, losses through uncalculated investments, separation from or early loss of father, and loss of ancestral land if conjoined with the 6th and 8th lords. Mehta quotes K.N. Rao: 'Mahatmas are inclined to leave their bodies in the sub-periods or sub-sub-periods of 9th or 12th lords.'",
+      "positive": "Moksha orientation, spiritual renunciation, residence in sacred ashrams, foreign spiritual leadership, and philosophical transcendence.",
+      "negative": "Dissipation of wealth on futile ventures, living away from father, loss of ancestral property if conjoined with 6th/8th lords.",
+      "shlokaReference": "Mehta, Ch. 9, p. 177; K.N. Rao Ashram Observation"
+    }
+  },
+  "grahaOccupants": {
+    "Sun": {
+      "title": "Sun in 9th House (Surya in Dharma Bhava)",
+      "text": "A well-placed Sun in the 9th house endows the native with a dutiful, noble, and virtuous character with deep reverence for spiritual values and traditional scriptures. Blesses the native with dutiful sons who carry forward the family name. The native possesses natural leadership, high moral authority, and gains favor from the state and elders. If afflicted by Moon or Venus, it may cause ophthalmic/vision sensitivities or administrative friction with governmental bodies. If afflicted by Mars and Saturn without benefic aspects, it indicates early vulnerability for the father.",
+      "positive": "Righteous leadership, dutiful sons, reverence for spiritual wisdom, paternal honor, and sovereign state recognition.",
+      "negative": "If afflicted: vision/eye troubles, administrative disputes with authorities, paternal health challenges, or ideological arrogance.",
+      "shlokaReference": "Mehta, Ch. 9, p. 177; Saravali"
+    },
+    "Moon": {
+      "title": "Moon in 9th House (Chandra in Dharma Bhava)",
+      "text": "The Moon in the 9th house is an exceptional placement conferring widespread popularity, poetic imagination, refined romance, higher academic achievements, and humanitarian benevolence. Success dawns from early youth. The native is blessed with an attractive spouse, obedient sons, and undertakes frequent sea voyages, foreign travel, and sacred pilgrimages to holy rivers and temples. If the Moon occupies a fiery or watery sign, the native becomes a celebrated writer, publisher, or printer. In conjunction with Saturn, Mars, and Mercury, it forms a major Raj Yoga. If afflicted, the native suffers from emotional restlessness and instability of fortune.",
+      "positive": "International fame, literary and publishing brilliance, sacred pilgrimages, foreign sea voyages, attractive spouse, and early prosperity.",
+      "negative": "If afflicted: emotional vacillation, superficial commitments, maternal health sensitivity, or erratic spiritual focus.",
+      "shlokaReference": "Mehta, Ch. 9, pp. 177-178; Jataka Parijata"
+    },
+    "Mars": {
+      "title": "Mars in 9th House (Mangala in Dharma Bhava)",
+      "text": "Mars in the 9th makes the native generous, renowned, affluent, and bold. If exalted or in its own sign, or conjoined with benefics, it confers immense good fortune and produces a daring social reformer with a progressive outlook who demolishes orthodox dogma. When in its own house, it produces a Raj Yoga granting royal favor, land, and fame. If in signs of Mercury, Venus, or Saturn, the native may marry outside their traditional caste or culture. If afflicted, Mars acts as a natural malefic, causing friction with father and brothers, harsh speech, religious iconoclasm, and danger from fire or sharp weapons.",
+      "positive": "Fearless reformer, Raj Yoga in own sign, triumph over dogma, executive courage, and generous patronage.",
+      "negative": "Harsh speech, friction with father and religious authorities, ideological dogmatism, and fire/accident vulnerability.",
+      "shlokaReference": "Mehta, Ch. 9, p. 178; Phala Deepika"
+    },
+    "Mercury": {
+      "title": "Mercury in 9th House (Budha in Dharma Bhava)",
+      "text": "Produces a brilliant, multifaceted philosopher, scientist, and explorer of nature's hidden laws. The native is polite, God-fearing, truth-loving, deeply devoted to the father, and an eloquent orator. In Gemini, Libra, or Aquarius, it brings significant luck and advancement after marriage as an editor, publisher, author, or university professor. In fiery signs, makes an adept mathematician or astrologer; in earthy signs, an astute commercial tycoon; in watery signs, administrative service in communications; in movable signs, love of extensive travels. Possesses an ascetic, meditative mind akin to Lord Buddha. If afflicted by malefics, the native scatters energy across too many unfinished projects.",
+      "positive": "Intellectual brilliance, mastery of astrology and metaphysics, Buddha-like philosophical detachment, successful publishing career, and eloquence.",
+      "negative": "If afflicted: restless mind, skepticism toward scriptures, anxiety over unfinished enterprises, and dispersed concentration.",
+      "shlokaReference": "Mehta, Ch. 9, pp. 178-179; BPHS"
+    },
+    "Jupiter": {
+      "title": "Jupiter in 9th House (Guru in Dharma Bhava - Karako Bhava Swakshetra)",
+      "text": "Jupiter in the 9th is in its supreme natural joy as Karaka of the house of wisdom and Dharma. When fortified, the native possesses vast immovable properties, palatial residences, and colossal wealth. The native is a celebrity of unassailable integrity, deeply devoted to religious duties, revered by preceptors, and enjoys excellent harmony with the father. Conjoined with Saturn, it forms a classic Yoga for spiritual renunciation, making one an internationally revered philosopher, lecturer, or preceptor in foreign lands. Conjoined with Moon and Mars, it confers high rank in the armed forces or police. A divine blessing that dissolves hundreds of chart afflictions.",
+      "positive": "Supreme Guru placement: international spiritual acclaim, unblemished integrity, vast wealth, divine preceptor blessings, and paternal harmony.",
+      "negative": "If debilitated or severely afflicted: dogmatic sanctimony, over-optimistic financial gambles, or friction with traditional elders.",
+      "shlokaReference": "Mehta, Ch. 9, p. 179; Phala Deepika"
+    },
+    "Venus": {
+      "title": "Venus in 9th House (Shukra in Dharma Bhava)",
+      "text": "The native is extraordinarily fortunate, blessed with an affectionate family, elegant vehicles, and flourishing children. Possesses a deep aesthetic passion for poetry, music, visual arts, and diplomacy. Conjoined with Saturn, makes a successful diplomat or high-ranking governmental representative. Conjoined with Sun, gives eloquent speech but sensitive constitution. Conjoined with Sun and Saturn, cautions against criminal or erratic impulses. In general, Venus in the 9th ensures prosperity through partnerships and cultural patronage.",
+      "positive": "Artistic and poetic genius, diplomatic honors, marital fortune, elegant conveyances, and cultured lifestyle.",
+      "negative": "If afflicted by malefics: romantic controversies, financial extravagance, or friction with father over lifestyle choices.",
+      "shlokaReference": "Mehta, Ch. 9, p. 179; Saravali"
+    },
+    "Saturn": {
+      "title": "Saturn in 9th House (Shani in Dharma Bhava)",
+      "text": "Saturn in the 9th creates an introspective, serious, and solitary disposition. The native may marry late or prefer a contemplative life. Confers success in law, jurisprudence, mining, history, and ancient civilizations. While the native may be frugal or austere, substantial long-term wealth is accumulated. Conjoined with the Sun, it produces ideological friction with father and children; with Mercury, indicates wealth achieved through unconventional or complex channels. In foreign travels, Saturn gives long residences abroad and an appreciation for antique cultural heritages.",
+      "positive": "Mastery of law, judicial discipline, historical research, enduring wealth, and profound philosophical maturity.",
+      "negative": "Strained relations with father, delayed marriage, melancholic or skeptical outlook, and obstacles in higher education.",
+      "shlokaReference": "Mehta, Ch. 9, pp. 179-180; Phala Deepika"
+    },
+    "Rahu": {
+      "title": "Rahu in 9th House (Rahu in Dharma Bhava)",
+      "text": "Rahu in the 9th gives an unorthodox, rebellious, and iconoclastic approach to religion, often rejecting traditional rituals while mastering foreign philosophical systems. Mehta notes a key empirical observation: Rahu in the 9th makes the native exceptionally proficient in at least one foreign language (many distinguished professors of English literature possess strong Saturn and Rahu in the 9th). In Aries, Taurus, Cancer, Virgo, and Aquarius, Rahu lifts the native to the highest pinnacles of honor, fame, and wealth. If afflicted, it can cause domestic disharmony, sharp differences with the father, and unconventional unions.",
+      "positive": "Mastery of foreign languages, international academic prominence, success abroad, and radical intellectual breakthroughs.",
+      "negative": "Conflict with father, skepticism toward ancestral traditions, domestic discord, and volatile reputation.",
+      "shlokaReference": "Mehta, Ch. 9, pp. 180-181; English Literature Empirical Rule"
+    },
+    "Ketu": {
+      "title": "Ketu in 9th House (Ketu in Dharma Bhava)",
+      "text": "Ketu in the 9th creates a deeply contemplative, introspective seeker with a natural disinterest in pomp and superficial rituals. The native possesses an intuitive grasp of Advaita Vedanta, mysticism, and spiritual liberation. However, the temper can be short, haughty, or easily agitated over trivial matters, with occasional strain in relations with parents. A well-disposed Ketu grants an affectionate spouse, worthy children, financial savings, and pilgrimages to secluded Himalayan or sacred mountain shrines.",
+      "positive": "Spiritual detachment, esoteric insight, pilgrimages to secluded mountain shrines, savings, and intuitive discernment.",
+      "negative": "Short temper, arrogance over philosophical knowledge, friction with father, and sudden ruptures in academic pursuits.",
+      "shlokaReference": "Mehta, Ch. 9, p. 180; Chamatkar Chintamani"
+    }
+  }
+}
+

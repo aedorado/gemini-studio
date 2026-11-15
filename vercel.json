@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "name": "astro-tools",
+  "cleanUrls": true,
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
