@@ -597,24 +597,30 @@
 
       <!-- Matrix 3: Houses x Rashis (12 Bhavas x 12 Signs) -->
       <div id="container-matrix-house-rashi" style="display: none;">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; background: var(--bg-card-alt); padding: 10px 14px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
-          <div style="font-size: 0.8rem; color: var(--text-muted);">
-            Planetary occupancy counts for each <strong>House × Rashi</strong> coordinate across all 102 charts.
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; background: var(--bg-card-alt); padding: 10px 14px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); flex-wrap: wrap; gap: 10px;">
+          <div id="label-house-rashi-mode-desc" style="font-size: 0.8rem; color: var(--text-muted);">
+            Number of native charts where <strong>House H falls in Rashi R</strong> (e.g. H4 in Gemini = 2 charts).
           </div>
-          <div style="display: flex; align-items: center; gap: 8px;">
-            <label style="font-size: 0.76rem; color: var(--text-muted); font-weight: 600;">Filter Planet:</label>
-            <select id="filter-house-rashi-planet" class="custom-select" style="padding: 3px 8px; font-size: 0.76rem;">
-              <option value="ALL">All Planetary Occupants</option>
-              <option value="Sun">Sun (Surya)</option>
-              <option value="Moon">Moon (Chandra)</option>
-              <option value="Mars">Mars (Mangala)</option>
-              <option value="Merc">Mercury (Budha)</option>
-              <option value="Jupt">Jupiter (Guru)</option>
-              <option value="Venu">Venus (Shukra)</option>
-              <option value="Satn">Saturn (Shani)</option>
-              <option value="Rahu">Rahu</option>
-              <option value="Ketu">Ketu</option>
-            </select>
+          <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;">
+            <div class="mode-toggle-group">
+              <button type="button" id="tab-hr-mode-sign" class="btn btn-sm btn-primary" style="padding: 3px 10px; font-size: 0.74rem;">🏛️ House Sign Frequency (Charts)</button>
+              <button type="button" id="tab-hr-mode-occupants" class="btn btn-sm btn-secondary" style="padding: 3px 10px; font-size: 0.74rem;">🪐 Planetary Occupancy (Grahas)</button>
+            </div>
+            <div id="wrap-house-rashi-planet-filter" style="display: none; align-items: center; gap: 6px;">
+              <label style="font-size: 0.76rem; color: var(--text-muted); font-weight: 600;">Filter Planet:</label>
+              <select id="filter-house-rashi-planet" class="custom-select" style="padding: 3px 8px; font-size: 0.76rem;">
+                <option value="ALL">All Planetary Occupants</option>
+                <option value="Sun">Sun (Surya)</option>
+                <option value="Moon">Moon (Chandra)</option>
+                <option value="Mars">Mars (Mangala)</option>
+                <option value="Merc">Mercury (Budha)</option>
+                <option value="Jupt">Jupiter (Guru)</option>
+                <option value="Venu">Venus (Shukra)</option>
+                <option value="Satn">Saturn (Shani)</option>
+                <option value="Rahu">Rahu</option>
+                <option value="Ketu">Ketu</option>
+              </select>
+            </div>
           </div>
         </div>
         <div class="heatmap-table-container">
@@ -643,10 +649,21 @@
       </div>
 
       <!-- Matrix 5: Planets x Nakshatras -->
-      <div id="container-matrix-nakshatra" class="heatmap-table-container" style="display: none;">
-        <table class="heatmap-table" id="table-matrix-nakshatra">
-          <!-- Rendered dynamically -->
-        </table>
+      <div id="container-matrix-nakshatra" style="display: none;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; background: var(--bg-card-alt); padding: 10px 14px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle); flex-wrap: wrap; gap: 10px;">
+          <div style="font-size: 0.8rem; color: var(--text-muted);">
+            Distribution of 9 Grahas across <strong>27 Vedic Nakshatras</strong>.
+          </div>
+          <div class="mode-toggle-group">
+            <button type="button" id="tab-nak-vertical" class="btn btn-sm btn-primary" style="padding: 3px 10px; font-size: 0.74rem;">Vertical (27 Stars as Rows)</button>
+            <button type="button" id="tab-nak-horizontal" class="btn btn-sm btn-secondary" style="padding: 3px 10px; font-size: 0.74rem;">Horizontal (27 Stars as Columns)</button>
+          </div>
+        </div>
+        <div class="heatmap-table-container">
+          <table class="heatmap-table" id="table-matrix-nakshatra">
+            <!-- Rendered dynamically -->
+          </table>
+        </div>
       </div>
     </section>
 

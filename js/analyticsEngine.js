@@ -7,7 +7,7 @@ import { calculateAshtakavarga } from './ashtakavarga.js';
 import { calculateShadbala, MIN_SHADBALA_REQUIREMENTS } from './shadbala.js';
 import { calculateShodashvargaMatrix } from './shodashvarga.js';
 
-const CACHE_KEY = 'jyotish_analytics_cache_v4';
+const CACHE_KEY = 'jyotish_analytics_cache_v5';
 
 // Classical Parashari Exaltation & Debilitation Degrees
 export const EXALTATION_DATA = {
@@ -193,6 +193,10 @@ export function computeProfileNatal(profile) {
 
     const asc = planets.find(p => p.key === 'ASC') || planets[0];
     const ascSignIndex = asc.signIndex;
+    const ascTotalDeg = asc.absLongitude !== undefined ? asc.absLongitude : (asc.signIndex * 30 + asc.degInSign);
+    const ascNakIndex = Math.min(26, Math.max(0, Math.floor(ascTotalDeg / (360 / 27))));
+    const ascNakPada = Math.min(4, Math.max(1, Math.floor((ascTotalDeg % (360 / 27)) / (360 / 108)) + 1));
+    const ascNakObj = NAKSHATRAS[ascNakIndex];
 
     const sunPlanet = planets.find(p => p.key === 'Sun');
     const sunPlacement = sunPlanet ? { signIndex: sunPlanet.signIndex, degInSign: sunPlanet.degInSign } : null;
@@ -313,6 +317,12 @@ export function computeProfileNatal(profile) {
       city: profile.city || '',
       ascSignIndex,
       ascSignName: asc.signName,
+      ascDegInSign: asc.degInSign,
+      ascTotalDeg,
+      ascNakshatraIndex: ascNakIndex,
+      ascNakshatraName: ascNakObj ? ascNakObj.name : 'Unknown',
+      ascNakshatraLord: ascNakObj ? ascNakObj.lord : 'Unknown',
+      ascPada: ascNakPada,
       moonSignIndex: moon ? moon.signIndex : null,
       moonSignName: moon ? moon.signName : 'Unknown',
       moonNakshatraIndex: moonNakIndex,
@@ -365,6 +375,8 @@ export function generateAnalyticsData(profiles) {
     name: NAKSHATRAS[i].name,
     lord: NAKSHATRAS[i].lord,
     deity: NAKSHATRAS[i].deity,
+    ascCount: 0,
+    ascProfileIds: [],
     moonCount: 0,
     totalPlanetsCount: 0,
     profileIds: []
@@ -400,6 +412,7 @@ export function generateAnalyticsData(profiles) {
     planetRashiMatrix[k] = Array.from({ length: 12 }, () => []);
     planetNakshatraMatrix[k] = Array.from({ length: 27 }, () => []);
   });
+  planetNakshatraMatrix['ASC'] = Array.from({ length: 27 }, () => []);
 
   const houseRashiMatrix = Array.from({ length: 12 }, () => Array.from({ length: 12 }, () => []));
   const lordHouseMatrix = Array.from({ length: 12 }, () => Array.from({ length: 12 }, () => []));
@@ -519,6 +532,25 @@ export function generateAnalyticsData(profiles) {
       nakshatraDist[c.moonNakshatraIndex].moonCount++;
       if (!nakshatraDist[c.moonNakshatraIndex].profileIds.includes(c.id)) {
         nakshatraDist[c.moonNakshatraIndex].profileIds.push(c.id);
+      }
+    }
+
+    // Ascendant (Lagna) Nakshatra tracking
+    if (c.ascNakshatraIndex !== null && c.ascNakshatraIndex !== undefined) {
+      const aIdx = c.ascNakshatraIndex;
+      planetNakshatraMatrix['ASC'][aIdx].push({
+        id: c.id,
+        name: c.name,
+        gender: c.gender,
+        sign: c.ascSignName,
+        deg: c.ascDegInSign,
+        pada: c.ascPada,
+        house: 1,
+        dignity: 'Lagna (Ascendant)'
+      });
+      if (nakshatraDist[aIdx]) {
+        nakshatraDist[aIdx].ascCount++;
+        nakshatraDist[aIdx].ascProfileIds.push(c.id);
       }
     }
 

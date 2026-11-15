@@ -31,11 +31,19 @@ const containerMatrixNakshatra = document.getElementById('container-matrix-naksh
 const tableMatrixHouse = document.getElementById('table-matrix-house');
 const tableMatrixRashi = document.getElementById('table-matrix-rashi');
 const filterHouseRashiPlanet = document.getElementById('filter-house-rashi-planet');
+const tabHrModeSign = document.getElementById('tab-hr-mode-sign');
+const tabHrModeOccupants = document.getElementById('tab-hr-mode-occupants');
+const wrapHouseRashiPlanetFilter = document.getElementById('wrap-house-rashi-planet-filter');
+const labelHouseRashiModeDesc = document.getElementById('label-house-rashi-mode-desc');
+let activeHouseRashiMode = 'sign'; // 'sign' (chart counts having given rashi) or 'occupants' (graha density)
 const tableMatrixHouseRashi = document.getElementById('table-matrix-house-rashi');
 
 const tabLordsHouse = document.getElementById('tab-lords-house');
 const tabLordsRashi = document.getElementById('tab-lords-rashi');
 const tableMatrixLords = document.getElementById('table-matrix-lords');
+const tabNakVertical = document.getElementById('tab-nak-vertical');
+const tabNakHorizontal = document.getElementById('tab-nak-horizontal');
+let activeNakshatraOrientation = 'vertical'; // 'vertical' (27 rows) or 'horizontal' (27 cols)
 const tableMatrixNakshatra = document.getElementById('table-matrix-nakshatra');
 const tableDignityMatrix = document.getElementById('table-dignity-matrix');
 
@@ -197,9 +205,31 @@ function setupEventListeners() {
   if (tabMatrixLords) tabMatrixLords.addEventListener('click', () => switchMatrixTab('lords'));
   if (tabMatrixNakshatra) tabMatrixNakshatra.addEventListener('click', () => switchMatrixTab('nakshatra'));
 
-  // House x Rashi planet filter
+  // House x Rashi planet filter and mode toggle
   if (filterHouseRashiPlanet) {
     filterHouseRashiPlanet.addEventListener('change', renderMatrixHouseRashi);
+  }
+  if (tabHrModeSign && tabHrModeOccupants) {
+    tabHrModeSign.addEventListener('click', () => {
+      activeHouseRashiMode = 'sign';
+      tabHrModeSign.className = 'btn btn-sm btn-primary';
+      tabHrModeOccupants.className = 'btn btn-sm btn-secondary';
+      if (wrapHouseRashiPlanetFilter) wrapHouseRashiPlanetFilter.style.display = 'none';
+      if (labelHouseRashiModeDesc) {
+        labelHouseRashiModeDesc.innerHTML = 'Number of native charts where <strong>House H falls in Rashi R</strong> (e.g. H4 in Gemini = 2 charts).';
+      }
+      renderMatrixHouseRashi();
+    });
+    tabHrModeOccupants.addEventListener('click', () => {
+      activeHouseRashiMode = 'occupants';
+      tabHrModeSign.className = 'btn btn-sm btn-secondary';
+      tabHrModeOccupants.className = 'btn btn-sm btn-primary';
+      if (wrapHouseRashiPlanetFilter) wrapHouseRashiPlanetFilter.style.display = 'flex';
+      if (labelHouseRashiModeDesc) {
+        labelHouseRashiModeDesc.innerHTML = 'Planetary occupancy counts for each <strong>House × Rashi</strong> coordinate across all 102 charts.';
+      }
+      renderMatrixHouseRashi();
+    });
   }
 
   // House Lords mode toggle
@@ -215,6 +245,22 @@ function setupEventListeners() {
       tabLordsHouse.className = 'btn btn-sm btn-secondary';
       tabLordsRashi.className = 'btn btn-sm btn-primary';
       renderMatrixHouseLords();
+    });
+  }
+
+  // Nakshatra orientation toggle
+  if (tabNakVertical && tabNakHorizontal) {
+    tabNakVertical.addEventListener('click', () => {
+      activeNakshatraOrientation = 'vertical';
+      tabNakVertical.className = 'btn btn-sm btn-primary';
+      tabNakHorizontal.className = 'btn btn-sm btn-secondary';
+      renderMatrixNakshatra();
+    });
+    tabNakHorizontal.addEventListener('click', () => {
+      activeNakshatraOrientation = 'horizontal';
+      tabNakVertical.className = 'btn btn-sm btn-secondary';
+      tabNakHorizontal.className = 'btn btn-sm btn-primary';
+      renderMatrixNakshatra();
     });
   }
 
@@ -445,81 +491,163 @@ function renderMatrixRashi() {
 function renderMatrixHouseRashi() {
   if (!tableMatrixHouseRashi || !analyticsState) return;
 
-  const rawMatrix = analyticsState.houseRashiMatrix;
-  if (!rawMatrix) return;
+  const isSignMode = activeHouseRashiMode === 'sign';
 
-  const pFilter = filterHouseRashiPlanet?.value || 'ALL';
-
-  // Filter matrix by planet if selected
-  const filteredMatrix = Array.from({ length: 12 }, (_, h) => {
-    return Array.from({ length: 12 }, (_, s) => {
-      const allItems = rawMatrix[h][s] || [];
-      if (pFilter === 'ALL') return allItems;
-      return allItems.filter(item => item.planetKey === pFilter);
-    });
-  });
-
-  let maxCount = 1;
-  for (let h = 0; h < 12; h++) {
-    for (let s = 0; s < 12; s++) {
-      const len = filteredMatrix[h][s].length;
-      if (len > maxCount) maxCount = len;
+  if (isSignMode) {
+    // MODE 1: Chart Counts (How many charts have House H falling in Sign S)
+    let maxCount = 1;
+    for (let h = 0; h < 12; h++) {
+      for (let s = 0; s < 12; s++) {
+        const requiredAsc = (s - h + 12) % 12;
+        const count = analyticsState.distributions.ascDist[requiredAsc]?.count || 0;
+        if (count > maxCount) maxCount = count;
+      }
     }
-  }
 
-  let html = '<thead><tr>';
-  html += '<th class="planet-col-header">House \\ Rashi</th>';
-  SIGNS.forEach(sign => {
-    html += `<th>${sign.symbol} ${sign.name}</th>`;
-  });
-  html += '</tr></thead><tbody>';
-
-  for (let h = 0; h < 12; h++) {
-    html += `<tr>`;
-    html += `<td class="planet-label-cell" style="color: var(--gold-light);">🏛️ ${BHAVA_NAMES[h]}</td>`;
-
-    for (let s = 0; s < 12; s++) {
-      const items = filteredMatrix[h][s] || [];
-      const count = items.length;
-      const bg = getHeatmapBgColor(count, maxCount);
-      const isPositive = count > 0;
-
-      html += `
-        <td class="matrix-cell" style="background: ${bg};"
-            data-house="${h + 1}" data-rashi="${s}"
-            title="House ${h + 1} in ${SIGNS[s].name}: ${count} planetary occupants">
-          <span class="matrix-val" style="color: ${isPositive ? 'var(--text-main)' : 'var(--text-dim)'}; font-weight: ${isPositive ? '700' : '400'};">
-            ${count}
-          </span>
-        </td>
-      `;
-    }
-    html += `</tr>`;
-  }
-
-  html += '</tbody>';
-  tableMatrixHouseRashi.innerHTML = html;
-
-  tableMatrixHouseRashi.querySelectorAll('td.matrix-cell').forEach(td => {
-    td.addEventListener('click', () => {
-      const hNum = parseInt(td.dataset.house, 10);
-      const signIdx = parseInt(td.dataset.rashi, 10);
-      const items = filteredMatrix[hNum - 1][signIdx] || [];
-
-      const list = items.map(item => ({
-        id: item.id,
-        name: item.name,
-        gender: item.gender,
-        sign: `${item.planetKey} in ${SIGNS[signIdx].name}`,
-        deg: item.deg,
-        house: hNum,
-        dignity: item.dignity,
-        isRetro: item.isRetro
-      }));
-
-      openDrilldown(`House ${hNum} in ${SIGNS[signIdx].name}`, list, `${list.length} planets occupying this House × Rashi coordinate`);
+    let html = '<thead><tr>';
+    html += '<th class="planet-col-header">House \\ Rashi (Chart Counts)</th>';
+    SIGNS.forEach(sign => {
+      html += `<th>${sign.symbol} ${sign.name}</th>`;
     });
-  });
+    html += '</tr></thead><tbody>';
+
+    for (let h = 0; h < 12; h++) {
+      html += `<tr>`;
+      html += `<td class="planet-label-cell" style="color: var(--gold-light);">🏛️ ${BHAVA_NAMES[h]}</td>`;
+
+      for (let s = 0; s < 12; s++) {
+        const requiredAsc = (s - h + 12) % 12;
+        const ascData = analyticsState.distributions.ascDist[requiredAsc];
+        const count = ascData ? ascData.count : 0;
+        const bg = getHeatmapBgColor(count, maxCount);
+        const isPositive = count > 0;
+
+        html += `
+          <td class="matrix-cell" style="background: ${bg};"
+              data-house="${h + 1}" data-rashi="${s}" data-asc="${requiredAsc}"
+              title="House ${h + 1} is ${SIGNS[s].name} in ${count} charts (${SIGNS[requiredAsc].name} Ascendant)">
+            <span class="matrix-val" style="color: ${isPositive ? 'var(--text-main)' : 'var(--text-dim)'}; font-weight: ${isPositive ? '700' : '400'};">
+              ${count}
+            </span>
+          </td>
+        `;
+      }
+      html += `</tr>`;
+    }
+
+    html += '</tbody>';
+    tableMatrixHouseRashi.innerHTML = html;
+
+    tableMatrixHouseRashi.querySelectorAll('td.matrix-cell').forEach(td => {
+      td.addEventListener('click', () => {
+        const hNum = parseInt(td.dataset.house, 10);
+        const signIdx = parseInt(td.dataset.rashi, 10);
+        const ascIdx = parseInt(td.dataset.asc, 10);
+        const ascData = analyticsState.distributions.ascDist[ascIdx];
+        if (!ascData || !ascData.profileIds) return;
+
+        const list = resolveProfileItems(ascData.profileIds, (c) => ({
+          id: c.id,
+          name: c.name,
+          gender: c.gender,
+          sign: `Lagna: ${c.ascSignName}`,
+          house: hNum,
+          dignity: `House ${hNum} in ${SIGNS[signIdx].name}`
+        }));
+
+        openDrilldown(`House ${hNum} (${BHAVA_NAMES[hNum - 1]}) in ${SIGNS[signIdx].name}`, list, `${list.length} native charts have ${SIGNS[signIdx].name} as House ${hNum} (${SIGNS[ascIdx].name} Ascendant)`);
+      });
+    });
+
+  } else {
+    // MODE 2: Planetary Occupancy (Graha Density)
+    const rawMatrix = analyticsState.houseRashiMatrix;
+    if (!rawMatrix) return;
+
+    const pFilter = filterHouseRashiPlanet?.value || 'ALL';
+
+    const filteredMatrix = Array.from({ length: 12 }, (_, h) => {
+      return Array.from({ length: 12 }, (_, s) => {
+        const allItems = rawMatrix[h][s] || [];
+        if (pFilter === 'ALL') return allItems;
+        return allItems.filter(item => item.planetKey === pFilter);
+      });
+    });
+
+    let maxCount = 1;
+    for (let h = 0; h < 12; h++) {
+      for (let s = 0; s < 12; s++) {
+        const len = filteredMatrix[h][s].length;
+        if (len > maxCount) maxCount = len;
+      }
+    }
+
+    let html = '<thead><tr>';
+    html += '<th class="planet-col-header">House \\ Rashi (Grahas)</th>';
+    SIGNS.forEach(sign => {
+      html += `<th>${sign.symbol} ${sign.name}</th>`;
+    });
+    html += '</tr></thead><tbody>';
+
+    for (let h = 0; h < 12; h++) {
+      html += `<tr>`;
+      html += `<td class="planet-label-cell" style="color: var(--gold-light);">🏛️ ${BHAVA_NAMES[h]}</td>`;
+
+      for (let s = 0; s < 12; s++) {
+        const items = filteredMatrix[h][s] || [];
+        const count = items.length;
+        const bg = getHeatmapBgColor(count, maxCount);
+        const isPositive = count > 0;
+
+        html += `
+          <td class="matrix-cell" style="background: ${bg};"
+              data-house="${h + 1}" data-rashi="${s}"
+              title="House ${h + 1} in ${SIGNS[s].name}: ${count} planetary occupants">
+            <span class="matrix-val" style="color: ${isPositive ? 'var(--text-main)' : 'var(--text-dim)'}; font-weight: ${isPositive ? '700' : '400'};">
+              ${count}
+            </span>
+          </td>
+        `;
+      }
+      html += `</tr>`;
+    }
+
+    html += '</tbody>';
+    tableMatrixHouseRashi.innerHTML = html;
+
+    tableMatrixHouseRashi.querySelectorAll('td.matrix-cell').forEach(td => {
+      td.addEventListener('click', () => {
+        const hNum = parseInt(td.dataset.house, 10);
+        const signIdx = parseInt(td.dataset.rashi, 10);
+        const items = filteredMatrix[hNum - 1][signIdx] || [];
+
+        const requiredAscSignIdx = (signIdx - (hNum - 1) + 12) % 12;
+        const ascSign = SIGNS[requiredAscSignIdx];
+        const matchingCharts = Object.values(analyticsState.chartMap).filter(c => c.ascSignIndex === requiredAscSignIdx);
+
+        const list = items.map(item => ({
+          id: item.id,
+          name: item.name,
+          gender: item.gender,
+          sign: `${item.planetKey} in ${SIGNS[signIdx].name}`,
+          deg: item.deg,
+          house: hNum,
+          dignity: item.dignity,
+          isRetro: item.isRetro
+        }));
+
+        let subText = '';
+        if (items.length > 0) {
+          subText = `${items.length} planetary occupant(s) in House ${hNum} (${SIGNS[signIdx].name}) across ${matchingCharts.length} ${ascSign.name} Ascendant charts in the databank.`;
+        } else {
+          const names = matchingCharts.map(c => c.name).join(', ') || 'None';
+          subText = `House ${hNum} falls in ${SIGNS[signIdx].name} for ${matchingCharts.length} ${ascSign.name} Ascendant charts (${names}), but House ${hNum} is vacant / empty with 0 occupying planets.`;
+        }
+
+        openDrilldown(`House ${hNum} (${BHAVA_NAMES[hNum - 1]}) in ${SIGNS[signIdx].name}`, list, subText);
+      });
+    });
+  }
 }
 
 /**
@@ -646,56 +774,198 @@ function renderMatrixNakshatra() {
   const matrix = analyticsState.planetNakshatraMatrix;
   if (!matrix) return;
 
+  const NAKSHATRA_ENTITIES = ['ASC', ...PLANET_ORDER];
+  const NAKSHATRA_ENTITY_LABELS = {
+    ASC: '🏹 Lagna',
+    Sun: '☀️ Sun',
+    Moon: '🌙 Moon',
+    Mars: '♂ Mars',
+    Merc: '☿ Merc',
+    Jupt: '♃ Jupt',
+    Venu: '♀ Venu',
+    Satn: '♄ Satn',
+    Rahu: '☊ Rahu',
+    Ketu: '☋ Ketu'
+  };
+
   let maxCount = 1;
-  PLANET_ORDER.forEach(k => {
+  NAKSHATRA_ENTITIES.forEach(k => {
     for (let n = 0; n < 27; n++) {
-      const len = matrix[k][n]?.length || 0;
+      const len = matrix[k] ? (matrix[k][n]?.length || 0) : 0;
       if (len > maxCount) maxCount = len;
     }
   });
 
-  let html = '<thead><tr>';
-  html += '<th class="planet-col-header">Planet \\ Nakshatra</th>';
-  NAKSHATRAS.forEach((nak, i) => {
-    html += `<th title="${nak.name} (${nak.lord}) - ${nak.deity}">#${i + 1} ${nak.name}<br><small style="color: var(--text-dim); font-size: 0.68rem;">(${nak.lord})</small></th>`;
-  });
-  html += '</tr></thead><tbody>';
+  const isVertical = activeNakshatraOrientation === 'vertical';
 
-  PLANET_ORDER.forEach(k => {
-    const pColor = PLANET_COLORS[k] || 'var(--text-main)';
-    html += `<tr>`;
-    html += `<td class="planet-label-cell" style="color: ${pColor};">● ${PLANET_NAMES[k] || k}</td>`;
+  if (isVertical) {
+    // VERTICAL LAYOUT: 27 Nakshatras as Rows, Lagna + 9 Planets as Columns
+    let html = '<thead><tr>';
+    html += '<th class="planet-col-header" style="min-width: 150px;">Nakshatra</th>';
+    html += '<th style="min-width: 75px;">Lord</th>';
+    
+    NAKSHATRA_ENTITIES.forEach(k => {
+      const pColor = k === 'ASC' ? '#06B6D4' : (PLANET_COLORS[k] || 'var(--text-main)');
+      const label = NAKSHATRA_ENTITY_LABELS[k] || k;
+      const title = k === 'ASC' ? 'Ascendant (Lagna) Star' : (k === 'Moon' ? 'Moon (Janma Nakshatra)' : (PLANET_NAMES[k] || k));
+      html += `<th style="color: ${pColor}; min-width: 65px;" title="${title}">${label}</th>`;
+    });
+    html += '<th style="color: var(--gold-primary); min-width: 65px;">Total Grahas</th>';
+    html += '</tr></thead><tbody>';
 
     for (let n = 0; n < 27; n++) {
-      const items = matrix[k][n] || [];
-      const count = items.length;
-      const bg = getHeatmapBgColor(count, maxCount);
-      const isPositive = count > 0;
+      const nak = NAKSHATRAS[n];
 
+      // Sum all 9 grahas for this nakshatra (excluding ASC from planet count)
+      let nakTotal = 0;
+      PLANET_ORDER.forEach(k => {
+        nakTotal += (matrix[k] ? (matrix[k][n]?.length || 0) : 0);
+      });
+
+      html += `<tr>`;
+      html += `<td class="planet-label-cell" style="color: var(--text-main);">#${n + 1} ${nak.name}</td>`;
+      html += `<td style="color: var(--text-dim); font-size: 0.76rem; font-weight: 600;">${nak.lord}</td>`;
+
+      NAKSHATRA_ENTITIES.forEach(k => {
+        const items = matrix[k] ? (matrix[k][n] || []) : [];
+        const count = items.length;
+        const bg = getHeatmapBgColor(count, maxCount);
+        const isPositive = count > 0;
+        const pLabel = k === 'ASC' ? 'Lagna' : (PLANET_NAMES[k] || k);
+
+        html += `
+          <td class="matrix-cell" style="background: ${bg};"
+              data-entity="${k}" data-nak="${n}"
+              title="${pLabel} in #${n + 1} ${nak.name}: ${count} charts">
+            <span class="matrix-val" style="color: ${isPositive ? (k === 'ASC' ? '#06B6D4' : 'var(--text-main)') : 'var(--text-dim)'}; font-weight: ${isPositive ? '700' : '400'};">
+              ${count}
+            </span>
+          </td>
+        `;
+      });
+
+      // Total 9 Grahas in this Nakshatra
       html += `
-        <td class="matrix-cell" style="background: ${bg};"
-            data-planet="${k}" data-nak="${n}"
-            title="${PLANET_NAMES[k]} in ${NAKSHATRAS[n].name}: ${count} charts">
-          <span class="matrix-val" style="color: ${isPositive ? 'var(--text-main)' : 'var(--text-dim)'}; font-weight: ${isPositive ? '700' : '400'};">
-            ${count}
+        <td class="matrix-cell" style="background: ${nakTotal > 0 ? 'rgba(245, 158, 11, 0.08)' : 'transparent'};"
+            data-nak-total="${n}" title="Total ${nakTotal} planets in #${n + 1} ${nak.name}">
+          <span class="matrix-val" style="color: ${nakTotal > 0 ? 'var(--gold-light)' : 'var(--text-dim)'}; font-weight: 800;">
+            ${nakTotal}
           </span>
         </td>
       `;
+
+      html += `</tr>`;
     }
-    html += `</tr>`;
-  });
 
-  html += '</tbody>';
-  tableMatrixNakshatra.innerHTML = html;
+    html += '</tbody>';
+    tableMatrixNakshatra.innerHTML = html;
 
-  tableMatrixNakshatra.querySelectorAll('td.matrix-cell').forEach(td => {
-    td.addEventListener('click', () => {
-      const pKey = td.dataset.planet;
-      const nakIdx = parseInt(td.dataset.nak, 10);
-      const items = matrix[pKey][nakIdx] || [];
-      openDrilldown(`${PLANET_NAMES[pKey]} in ${NAKSHATRAS[nakIdx].name} (${NAKSHATRAS[nakIdx].lord})`, items, `Found in ${items.length} charts`);
+    // Attach click listeners for Vertical view
+    tableMatrixNakshatra.querySelectorAll('td.matrix-cell[data-entity]').forEach(td => {
+      td.addEventListener('click', () => {
+        const eKey = td.dataset.entity;
+        const nakIdx = parseInt(td.dataset.nak, 10);
+        const nak = NAKSHATRAS[nakIdx];
+        const items = matrix[eKey] ? (matrix[eKey][nakIdx] || []) : [];
+
+        if (eKey === 'ASC') {
+          const list = items.map(item => ({
+            id: item.id,
+            name: item.name,
+            gender: item.gender,
+            sign: `Lagna in ${nak.name} (${nak.lord})`,
+            deg: item.deg,
+            dignity: `Pada ${item.pada || 1}`
+          }));
+          openDrilldown(`Lagna (Ascendant) in #${nakIdx + 1} ${nak.name} (${nak.lord})`, list, `${list.length} charts with Ascendant in this star`);
+        } else if (eKey === 'Moon') {
+          const list = items.map(item => ({
+            id: item.id,
+            name: item.name,
+            gender: item.gender,
+            sign: `Moon in ${nak.name} (${nak.lord})`,
+            deg: item.deg,
+            dignity: `Pada ${item.pada || 1} • Janma Nakshatra`
+          }));
+          openDrilldown(`Janma Nakshatra (Moon) in #${nakIdx + 1} ${nak.name} (${nak.lord})`, list, `${list.length} charts with Janma Moon in this star`);
+        } else {
+          openDrilldown(`${PLANET_NAMES[eKey]} in #${nakIdx + 1} ${nak.name} (${nak.lord})`, items, `Found in ${items.length} charts`);
+        }
+      });
     });
-  });
+
+    tableMatrixNakshatra.querySelectorAll('td.matrix-cell[data-nak-total]').forEach(td => {
+      td.addEventListener('click', () => {
+        const nakIdx = parseInt(td.dataset.nakTotal, 10);
+        const nak = NAKSHATRAS[nakIdx];
+        const allItems = [];
+        PLANET_ORDER.forEach(k => {
+          (matrix[k] ? (matrix[k][nakIdx] || []) : []).forEach(item => {
+            allItems.push({
+              id: item.id,
+              name: item.name,
+              gender: item.gender,
+              sign: `${k} in ${nak.name}`,
+              deg: item.deg,
+              dignity: item.dignity,
+              house: item.house
+            });
+          });
+        });
+        openDrilldown(`All Planets in #${nakIdx + 1} ${nak.name} (${nak.lord})`, allItems, `Total ${allItems.length} planetary occupants`);
+      });
+    });
+
+  } else {
+    // HORIZONTAL LAYOUT: 27 Nakshatras as Columns, Lagna + 9 Planets as Rows
+    let html = '<thead><tr>';
+    html += '<th class="planet-col-header">Planet / Star</th>';
+    NAKSHATRAS.forEach((nak, i) => {
+      html += `<th title="${nak.name} (${nak.lord}) - ${nak.deity}">#${i + 1} ${nak.name}<br><small style="color: var(--text-dim); font-size: 0.68rem;">(${nak.lord})</small></th>`;
+    });
+    html += '</tr></thead><tbody>';
+
+    NAKSHATRA_ENTITIES.forEach(k => {
+      const pColor = k === 'ASC' ? '#06B6D4' : (PLANET_COLORS[k] || 'var(--text-main)');
+      const label = NAKSHATRA_ENTITY_LABELS[k] || k;
+      html += `<tr>`;
+      html += `<td class="planet-label-cell" style="color: ${pColor};">${label}</td>`;
+
+      for (let n = 0; n < 27; n++) {
+        const items = matrix[k] ? (matrix[k][n] || []) : [];
+        const count = items.length;
+        const bg = getHeatmapBgColor(count, maxCount);
+        const isPositive = count > 0;
+        const nak = NAKSHATRAS[n];
+        const pLabel = k === 'ASC' ? 'Lagna' : (PLANET_NAMES[k] || k);
+
+        html += `
+          <td class="matrix-cell" style="background: ${bg};"
+              data-entity="${k}" data-nak="${n}"
+              title="${pLabel} in ${nak.name}: ${count} charts">
+            <span class="matrix-val" style="color: ${isPositive ? (k === 'ASC' ? '#06B6D4' : 'var(--text-main)') : 'var(--text-dim)'}; font-weight: ${isPositive ? '700' : '400'};">
+              ${count}
+            </span>
+          </td>
+        `;
+      }
+      html += `</tr>`;
+    });
+
+    html += '</tbody>';
+    tableMatrixNakshatra.innerHTML = html;
+
+    tableMatrixNakshatra.querySelectorAll('td.matrix-cell').forEach(td => {
+      td.addEventListener('click', () => {
+        const eKey = td.dataset.entity;
+        const nakIdx = parseInt(td.dataset.nak, 10);
+        const nak = NAKSHATRAS[nakIdx];
+        const items = matrix[eKey] ? (matrix[eKey][nakIdx] || []) : [];
+        const pLabel = eKey === 'ASC' ? 'Lagna (Ascendant)' : (PLANET_NAMES[eKey] || eKey);
+        openDrilldown(`${pLabel} in #${nakIdx + 1} ${nak.name} (${nak.lord})`, items, `Found in ${items.length} charts`);
+      });
+    });
+  }
 }
 
 /**
